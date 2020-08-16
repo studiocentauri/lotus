@@ -83,8 +83,10 @@
               
             
             
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="lotus.html">Lotus API</a></li>
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lotus.html">API Reference</a></li>
 </ul>
 
             
@@ -155,7 +157,7 @@
 <p>↰ <a class="reference internal" href="file_include_lotus_rendering_Renderer.h.html#file-include-lotus-rendering-renderer-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">include/lotus/rendering/Renderer.h</span></code>)</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#pragma once</span>
 
-<span class="cp">#include</span> <span class="cpf">&quot;lotus/events/Window.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;lotus/events/IWindow.h&quot;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&quot;lotus/components/rendering.h&quot;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&quot;lotus/components/scene.h&quot;</span><span class="cp"></span>
 
@@ -164,8 +166,11 @@
     <span class="k">struct</span> <span class="n">RendererOp</span>
     <span class="p">{</span>
         <span class="kt">bool</span> <span class="n">IsDebug</span><span class="p">;</span>
+
         <span class="n">ERenderAPI</span> <span class="n">RenderAPI</span><span class="p">;</span>
+
         <span class="kt">uint32_t</span> <span class="n">ViewportWidth</span><span class="p">;</span>
+
         <span class="kt">uint32_t</span> <span class="n">ViewportHeight</span><span class="p">;</span>
     <span class="p">};</span>
 

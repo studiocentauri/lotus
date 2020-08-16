@@ -30,10 +30,18 @@ Program Listing for File Engine.h
        class Engine : public Singleton<Engine>
        {
            bool _isRunning = true;
-           URef<Window> _window;
+           URef<IWindow> _window;
            EventManager* _eventManager{};
            Input* _inputManager{};
            Renderer* _renderer{};
+   
+       public:
+           void Initialize(const LotusOp& options);
+   
+           void Run();
+   
+           void Shutdown();
+   
        private:
            friend Singleton<Engine>;
    
@@ -44,13 +52,5 @@ Program Listing for File Engine.h
            // This guy needs to be a reference so that a single callback can be used for all window events
            // This function should then typecast into an appropriate type before ending the thing to the Event Manager.
            static void OnEvent(Event& event);
-   
-       public:
-   
-           void Initialize(const LotusOp& options);
-   
-           void Run();
-   
-           void Shutdown();
        };
    }

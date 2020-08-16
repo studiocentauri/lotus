@@ -83,8 +83,10 @@
               
             
             
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="lotus.html">Lotus API</a></li>
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lotus.html">API Reference</a></li>
 </ul>
 
             
@@ -159,7 +161,6 @@
 
 <span class="k">namespace</span> <span class="n">Lotus</span>
 <span class="p">{</span>
-    <span class="c1">// Aliases</span>
     <span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
     <span class="k">using</span> <span class="n">URef</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">;</span>
 
@@ -176,11 +177,6 @@
     <span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
     <span class="k">class</span> <span class="nc">Singleton</span>
     <span class="p">{</span>
-    <span class="k">protected</span><span class="o">:</span>
-        <span class="n">Singleton</span><span class="p">()</span> <span class="k">noexcept</span> <span class="o">=</span> <span class="k">default</span><span class="p">;</span>
-
-        <span class="k">virtual</span> <span class="o">~</span><span class="n">Singleton</span><span class="p">()</span> <span class="o">=</span> <span class="k">default</span><span class="p">;</span>
-
     <span class="k">public</span><span class="o">:</span>
         <span class="n">Singleton</span><span class="p">(</span><span class="k">const</span> <span class="n">Singleton</span><span class="o">&amp;</span><span class="p">)</span> <span class="o">=</span> <span class="k">delete</span><span class="p">;</span>
 
@@ -191,6 +187,11 @@
             <span class="k">static</span> <span class="n">T</span> <span class="n">instance</span><span class="p">;</span>
             <span class="k">return</span> <span class="n">instance</span><span class="p">;</span>
         <span class="p">}</span>
+
+    <span class="k">protected</span><span class="o">:</span>
+        <span class="n">Singleton</span><span class="p">()</span> <span class="k">noexcept</span> <span class="o">=</span> <span class="k">default</span><span class="p">;</span>
+
+        <span class="k">virtual</span> <span class="o">~</span><span class="n">Singleton</span><span class="p">()</span> <span class="o">=</span> <span class="k">default</span><span class="p">;</span>
     <span class="p">};</span>
 
     <span class="k">class</span> <span class="nc">ILifecycle</span>

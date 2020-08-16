@@ -158,6 +158,11 @@ Classes and Structs
 .. toctree::
    :maxdepth: 5
 
+   classLotus_1_1IWindow.rst
+
+.. toctree::
+   :maxdepth: 5
+
    classLotus_1_1LShader.rst
 
 .. toctree::
@@ -189,11 +194,6 @@ Classes and Structs
    :maxdepth: 5
 
    classLotus_1_1Texture.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   classLotus_1_1Window.rst
 
 Enums
 *****

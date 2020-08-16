@@ -12,8 +12,8 @@ Inheritance Relationships
 Derived Types
 *************
 
+- ``public Lotus::IWindow`` (:ref:`exhale_class_classLotus_1_1IWindow`)
 - ``public Lotus::Renderer`` (:ref:`exhale_class_classLotus_1_1Renderer`)
-- ``public Lotus::Window`` (:ref:`exhale_class_classLotus_1_1Window`)
 
 
 Class Documentation

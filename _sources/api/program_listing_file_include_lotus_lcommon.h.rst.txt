@@ -10,13 +10,13 @@ Program Listing for File lcommon.h
 
 .. code-block:: cpp
 
+   
    #pragma once
    
    #include <memory>
    
    namespace Lotus
    {
-       // Aliases
        template<typename T>
        using URef = std::unique_ptr<T>;
    
@@ -33,11 +33,6 @@ Program Listing for File lcommon.h
        template<typename T>
        class Singleton
        {
-       protected:
-           Singleton() noexcept = default;
-   
-           virtual ~Singleton() = default;
-   
        public:
            Singleton(const Singleton&) = delete;
    
@@ -48,6 +43,11 @@ Program Listing for File lcommon.h
                static T instance;
                return instance;
            }
+   
+       protected:
+           Singleton() noexcept = default;
+   
+           virtual ~Singleton() = default;
        };
    
        class ILifecycle

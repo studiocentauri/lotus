@@ -381,9 +381,9 @@ Includes
 
 - ``events/Event.h`` (:ref:`file_include_lotus_events_Event.h`)
 
-- ``events/Input.h`` (:ref:`file_include_lotus_events_Input.h`)
+- ``events/IWindow.h`` (:ref:`file_include_lotus_events_IWindow.h`)
 
-- ``events/Window.h`` (:ref:`file_include_lotus_events_Window.h`)
+- ``events/Input.h`` (:ref:`file_include_lotus_events_Input.h`)
 
 - ``limits``
 

@@ -85,8 +85,10 @@
               
             
             
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="lotus.html">Lotus API</a></li>
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lotus.html">API Reference</a></li>
 </ul>
 
             
@@ -133,7 +135,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="lotus.html">Lotus API</a> &raquo;</li>
+          <li><a href="lotus.html">API Reference</a> &raquo;</li>
         
       <li>Class Input</li>
     
@@ -173,27 +175,56 @@
 <dl class="cpp class">
 <dt id="_CPPv4N5Lotus5InputE">
 <span id="_CPPv3N5Lotus5InputE"></span><span id="_CPPv2N5Lotus5InputE"></span><span id="Lotus::Input"></span><span class="target" id="classLotus_1_1Input"></span><em class="property">class </em><code class="sig-prename descclassname">Lotus<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">Input</code> : <em class="property">public</em> Lotus::<a class="reference internal" href="classLotus_1_1Singleton.html#_CPPv4I0EN5Lotus9SingletonE" title="Lotus::Singleton">Singleton</a>&lt;<a class="reference internal" href="#_CPPv4N5Lotus5InputE" title="Lotus::Input">Input</a>&gt;<a class="headerlink" href="#_CPPv4N5Lotus5InputE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><div class="breathe-sectiondef docutils container">
+<dd><p><a class="reference internal" href="#classLotus_1_1Input"><span class="std std-ref">Input</span></a> manager that receives window events and maintains input state. Users should query this class to get input information. This is to avoid end users interacting with low level window implementations themselves. </p>
+<div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Public Functions</p>
 <dl class="cpp function">
 <dt id="_CPPv4N5Lotus5Input14UpdateKeyStateERK13KeyboardEvent">
 <span id="_CPPv3N5Lotus5Input14UpdateKeyStateERK13KeyboardEvent"></span><span id="_CPPv2N5Lotus5Input14UpdateKeyStateERK13KeyboardEvent"></span><span id="Lotus::Input::UpdateKeyState__KeyboardEventCR"></span><span class="target" id="classLotus_1_1Input_1a403608d8ff44d8bb9e5862d1b8d18ee2"></span>void <code class="sig-name descname">UpdateKeyState</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="structLotus_1_1KeyboardEvent.html#_CPPv4N5Lotus13KeyboardEventE" title="Lotus::KeyboardEvent">KeyboardEvent</a> &amp;<em>event</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus5Input14UpdateKeyStateERK13KeyboardEvent" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p><a class="reference internal" href="structLotus_1_1KeyboardEvent.html#structLotus_1_1KeyboardEvent"><span class="std std-ref">KeyboardEvent</span></a> receiver that updates internal keyboard state. <dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">event</span></code>: Keyboard input data </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
 
 <dl class="cpp function">
 <dt id="_CPPv4N5Lotus5Input16UpdateMouseStateERK10MouseEvent">
 <span id="_CPPv3N5Lotus5Input16UpdateMouseStateERK10MouseEvent"></span><span id="_CPPv2N5Lotus5Input16UpdateMouseStateERK10MouseEvent"></span><span id="Lotus::Input::UpdateMouseState__MouseEventCR"></span><span class="target" id="classLotus_1_1Input_1a6ab4a8bc15643638ded5d23f2a38accd"></span>void <code class="sig-name descname">UpdateMouseState</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="structLotus_1_1MouseEvent.html#_CPPv4N5Lotus10MouseEventE" title="Lotus::MouseEvent">MouseEvent</a> &amp;<em>event</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus5Input16UpdateMouseStateERK10MouseEvent" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p><a class="reference internal" href="structLotus_1_1MouseEvent.html#structLotus_1_1MouseEvent"><span class="std std-ref">MouseEvent</span></a> receiver that updates internal mouse state. <dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">event</span></code>: Mouse input data </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
 
 <dl class="cpp function">
 <dt id="_CPPv4N5Lotus5Input13GetKeyPressedEi">
 <span id="_CPPv3N5Lotus5Input13GetKeyPressedEi"></span><span id="_CPPv2N5Lotus5Input13GetKeyPressedEi"></span><span id="Lotus::Input::GetKeyPressed__i"></span><span class="target" id="classLotus_1_1Input_1ab6ac6daeda32ba5d463f4589fda9d2f1"></span>bool <code class="sig-name descname">GetKeyPressed</code><span class="sig-paren">(</span>int <em>key</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus5Input13GetKeyPressedEi" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p>Query the keyboard state for a particular key <dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>True if the key is pressed </p>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">key</span></code>: Keycode for the requested key </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
 
 <dl class="cpp function">
 <dt id="_CPPv4N5Lotus5Input13GetMouseDeltaEv">
 <span id="_CPPv3N5Lotus5Input13GetMouseDeltaEv"></span><span id="_CPPv2N5Lotus5Input13GetMouseDeltaEv"></span><span id="Lotus::Input::GetMouseDelta"></span><span class="target" id="classLotus_1_1Input_1a4c0037f10ec52a13abbb076b4459b69e"></span>std::pair&lt;float, float&gt; <code class="sig-name descname">GetMouseDelta</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus5Input13GetMouseDeltaEv" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p>Query the mouse state for mouse cursor delta since the last mouse event <dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>Pair of floats with X and Y deltas </p>
+</dd>
+</dl>
+</p>
+</dd></dl>
 
 </div>
 </dd></dl>

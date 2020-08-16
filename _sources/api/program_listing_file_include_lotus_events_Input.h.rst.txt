@@ -26,12 +26,8 @@ Program Listing for File Input.h
            float _xOffset = 0.0f;
            float _yOffset = 0.0f;
    
-       private:
-           friend Singleton<Input>;
-   
-           Input() = default;
-   
        public:
+   
            void UpdateKeyState(const KeyboardEvent& event);
    
            void UpdateMouseState(const MouseEvent& event);
@@ -39,5 +35,10 @@ Program Listing for File Input.h
            bool GetKeyPressed(int key);
    
            std::pair<float, float> GetMouseDelta();
+   
+       private:
+           friend Singleton<Input>;
+   
+           Input() = default;
        };
    }

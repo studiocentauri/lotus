@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Lotus API &mdash; Lotus 0.0.1 documentation</title>
+  <title>API Reference &mdash; Lotus 0.0.1 documentation</title>
   
 
   
@@ -40,7 +40,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Namespace Lotus" href="namespace_Lotus.html" />
-    <link rel="prev" title="Welcome to Lotus’s documentation!" href="../index.html" /> 
+    <link rel="prev" title="Installation" href="../install.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -85,8 +85,10 @@
               
             
             
-              <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Lotus API</a><ul>
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API Reference</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#class-hierarchy">Class Hierarchy</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#file-hierarchy">File Hierarchy</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#full-api">Full API</a><ul>
@@ -123,6 +125,7 @@
 <li class="toctree-l4"><a class="reference internal" href="classLotus_1_1ILifecycle.html">Class ILifecycle</a></li>
 <li class="toctree-l4"><a class="reference internal" href="classLotus_1_1Input.html">Class Input</a></li>
 <li class="toctree-l4"><a class="reference internal" href="classLotus_1_1IResource.html">Class IResource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="classLotus_1_1IWindow.html">Class IWindow</a></li>
 <li class="toctree-l4"><a class="reference internal" href="classLotus_1_1LShader.html">Class LShader</a></li>
 <li class="toctree-l4"><a class="reference internal" href="classLotus_1_1Mesh.html">Class Mesh</a></li>
 <li class="toctree-l4"><a class="reference internal" href="classLotus_1_1Renderer.html">Class Renderer</a></li>
@@ -130,7 +133,6 @@
 <li class="toctree-l4"><a class="reference internal" href="classLotus_1_1SceneManager.html">Class SceneManager</a></li>
 <li class="toctree-l4"><a class="reference internal" href="classLotus_1_1Singleton.html">Template Class Singleton</a></li>
 <li class="toctree-l4"><a class="reference internal" href="classLotus_1_1Texture.html">Class Texture</a></li>
-<li class="toctree-l4"><a class="reference internal" href="classLotus_1_1Window.html">Class Window</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#enums">Enums</a><ul>
@@ -259,7 +261,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Lotus API</li>
+      <li>API Reference</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -278,14 +280,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="lotus-api">
-<h1>Lotus API<a class="headerlink" href="#lotus-api" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="api-reference">
+<h1>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="class-hierarchy">
 <h2>Class Hierarchy<a class="headerlink" href="#class-hierarchy" title="Permalink to this headline">¶</a></h2>
 <ul class="treeView" id="class-treeView">
   <li>
     <ul class="collapsibleList">
-      <li class="lastChild">Namespace <a href="namespace_Lotus.html#namespace-Lotus">Lotus</a><ul><li>Struct <a href="structLotus_1_1CCamera.html#exhale-struct-structLotus-1-1CCamera">CCamera</a></li><li>Struct <a href="structLotus_1_1CDirectionalLight.html#exhale-struct-structLotus-1-1CDirectionalLight">CDirectionalLight</a></li><li>Struct <a href="structLotus_1_1CLight.html#exhale-struct-structLotus-1-1CLight">CLight</a></li><li>Struct <a href="structLotus_1_1CMeshRenderer.html#exhale-struct-structLotus-1-1CMeshRenderer">CMeshRenderer</a></li><li>Struct <a href="structLotus_1_1CPointLight.html#exhale-struct-structLotus-1-1CPointLight">CPointLight</a></li><li>Struct <a href="structLotus_1_1CScript.html#exhale-struct-structLotus-1-1CScript">CScript</a></li><li>Struct <a href="structLotus_1_1CSpotlight.html#exhale-struct-structLotus-1-1CSpotlight">CSpotlight</a></li><li>Struct <a href="structLotus_1_1CTransform.html#exhale-struct-structLotus-1-1CTransform">CTransform</a></li><li>Struct <a href="structLotus_1_1Event.html#exhale-struct-structLotus-1-1Event">Event</a></li><li>Struct <a href="structLotus_1_1KeyboardEvent.html#exhale-struct-structLotus-1-1KeyboardEvent">KeyboardEvent</a></li><li>Struct <a href="structLotus_1_1LModel.html#exhale-struct-structLotus-1-1LModel">LModel</a></li><li>Struct <a href="structLotus_1_1LotusOp.html#exhale-struct-structLotus-1-1LotusOp">LotusOp</a></li><li>Struct <a href="structLotus_1_1MouseEvent.html#exhale-struct-structLotus-1-1MouseEvent">MouseEvent</a></li><li>Struct <a href="structLotus_1_1RendererOp.html#exhale-struct-structLotus-1-1RendererOp">RendererOp</a></li><li>Struct <a href="structLotus_1_1UpdateEvent.html#exhale-struct-structLotus-1-1UpdateEvent">UpdateEvent</a></li><li>Struct <a href="structLotus_1_1Vertex.html#exhale-struct-structLotus-1-1Vertex">Vertex</a></li><li>Struct <a href="structLotus_1_1WindowCloseEvent.html#exhale-struct-structLotus-1-1WindowCloseEvent">WindowCloseEvent</a></li><li>Struct <a href="structLotus_1_1WindowOp.html#exhale-struct-structLotus-1-1WindowOp">WindowOp</a></li><li>Struct <a href="structLotus_1_1WindowResizeEvent.html#exhale-struct-structLotus-1-1WindowResizeEvent">WindowResizeEvent</a></li><li>Class <a href="classLotus_1_1AActor.html#exhale-class-classLotus-1-1AActor">AActor</a></li><li>Class <a href="classLotus_1_1ACamera.html#exhale-class-classLotus-1-1ACamera">ACamera</a></li><li>Class <a href="classLotus_1_1AssetManager.html#exhale-class-classLotus-1-1AssetManager">AssetManager</a></li><li>Class <a href="classLotus_1_1Engine.html#exhale-class-classLotus-1-1Engine">Engine</a></li><li>Class <a href="classLotus_1_1Entity.html#exhale-class-classLotus-1-1Entity">Entity</a></li><li>Class <a href="classLotus_1_1EventManager.html#exhale-class-classLotus-1-1EventManager">EventManager</a></li><li>Class <a href="classLotus_1_1ILifecycle.html#exhale-class-classLotus-1-1ILifecycle">ILifecycle</a></li><li>Class <a href="classLotus_1_1Input.html#exhale-class-classLotus-1-1Input">Input</a></li><li>Class <a href="classLotus_1_1IResource.html#exhale-class-classLotus-1-1IResource">IResource</a></li><li>Class <a href="classLotus_1_1LShader.html#exhale-class-classLotus-1-1LShader">LShader</a></li><li>Class <a href="classLotus_1_1Mesh.html#exhale-class-classLotus-1-1Mesh">Mesh</a></li><li>Class <a href="classLotus_1_1Renderer.html#exhale-class-classLotus-1-1Renderer">Renderer</a></li><li>Class <a href="classLotus_1_1Scene.html#exhale-class-classLotus-1-1Scene">Scene</a></li><li>Class <a href="classLotus_1_1SceneManager.html#exhale-class-classLotus-1-1SceneManager">SceneManager</a></li><li>Template Class <a href="classLotus_1_1Singleton.html#exhale-class-classLotus-1-1Singleton">Singleton</a></li><li>Class <a href="classLotus_1_1Texture.html#exhale-class-classLotus-1-1Texture">Texture</a></li><li>Class <a href="classLotus_1_1Window.html#exhale-class-classLotus-1-1Window">Window</a></li><li>Enum <a href="enum_namespaceLotus_1af409efc59ac393913dd22929ded8d88a.html#exhale-enum-namespaceLotus-1af409efc59ac393913dd22929ded8d88a">EEventCategory</a></li><li>Enum <a href="enum_namespaceLotus_1a95978c94165d403681026eb8f30f1797.html#exhale-enum-namespaceLotus-1a95978c94165d403681026eb8f30f1797">EEventType</a></li><li class="lastChild">Enum <a href="enum_namespaceLotus_1ae825578a38779239ed42a80e8048dfb3.html#exhale-enum-namespaceLotus-1ae825578a38779239ed42a80e8048dfb3">ERenderAPI</a></li></ul></li>
+      <li class="lastChild">Namespace <a href="namespace_Lotus.html#namespace-Lotus">Lotus</a><ul><li>Struct <a href="structLotus_1_1CCamera.html#exhale-struct-structLotus-1-1CCamera">CCamera</a></li><li>Struct <a href="structLotus_1_1CDirectionalLight.html#exhale-struct-structLotus-1-1CDirectionalLight">CDirectionalLight</a></li><li>Struct <a href="structLotus_1_1CLight.html#exhale-struct-structLotus-1-1CLight">CLight</a></li><li>Struct <a href="structLotus_1_1CMeshRenderer.html#exhale-struct-structLotus-1-1CMeshRenderer">CMeshRenderer</a></li><li>Struct <a href="structLotus_1_1CPointLight.html#exhale-struct-structLotus-1-1CPointLight">CPointLight</a></li><li>Struct <a href="structLotus_1_1CScript.html#exhale-struct-structLotus-1-1CScript">CScript</a></li><li>Struct <a href="structLotus_1_1CSpotlight.html#exhale-struct-structLotus-1-1CSpotlight">CSpotlight</a></li><li>Struct <a href="structLotus_1_1CTransform.html#exhale-struct-structLotus-1-1CTransform">CTransform</a></li><li>Struct <a href="structLotus_1_1Event.html#exhale-struct-structLotus-1-1Event">Event</a></li><li>Struct <a href="structLotus_1_1KeyboardEvent.html#exhale-struct-structLotus-1-1KeyboardEvent">KeyboardEvent</a></li><li>Struct <a href="structLotus_1_1LModel.html#exhale-struct-structLotus-1-1LModel">LModel</a></li><li>Struct <a href="structLotus_1_1LotusOp.html#exhale-struct-structLotus-1-1LotusOp">LotusOp</a></li><li>Struct <a href="structLotus_1_1MouseEvent.html#exhale-struct-structLotus-1-1MouseEvent">MouseEvent</a></li><li>Struct <a href="structLotus_1_1RendererOp.html#exhale-struct-structLotus-1-1RendererOp">RendererOp</a></li><li>Struct <a href="structLotus_1_1UpdateEvent.html#exhale-struct-structLotus-1-1UpdateEvent">UpdateEvent</a></li><li>Struct <a href="structLotus_1_1Vertex.html#exhale-struct-structLotus-1-1Vertex">Vertex</a></li><li>Struct <a href="structLotus_1_1WindowCloseEvent.html#exhale-struct-structLotus-1-1WindowCloseEvent">WindowCloseEvent</a></li><li>Struct <a href="structLotus_1_1WindowOp.html#exhale-struct-structLotus-1-1WindowOp">WindowOp</a></li><li>Struct <a href="structLotus_1_1WindowResizeEvent.html#exhale-struct-structLotus-1-1WindowResizeEvent">WindowResizeEvent</a></li><li>Class <a href="classLotus_1_1AActor.html#exhale-class-classLotus-1-1AActor">AActor</a></li><li>Class <a href="classLotus_1_1ACamera.html#exhale-class-classLotus-1-1ACamera">ACamera</a></li><li>Class <a href="classLotus_1_1AssetManager.html#exhale-class-classLotus-1-1AssetManager">AssetManager</a></li><li>Class <a href="classLotus_1_1Engine.html#exhale-class-classLotus-1-1Engine">Engine</a></li><li>Class <a href="classLotus_1_1Entity.html#exhale-class-classLotus-1-1Entity">Entity</a></li><li>Class <a href="classLotus_1_1EventManager.html#exhale-class-classLotus-1-1EventManager">EventManager</a></li><li>Class <a href="classLotus_1_1ILifecycle.html#exhale-class-classLotus-1-1ILifecycle">ILifecycle</a></li><li>Class <a href="classLotus_1_1Input.html#exhale-class-classLotus-1-1Input">Input</a></li><li>Class <a href="classLotus_1_1IResource.html#exhale-class-classLotus-1-1IResource">IResource</a></li><li>Class <a href="classLotus_1_1IWindow.html#exhale-class-classLotus-1-1IWindow">IWindow</a></li><li>Class <a href="classLotus_1_1LShader.html#exhale-class-classLotus-1-1LShader">LShader</a></li><li>Class <a href="classLotus_1_1Mesh.html#exhale-class-classLotus-1-1Mesh">Mesh</a></li><li>Class <a href="classLotus_1_1Renderer.html#exhale-class-classLotus-1-1Renderer">Renderer</a></li><li>Class <a href="classLotus_1_1Scene.html#exhale-class-classLotus-1-1Scene">Scene</a></li><li>Class <a href="classLotus_1_1SceneManager.html#exhale-class-classLotus-1-1SceneManager">SceneManager</a></li><li>Template Class <a href="classLotus_1_1Singleton.html#exhale-class-classLotus-1-1Singleton">Singleton</a></li><li>Class <a href="classLotus_1_1Texture.html#exhale-class-classLotus-1-1Texture">Texture</a></li><li>Enum <a href="enum_namespaceLotus_1af409efc59ac393913dd22929ded8d88a.html#exhale-enum-namespaceLotus-1af409efc59ac393913dd22929ded8d88a">EEventCategory</a></li><li>Enum <a href="enum_namespaceLotus_1a95978c94165d403681026eb8f30f1797.html#exhale-enum-namespaceLotus-1a95978c94165d403681026eb8f30f1797">EEventType</a></li><li class="lastChild">Enum <a href="enum_namespaceLotus_1ae825578a38779239ed42a80e8048dfb3.html#exhale-enum-namespaceLotus-1ae825578a38779239ed42a80e8048dfb3">ERenderAPI</a></li></ul></li>
     </ul>
   </li><!-- only tree view element -->
 </ul><!-- /treeView class-treeView --></div>
@@ -294,7 +296,7 @@
 <ul class="treeView" id="file-treeView">
   <li>
     <ul class="collapsibleList">
-      <li>File <a href="file_include_lotus_scene_AActor.h.html#file-include-lotus-scene-AActor.h">AActor.h</a></li><li>File <a href="file_include_lotus_scene_ACamera.h.html#file-include-lotus-scene-ACamera.h">ACamera.h</a></li><li>File <a href="file_include_lotus_debug.h.html#file-include-lotus-debug.h">debug.h</a></li><li>File <a href="file_include_lotus_Engine.h.html#file-include-lotus-Engine.h">Engine.h</a></li><li>File <a href="file_include_lotus_events_Event.h.html#file-include-lotus-events-Event.h">Event.h</a></li><li>File <a href="file_include_lotus_events_EventManager.h.html#file-include-lotus-events-EventManager.h">EventManager.h</a></li><li>File <a href="file_include_lotus_events_Input.h.html#file-include-lotus-events-Input.h">Input.h</a></li><li>File <a href="file_include_lotus_lcommon.h.html#file-include-lotus-lcommon.h">lcommon.h</a></li><li>File <a href="file_include_lotus_components_lights.h.html#file-include-lotus-components-lights.h">lights.h</a></li><li>File <a href="file_include_lotus_lotus.h.html#file-include-lotus-lotus.h">lotus.h</a></li><li>File <a href="file_include_lotus_rendering_LShader.h.html#file-include-lotus-rendering-LShader.h">LShader.h</a></li><li>File <a href="file_include_lotus_physics.h.html#file-include-lotus-physics.h">physics.h</a></li><li>File <a href="file_include_lotus_python.h.html#file-include-lotus-python.h">python.h</a></li><li>File <a href="file_include_lotus_rendering_Renderer.h.html#file-include-lotus-rendering-Renderer.h">Renderer.h</a></li><li>File <a href="file_include_lotus_components_rendering.h.html#file-include-lotus-components-rendering.h">rendering.h</a></li><li>File <a href="file_include_lotus_resources.h.html#file-include-lotus-resources.h">resources.h</a></li><li>File <a href="file_include_lotus_components_scene.h.html#file-include-lotus-components-scene.h">scene.h</a></li><li>File <a href="file_include_lotus_scene_Scene.h.html#file-include-lotus-scene-Scene.h">Scene.h</a></li><li>File <a href="file_include_lotus_scene_SceneManager.h.html#file-include-lotus-scene-SceneManager.h">SceneManager.h</a></li><li class="lastChild">File <a href="file_include_lotus_events_Window.h.html#file-include-lotus-events-Window.h">Window.h</a></li>
+      <li>File <a href="file_include_lotus_scene_AActor.h.html#file-include-lotus-scene-AActor.h">AActor.h</a></li><li>File <a href="file_include_lotus_scene_ACamera.h.html#file-include-lotus-scene-ACamera.h">ACamera.h</a></li><li>File <a href="file_include_lotus_debug.h.html#file-include-lotus-debug.h">debug.h</a></li><li>File <a href="file_include_lotus_Engine.h.html#file-include-lotus-Engine.h">Engine.h</a></li><li>File <a href="file_include_lotus_events_Event.h.html#file-include-lotus-events-Event.h">Event.h</a></li><li>File <a href="file_include_lotus_events_EventManager.h.html#file-include-lotus-events-EventManager.h">EventManager.h</a></li><li>File <a href="file_include_lotus_events_Input.h.html#file-include-lotus-events-Input.h">Input.h</a></li><li>File <a href="file_include_lotus_events_IWindow.h.html#file-include-lotus-events-IWindow.h">IWindow.h</a></li><li>File <a href="file_include_lotus_lcommon.h.html#file-include-lotus-lcommon.h">lcommon.h</a></li><li>File <a href="file_include_lotus_components_lights.h.html#file-include-lotus-components-lights.h">lights.h</a></li><li>File <a href="file_include_lotus_lotus.h.html#file-include-lotus-lotus.h">lotus.h</a></li><li>File <a href="file_include_lotus_rendering_LShader.h.html#file-include-lotus-rendering-LShader.h">LShader.h</a></li><li>File <a href="file_include_lotus_physics.h.html#file-include-lotus-physics.h">physics.h</a></li><li>File <a href="file_include_lotus_python.h.html#file-include-lotus-python.h">python.h</a></li><li>File <a href="file_include_lotus_rendering_Renderer.h.html#file-include-lotus-rendering-Renderer.h">Renderer.h</a></li><li>File <a href="file_include_lotus_components_rendering.h.html#file-include-lotus-components-rendering.h">rendering.h</a></li><li>File <a href="file_include_lotus_resources.h.html#file-include-lotus-resources.h">resources.h</a></li><li>File <a href="file_include_lotus_components_scene.h.html#file-include-lotus-components-scene.h">scene.h</a></li><li>File <a href="file_include_lotus_scene_Scene.h.html#file-include-lotus-scene-Scene.h">Scene.h</a></li><li class="lastChild">File <a href="file_include_lotus_scene_SceneManager.h.html#file-include-lotus-scene-SceneManager.h">SceneManager.h</a></li>
     </ul>
   </li><!-- only tree view element -->
 </ul><!-- /treeView file-treeView --></div>
@@ -616,6 +618,18 @@
 </div>
 <div class="toctree-wrapper compound">
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="classLotus_1_1IWindow.html">Class IWindow</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classLotus_1_1IWindow.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classLotus_1_1IWindow.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="classLotus_1_1IWindow.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="classLotus_1_1LShader.html">Class LShader</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="classLotus_1_1LShader.html#class-documentation">Class Documentation</a></li>
 </ul>
@@ -682,18 +696,6 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="classLotus_1_1Texture.html#class-documentation">Class Documentation</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="classLotus_1_1Window.html">Class Window</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="classLotus_1_1Window.html#inheritance-relationships">Inheritance Relationships</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="classLotus_1_1Window.html#base-type">Base Type</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="classLotus_1_1Window.html#class-documentation">Class Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -1237,7 +1239,7 @@
         <a href="namespace_Lotus.html" class="btn btn-neutral float-right" title="Namespace Lotus" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to Lotus’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../install.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

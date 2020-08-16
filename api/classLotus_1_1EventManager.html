@@ -85,8 +85,10 @@
               
             
             
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="lotus.html">Lotus API</a></li>
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lotus.html">API Reference</a></li>
 </ul>
 
             
@@ -133,7 +135,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="lotus.html">Lotus API</a> &raquo;</li>
+          <li><a href="lotus.html">API Reference</a> &raquo;</li>
         
       <li>Class EventManager</li>
     
@@ -173,32 +175,77 @@
 <dl class="cpp class">
 <dt id="_CPPv4N5Lotus12EventManagerE">
 <span id="_CPPv3N5Lotus12EventManagerE"></span><span id="_CPPv2N5Lotus12EventManagerE"></span><span id="Lotus::EventManager"></span><span class="target" id="classLotus_1_1EventManager"></span><em class="property">class </em><code class="sig-prename descclassname">Lotus<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">EventManager</code> : <em class="property">public</em> Lotus::<a class="reference internal" href="classLotus_1_1Singleton.html#_CPPv4I0EN5Lotus9SingletonE" title="Lotus::Singleton">Singleton</a>&lt;<a class="reference internal" href="#_CPPv4N5Lotus12EventManagerE" title="Lotus::EventManager">EventManager</a>&gt;<a class="headerlink" href="#_CPPv4N5Lotus12EventManagerE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><div class="breathe-sectiondef docutils container">
+<dd><p>Wrapper class over EnTT to bind, queue and dispatch events. </p>
+<div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Public Functions</p>
 <dl class="cpp function">
 <dt id="_CPPv4I0EN5Lotus12EventManager6InvokeEvR1T">
 <span id="_CPPv3I0EN5Lotus12EventManager6InvokeER1T"></span><span id="_CPPv2I0EN5Lotus12EventManager6InvokeER1T"></span>template&lt;typename <code class="sig-name descname">T</code>&gt;<br /><span class="target" id="classLotus_1_1EventManager_1a566c70873f1a61d81562f127fb3baae5"></span>void <code class="sig-name descname">Invoke</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I0EN5Lotus12EventManager6InvokeEvR1T" title="Lotus::EventManager::Invoke::T">T</a> &amp;<em>event</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0EN5Lotus12EventManager6InvokeEvR1T" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p>Invoke an event immediately <dl class="simple">
+<dt><strong>Template Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">T</span></code>: Type of the event to invoke </p></li>
+</ul>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">event</span></code>: Data to invoke the event with </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
 
 <dl class="cpp function">
 <dt id="_CPPv4I0EN5Lotus12EventManager5QueueEv1T">
 <span id="_CPPv3I0EN5Lotus12EventManager5QueueE1T"></span><span id="_CPPv2I0EN5Lotus12EventManager5QueueE1T"></span>template&lt;typename <code class="sig-name descname">T</code>&gt;<br /><span class="target" id="classLotus_1_1EventManager_1a59445fe09d0d07d7b5bb62128825b875"></span>void <code class="sig-name descname">Queue</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I0EN5Lotus12EventManager5QueueEv1T" title="Lotus::EventManager::Queue::T">T</a> <em>event</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0EN5Lotus12EventManager5QueueEv1T" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p>Add an event to the queue, to be called at the end of the frame <dl class="simple">
+<dt><strong>Template Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">T</span></code>: Type of the event to queue </p></li>
+</ul>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">event</span></code>: Data to queue the event with </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
 
 <dl class="cpp function">
 <dt id="_CPPv4I0_Da0EN5Lotus12EventManager4BindEv1L">
 <span id="_CPPv3I0_Da0EN5Lotus12EventManager4BindE1L"></span><span id="_CPPv2I0_Da0EN5Lotus12EventManager4BindE1L"></span>template&lt;typename <code class="sig-name descname">E</code>, auto <code class="sig-name descname">F</code>, typename <code class="sig-name descname">L</code>&gt;<br /><span class="target" id="classLotus_1_1EventManager_1a1d1f84c8c2883b91604d2af8664d0ed5"></span>void <code class="sig-name descname">Bind</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I0_Da0EN5Lotus12EventManager4BindEv1L" title="Lotus::EventManager::Bind::L">L</a> <em>arg</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0_Da0EN5Lotus12EventManager4BindEv1L" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p>Register an event callback which is a non-static member function <dl class="simple">
+<dt><strong>Template Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">E</span></code>: Type of the event to register this callback for </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">F</span></code>: Pointer to the callback </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">L</span></code>: Type of the listener class </p></li>
+</ul>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">arg</span></code>: Listener class instance on which the callback is to be invoked </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
 
 <dl class="cpp function">
 <dt id="_CPPv4I0_DaEN5Lotus12EventManager4BindEvv">
 <span id="_CPPv3I0_DaEN5Lotus12EventManager4BindEv"></span><span id="_CPPv2I0_DaEN5Lotus12EventManager4BindEv"></span>template&lt;typename <code class="sig-name descname">E</code>, auto <code class="sig-name descname">F</code>&gt;<br /><span class="target" id="classLotus_1_1EventManager_1a4ba9e061d7cd436326f8be37102f2300"></span>void <code class="sig-name descname">Bind</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0_DaEN5Lotus12EventManager4BindEvv" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p>Register a static or free function callback <dl class="simple">
+<dt><strong>Template Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">E</span></code>: Type of the event to register this callback for </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">F</span></code>: Pointer to the callback </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
 
 <dl class="cpp function">
 <dt id="_CPPv4N5Lotus12EventManager14BroadcastQueueEv">
 <span id="_CPPv3N5Lotus12EventManager14BroadcastQueueEv"></span><span id="_CPPv2N5Lotus12EventManager14BroadcastQueueEv"></span><span id="Lotus::EventManager::BroadcastQueue"></span><span class="target" id="classLotus_1_1EventManager_1a6dfb92d697d142105a85ce0fa3487264"></span>void <code class="sig-name descname">BroadcastQueue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus12EventManager14BroadcastQueueEv" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p>Dispatch all queued events </p>
+</dd></dl>
 
 </div>
 </dd></dl>

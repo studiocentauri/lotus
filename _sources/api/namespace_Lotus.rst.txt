@@ -15,7 +15,7 @@ Namespace Lotus
 Detailed Description
 --------------------
 
-OPERATIONS 
+Defines constructs used throughout the project. 
 
 
 
@@ -81,6 +81,8 @@ Classes
 
 - :ref:`exhale_class_classLotus_1_1IResource`
 
+- :ref:`exhale_class_classLotus_1_1IWindow`
+
 - :ref:`exhale_class_classLotus_1_1LShader`
 
 - :ref:`exhale_class_classLotus_1_1Mesh`
@@ -94,8 +96,6 @@ Classes
 - :ref:`exhale_class_classLotus_1_1Singleton`
 
 - :ref:`exhale_class_classLotus_1_1Texture`
-
-- :ref:`exhale_class_classLotus_1_1Window`
 
 
 Enums

@@ -29,7 +29,7 @@ Includes
 
 - ``lotus/components/scene.h`` (:ref:`file_include_lotus_components_scene.h`)
 
-- ``lotus/events/Window.h`` (:ref:`file_include_lotus_events_Window.h`)
+- ``lotus/events/IWindow.h`` (:ref:`file_include_lotus_events_IWindow.h`)
 
 
 

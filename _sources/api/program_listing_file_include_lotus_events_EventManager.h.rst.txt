@@ -23,20 +23,14 @@ Program Listing for File EventManager.h
        {
            entt::dispatcher _dispatcher{};
    
-       private:
-           friend Singleton<EventManager>;
-   
-           EventManager() = default;
-   
        public:
+   
            template<typename T>
            void Invoke(T& event)
            {
-               // Calls the callback for the event immediately
                _dispatcher.trigger<T>(event);
            }
    
-           // Add an event to the queue, to be called at the end of the frame
            template<typename T>
            void Queue(T event)
            {
@@ -61,5 +55,10 @@ Program Listing for File EventManager.h
                // Call all events in queue
                _dispatcher.update();
            }
+   
+       private:
+           friend Singleton<EventManager>;
+   
+           EventManager() = default;
        };
    }

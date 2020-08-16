@@ -85,8 +85,10 @@
               
             
             
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="lotus.html">Lotus API</a></li>
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lotus.html">API Reference</a></li>
 </ul>
 
             
@@ -133,7 +135,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="lotus.html">Lotus API</a> &raquo;</li>
+          <li><a href="lotus.html">API Reference</a> &raquo;</li>
         
       <li>Class Renderer</li>
     
@@ -173,22 +175,48 @@
 <dl class="cpp class">
 <dt id="_CPPv4N5Lotus8RendererE">
 <span id="_CPPv3N5Lotus8RendererE"></span><span id="_CPPv2N5Lotus8RendererE"></span><span id="Lotus::Renderer"></span><span class="target" id="classLotus_1_1Renderer"></span><em class="property">class </em><code class="sig-prename descclassname">Lotus<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">Renderer</code> : <em class="property">public</em> Lotus::<a class="reference internal" href="classLotus_1_1ILifecycle.html#_CPPv4N5Lotus10ILifecycleE" title="Lotus::ILifecycle">ILifecycle</a><a class="headerlink" href="#_CPPv4N5Lotus8RendererE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><div class="breathe-sectiondef docutils container">
+<dd><p><a class="reference internal" href="#classLotus_1_1Renderer"><span class="std std-ref">Renderer</span></a> class used by the end user. Abstracts away platform specific implementation details. All implementations must subclass this. </p>
+<div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Public Functions</p>
 <dl class="cpp function">
 <dt id="_CPPv4N5Lotus8Renderer10InitializeERK10RendererOp">
 <span id="_CPPv3N5Lotus8Renderer10InitializeERK10RendererOp"></span><span id="_CPPv2N5Lotus8Renderer10InitializeERK10RendererOp"></span><span id="Lotus::Renderer::Initialize__RendererOpCR"></span><span class="target" id="classLotus_1_1Renderer_1afd0235d803925767494aeb79b53d5f63"></span>void <code class="sig-name descname">Initialize</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="structLotus_1_1RendererOp.html#_CPPv4N5Lotus10RendererOpE" title="Lotus::RendererOp">RendererOp</a> &amp;<em>options</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus8Renderer10InitializeERK10RendererOp" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p>Initialize the renderer. <dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">options</span></code>: Options to configure the renderer </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
 
 <dl class="cpp function">
 <dt id="_CPPv4N5Lotus8Renderer11SetViewportEiiii">
 <span id="_CPPv3N5Lotus8Renderer11SetViewportEiiii"></span><span id="_CPPv2N5Lotus8Renderer11SetViewportEiiii"></span><span id="Lotus::Renderer::SetViewport__i.i.i.i"></span><span class="target" id="classLotus_1_1Renderer_1a1d627fefc6486ad1c592d58bd21f697f"></span>void <code class="sig-name descname">SetViewport</code><span class="sig-paren">(</span>int <em>x</em>, int <em>y</em>, int <em>width</em>, int <em>height</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus8Renderer11SetViewportEiiii" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p>Set viewport dimensions <dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">x</span></code>: Origin x-coordinate </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">y</span></code>: Origin y-coordinate </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">width</span></code>: Desired viewport width </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">height</span></code>: Desired viewport height </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
 
 <dl class="cpp function">
 <dt id="_CPPv4N5Lotus8Renderer8DrawMeshERK13CMeshRendererRK10CTransform">
 <span id="_CPPv3N5Lotus8Renderer8DrawMeshERK13CMeshRendererRK10CTransform"></span><span id="_CPPv2N5Lotus8Renderer8DrawMeshERK13CMeshRendererRK10CTransform"></span><span id="Lotus::Renderer::DrawMesh__CMeshRendererCR.CTransformCR"></span><span class="target" id="classLotus_1_1Renderer_1a1e623c460723c453cacbb3473bda828b"></span>void <code class="sig-name descname">DrawMesh</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="structLotus_1_1CMeshRenderer.html#_CPPv4N5Lotus13CMeshRendererE" title="Lotus::CMeshRenderer">CMeshRenderer</a> &amp;<em>data</em>, <em class="property">const</em> <a class="reference internal" href="structLotus_1_1CTransform.html#_CPPv4N5Lotus10CTransformE" title="Lotus::CTransform">CTransform</a> &amp;<em>transform</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus8Renderer8DrawMeshERK13CMeshRendererRK10CTransform" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p>Draw a mesh <dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">data</span></code>: <a class="reference internal" href="structLotus_1_1CMeshRenderer.html#structLotus_1_1CMeshRenderer"><span class="std std-ref">CMeshRenderer</span></a> object reference holding data for the mesh to be drawn </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">transform</span></code>: <a class="reference internal" href="structLotus_1_1CTransform.html#structLotus_1_1CTransform"><span class="std std-ref">CTransform</span></a> reference for the mesh to be drawn </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
 
 <dl class="cpp function">
 <dt id="_CPPv4N5Lotus8Renderer11OnPreUpdateEv">

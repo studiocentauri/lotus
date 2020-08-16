@@ -1,6 +1,6 @@
 
-Lotus API
-=========
+API Reference
+=============
 
 .. include:: class_view_hierarchy.rst
 

@@ -83,8 +83,10 @@
               
             
             
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="lotus.html">Lotus API</a></li>
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lotus.html">API Reference</a></li>
 </ul>
 
             
@@ -163,16 +165,16 @@
 <span class="k">typedef</span> <span class="n">glm</span><span class="o">::</span><span class="n">ivec2</span> <span class="n">Vector2i</span><span class="p">;</span>
 <span class="k">typedef</span> <span class="n">glm</span><span class="o">::</span><span class="n">ivec3</span> <span class="n">Vector3i</span><span class="p">;</span>
 <span class="k">typedef</span> <span class="n">glm</span><span class="o">::</span><span class="n">ivec4</span> <span class="n">Vector4i</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="n">glm</span><span class="o">::</span><span class="n">vec2</span>  <span class="n">Vector2f</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="n">glm</span><span class="o">::</span><span class="n">vec3</span>  <span class="n">Vector3f</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="n">glm</span><span class="o">::</span><span class="n">vec4</span>  <span class="n">Vector4f</span><span class="p">;</span>
+<span class="k">typedef</span> <span class="n">glm</span><span class="o">::</span><span class="n">vec2</span> <span class="n">Vector2f</span><span class="p">;</span>
+<span class="k">typedef</span> <span class="n">glm</span><span class="o">::</span><span class="n">vec3</span> <span class="n">Vector3f</span><span class="p">;</span>
+<span class="k">typedef</span> <span class="n">glm</span><span class="o">::</span><span class="n">vec4</span> <span class="n">Vector4f</span><span class="p">;</span>
 
 <span class="k">typedef</span> <span class="n">glm</span><span class="o">::</span><span class="n">imat2x2</span> <span class="n">Matrix2i</span><span class="p">;</span>
 <span class="k">typedef</span> <span class="n">glm</span><span class="o">::</span><span class="n">imat3x3</span> <span class="n">Matrix3i</span><span class="p">;</span>
 <span class="k">typedef</span> <span class="n">glm</span><span class="o">::</span><span class="n">imat4x4</span> <span class="n">Matrix4i</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="n">glm</span><span class="o">::</span><span class="n">mat2</span>    <span class="n">Matrix2f</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="n">glm</span><span class="o">::</span><span class="n">mat3</span>    <span class="n">Matrix3f</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="n">glm</span><span class="o">::</span><span class="n">mat4</span>    <span class="n">Matrix4f</span><span class="p">;</span>
+<span class="k">typedef</span> <span class="n">glm</span><span class="o">::</span><span class="n">mat2</span> <span class="n">Matrix2f</span><span class="p">;</span>
+<span class="k">typedef</span> <span class="n">glm</span><span class="o">::</span><span class="n">mat3</span> <span class="n">Matrix3f</span><span class="p">;</span>
+<span class="k">typedef</span> <span class="n">glm</span><span class="o">::</span><span class="n">mat4</span> <span class="n">Matrix4f</span><span class="p">;</span>
 
 <span class="cp">#define FRONT    Vector3f( 0.0f,  0.0f, -1.0f)</span>
 <span class="cp">#define BACK     Vector3f( 0.0f,  0.0f,  1.0f)</span>
@@ -206,164 +208,6 @@
 
     <span class="k">const</span> <span class="kt">float</span><span class="o">*</span> <span class="nf">valuePtr</span><span class="p">(</span><span class="k">const</span> <span class="n">Vector3f</span><span class="o">&amp;</span> <span class="n">vec</span><span class="p">);</span>
 <span class="p">}</span>
-
-
-
-<span class="c1">//template&lt;int L, typename T&gt;</span>
-<span class="c1">//class Vector</span>
-<span class="c1">//{</span>
-<span class="c1">//private:</span>
-<span class="c1">//public:</span>
-<span class="c1">//    glm::vec&lt;L, T, glm::defaultp&gt; value;</span>
-<span class="c1">//</span>
-<span class="c1">//    Vector(glm::vec&lt;L, T, glm::defaultp&gt; value_) : value(value_)</span>
-<span class="c1">//    {};</span>
-<span class="c1">//</span>
-<span class="c1">//    Vector()</span>
-<span class="c1">//    {</span>
-<span class="c1">//        value = glm::vec&lt;L, T, glm::defaultp&gt;();</span>
-<span class="c1">//    }</span>
-<span class="c1">//</span>
-<span class="c1">//    Vector(T scalar)</span>
-<span class="c1">//    {</span>
-<span class="c1">//        value = glm::vec&lt;L, T, glm::defaultp&gt;(scalar);</span>
-<span class="c1">//    }</span>
-<span class="c1">//</span>
-<span class="c1">//    const float* getValuePtr() const</span>
-<span class="c1">//    {</span>
-<span class="c1">//        return glm::value_ptr(value);</span>
-<span class="c1">//    }</span>
-<span class="c1">//};</span>
-<span class="c1">//</span>
-<span class="c1">//template&lt;typename T&gt;</span>
-<span class="c1">//class Vector&lt;3, T&gt;</span>
-<span class="c1">//{</span>
-<span class="c1">//private:</span>
-<span class="c1">//    T coords[3];</span>
-<span class="c1">//public:</span>
-<span class="c1">//    Vector(glm::vec&lt;3, T, glm::defaultp&gt; value_)</span>
-<span class="c1">//    {</span>
-<span class="c1">//        coords[0] = value_.x;</span>
-<span class="c1">//        coords[1] = value_.y;</span>
-<span class="c1">//        coords[2] = value_.z;</span>
-<span class="c1">//    };</span>
-<span class="c1">//</span>
-<span class="c1">//    Vector(T scalar)</span>
-<span class="c1">//    {</span>
-<span class="c1">//        Vector(glm::vec&lt;3, T, glm::defaultp&gt;(scalar));</span>
-<span class="c1">//    }</span>
-<span class="c1">//</span>
-<span class="c1">//    Vector(T a, T b, T c)</span>
-<span class="c1">//    {</span>
-<span class="c1">//        Vector(glm::vec&lt;3, T, glm::defaultp&gt;(a, b, c));</span>
-<span class="c1">//    }</span>
-<span class="c1">//</span>
-<span class="c1">//    Vector()</span>
-<span class="c1">//    {</span>
-<span class="c1">//        Vector(0.0f);</span>
-<span class="c1">//    }</span>
-<span class="c1">//</span>
-<span class="c1">//    Vector&lt;3, T&gt;&amp; operator=(const Vector&lt;3, T&gt;&amp; rhs)</span>
-<span class="c1">//    {</span>
-<span class="c1">//        coords[0] = rhs.x();</span>
-<span class="c1">//        coords[1] = rhs.y();</span>
-<span class="c1">//        coords[2] = rhs.z();</span>
-<span class="c1">//        return *this;</span>
-<span class="c1">//    }</span>
-<span class="c1">//</span>
-<span class="c1">//    bool operator==(const Vector&lt;3, T&gt;&amp; rhs) const</span>
-<span class="c1">//    {</span>
-<span class="c1">//        return (x() == rhs.x()) &amp;&amp; (y() == rhs.y()) &amp;&amp; (z() == rhs.z());</span>
-<span class="c1">//    }</span>
-<span class="c1">//</span>
-<span class="c1">//    bool operator!=(const Vector&lt;3, T&gt;&amp; rhs) const</span>
-<span class="c1">//    {</span>
-<span class="c1">//        return !(rhs == *this);</span>
-<span class="c1">//    }</span>
-<span class="c1">//</span>
-<span class="c1">//    Vector&lt;3, T&gt; operator*(const float&amp; scalar) const</span>
-<span class="c1">//    {</span>
-<span class="c1">//        return Vector&lt;3, T&gt;(x() * scalar, y() * scalar, z() * scalar);</span>
-<span class="c1">//    }</span>
-<span class="c1">//</span>
-<span class="c1">//    Vector&lt;3, T&gt; operator+(const Vector&lt;3, T&gt;&amp; rhs) const</span>
-<span class="c1">//    {</span>
-<span class="c1">//        return Vector&lt;3, T&gt;(x() + rhs.x(), y() + rhs.y(), z() + rhs.z());</span>
-<span class="c1">//    }</span>
-<span class="c1">//</span>
-<span class="c1">//    Vector&lt;3, T&gt; operator-(const Vector&lt;3, T&gt;&amp; rhs) const</span>
-<span class="c1">//    {</span>
-<span class="c1">//        return Vector&lt;3, T&gt;(x() - rhs.x(), y() - rhs.y(), z() - rhs.z());</span>
-<span class="c1">//    }</span>
-<span class="c1">//</span>
-<span class="c1">//    Vector&lt;3, T&gt;&amp; operator+=(const Vector&lt;3, T&gt;&amp; rhs)</span>
-<span class="c1">//    {</span>
-<span class="c1">//        *this = *this + rhs;</span>
-<span class="c1">//        return *this;</span>
-<span class="c1">//    }</span>
-<span class="c1">//</span>
-<span class="c1">//    Vector&lt;3, T&gt;&amp; operator-=(const Vector&lt;3, T&gt;&amp; rhs)</span>
-<span class="c1">//    {</span>
-<span class="c1">//        *this = *this - rhs;</span>
-<span class="c1">//        return *this;</span>
-<span class="c1">//    }</span>
-<span class="c1">//</span>
-<span class="c1">//    const T* getValuePtr() const</span>
-<span class="c1">//    {</span>
-<span class="c1">//        return coords;</span>
-<span class="c1">//    }</span>
-<span class="c1">//</span>
-<span class="c1">//    const glm::vec&lt;3, T, glm::defaultp&gt; toGLM() const</span>
-<span class="c1">//    {</span>
-<span class="c1">//        return glm::vec&lt;3, T, glm::defaultp&gt;(x(), y(), z());</span>
-<span class="c1">//    }</span>
-<span class="c1">//</span>
-<span class="c1">//    T x() const</span>
-<span class="c1">//    {</span>
-<span class="c1">//        return coords[0];</span>
-<span class="c1">//    }</span>
-<span class="c1">//</span>
-<span class="c1">//    T y() const</span>
-<span class="c1">//    {</span>
-<span class="c1">//        return coords[1];</span>
-<span class="c1">//    }</span>
-<span class="c1">//</span>
-<span class="c1">//    T z() const</span>
-<span class="c1">//    {</span>
-<span class="c1">//        return coords[2];</span>
-<span class="c1">//    }</span>
-<span class="c1">//};</span>
-<span class="c1">//</span>
-<span class="c1">//template&lt;int C, int R, typename T&gt;</span>
-<span class="c1">//class Matrix</span>
-<span class="c1">//{</span>
-<span class="c1">//public:</span>
-<span class="c1">//    glm::mat&lt;C, R, T, glm::defaultp&gt; value;</span>
-<span class="c1">//</span>
-<span class="c1">//    Matrix()</span>
-<span class="c1">//    {</span>
-<span class="c1">//        Matrix(0);</span>
-<span class="c1">//    }</span>
-<span class="c1">//</span>
-<span class="c1">//    Matrix(T diag)</span>
-<span class="c1">//    {</span>
-<span class="c1">//        value = glm::mat&lt;C, R, T, glm::defaultp&gt;(diag);</span>
-<span class="c1">//    }</span>
-<span class="c1">//</span>
-<span class="c1">//    const float* getValuePtr() const</span>
-<span class="c1">//    {</span>
-<span class="c1">//        return glm::value_ptr(value);</span>
-<span class="c1">//    }</span>
-<span class="c1">//</span>
-<span class="c1">//    Matrix(glm::mat&lt;C, R, T, glm::defaultp&gt; value_) : value(value_)</span>
-<span class="c1">//    {}</span>
-<span class="c1">//</span>
-<span class="c1">//    Matrix&amp; operator=(const Matrix&amp; rhs)</span>
-<span class="c1">//    {</span>
-<span class="c1">//        value = rhs.value;</span>
-<span class="c1">//        return *this;</span>
-<span class="c1">//    }</span>
-<span class="c1">//};</span>
 </pre></div>
 </div>
 </div>

@@ -85,8 +85,10 @@
               
             
             
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="lotus.html">Lotus API</a></li>
+              <p class="caption"><span class="caption-text">Contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lotus.html">API Reference</a></li>
 </ul>
 
             
@@ -133,7 +135,7 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-          <li><a href="lotus.html">Lotus API</a> &raquo;</li>
+          <li><a href="lotus.html">API Reference</a> &raquo;</li>
         
       <li>Class Engine</li>
     
@@ -173,22 +175,32 @@
 <dl class="cpp class">
 <dt id="_CPPv4N5Lotus6EngineE">
 <span id="_CPPv3N5Lotus6EngineE"></span><span id="_CPPv2N5Lotus6EngineE"></span><span id="Lotus::Engine"></span><span class="target" id="classLotus_1_1Engine"></span><em class="property">class </em><code class="sig-prename descclassname">Lotus<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">Engine</code> : <em class="property">public</em> Lotus::<a class="reference internal" href="classLotus_1_1Singleton.html#_CPPv4I0EN5Lotus9SingletonE" title="Lotus::Singleton">Singleton</a>&lt;<a class="reference internal" href="#_CPPv4N5Lotus6EngineE" title="Lotus::Engine">Engine</a>&gt;<a class="headerlink" href="#_CPPv4N5Lotus6EngineE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><div class="breathe-sectiondef docutils container">
+<dd><p>Core Lotus engine class that handles all subsystems and the main gameplay loop. </p>
+<div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Public Functions</p>
 <dl class="cpp function">
 <dt id="_CPPv4N5Lotus6Engine10InitializeERK7LotusOp">
 <span id="_CPPv3N5Lotus6Engine10InitializeERK7LotusOp"></span><span id="_CPPv2N5Lotus6Engine10InitializeERK7LotusOp"></span><span id="Lotus::Engine::Initialize__LotusOpCR"></span><span class="target" id="classLotus_1_1Engine_1a51bddf90acf0b33d68782c5ef6a7da1a"></span>void <code class="sig-name descname">Initialize</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="structLotus_1_1LotusOp.html#_CPPv4N5Lotus7LotusOpE" title="Lotus::LotusOp">LotusOp</a> &amp;<em>options</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus6Engine10InitializeERK7LotusOp" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p>Initialize the engine and setup core subsystems. <dl class="simple">
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">options</span></code>: Options to configure the engine with </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
 
 <dl class="cpp function">
 <dt id="_CPPv4N5Lotus6Engine3RunEv">
 <span id="_CPPv3N5Lotus6Engine3RunEv"></span><span id="_CPPv2N5Lotus6Engine3RunEv"></span><span id="Lotus::Engine::Run"></span><span class="target" id="classLotus_1_1Engine_1a7a173098c037e1201f3008b4830ab7a0"></span>void <code class="sig-name descname">Run</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus6Engine3RunEv" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p>Start the main gameplay loop. </p>
+</dd></dl>
 
 <dl class="cpp function">
 <dt id="_CPPv4N5Lotus6Engine8ShutdownEv">
 <span id="_CPPv3N5Lotus6Engine8ShutdownEv"></span><span id="_CPPv2N5Lotus6Engine8ShutdownEv"></span><span id="Lotus::Engine::Shutdown"></span><span class="target" id="classLotus_1_1Engine_1a8021bd823cc0de3909210d15c88af6f0"></span>void <code class="sig-name descname">Shutdown</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus6Engine8ShutdownEv" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p>Shutdown the engine. </p>
+</dd></dl>
 
 </div>
 </dd></dl>
