@@ -1,0 +1,28 @@
+.. _exhale_struct_structLotus_1_1Event:
+
+Struct Event
+============
+
+- Defined in :ref:`file_include_lotus_events_Event.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Derived Types
+*************
+
+- ``public Lotus::KeyboardEvent`` (:ref:`exhale_struct_structLotus_1_1KeyboardEvent`)
+- ``public Lotus::MouseEvent`` (:ref:`exhale_struct_structLotus_1_1MouseEvent`)
+- ``public Lotus::UpdateEvent`` (:ref:`exhale_struct_structLotus_1_1UpdateEvent`)
+- ``public Lotus::WindowCloseEvent`` (:ref:`exhale_struct_structLotus_1_1WindowCloseEvent`)
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: Lotus::Event
+   :members:
+   :protected-members:
+   :undoc-members:

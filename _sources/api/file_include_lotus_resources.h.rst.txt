@@ -1,0 +1,86 @@
+
+.. _file_include_lotus_resources.h:
+
+File resources.h
+================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/lotus/resources.h``)
+------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_lotus_resources.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``assimp/scene.h``
+
+- ``lcommon.h`` (:ref:`file_include_lotus_lcommon.h`)
+
+- ``physics.h`` (:ref:`file_include_lotus_physics.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_lotus_lotus.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_Lotus`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structLotus_1_1LModel`
+
+- :ref:`exhale_struct_structLotus_1_1Vertex`
+
+- :ref:`exhale_class_classLotus_1_1AssetManager`
+
+- :ref:`exhale_class_classLotus_1_1IResource`
+
+- :ref:`exhale_class_classLotus_1_1Mesh`
+
+- :ref:`exhale_class_classLotus_1_1Texture`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_resources_8h_1ad071b7b1c98f623fbf2246f33687f0e0`
+
+- :ref:`exhale_define_resources_8h_1a4a79d571b12106c7d8d8a6536b5d0b30`
+
+- :ref:`exhale_define_resources_8h_1afe51edf3f40363f5d09129360f325b72`
+
+- :ref:`exhale_define_resources_8h_1a8d23feea868a983c8c2b661e1e16972f`
+
+- :ref:`exhale_define_resources_8h_1af66629d6b00cab37ec92e3933efa4bcc`
+
+- :ref:`exhale_define_resources_8h_1abe284e6dd85278d8672eae96f282eddd`
+
+- :ref:`exhale_define_resources_8h_1ab24a1924d30905579baa6ceff4710c2e`
+

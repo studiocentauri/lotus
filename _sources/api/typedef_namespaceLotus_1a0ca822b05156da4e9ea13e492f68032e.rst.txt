@@ -1,0 +1,13 @@
+.. _exhale_typedef_namespaceLotus_1a0ca822b05156da4e9ea13e492f68032e:
+
+Typedef Lotus::SRef
+===================
+
+.. did not find file this was defined in
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: Lotus::SRef

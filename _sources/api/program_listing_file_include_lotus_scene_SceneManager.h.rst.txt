@@ -1,0 +1,38 @@
+
+.. _program_listing_file_include_lotus_scene_SceneManager.h:
+
+Program Listing for File SceneManager.h
+=======================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_include_lotus_scene_SceneManager.h>` (``include/lotus/scene/SceneManager.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #pragma once
+   
+   #include "Scene.h"
+   #include "lotus/lcommon.h"
+   
+   namespace Lotus
+   {
+       class SceneManager : public Singleton<SceneManager>
+       {
+           URef<Scene> _activeScene;
+       private:
+           friend Singleton<SceneManager>;
+   
+           SceneManager() = default;
+   
+       public:
+   
+           const URef<Scene>& GetActiveScene();
+   
+           ACamera GetActiveCamera();
+   
+           const URef<Scene>& LoadScene(const std::string& path);
+   
+           const URef<Scene>& ChangeScene(const std::string& path);
+       };
+   }

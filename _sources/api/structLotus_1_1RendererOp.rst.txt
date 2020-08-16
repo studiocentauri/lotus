@@ -1,0 +1,16 @@
+.. _exhale_struct_structLotus_1_1RendererOp:
+
+Struct RendererOp
+=================
+
+- Defined in :ref:`file_include_lotus_rendering_Renderer.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: Lotus::RendererOp
+   :members:
+   :protected-members:
+   :undoc-members:

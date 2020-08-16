@@ -1,0 +1,98 @@
+
+.. _file_include_lotus_events_Event.h:
+
+File Event.h
+============
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/lotus/events/Event.h``)
+---------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_lotus_events_Event.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``functional``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_lotus_events_EventManager.h`
+
+- :ref:`file_include_lotus_events_Input.h`
+
+- :ref:`file_include_lotus_events_Window.h`
+
+- :ref:`file_include_lotus_lotus.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_Lotus`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structLotus_1_1Event`
+
+- :ref:`exhale_struct_structLotus_1_1KeyboardEvent`
+
+- :ref:`exhale_struct_structLotus_1_1MouseEvent`
+
+- :ref:`exhale_struct_structLotus_1_1UpdateEvent`
+
+- :ref:`exhale_struct_structLotus_1_1WindowCloseEvent`
+
+- :ref:`exhale_struct_structLotus_1_1WindowResizeEvent`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_Event_8h_1ad27cc17b25bb93134368d5eb21126eae`
+
+- :ref:`exhale_define_Event_8h_1afab985ea642b06058606f89e117e2bf7`
+
+- :ref:`exhale_define_Event_8h_1aa6b4d2ab56a84b248ef2e2afc67fd82f`
+
+- :ref:`exhale_define_Event_8h_1a669a55606aaabcce8a56bd13971e2fe8`
+
+- :ref:`exhale_define_Event_8h_1aae2d740f21e8afe73fafd960d2987d48`
+
+- :ref:`exhale_define_Event_8h_1ad4012af5b07d914a243bc7429539d3ed`
+
+- :ref:`exhale_define_Event_8h_1a6ac13f8363c4a9bf676a550dc83cb7d1`
+
+- :ref:`exhale_define_Event_8h_1a3e8a9e8f8defea19263d4b4847d1b2bb`
+
+- :ref:`exhale_define_Event_8h_1adad4024bd2ecd378b0f7f348c031173f`
+
+- :ref:`exhale_define_Event_8h_1a7e903d9308f586ab04aaaa781cbaba9f`
+
+- :ref:`exhale_define_Event_8h_1a1b517388acb29a44945d4a92f10d1deb`
+
+- :ref:`exhale_define_Event_8h_1a639d8c7c1fe837bf253d54ae5217c2f8`
+

@@ -1,0 +1,25 @@
+.. _exhale_struct_structLotus_1_1LModel:
+
+Struct LModel
+=============
+
+- Defined in :ref:`file_include_lotus_resources.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Lotus::IResource`` (:ref:`exhale_class_classLotus_1_1IResource`)
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: Lotus::LModel
+   :members:
+   :protected-members:
+   :undoc-members:

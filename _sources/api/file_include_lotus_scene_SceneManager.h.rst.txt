@@ -1,0 +1,55 @@
+
+.. _file_include_lotus_scene_SceneManager.h:
+
+File SceneManager.h
+===================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/lotus/scene/SceneManager.h``)
+---------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_lotus_scene_SceneManager.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``Scene.h`` (:ref:`file_include_lotus_scene_Scene.h`)
+
+- ``lotus/lcommon.h`` (:ref:`file_include_lotus_lcommon.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_lotus_lotus.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_Lotus`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classLotus_1_1SceneManager`
+

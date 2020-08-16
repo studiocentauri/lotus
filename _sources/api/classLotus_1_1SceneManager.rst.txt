@@ -1,0 +1,25 @@
+.. _exhale_class_classLotus_1_1SceneManager:
+
+Class SceneManager
+==================
+
+- Defined in :ref:`file_include_lotus_scene_SceneManager.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Lotus::Singleton< SceneManager >`` (:ref:`exhale_class_classLotus_1_1Singleton`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Lotus::SceneManager
+   :members:
+   :protected-members:
+   :undoc-members:

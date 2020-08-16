@@ -1,0 +1,13 @@
+.. _exhale_define_physics_8h_1a437ef08681e7210d6678427030446a54:
+
+Define LEFT
+===========
+
+- Defined in :ref:`file_include_lotus_physics.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: LEFT

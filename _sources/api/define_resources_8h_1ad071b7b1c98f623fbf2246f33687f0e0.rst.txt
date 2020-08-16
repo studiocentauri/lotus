@@ -1,0 +1,13 @@
+.. _exhale_define_resources_8h_1ad071b7b1c98f623fbf2246f33687f0e0:
+
+Define DIFFUSE_TEXTURE
+======================
+
+- Defined in :ref:`file_include_lotus_resources.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: DIFFUSE_TEXTURE

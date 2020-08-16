@@ -1,0 +1,42 @@
+
+.. _program_listing_file_include_lotus_debug.h:
+
+Program Listing for File debug.h
+================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_include_lotus_debug.h>` (``include/lotus/debug.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #pragma once
+   
+   // TODO: spdlog as a usage dependency
+   #include <spdlog/spdlog.h>
+   
+   #define LOG_INFO(...)   spdlog::info(__VA_ARGS__)
+   #define LOG_WARN(...)   spdlog::warn(__VA_ARGS__)
+   #define LOG_ERROR(...)  spdlog::error(__VA_ARGS__)
+   
+   //namespace Lotus
+   //{
+   //
+   //    template<typename T>
+   //    void info(const T& msg);
+   //
+   //    template<typename ...Args>
+   //    void info(const char* fmt, const Args& ...);
+   //
+   //    template<typename T>
+   //    void warn(const T& msg);
+   //
+   //    template<typename ...Args>
+   //    void warn(const char* fmt, const Args& ...);
+   //
+   //    template<typename T>
+   //    void error(const T& msg);
+   //
+   //    template<typename ...Args>
+   //    void error(const char* fmt, const Args& ...);
+   //}

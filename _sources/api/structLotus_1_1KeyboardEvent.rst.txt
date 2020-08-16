@@ -1,0 +1,25 @@
+.. _exhale_struct_structLotus_1_1KeyboardEvent:
+
+Struct KeyboardEvent
+====================
+
+- Defined in :ref:`file_include_lotus_events_Event.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Lotus::Event`` (:ref:`exhale_struct_structLotus_1_1Event`)
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: Lotus::KeyboardEvent
+   :members:
+   :protected-members:
+   :undoc-members:

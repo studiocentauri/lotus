@@ -1,0 +1,13 @@
+.. _exhale_function_namespaceLotus_1a726f9b8e02e75b52c1f7df5480868381:
+
+Function Lotus::LCross
+======================
+
+.. did not find file this was defined in
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: Lotus::LCross(const Vector3f&, const Vector3f&)

@@ -1,0 +1,44 @@
+
+.. _file_include_lotus_debug.h:
+
+File debug.h
+============
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/lotus/debug.h``)
+--------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_lotus_debug.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``spdlog/spdlog.h``
+
+
+
+
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_debug_8h_1ad4a9117ce894e3319e903142347a0f63`
+
+- :ref:`exhale_define_debug_8h_1a378e28bfcb78d17285210d6bbb70a083`
+
+- :ref:`exhale_define_debug_8h_1add82efa459e0af380b68522c29b9fd44`
+

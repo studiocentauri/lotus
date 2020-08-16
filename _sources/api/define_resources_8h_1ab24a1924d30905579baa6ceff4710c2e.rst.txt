@@ -1,0 +1,13 @@
+.. _exhale_define_resources_8h_1ab24a1924d30905579baa6ceff4710c2e:
+
+Define SPECULAR_TEXTURE
+=======================
+
+- Defined in :ref:`file_include_lotus_resources.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: SPECULAR_TEXTURE

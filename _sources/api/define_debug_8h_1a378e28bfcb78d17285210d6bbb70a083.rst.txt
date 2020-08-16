@@ -1,0 +1,13 @@
+.. _exhale_define_debug_8h_1a378e28bfcb78d17285210d6bbb70a083:
+
+Define LOG_INFO
+===============
+
+- Defined in :ref:`file_include_lotus_debug.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: LOG_INFO

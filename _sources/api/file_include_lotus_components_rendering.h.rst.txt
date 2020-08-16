@@ -1,0 +1,55 @@
+
+.. _file_include_lotus_components_rendering.h:
+
+File rendering.h
+================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/lotus/components/rendering.h``)
+-----------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_lotus_components_rendering.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``lotus/lcommon.h`` (:ref:`file_include_lotus_lcommon.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_lotus_rendering_Renderer.h`
+
+- :ref:`file_include_lotus_lotus.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_Lotus`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structLotus_1_1CMeshRenderer`
+

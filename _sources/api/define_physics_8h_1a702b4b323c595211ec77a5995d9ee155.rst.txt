@@ -1,0 +1,13 @@
+.. _exhale_define_physics_8h_1a702b4b323c595211ec77a5995d9ee155:
+
+Define Z_AXIS
+=============
+
+- Defined in :ref:`file_include_lotus_physics.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: Z_AXIS

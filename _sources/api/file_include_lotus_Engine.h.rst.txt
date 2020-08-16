@@ -1,0 +1,63 @@
+
+.. _file_include_lotus_Engine.h:
+
+File Engine.h
+=============
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/lotus/Engine.h``)
+---------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_lotus_Engine.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``events/EventManager.h`` (:ref:`file_include_lotus_events_EventManager.h`)
+
+- ``events/Input.h`` (:ref:`file_include_lotus_events_Input.h`)
+
+- ``lcommon.h`` (:ref:`file_include_lotus_lcommon.h`)
+
+- ``rendering/Renderer.h`` (:ref:`file_include_lotus_rendering_Renderer.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_lotus_events_EventManager.h`
+
+- :ref:`file_include_lotus_lotus.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_Lotus`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structLotus_1_1LotusOp`
+
+- :ref:`exhale_class_classLotus_1_1Engine`
+

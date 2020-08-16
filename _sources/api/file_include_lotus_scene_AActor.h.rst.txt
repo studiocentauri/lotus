@@ -1,0 +1,59 @@
+
+.. _file_include_lotus_scene_AActor.h:
+
+File AActor.h
+=============
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/lotus/scene/AActor.h``)
+---------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_lotus_scene_AActor.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``Scene.h`` (:ref:`file_include_lotus_scene_Scene.h`)
+
+- ``lotus/components/scene.h`` (:ref:`file_include_lotus_components_scene.h`)
+
+- ``lotus/physics.h`` (:ref:`file_include_lotus_physics.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_lotus_lotus.h`
+
+- :ref:`file_include_lotus_scene_ACamera.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_Lotus`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classLotus_1_1AActor`
+

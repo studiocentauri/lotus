@@ -1,0 +1,13 @@
+.. _exhale_function_namespaceLotus_1a6b8ce6b82e47ad6e7d1368b2b414eccb:
+
+Function Lotus::LPerspective
+============================
+
+.. did not find file this was defined in
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: Lotus::LPerspective(float, float, float, float)

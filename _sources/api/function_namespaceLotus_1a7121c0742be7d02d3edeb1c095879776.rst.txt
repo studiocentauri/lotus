@@ -1,0 +1,13 @@
+.. _exhale_function_namespaceLotus_1a7121c0742be7d02d3edeb1c095879776:
+
+Function Lotus::LTranslate
+==========================
+
+.. did not find file this was defined in
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: Lotus::LTranslate(const Matrix4f&, const Vector3f&)

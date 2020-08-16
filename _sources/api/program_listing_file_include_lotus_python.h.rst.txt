@@ -1,0 +1,13 @@
+
+.. _program_listing_file_include_lotus_python.h:
+
+Program Listing for File python.h
+=================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_include_lotus_python.h>` (``include/lotus/python.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   void exec_file(const std::string& filepath);

@@ -1,0 +1,13 @@
+.. _exhale_function_namespaceLotus_1a14c15fa7611b1fff9231f9ecee70e5f7:
+
+Function Lotus::valuePtr(const Matrix4f&)
+=========================================
+
+.. did not find file this was defined in
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: Lotus::valuePtr(const Matrix4f&)

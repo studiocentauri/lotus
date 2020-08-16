@@ -1,0 +1,16 @@
+.. _exhale_struct_structLotus_1_1CCamera:
+
+Struct CCamera
+==============
+
+- Defined in :ref:`file_include_lotus_components_scene.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: Lotus::CCamera
+   :members:
+   :protected-members:
+   :undoc-members:

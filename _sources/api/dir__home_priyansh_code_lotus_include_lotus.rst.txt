@@ -1,0 +1,23 @@
+.. _dir__home_priyansh_code_lotus_include_lotus:
+
+
+Directory lotus
+===============
+
+
+|exhale_lsh| :ref:`Parent directory <dir__home_priyansh_code_lotus_include>` (``/home/priyansh/code/lotus/include``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``/home/priyansh/code/lotus/include/lotus``
+
+Subdirectories
+--------------
+
+- :ref:`dir__home_priyansh_code_lotus_include_lotus_components`
+- :ref:`dir__home_priyansh_code_lotus_include_lotus_events`
+- :ref:`dir__home_priyansh_code_lotus_include_lotus_rendering`
+- :ref:`dir__home_priyansh_code_lotus_include_lotus_scene`
+
+
+

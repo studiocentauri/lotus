@@ -1,0 +1,67 @@
+
+.. _file_include_lotus_lcommon.h:
+
+File lcommon.h
+==============
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/lotus/lcommon.h``)
+----------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_lotus_lcommon.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``memory``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_lotus_components_rendering.h`
+
+- :ref:`file_include_lotus_Engine.h`
+
+- :ref:`file_include_lotus_events_EventManager.h`
+
+- :ref:`file_include_lotus_events_Input.h`
+
+- :ref:`file_include_lotus_events_Window.h`
+
+- :ref:`file_include_lotus_resources.h`
+
+- :ref:`file_include_lotus_scene_SceneManager.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_Lotus`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classLotus_1_1ILifecycle`
+
+- :ref:`exhale_class_classLotus_1_1Singleton`
+

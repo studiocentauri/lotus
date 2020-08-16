@@ -1,0 +1,61 @@
+
+.. _file_include_lotus_rendering_Renderer.h:
+
+File Renderer.h
+===============
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/lotus/rendering/Renderer.h``)
+---------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_lotus_rendering_Renderer.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``lotus/components/rendering.h`` (:ref:`file_include_lotus_components_rendering.h`)
+
+- ``lotus/components/scene.h`` (:ref:`file_include_lotus_components_scene.h`)
+
+- ``lotus/events/Window.h`` (:ref:`file_include_lotus_events_Window.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_lotus_Engine.h`
+
+- :ref:`file_include_lotus_lotus.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_Lotus`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structLotus_1_1RendererOp`
+
+- :ref:`exhale_class_classLotus_1_1Renderer`
+

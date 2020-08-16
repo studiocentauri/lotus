@@ -1,0 +1,13 @@
+.. _exhale_define_physics_8h_1a4193cd1c8c2e6ebd0e056fa2364a663f:
+
+Define DOWN
+===========
+
+- Defined in :ref:`file_include_lotus_physics.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: DOWN

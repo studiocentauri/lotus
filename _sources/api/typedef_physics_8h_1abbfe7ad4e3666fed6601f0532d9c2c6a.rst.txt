@@ -1,0 +1,13 @@
+.. _exhale_typedef_physics_8h_1abbfe7ad4e3666fed6601f0532d9c2c6a:
+
+Typedef Vector3f
+================
+
+- Defined in :ref:`file_include_lotus_physics.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: Vector3f

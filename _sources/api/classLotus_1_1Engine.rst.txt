@@ -1,0 +1,25 @@
+.. _exhale_class_classLotus_1_1Engine:
+
+Class Engine
+============
+
+- Defined in :ref:`file_include_lotus_Engine.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Lotus::Singleton< Engine >`` (:ref:`exhale_class_classLotus_1_1Singleton`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Lotus::Engine
+   :members:
+   :protected-members:
+   :undoc-members:

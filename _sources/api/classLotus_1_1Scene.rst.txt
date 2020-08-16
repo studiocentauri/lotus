@@ -1,0 +1,16 @@
+.. _exhale_class_classLotus_1_1Scene:
+
+Class Scene
+===========
+
+- Defined in :ref:`file_include_lotus_scene_Scene.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Lotus::Scene
+   :members:
+   :protected-members:
+   :undoc-members:

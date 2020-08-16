@@ -1,0 +1,16 @@
+.. _exhale_struct_structLotus_1_1WindowResizeEvent:
+
+Struct WindowResizeEvent
+========================
+
+- Defined in :ref:`file_include_lotus_events_Event.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: Lotus::WindowResizeEvent
+   :members:
+   :protected-members:
+   :undoc-members:

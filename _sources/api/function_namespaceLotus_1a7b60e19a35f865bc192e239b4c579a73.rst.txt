@@ -1,0 +1,13 @@
+.. _exhale_function_namespaceLotus_1a7b60e19a35f865bc192e239b4c579a73:
+
+Function Lotus::LNormalize
+==========================
+
+.. did not find file this was defined in
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: Lotus::LNormalize(const Vector3f&)

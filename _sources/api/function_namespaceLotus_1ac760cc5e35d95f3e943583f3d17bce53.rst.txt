@@ -1,0 +1,13 @@
+.. _exhale_function_namespaceLotus_1ac760cc5e35d95f3e943583f3d17bce53:
+
+Function Lotus::LScale
+======================
+
+.. did not find file this was defined in
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: Lotus::LScale(const Matrix4f&, const Vector3f&)

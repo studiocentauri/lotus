@@ -1,0 +1,13 @@
+.. _exhale_typedef_physics_8h_1a72973b86635189df8866714bc1e1b262:
+
+Typedef Matrix2f
+================
+
+- Defined in :ref:`file_include_lotus_physics.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: Matrix2f

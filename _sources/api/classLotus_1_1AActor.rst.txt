@@ -1,0 +1,31 @@
+.. _exhale_class_classLotus_1_1AActor:
+
+Class AActor
+============
+
+- Defined in :ref:`file_include_lotus_scene_AActor.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Lotus::Entity`` (:ref:`exhale_class_classLotus_1_1Entity`)
+
+
+Derived Type
+************
+
+- ``public Lotus::ACamera`` (:ref:`exhale_class_classLotus_1_1ACamera`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Lotus::AActor
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,68 @@
+
+.. _file_include_lotus_scene_Scene.h:
+
+File Scene.h
+============
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include/lotus/scene/Scene.h``)
+--------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_lotus_scene_Scene.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``lotus/internal/entt.hpp``
+
+- ``lotus/physics.h`` (:ref:`file_include_lotus_physics.h`)
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_lotus_lotus.h`
+
+- :ref:`file_include_lotus_scene_SceneManager.h`
+
+- :ref:`file_include_lotus_scene_AActor.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_Lotus`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_class_classLotus_1_1Entity`
+
+- :ref:`exhale_class_classLotus_1_1Scene`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_Scene_8h_1ad5385c5f26ed92f11423b6783a37f309`
+

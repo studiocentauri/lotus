@@ -1,0 +1,15 @@
+.. _dir__home_priyansh_code_lotus_include_lotus_events:
+
+
+Directory events
+================
+
+
+|exhale_lsh| :ref:`Parent directory <dir__home_priyansh_code_lotus_include_lotus>` (``/home/priyansh/code/lotus/include/lotus``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``/home/priyansh/code/lotus/include/lotus/events``
+
+
+
