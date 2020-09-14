@@ -1,0 +1,13 @@
+.. _exhale_function_physics_8h_1a7121c0742be7d02d3edeb1c095879776:
+
+Function Lotus::LTranslate
+==========================
+
+- Defined in :ref:`file_include_lotus_physics.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: Lotus::LTranslate(const Matrix4f&, const Vector3f&)

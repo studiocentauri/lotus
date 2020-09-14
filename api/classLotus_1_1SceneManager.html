@@ -7,13 +7,14 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Class SceneManager &mdash; Lotus 0.0.1 documentation</title>
+  <title>Class SceneManager &mdash; Lotus 0.1.0 documentation</title>
   
 
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/navbar.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists\css\tree_view.css" type="text/css" />
 
   
   
@@ -31,8 +32,8 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/language_data.js"></script>
-        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
-        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script src="../_static/collapsible-lists\js\CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists\js\apply-collapsible-lists.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -54,9 +55,12 @@
           
 
           
-            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Lotus
+            <a href="../index.html">
           
 
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -85,9 +89,14 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents</span></p>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/ecs.html">Entity Component System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/renderer.html">Renderer</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="lotus.html">API Reference</a></li>
 </ul>
 
@@ -163,10 +172,11 @@
 </ul>
 <div class="section" id="inheritance-relationships">
 <h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="base-type">
-<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="base-types">
+<h3>Base Types<a class="headerlink" href="#base-types" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Lotus::Singleton&lt;</span> <span class="pre">SceneManager</span> <span class="pre">&gt;</span></code> (<a class="reference internal" href="classLotus_1_1Singleton.html#exhale-class-classlotus-1-1singleton"><span class="std std-ref">Template Class Singleton</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">private</span> <span class="pre">Lotus::ILifecycle</span></code> (<a class="reference internal" href="classLotus_1_1ILifecycle.html#exhale-class-classlotus-1-1ilifecycle"><span class="std std-ref">Class ILifecycle</span></a>)</p></li>
 </ul>
 </div>
 </div>
@@ -174,12 +184,12 @@
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
 <dl class="cpp class">
 <dt id="_CPPv4N5Lotus12SceneManagerE">
-<span id="_CPPv3N5Lotus12SceneManagerE"></span><span id="_CPPv2N5Lotus12SceneManagerE"></span><span id="Lotus::SceneManager"></span><span class="target" id="classLotus_1_1SceneManager"></span><em class="property">class </em><code class="sig-prename descclassname">Lotus<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">SceneManager</code> : <em class="property">public</em> Lotus::<a class="reference internal" href="classLotus_1_1Singleton.html#_CPPv4I0EN5Lotus9SingletonE" title="Lotus::Singleton">Singleton</a>&lt;<a class="reference internal" href="#_CPPv4N5Lotus12SceneManagerE" title="Lotus::SceneManager">SceneManager</a>&gt;<a class="headerlink" href="#_CPPv4N5Lotus12SceneManagerE" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv3N5Lotus12SceneManagerE"></span><span id="_CPPv2N5Lotus12SceneManagerE"></span><span id="Lotus::SceneManager"></span><span class="target" id="classLotus_1_1SceneManager"></span><em class="property">class </em><code class="sig-prename descclassname">Lotus<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">SceneManager</code> : <em class="property">public</em> Lotus::<a class="reference internal" href="classLotus_1_1Singleton.html#_CPPv4I0EN5Lotus9SingletonE" title="Lotus::Singleton">Singleton</a>&lt;<a class="reference internal" href="#_CPPv4N5Lotus12SceneManagerE" title="Lotus::SceneManager">SceneManager</a>&gt;, <em class="property">private</em> Lotus::<a class="reference internal" href="classLotus_1_1ILifecycle.html#_CPPv4N5Lotus10ILifecycleE" title="Lotus::ILifecycle">ILifecycle</a><a class="headerlink" href="#_CPPv4N5Lotus12SceneManagerE" title="Permalink to this definition">¶</a><br /></dt>
 <dd><div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Public Functions</p>
 <dl class="cpp function">
 <dt id="_CPPv4N5Lotus12SceneManager14GetActiveSceneEv">
-<span id="_CPPv3N5Lotus12SceneManager14GetActiveSceneEv"></span><span id="_CPPv2N5Lotus12SceneManager14GetActiveSceneEv"></span><span id="Lotus::SceneManager::GetActiveScene"></span><span class="target" id="classLotus_1_1SceneManager_1aa817bdda11c846e58b9fd7f158a47ffd"></span><em class="property">const</em> <a class="reference internal" href="typedef_namespaceLotus_1a6f22aaa2432738d028a1ddf0eba60054.html#_CPPv4I0EN5Lotus4URefE" title="Lotus::URef">URef</a>&lt;<a class="reference internal" href="classLotus_1_1Scene.html#_CPPv4N5Lotus5SceneE" title="Lotus::Scene">Scene</a>&gt; &amp;<code class="sig-name descname">GetActiveScene</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus12SceneManager14GetActiveSceneEv" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv3N5Lotus12SceneManager14GetActiveSceneEv"></span><span id="_CPPv2N5Lotus12SceneManager14GetActiveSceneEv"></span><span id="Lotus::SceneManager::GetActiveScene"></span><span class="target" id="classLotus_1_1SceneManager_1aa817bdda11c846e58b9fd7f158a47ffd"></span><em class="property">const</em> <a class="reference internal" href="typedef_lcommon_8h_1a6f22aaa2432738d028a1ddf0eba60054.html#_CPPv4I0EN5Lotus4URefE" title="Lotus::URef">URef</a>&lt;<a class="reference internal" href="classLotus_1_1Scene.html#_CPPv4N5Lotus5SceneE" title="Lotus::Scene">Scene</a>&gt; &amp;<code class="sig-name descname">GetActiveScene</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus12SceneManager14GetActiveSceneEv" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp function">
@@ -189,12 +199,17 @@
 
 <dl class="cpp function">
 <dt id="_CPPv4N5Lotus12SceneManager9LoadSceneERKNSt6stringE">
-<span id="_CPPv3N5Lotus12SceneManager9LoadSceneERKNSt6stringE"></span><span id="_CPPv2N5Lotus12SceneManager9LoadSceneERKNSt6stringE"></span><span id="Lotus::SceneManager::LoadScene__ssCR"></span><span class="target" id="classLotus_1_1SceneManager_1a77215158192b953c998f33663993baa7"></span><em class="property">const</em> <a class="reference internal" href="typedef_namespaceLotus_1a6f22aaa2432738d028a1ddf0eba60054.html#_CPPv4I0EN5Lotus4URefE" title="Lotus::URef">URef</a>&lt;<a class="reference internal" href="classLotus_1_1Scene.html#_CPPv4N5Lotus5SceneE" title="Lotus::Scene">Scene</a>&gt; &amp;<code class="sig-name descname">LoadScene</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus12SceneManager9LoadSceneERKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv3N5Lotus12SceneManager9LoadSceneERKNSt6stringE"></span><span id="_CPPv2N5Lotus12SceneManager9LoadSceneERKNSt6stringE"></span><span id="Lotus::SceneManager::LoadScene__ssCR"></span><span class="target" id="classLotus_1_1SceneManager_1a77215158192b953c998f33663993baa7"></span><em class="property">const</em> <a class="reference internal" href="typedef_lcommon_8h_1a6f22aaa2432738d028a1ddf0eba60054.html#_CPPv4I0EN5Lotus4URefE" title="Lotus::URef">URef</a>&lt;<a class="reference internal" href="classLotus_1_1Scene.html#_CPPv4N5Lotus5SceneE" title="Lotus::Scene">Scene</a>&gt; &amp;<code class="sig-name descname">LoadScene</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus12SceneManager9LoadSceneERKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp function">
 <dt id="_CPPv4N5Lotus12SceneManager11ChangeSceneERKNSt6stringE">
-<span id="_CPPv3N5Lotus12SceneManager11ChangeSceneERKNSt6stringE"></span><span id="_CPPv2N5Lotus12SceneManager11ChangeSceneERKNSt6stringE"></span><span id="Lotus::SceneManager::ChangeScene__ssCR"></span><span class="target" id="classLotus_1_1SceneManager_1aa73409bbca1ecf47a6800e7ca73d9ce8"></span><em class="property">const</em> <a class="reference internal" href="typedef_namespaceLotus_1a6f22aaa2432738d028a1ddf0eba60054.html#_CPPv4I0EN5Lotus4URefE" title="Lotus::URef">URef</a>&lt;<a class="reference internal" href="classLotus_1_1Scene.html#_CPPv4N5Lotus5SceneE" title="Lotus::Scene">Scene</a>&gt; &amp;<code class="sig-name descname">ChangeScene</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus12SceneManager11ChangeSceneERKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv3N5Lotus12SceneManager11ChangeSceneERKNSt6stringE"></span><span id="_CPPv2N5Lotus12SceneManager11ChangeSceneERKNSt6stringE"></span><span id="Lotus::SceneManager::ChangeScene__ssCR"></span><span class="target" id="classLotus_1_1SceneManager_1aa73409bbca1ecf47a6800e7ca73d9ce8"></span><em class="property">const</em> <a class="reference internal" href="typedef_lcommon_8h_1a6f22aaa2432738d028a1ddf0eba60054.html#_CPPv4I0EN5Lotus4URefE" title="Lotus::URef">URef</a>&lt;<a class="reference internal" href="classLotus_1_1Scene.html#_CPPv4N5Lotus5SceneE" title="Lotus::Scene">Scene</a>&gt; &amp;<code class="sig-name descname">ChangeScene</code><span class="sig-paren">(</span><em class="property">const</em> std::string &amp;<em>path</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus12SceneManager11ChangeSceneERKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N5Lotus12SceneManager12OnPreDestroyERK15PreDestroyEvent">
+<span id="_CPPv3N5Lotus12SceneManager12OnPreDestroyERK15PreDestroyEvent"></span><span id="_CPPv2N5Lotus12SceneManager12OnPreDestroyERK15PreDestroyEvent"></span><span id="Lotus::SceneManager::OnPreDestroy__PreDestroyEventCR"></span><span class="target" id="classLotus_1_1SceneManager_1a9f4a9934c669ce306abce111883f39ec"></span>void <code class="sig-name descname">OnPreDestroy</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="structLotus_1_1PreDestroyEvent.html#_CPPv4N5Lotus15PreDestroyEventE" title="Lotus::PreDestroyEvent">PreDestroyEvent</a> &amp;<em>event</em><span class="sig-paren">)</span> <em class="property">override</em><a class="headerlink" href="#_CPPv4N5Lotus12SceneManager12OnPreDestroyERK15PreDestroyEvent" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </div>
@@ -224,7 +239,7 @@
   <div role="contentinfo">
     <p>
         
-        &copy; Copyright 2020, Mayant Mukul
+        &copy; Copyright 2020, Studio Centauri
 
     </p>
   </div>

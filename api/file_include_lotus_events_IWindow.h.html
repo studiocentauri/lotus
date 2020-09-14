@@ -7,13 +7,14 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>File IWindow.h &mdash; Lotus 0.0.1 documentation</title>
+  <title>File IWindow.h &mdash; Lotus 0.1.0 documentation</title>
   
 
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/navbar.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists\css\tree_view.css" type="text/css" />
 
   
   
@@ -31,8 +32,8 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/language_data.js"></script>
-        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
-        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script src="../_static/collapsible-lists\js\CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists\js\apply-collapsible-lists.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -52,9 +53,12 @@
           
 
           
-            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Lotus
+            <a href="../index.html">
           
 
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -83,9 +87,14 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents</span></p>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/ecs.html">Entity Component System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/renderer.html">Renderer</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="lotus.html">API Reference</a></li>
 </ul>
 
@@ -157,7 +166,7 @@
 <div class="contents local topic" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#definition-include-lotus-events-iwindow-h" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">include/lotus/events/IWindow.h</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#definition-include-lotus-events-iwindow-h" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">include\lotus\events\IWindow.h</span></code>)</a></p></li>
 <li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
 <li><p><a class="reference internal" href="#included-by" id="id3">Included By</a></p></li>
 <li><p><a class="reference internal" href="#namespaces" id="id4">Namespaces</a></p></li>
@@ -165,7 +174,7 @@
 </ul>
 </div>
 <div class="section" id="definition-include-lotus-events-iwindow-h">
-<h2>Definition (<code class="docutils literal notranslate"><span class="pre">include/lotus/events/IWindow.h</span></code>)<a class="headerlink" href="#definition-include-lotus-events-iwindow-h" title="Permalink to this headline">¶</a></h2>
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">include\lotus\events\IWindow.h</span></code>)<a class="headerlink" href="#definition-include-lotus-events-iwindow-h" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="program_listing_file_include_lotus_events_IWindow.h.html">Program Listing for File IWindow.h</a></li>
@@ -176,16 +185,17 @@
 <h2>Includes<a class="headerlink" href="#includes" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">functional</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">lotus/events/Event.h</span></code> (<a class="reference internal" href="file_include_lotus_events_Event.h.html#file-include-lotus-events-event-h"><span class="std std-ref">File Event.h</span></a>)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">lotus/lcommon.h</span></code> (<a class="reference internal" href="file_include_lotus_lcommon.h.html#file-include-lotus-lcommon-h"><span class="std std-ref">File lcommon.h</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lotus/ILifecycle.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lotus/events/Event.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lotus/lcommon.h</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">utility</span></code></p></li>
 </ul>
 </div>
 <div class="section" id="included-by">
 <h2>Included By<a class="headerlink" href="#included-by" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference internal" href="file_include_lotus_rendering_Renderer.h.html#file-include-lotus-rendering-renderer-h"><span class="std std-ref">File Renderer.h</span></a></p></li>
 <li><p><a class="reference internal" href="file_include_lotus_lotus.h.html#file-include-lotus-lotus-h"><span class="std std-ref">File lotus.h</span></a></p></li>
+<li><p><a class="reference internal" href="file_include_lotus_Renderer.h.html#file-include-lotus-renderer-h"><span class="std std-ref">File Renderer.h</span></a></p></li>
 </ul>
 </div>
 <div class="section" id="namespaces">
@@ -215,7 +225,7 @@
   <div role="contentinfo">
     <p>
         
-        &copy; Copyright 2020, Mayant Mukul
+        &copy; Copyright 2020, Studio Centauri
 
     </p>
   </div>

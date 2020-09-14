@@ -1,0 +1,16 @@
+.. _exhale_struct_structLotus_1_1Shader:
+
+Struct Shader
+=============
+
+- Defined in :ref:`file_include_lotus_resources_Shader.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: Lotus::Shader
+   :members:
+   :protected-members:
+   :undoc-members:

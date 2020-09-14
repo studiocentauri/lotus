@@ -4,7 +4,7 @@
 Program Listing for File Input.h
 ================================
 
-|exhale_lsh| :ref:`Return to documentation for file <file_include_lotus_events_Input.h>` (``include/lotus/events/Input.h``)
+|exhale_lsh| :ref:`Return to documentation for file <file_include_lotus_events_Input.h>` (``include\lotus\events\Input.h``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -19,7 +19,7 @@ Program Listing for File Input.h
    
    namespace Lotus
    {
-       class Input : public Singleton<Input>
+       class LOTUS_API Input final : public Singleton<Input>
        {
            std::unordered_map<int, int> _state;
    

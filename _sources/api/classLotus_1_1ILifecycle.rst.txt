@@ -3,7 +3,7 @@
 Class ILifecycle
 ================
 
-- Defined in :ref:`file_include_lotus_lcommon.h`
+- Defined in :ref:`file_include_lotus_ILifecycle.h`
 
 
 Inheritance Relationships
@@ -14,6 +14,7 @@ Derived Types
 
 - ``public Lotus::IWindow`` (:ref:`exhale_class_classLotus_1_1IWindow`)
 - ``public Lotus::Renderer`` (:ref:`exhale_class_classLotus_1_1Renderer`)
+- ``private Lotus::SceneManager`` (:ref:`exhale_class_classLotus_1_1SceneManager`)
 
 
 Class Documentation

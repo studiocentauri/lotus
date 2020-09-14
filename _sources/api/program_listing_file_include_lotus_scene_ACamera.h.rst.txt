@@ -4,7 +4,7 @@
 Program Listing for File ACamera.h
 ==================================
 
-|exhale_lsh| :ref:`Return to documentation for file <file_include_lotus_scene_ACamera.h>` (``include/lotus/scene/ACamera.h``)
+|exhale_lsh| :ref:`Return to documentation for file <file_include_lotus_scene_ACamera.h>` (``include\lotus\scene\ACamera.h``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -16,7 +16,7 @@ Program Listing for File ACamera.h
    
    namespace Lotus
    {
-       class ACamera : public AActor
+       class LOTUS_API ACamera : public AActor
        {
        public:
            ACamera(EntityID id = NULL_ENTITY, Scene* scene = nullptr) : AActor(id, scene)

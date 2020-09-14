@@ -4,7 +4,7 @@
 Program Listing for File Engine.h
 =================================
 
-|exhale_lsh| :ref:`Return to documentation for file <file_include_lotus_Engine.h>` (``include/lotus/Engine.h``)
+|exhale_lsh| :ref:`Return to documentation for file <file_include_lotus_Engine.h>` (``include\lotus\Engine.h``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,30 +13,26 @@ Program Listing for File Engine.h
    #pragma once
    
    #include "lcommon.h"
-   #include "rendering/Renderer.h"
+   #include "Renderer.h"
    #include "events/EventManager.h"
    #include "events/Input.h"
    
    namespace Lotus
    {
-       struct LotusOp
-       {
-           ERenderAPI RenderAPI = ERenderAPI::OPEN_GL;
-           bool IsDebug = true;
-           unsigned int Width = 800;
-           unsigned int Height = 600;
-       };
-   
-       class Engine : public Singleton<Engine>
+       class LOTUS_API Engine : public Singleton<Engine>
        {
            bool _isRunning = true;
+   
+           // NOTE: While this is a unique pointer owned by the engine, the underlying object can be modified
+           // by the lifecycle events called on it.
            URef<IWindow> _window;
+   
            EventManager* _eventManager{};
            Input* _inputManager{};
            Renderer* _renderer{};
    
        public:
-           void Initialize(const LotusOp& options);
+           void Initialize();
    
            void Run();
    

@@ -7,13 +7,14 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Full API &mdash; Lotus 0.0.1 documentation</title>
+  <title>Full API &mdash; Lotus 0.1.0 documentation</title>
   
 
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/navbar.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists\css\tree_view.css" type="text/css" />
 
   
   
@@ -31,8 +32,8 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/language_data.js"></script>
-        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
-        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script src="../_static/collapsible-lists\js\CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists\js\apply-collapsible-lists.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -52,9 +53,12 @@
           
 
           
-            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Lotus
+            <a href="../index.html">
           
 
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -83,9 +87,14 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents</span></p>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/ecs.html">Entity Component System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/renderer.html">Renderer</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="lotus.html">API Reference</a></li>
 </ul>
 
@@ -159,11 +168,11 @@
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="namespace_Lotus.html">Namespace Lotus</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="namespace_Lotus.html#detailed-description">Detailed Description</a></li>
 <li class="toctree-l2"><a class="reference internal" href="namespace_Lotus.html#classes">Classes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="namespace_Lotus.html#enums">Enums</a></li>
 <li class="toctree-l2"><a class="reference internal" href="namespace_Lotus.html#functions">Functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="namespace_Lotus.html#typedefs">Typedefs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="namespace_Lotus.html#variables">Variables</a></li>
 </ul>
 </li>
 </ul>
@@ -171,6 +180,18 @@
 </div>
 <div class="section" id="classes-and-structs">
 <h2>Classes and Structs<a class="headerlink" href="#classes-and-structs" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structLotus_1_1BeginEvent.html">Struct BeginEvent</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structLotus_1_1BeginEvent.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="structLotus_1_1BeginEvent.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="structLotus_1_1BeginEvent.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="structLotus_1_1CCamera.html">Struct CCamera</a><ul>
@@ -233,6 +254,14 @@
 </div>
 <div class="toctree-wrapper compound">
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="structLotus_1_1CSkybox.html">Struct CSkybox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structLotus_1_1CSkybox.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="structLotus_1_1CSpotlight.html">Struct CSpotlight</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="structLotus_1_1CSpotlight.html#inheritance-relationships">Inheritance Relationships</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="structLotus_1_1CSpotlight.html#base-type">Base Type</a></li>
@@ -253,12 +282,56 @@
 </div>
 <div class="toctree-wrapper compound">
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="structLotus_1_1Cubemap.html">Struct Cubemap</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structLotus_1_1Cubemap.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structLotus_1_1DestroyEvent.html">Struct DestroyEvent</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structLotus_1_1DestroyEvent.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="structLotus_1_1DestroyEvent.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="structLotus_1_1DestroyEvent.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="structLotus_1_1Event.html">Struct Event</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="structLotus_1_1Event.html#inheritance-relationships">Inheritance Relationships</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="structLotus_1_1Event.html#derived-types">Derived Types</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="structLotus_1_1Event.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structLotus_1_1InitEvent.html">Struct InitEvent</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structLotus_1_1InitEvent.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="structLotus_1_1InitEvent.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="structLotus_1_1InitEvent.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structLotus_1_1ISerializable.html">Struct ISerializable</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structLotus_1_1ISerializable.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="structLotus_1_1ISerializable.html#derived-type">Derived Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="structLotus_1_1ISerializable.html#struct-documentation">Struct Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -277,20 +350,16 @@
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="structLotus_1_1LModel.html">Struct LModel</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="structLotus_1_1LModel.html#inheritance-relationships">Inheritance Relationships</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="structLotus_1_1LModel.html#base-type">Base Type</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="structLotus_1_1LModel.html#struct-documentation">Struct Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="structLotus_1_1Material.html">Struct Material</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structLotus_1_1Material.html#struct-documentation">Struct Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="structLotus_1_1LotusOp.html">Struct LotusOp</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="structLotus_1_1LotusOp.html#struct-documentation">Struct Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="structLotus_1_1Model.html">Struct Model</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structLotus_1_1Model.html#struct-documentation">Struct Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -309,8 +378,80 @@
 </div>
 <div class="toctree-wrapper compound">
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="structLotus_1_1PostUpdateEvent.html">Struct PostUpdateEvent</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structLotus_1_1PostUpdateEvent.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="structLotus_1_1PostUpdateEvent.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="structLotus_1_1PostUpdateEvent.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structLotus_1_1PreDestroyEvent.html">Struct PreDestroyEvent</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structLotus_1_1PreDestroyEvent.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="structLotus_1_1PreDestroyEvent.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="structLotus_1_1PreDestroyEvent.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structLotus_1_1PreUpdateEvent.html">Struct PreUpdateEvent</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structLotus_1_1PreUpdateEvent.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="structLotus_1_1PreUpdateEvent.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="structLotus_1_1PreUpdateEvent.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="structLotus_1_1RendererOp.html">Struct RendererOp</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="structLotus_1_1RendererOp.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structLotus_1_1Shader.html">Struct Shader</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structLotus_1_1Shader.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structLotus_1_1ShutdownEvent.html">Struct ShutdownEvent</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structLotus_1_1ShutdownEvent.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="structLotus_1_1ShutdownEvent.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="structLotus_1_1ShutdownEvent.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structLotus_1_1SubMesh.html">Struct SubMesh</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structLotus_1_1SubMesh.html#struct-documentation">Struct Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="structLotus_1_1Texture.html">Struct Texture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="structLotus_1_1Texture.html#struct-documentation">Struct Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -390,8 +531,24 @@
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="classLotus_1_1AssetManager.html">Class AssetManager</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="classLotus_1_1AssetManager.html#class-documentation">Class Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classLotus_1_1AssetRegistry.html">Class AssetRegistry</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classLotus_1_1AssetRegistry.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classLotus_1_1AssetRegistry.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="classLotus_1_1AssetRegistry.html#class-documentation">Class Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="classLotus_1_1Config.html">Class Config</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classLotus_1_1Config.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classLotus_1_1Config.html#base-type">Base Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="classLotus_1_1Config.html#class-documentation">Class Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -458,40 +615,12 @@
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="classLotus_1_1IResource.html">Class IResource</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="classLotus_1_1IResource.html#inheritance-relationships">Inheritance Relationships</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="classLotus_1_1IResource.html#derived-types">Derived Types</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="classLotus_1_1IResource.html#class-documentation">Class Documentation</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<ul>
 <li class="toctree-l1"><a class="reference internal" href="classLotus_1_1IWindow.html">Class IWindow</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="classLotus_1_1IWindow.html#inheritance-relationships">Inheritance Relationships</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="classLotus_1_1IWindow.html#base-type">Base Type</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="classLotus_1_1IWindow.html#class-documentation">Class Documentation</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="classLotus_1_1LShader.html">Class LShader</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="classLotus_1_1LShader.html#class-documentation">Class Documentation</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="classLotus_1_1Mesh.html">Class Mesh</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="classLotus_1_1Mesh.html#class-documentation">Class Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -511,6 +640,10 @@
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="classLotus_1_1Scene.html">Class Scene</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="classLotus_1_1Scene.html#inheritance-relationships">Inheritance Relationships</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="classLotus_1_1Scene.html#base-type">Base Type</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="classLotus_1_1Scene.html#class-documentation">Class Documentation</a></li>
 </ul>
 </li>
@@ -520,7 +653,7 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="classLotus_1_1SceneManager.html">Class SceneManager</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="classLotus_1_1SceneManager.html#inheritance-relationships">Inheritance Relationships</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="classLotus_1_1SceneManager.html#base-type">Base Type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="classLotus_1_1SceneManager.html#base-types">Base Types</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="classLotus_1_1SceneManager.html#class-documentation">Class Documentation</a></li>
@@ -532,22 +665,10 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="classLotus_1_1Singleton.html">Template Class Singleton</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="classLotus_1_1Singleton.html#inheritance-relationships">Inheritance Relationships</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="classLotus_1_1Singleton.html#derived-type">Derived Type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="classLotus_1_1Singleton.html#derived-types">Derived Types</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="classLotus_1_1Singleton.html#class-documentation">Class Documentation</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="classLotus_1_1Texture.html">Class Texture</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="classLotus_1_1Texture.html#inheritance-relationships">Inheritance Relationships</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="classLotus_1_1Texture.html#base-type">Base Type</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="classLotus_1_1Texture.html#class-documentation">Class Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -557,24 +678,8 @@
 <h2>Enums<a class="headerlink" href="#enums" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="enum_namespaceLotus_1af409efc59ac393913dd22929ded8d88a.html">Enum EEventCategory</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="enum_namespaceLotus_1af409efc59ac393913dd22929ded8d88a.html#enum-documentation">Enum Documentation</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="enum_namespaceLotus_1a95978c94165d403681026eb8f30f1797.html">Enum EEventType</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="enum_namespaceLotus_1a95978c94165d403681026eb8f30f1797.html#enum-documentation">Enum Documentation</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="enum_namespaceLotus_1ae825578a38779239ed42a80e8048dfb3.html">Enum ERenderAPI</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="enum_namespaceLotus_1ae825578a38779239ed42a80e8048dfb3.html#enum-documentation">Enum Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enum_lcommon_8h_1ae825578a38779239ed42a80e8048dfb3.html">Enum ERenderAPI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enum_lcommon_8h_1ae825578a38779239ed42a80e8048dfb3.html#enum-documentation">Enum Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -584,96 +689,299 @@
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function_python_8h_1a545dd5dc50c03ccbd95c9efd67b7df90.html">Function exec_file</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function_python_8h_1a545dd5dc50c03ccbd95c9efd67b7df90.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_AssetRegistry_8h_1ad91370af6be232ffc36dbd0c28df178e.html">Function __concatPath</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_AssetRegistry_8h_1ad91370af6be232ffc36dbd0c28df178e.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function_namespaceLotus_1a726f9b8e02e75b52c1f7df5480868381.html">Function Lotus::LCross</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function_namespaceLotus_1a726f9b8e02e75b52c1f7df5480868381.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_AssetRegistry_8h_1af8d5a4fcf982327d3fd07841fc56ff20.html">Function __getConfigResourcePath</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_AssetRegistry_8h_1af8d5a4fcf982327d3fd07841fc56ff20.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function_namespaceLotus_1a893de9d4908114267fdfb6b93352a369.html">Function Lotus::LLookAt</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function_namespaceLotus_1a893de9d4908114267fdfb6b93352a369.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_python_8h_1a29d480f966b234b215ded6a0d26e4795.html">Function exec_file</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_python_8h_1a29d480f966b234b215ded6a0d26e4795.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function_namespaceLotus_1a7b60e19a35f865bc192e239b4c579a73.html">Function Lotus::LNormalize</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function_namespaceLotus_1a7b60e19a35f865bc192e239b4c579a73.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_physics_8h_1a726f9b8e02e75b52c1f7df5480868381.html">Function Lotus::LCross</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_physics_8h_1a726f9b8e02e75b52c1f7df5480868381.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function_namespaceLotus_1a6b8ce6b82e47ad6e7d1368b2b414eccb.html">Function Lotus::LPerspective</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function_namespaceLotus_1a6b8ce6b82e47ad6e7d1368b2b414eccb.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_physics_8h_1a893de9d4908114267fdfb6b93352a369.html">Function Lotus::LLookAt</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_physics_8h_1a893de9d4908114267fdfb6b93352a369.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function_namespaceLotus_1a2d8bf4ad45a5ac17b5f8188ad4b9f3af.html">Function Lotus::LRotate</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function_namespaceLotus_1a2d8bf4ad45a5ac17b5f8188ad4b9f3af.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_physics_8h_1a7b60e19a35f865bc192e239b4c579a73.html">Function Lotus::LNormalize</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_physics_8h_1a7b60e19a35f865bc192e239b4c579a73.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function_namespaceLotus_1ac760cc5e35d95f3e943583f3d17bce53.html">Function Lotus::LScale</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function_namespaceLotus_1ac760cc5e35d95f3e943583f3d17bce53.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_Cubemap_8h_1a6d3c6424b1092d6cd3ac50ecab2dfe65.html">Function Lotus::LOADER(CubemapLoader, Cubemap)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_Cubemap_8h_1a6d3c6424b1092d6cd3ac50ecab2dfe65.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function_namespaceLotus_1a7121c0742be7d02d3edeb1c095879776.html">Function Lotus::LTranslate</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function_namespaceLotus_1a7121c0742be7d02d3edeb1c095879776.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_Material_8h_1ae86fe9c4a845408e36e31f0fc546af1e.html">Function Lotus::LOADER(MaterialLoader, Material)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_Material_8h_1ae86fe9c4a845408e36e31f0fc546af1e.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function_namespaceLotus_1a7a89c7b9bf8fff8323baaeeefe2a8927.html">Function Lotus::operator&amp;</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function_namespaceLotus_1a7a89c7b9bf8fff8323baaeeefe2a8927.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_Model_8h_1a3f9208ab6e148adc2f9c58c59780c7ce.html">Function Lotus::LOADER(ModelLoader, Model)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_Model_8h_1a3f9208ab6e148adc2f9c58c59780c7ce.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function_namespaceLotus_1a345ef21a7417df1d4107f40e48490a79.html">Function Lotus::operator|</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function_namespaceLotus_1a345ef21a7417df1d4107f40e48490a79.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_Shader_8h_1acb1322af7fe93c1368708656d979b3d9.html">Function Lotus::LOADER(ShaderLoader, Shader)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_Shader_8h_1acb1322af7fe93c1368708656d979b3d9.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function_namespaceLotus_1a14c15fa7611b1fff9231f9ecee70e5f7.html">Function Lotus::valuePtr(const Matrix4f&amp;)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function_namespaceLotus_1a14c15fa7611b1fff9231f9ecee70e5f7.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_Texture_8h_1ae6968b6433d74dc3ce6d7f93ac886187.html">Function Lotus::LOADER(TextureLoader, Texture)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_Texture_8h_1ae6968b6433d74dc3ce6d7f93ac886187.html#function-documentation">Function Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="function_namespaceLotus_1a0aee522b724c634c46d97e2e2ad030f5.html">Function Lotus::valuePtr(const Vector3f&amp;)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="function_namespaceLotus_1a0aee522b724c634c46d97e2e2ad030f5.html#function-documentation">Function Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="function_physics_8h_1a6b8ce6b82e47ad6e7d1368b2b414eccb.html">Function Lotus::LPerspective</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_physics_8h_1a6b8ce6b82e47ad6e7d1368b2b414eccb.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_physics_8h_1a2d8bf4ad45a5ac17b5f8188ad4b9f3af.html">Function Lotus::LRotate</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_physics_8h_1a2d8bf4ad45a5ac17b5f8188ad4b9f3af.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_physics_8h_1ac760cc5e35d95f3e943583f3d17bce53.html">Function Lotus::LScale</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_physics_8h_1ac760cc5e35d95f3e943583f3d17bce53.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_physics_8h_1a7121c0742be7d02d3edeb1c095879776.html">Function Lotus::LTranslate</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_physics_8h_1a7121c0742be7d02d3edeb1c095879776.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_Event_8h_1a75dfbd9f988cb79d117e09ff6c6f0f32.html">Function Lotus::operator&amp;</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_Event_8h_1a75dfbd9f988cb79d117e09ff6c6f0f32.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_Event_8h_1a027067e953b657dc705d2882f94d1322.html">Function Lotus::operator|</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_Event_8h_1a027067e953b657dc705d2882f94d1322.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_physics_8h_1a14c15fa7611b1fff9231f9ecee70e5f7.html">Function Lotus::valuePtr(const Matrix4f&amp;)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_physics_8h_1a14c15fa7611b1fff9231f9ecee70e5f7.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="function_physics_8h_1a0aee522b724c634c46d97e2e2ad030f5.html">Function Lotus::valuePtr(const Vector3f&amp;)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="function_physics_8h_1a0aee522b724c634c46d97e2e2ad030f5.html#function-documentation">Function Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="variables">
+<h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_Event_8h_1a9fa6513523393acfab1e787fdfaf7d96.html">Variable BIT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_Event_8h_1a9fa6513523393acfab1e787fdfaf7d96.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_Event_8h_1ab81ca9153c95d55639b4ab520bb2aa4d.html">Variable INPUT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_Event_8h_1ab81ca9153c95d55639b4ab520bb2aa4d.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_Event_8h_1a9cac8350acb7e117f4adf7fe75c2bb47.html">Variable KEYBOARD</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_Event_8h_1a9cac8350acb7e117f4adf7fe75c2bb47.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_Event_8h_1ad201ad7fb9674045709e794c843d37fc.html">Variable KEYBOARD_EVENT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_Event_8h_1ad201ad7fb9674045709e794c843d37fc.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_Event_8h_1a41b99746213bcbbc8433f7a25d999e44.html">Variable Lotus::L_KEY_A</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_Event_8h_1a41b99746213bcbbc8433f7a25d999e44.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_Event_8h_1a828f48b63b87fb587dfdc0b6752fbae7.html">Variable Lotus::L_KEY_D</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_Event_8h_1a828f48b63b87fb587dfdc0b6752fbae7.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_Event_8h_1a6c153c49f8b599bc1f3d3a401ba46426.html">Variable Lotus::L_KEY_E</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_Event_8h_1a6c153c49f8b599bc1f3d3a401ba46426.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_Event_8h_1a1d6e11f6ceaee990c4c45fb699618462.html">Variable Lotus::L_KEY_ESC</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_Event_8h_1a1d6e11f6ceaee990c4c45fb699618462.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_Event_8h_1aed33feb307536967c772b666a0f51dce.html">Variable Lotus::L_KEY_NONE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_Event_8h_1aed33feb307536967c772b666a0f51dce.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_Event_8h_1ad432f0e5d42c16af9b552825cceaf392.html">Variable Lotus::L_KEY_PRESS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_Event_8h_1ad432f0e5d42c16af9b552825cceaf392.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_Event_8h_1a6c427ef0a5b57b5d3fcafae7358f6d7d.html">Variable Lotus::L_KEY_Q</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_Event_8h_1a6c427ef0a5b57b5d3fcafae7358f6d7d.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_Event_8h_1a5521cd08d6a90f2cad02bd0c65ace718.html">Variable Lotus::L_KEY_RELEASE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_Event_8h_1a5521cd08d6a90f2cad02bd0c65ace718.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_Event_8h_1ab079205170bed9de40485343a4d95264.html">Variable Lotus::L_KEY_REPEAT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_Event_8h_1ab079205170bed9de40485343a4d95264.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_Event_8h_1ae09c4c1573b3532a4207cfe668a83c56.html">Variable Lotus::L_KEY_S</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_Event_8h_1ae09c4c1573b3532a4207cfe668a83c56.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_Event_8h_1a236ef538639962bf4b599012e26b3ad6.html">Variable Lotus::L_KEY_W</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_Event_8h_1a236ef538639962bf4b599012e26b3ad6.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_Event_8h_1a899caa602e4fff675b17cdbab33607ec.html">Variable NONE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_Event_8h_1a899caa602e4fff675b17cdbab33607ec.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_Event_8h_1a5233c989a91a39f8630900f1d3c23ba5.html">Variable WINDOW</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_Event_8h_1a5233c989a91a39f8630900f1d3c23ba5.html#variable-documentation">Variable Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="variable_Event_8h_1a82706b9ddae70c884978ccef628fc2d5.html">Variable WINDOW_CLOSE_EVENT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="variable_Event_8h_1a82706b9ddae70c884978ccef628fc2d5.html#variable-documentation">Variable Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -691,16 +999,8 @@
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="define_Event_8h_1ad27cc17b25bb93134368d5eb21126eae.html">Define BIT</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="define_Event_8h_1ad27cc17b25bb93134368d5eb21126eae.html#define-documentation">Define Documentation</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="define_resources_8h_1ad071b7b1c98f623fbf2246f33687f0e0.html">Define DIFFUSE_TEXTURE</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="define_resources_8h_1ad071b7b1c98f623fbf2246f33687f0e0.html#define-documentation">Define Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="define_Texture_8h_1ad071b7b1c98f623fbf2246f33687f0e0.html">Define DIFFUSE_TEXTURE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_Texture_8h_1ad071b7b1c98f623fbf2246f33687f0e0.html#define-documentation">Define Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -715,6 +1015,14 @@
 </div>
 <div class="toctree-wrapper compound">
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="define_ISerializable_8h_1abfdee8ad625fefeb9ba75d3c85f114fa.html">Define FIELD</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_ISerializable_8h_1abfdee8ad625fefeb9ba75d3c85f114fa.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="define_physics_8h_1ac25c6a324554f8ae267ad7c1638074a8.html">Define FRONT</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="define_physics_8h_1ac25c6a324554f8ae267ad7c1638074a8.html#define-documentation">Define Documentation</a></li>
 </ul>
@@ -723,104 +1031,8 @@
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="define_resources_8h_1a4a79d571b12106c7d8d8a6536b5d0b30.html">Define IMPORT_ERR_CODE</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="define_resources_8h_1a4a79d571b12106c7d8d8a6536b5d0b30.html#define-documentation">Define Documentation</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="define_resources_8h_1afe51edf3f40363f5d09129360f325b72.html">Define IMPORT_SUCCESS_CODE</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="define_resources_8h_1afe51edf3f40363f5d09129360f325b72.html#define-documentation">Define Documentation</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="define_Event_8h_1afab985ea642b06058606f89e117e2bf7.html">Define L_KEY_A</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="define_Event_8h_1afab985ea642b06058606f89e117e2bf7.html#define-documentation">Define Documentation</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="define_Event_8h_1aa6b4d2ab56a84b248ef2e2afc67fd82f.html">Define L_KEY_D</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="define_Event_8h_1aa6b4d2ab56a84b248ef2e2afc67fd82f.html#define-documentation">Define Documentation</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="define_Event_8h_1a669a55606aaabcce8a56bd13971e2fe8.html">Define L_KEY_E</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="define_Event_8h_1a669a55606aaabcce8a56bd13971e2fe8.html#define-documentation">Define Documentation</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="define_Event_8h_1aae2d740f21e8afe73fafd960d2987d48.html">Define L_KEY_ESC</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="define_Event_8h_1aae2d740f21e8afe73fafd960d2987d48.html#define-documentation">Define Documentation</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="define_Event_8h_1ad4012af5b07d914a243bc7429539d3ed.html">Define L_KEY_NONE</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="define_Event_8h_1ad4012af5b07d914a243bc7429539d3ed.html#define-documentation">Define Documentation</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="define_Event_8h_1a6ac13f8363c4a9bf676a550dc83cb7d1.html">Define L_KEY_PRESS</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="define_Event_8h_1a6ac13f8363c4a9bf676a550dc83cb7d1.html#define-documentation">Define Documentation</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="define_Event_8h_1a3e8a9e8f8defea19263d4b4847d1b2bb.html">Define L_KEY_Q</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="define_Event_8h_1a3e8a9e8f8defea19263d4b4847d1b2bb.html#define-documentation">Define Documentation</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="define_Event_8h_1adad4024bd2ecd378b0f7f348c031173f.html">Define L_KEY_RELEASE</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="define_Event_8h_1adad4024bd2ecd378b0f7f348c031173f.html#define-documentation">Define Documentation</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="define_Event_8h_1a7e903d9308f586ab04aaaa781cbaba9f.html">Define L_KEY_REPEAT</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="define_Event_8h_1a7e903d9308f586ab04aaaa781cbaba9f.html#define-documentation">Define Documentation</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="define_Event_8h_1a1b517388acb29a44945d4a92f10d1deb.html">Define L_KEY_S</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="define_Event_8h_1a1b517388acb29a44945d4a92f10d1deb.html#define-documentation">Define Documentation</a></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="define_Event_8h_1a639d8c7c1fe837bf253d54ae5217c2f8.html">Define L_KEY_W</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="define_Event_8h_1a639d8c7c1fe837bf253d54ae5217c2f8.html#define-documentation">Define Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="define_lcommon_8h_1a784c41a02958c5fc15b972fd2a77c2ba.html">Define GET</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_lcommon_8h_1a784c41a02958c5fc15b972fd2a77c2ba.html#define-documentation">Define Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -829,6 +1041,14 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="define_physics_8h_1a437ef08681e7210d6678427030446a54.html">Define LEFT</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="define_physics_8h_1a437ef08681e7210d6678427030446a54.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_lcommon_8h_1a914bab389639249543e304f117855323.html">Define LOADER</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_lcommon_8h_1a914bab389639249543e304f117855323.html#define-documentation">Define Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -859,6 +1079,46 @@
 </div>
 <div class="toctree-wrapper compound">
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="define_lotus__export_8h_1a6844f05c542edd3895a21e614409d121.html">Define LOTUS_API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_lotus__export_8h_1a6844f05c542edd3895a21e614409d121.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_lotus__export_8h_1a292e8b03622c52e8dd3f5ebadecd7e3b.html">Define LOTUS_DEPRECATED</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_lotus__export_8h_1a292e8b03622c52e8dd3f5ebadecd7e3b.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_lotus__export_8h_1a0afcf963f5221e058e99076ae209bf4d.html">Define LOTUS_DEPRECATED_EXPORT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_lotus__export_8h_1a0afcf963f5221e058e99076ae209bf4d.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_lotus__export_8h_1ad755f8db83fb66c1ea4e8f1f40e82680.html">Define LOTUS_DEPRECATED_NO_EXPORT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_lotus__export_8h_1ad755f8db83fb66c1ea4e8f1f40e82680.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_lotus__export_8h_1a894eb7bfaa12220b213e401badfd7021.html">Define LOTUS_NO_EXPORT</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_lotus__export_8h_1a894eb7bfaa12220b213e401badfd7021.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="define_Scene_8h_1ad5385c5f26ed92f11423b6783a37f309.html">Define NULL_ENTITY</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="define_Scene_8h_1ad5385c5f26ed92f11423b6783a37f309.html#define-documentation">Define Documentation</a></li>
 </ul>
@@ -875,24 +1135,32 @@
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="define_resources_8h_1a8d23feea868a983c8c2b661e1e16972f.html">Define RED</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="define_resources_8h_1a8d23feea868a983c8c2b661e1e16972f.html#define-documentation">Define Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="define_Texture_8h_1a8d23feea868a983c8c2b661e1e16972f.html">Define RED</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_Texture_8h_1a8d23feea868a983c8c2b661e1e16972f.html#define-documentation">Define Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="define_resources_8h_1af66629d6b00cab37ec92e3933efa4bcc.html">Define RGB</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="define_resources_8h_1af66629d6b00cab37ec92e3933efa4bcc.html#define-documentation">Define Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="define_AssetRegistry_8h_1a1103d3698258a2520fd3b6aebc3e04d5.html">Define RESOURCE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_AssetRegistry_8h_1a1103d3698258a2520fd3b6aebc3e04d5.html#define-documentation">Define Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="define_resources_8h_1abe284e6dd85278d8672eae96f282eddd.html">Define RGBA</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="define_resources_8h_1abe284e6dd85278d8672eae96f282eddd.html#define-documentation">Define Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="define_Texture_8h_1af66629d6b00cab37ec92e3933efa4bcc.html">Define RGB</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_Texture_8h_1af66629d6b00cab37ec92e3933efa4bcc.html#define-documentation">Define Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="define_Texture_8h_1abe284e6dd85278d8672eae96f282eddd.html">Define RGBA</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_Texture_8h_1abe284e6dd85278d8672eae96f282eddd.html#define-documentation">Define Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -907,8 +1175,8 @@
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="define_resources_8h_1ab24a1924d30905579baa6ceff4710c2e.html">Define SPECULAR_TEXTURE</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="define_resources_8h_1ab24a1924d30905579baa6ceff4710c2e.html#define-documentation">Define Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="define_Texture_8h_1ab24a1924d30905579baa6ceff4710c2e.html">Define SPECULAR_TEXTURE</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="define_Texture_8h_1ab24a1924d30905579baa6ceff4710c2e.html#define-documentation">Define Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -950,32 +1218,56 @@
 <h2>Typedefs<a class="headerlink" href="#typedefs" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="typedef_namespaceLotus_1af674a4a55348c0da8fef03f022a6c8e2.html">Typedef Lotus::EntityID</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="typedef_namespaceLotus_1af674a4a55348c0da8fef03f022a6c8e2.html#typedef-documentation">Typedef Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="typedef_Scene_8h_1af674a4a55348c0da8fef03f022a6c8e2.html">Typedef Lotus::EntityID</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_Scene_8h_1af674a4a55348c0da8fef03f022a6c8e2.html#typedef-documentation">Typedef Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="typedef_namespaceLotus_1acd408d6810128a5ee2f4d2105a8cdb32.html">Typedef Lotus::EntityRegistry</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="typedef_namespaceLotus_1acd408d6810128a5ee2f4d2105a8cdb32.html#typedef-documentation">Typedef Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="typedef_Scene_8h_1acd408d6810128a5ee2f4d2105a8cdb32.html">Typedef Lotus::EntityRegistry</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_Scene_8h_1acd408d6810128a5ee2f4d2105a8cdb32.html#typedef-documentation">Typedef Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="typedef_namespaceLotus_1a0ca822b05156da4e9ea13e492f68032e.html">Typedef Lotus::SRef</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="typedef_namespaceLotus_1a0ca822b05156da4e9ea13e492f68032e.html#typedef-documentation">Typedef Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="typedef_lcommon_8h_1a28ddd2debe7f1c7e5f33e1a637b6b84f.html">Typedef Lotus::Handle</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_lcommon_8h_1a28ddd2debe7f1c7e5f33e1a637b6b84f.html#typedef-documentation">Typedef Documentation</a></li>
 </ul>
 </li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="typedef_namespaceLotus_1a6f22aaa2432738d028a1ddf0eba60054.html">Typedef Lotus::URef</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="typedef_namespaceLotus_1a6f22aaa2432738d028a1ddf0eba60054.html#typedef-documentation">Typedef Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="typedef_ISerializable_8h_1a186727d646d3c1df36b63232dc2e492a.html">Typedef Lotus::IArchive</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_ISerializable_8h_1a186727d646d3c1df36b63232dc2e492a.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_ISerializable_8h_1af13b7c55f035a10d77186e339bf6926a.html">Typedef Lotus::OArchive</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_ISerializable_8h_1af13b7c55f035a10d77186e339bf6926a.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_lcommon_8h_1a0ca822b05156da4e9ea13e492f68032e.html">Typedef Lotus::SRef</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_lcommon_8h_1a0ca822b05156da4e9ea13e492f68032e.html#typedef-documentation">Typedef Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="typedef_lcommon_8h_1a6f22aaa2432738d028a1ddf0eba60054.html">Typedef Lotus::URef</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="typedef_lcommon_8h_1a6f22aaa2432738d028a1ddf0eba60054.html#typedef-documentation">Typedef Documentation</a></li>
 </ul>
 </li>
 </ul>
@@ -1091,7 +1383,7 @@
   <div role="contentinfo">
     <p>
         
-        &copy; Copyright 2020, Mayant Mukul
+        &copy; Copyright 2020, Studio Centauri
 
     </p>
   </div>

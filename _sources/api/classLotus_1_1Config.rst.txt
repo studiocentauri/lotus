@@ -1,0 +1,25 @@
+.. _exhale_class_classLotus_1_1Config:
+
+Class Config
+============
+
+- Defined in :ref:`file_include_lotus_Config.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Lotus::Singleton< Config >`` (:ref:`exhale_class_classLotus_1_1Singleton`)
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Lotus::Config
+   :members:
+   :protected-members:
+   :undoc-members:

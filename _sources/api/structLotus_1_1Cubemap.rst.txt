@@ -1,0 +1,16 @@
+.. _exhale_struct_structLotus_1_1Cubemap:
+
+Struct Cubemap
+==============
+
+- Defined in :ref:`file_include_lotus_resources_Cubemap.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: Lotus::Cubemap
+   :members:
+   :protected-members:
+   :undoc-members:

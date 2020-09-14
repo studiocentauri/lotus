@@ -1,0 +1,13 @@
+.. _exhale_define_AssetRegistry_8h_1a1103d3698258a2520fd3b6aebc3e04d5:
+
+Define RESOURCE
+===============
+
+- Defined in :ref:`file_include_lotus_resources_AssetRegistry.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: RESOURCE

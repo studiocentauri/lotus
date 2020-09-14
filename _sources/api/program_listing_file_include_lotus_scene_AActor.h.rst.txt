@@ -4,7 +4,7 @@
 Program Listing for File AActor.h
 =================================
 
-|exhale_lsh| :ref:`Return to documentation for file <file_include_lotus_scene_AActor.h>` (``include/lotus/scene/AActor.h``)
+|exhale_lsh| :ref:`Return to documentation for file <file_include_lotus_scene_AActor.h>` (``include\lotus\scene\AActor.h``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -19,7 +19,9 @@ Program Listing for File AActor.h
    namespace Lotus
    {
        // TODO: An entity that is placed in the scene, i.e. entity with a transform, plus some helper functions
-       class AActor : public Entity
+   
+   
+       class LOTUS_API AActor : public Entity
        {
        public:
            AActor(EntityID id = NULL_ENTITY, Scene* scene = nullptr) : Entity(id, scene)

@@ -11,52 +11,32 @@ Directories
 .. toctree::
    :maxdepth: 5
 
-   dir__home.rst
+   dir_D__code_lotus_include_lotus.rst
 
 .. toctree::
    :maxdepth: 5
 
-   dir__home_priyansh.rst
+   dir_D__code_lotus_include_lotus_components.rst
 
 .. toctree::
    :maxdepth: 5
 
-   dir__home_priyansh_code.rst
+   dir_D__code_lotus_include_lotus_events.rst
 
 .. toctree::
    :maxdepth: 5
 
-   dir__home_priyansh_code_lotus.rst
+   dir_D__code_lotus_include_lotus_resources.rst
 
 .. toctree::
    :maxdepth: 5
 
-   dir__home_priyansh_code_lotus_include.rst
+   dir_D__code_lotus_include_lotus_scene.rst
 
 .. toctree::
    :maxdepth: 5
 
-   dir__home_priyansh_code_lotus_include_lotus.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   dir__home_priyansh_code_lotus_include_lotus_components.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   dir__home_priyansh_code_lotus_include_lotus_events.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   dir__home_priyansh_code_lotus_include_lotus_rendering.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   dir__home_priyansh_code_lotus_include_lotus_scene.rst
+   dir_include.rst
 
 Files
 *****
@@ -71,6 +51,21 @@ Files
    :maxdepth: 5
 
    file_include_lotus_scene_ACamera.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_include_lotus_resources_AssetRegistry.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_include_lotus_Config.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_include_lotus_resources_Cubemap.h.rst
 
 .. toctree::
    :maxdepth: 5
@@ -95,7 +90,17 @@ Files
 .. toctree::
    :maxdepth: 5
 
+   file_include_lotus_ILifecycle.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
    file_include_lotus_events_Input.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_include_lotus_ISerializable.h.rst
 
 .. toctree::
    :maxdepth: 5
@@ -120,7 +125,17 @@ Files
 .. toctree::
    :maxdepth: 5
 
-   file_include_lotus_rendering_LShader.h.rst
+   file_include_lotus_lotus_export.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_include_lotus_resources_Material.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_include_lotus_resources_Model.h.rst
 
 .. toctree::
    :maxdepth: 5
@@ -135,7 +150,7 @@ Files
 .. toctree::
    :maxdepth: 5
 
-   file_include_lotus_rendering_Renderer.h.rst
+   file_include_lotus_Renderer.h.rst
 
 .. toctree::
    :maxdepth: 5
@@ -145,12 +160,7 @@ Files
 .. toctree::
    :maxdepth: 5
 
-   file_include_lotus_resources.h.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   file_include_lotus_components_scene.h.rst
+   file_include_lotus_scene_Scene.h.rst
 
 .. toctree::
    :maxdepth: 5
@@ -161,3 +171,13 @@ Files
    :maxdepth: 5
 
    file_include_lotus_scene_SceneManager.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_include_lotus_resources_Shader.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file_include_lotus_resources_Texture.h.rst

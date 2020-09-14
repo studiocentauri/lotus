@@ -8,7 +8,7 @@ File AActor.h
    :local:
    :backlinks: none
 
-Definition (``include/lotus/scene/AActor.h``)
+Definition (``include\lotus\scene\AActor.h``)
 ---------------------------------------------
 
 
@@ -27,9 +27,9 @@ Includes
 
 - ``Scene.h`` (:ref:`file_include_lotus_scene_Scene.h`)
 
-- ``lotus/components/scene.h`` (:ref:`file_include_lotus_components_scene.h`)
+- ``lotus/components/scene.h``
 
-- ``lotus/physics.h`` (:ref:`file_include_lotus_physics.h`)
+- ``lotus/physics.h``
 
 
 

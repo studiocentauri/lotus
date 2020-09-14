@@ -8,7 +8,7 @@ File python.h
    :local:
    :backlinks: none
 
-Definition (``include/lotus/python.h``)
+Definition (``include\lotus\python.h``)
 ---------------------------------------
 
 
@@ -20,6 +20,12 @@ Definition (``include/lotus/python.h``)
 
 
 
+
+Includes
+--------
+
+
+- ``lotus/lotus_export.h``
 
 
 
@@ -36,5 +42,5 @@ Functions
 ---------
 
 
-- :ref:`exhale_function_python_8h_1a545dd5dc50c03ccbd95c9efd67b7df90`
+- :ref:`exhale_function_python_8h_1a29d480f966b234b215ded6a0d26e4795`
 

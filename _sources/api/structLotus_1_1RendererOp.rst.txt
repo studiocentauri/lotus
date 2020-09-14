@@ -3,7 +3,7 @@
 Struct RendererOp
 =================
 
-- Defined in :ref:`file_include_lotus_rendering_Renderer.h`
+- Defined in :ref:`file_include_lotus_Renderer.h`
 
 
 Struct Documentation

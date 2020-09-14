@@ -1,0 +1,13 @@
+.. _exhale_variable_Event_8h_1a899caa602e4fff675b17cdbab33607ec:
+
+Variable NONE
+=============
+
+- Defined in :ref:`file_include_lotus_events_Event.h`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: NONE

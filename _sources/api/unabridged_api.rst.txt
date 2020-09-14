@@ -18,6 +18,11 @@ Classes and Structs
 .. toctree::
    :maxdepth: 5
 
+   structLotus_1_1BeginEvent.rst
+
+.. toctree::
+   :maxdepth: 5
+
    structLotus_1_1CCamera.rst
 
 .. toctree::
@@ -48,6 +53,11 @@ Classes and Structs
 .. toctree::
    :maxdepth: 5
 
+   structLotus_1_1CSkybox.rst
+
+.. toctree::
+   :maxdepth: 5
+
    structLotus_1_1CSpotlight.rst
 
 .. toctree::
@@ -58,7 +68,27 @@ Classes and Structs
 .. toctree::
    :maxdepth: 5
 
+   structLotus_1_1Cubemap.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   structLotus_1_1DestroyEvent.rst
+
+.. toctree::
+   :maxdepth: 5
+
    structLotus_1_1Event.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   structLotus_1_1InitEvent.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   structLotus_1_1ISerializable.rst
 
 .. toctree::
    :maxdepth: 5
@@ -68,12 +98,12 @@ Classes and Structs
 .. toctree::
    :maxdepth: 5
 
-   structLotus_1_1LModel.rst
+   structLotus_1_1Material.rst
 
 .. toctree::
    :maxdepth: 5
 
-   structLotus_1_1LotusOp.rst
+   structLotus_1_1Model.rst
 
 .. toctree::
    :maxdepth: 5
@@ -83,7 +113,42 @@ Classes and Structs
 .. toctree::
    :maxdepth: 5
 
+   structLotus_1_1PostUpdateEvent.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   structLotus_1_1PreDestroyEvent.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   structLotus_1_1PreUpdateEvent.rst
+
+.. toctree::
+   :maxdepth: 5
+
    structLotus_1_1RendererOp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   structLotus_1_1Shader.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   structLotus_1_1ShutdownEvent.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   structLotus_1_1SubMesh.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   structLotus_1_1Texture.rst
 
 .. toctree::
    :maxdepth: 5
@@ -123,7 +188,12 @@ Classes and Structs
 .. toctree::
    :maxdepth: 5
 
-   classLotus_1_1AssetManager.rst
+   classLotus_1_1AssetRegistry.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classLotus_1_1Config.rst
 
 .. toctree::
    :maxdepth: 5
@@ -153,22 +223,7 @@ Classes and Structs
 .. toctree::
    :maxdepth: 5
 
-   classLotus_1_1IResource.rst
-
-.. toctree::
-   :maxdepth: 5
-
    classLotus_1_1IWindow.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   classLotus_1_1LShader.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   classLotus_1_1Mesh.rst
 
 .. toctree::
    :maxdepth: 5
@@ -190,11 +245,6 @@ Classes and Structs
 
    classLotus_1_1Singleton.rst
 
-.. toctree::
-   :maxdepth: 5
-
-   classLotus_1_1Texture.rst
-
 Enums
 *****
 
@@ -202,17 +252,7 @@ Enums
 .. toctree::
    :maxdepth: 5
 
-   enum_namespaceLotus_1af409efc59ac393913dd22929ded8d88a.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   enum_namespaceLotus_1a95978c94165d403681026eb8f30f1797.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   enum_namespaceLotus_1ae825578a38779239ed42a80e8048dfb3.rst
+   enum_lcommon_8h_1ae825578a38779239ed42a80e8048dfb3.rst
 
 Functions
 *********
@@ -221,62 +261,191 @@ Functions
 .. toctree::
    :maxdepth: 5
 
-   function_python_8h_1a545dd5dc50c03ccbd95c9efd67b7df90.rst
+   function_AssetRegistry_8h_1ad91370af6be232ffc36dbd0c28df178e.rst
 
 .. toctree::
    :maxdepth: 5
 
-   function_namespaceLotus_1a726f9b8e02e75b52c1f7df5480868381.rst
+   function_AssetRegistry_8h_1af8d5a4fcf982327d3fd07841fc56ff20.rst
 
 .. toctree::
    :maxdepth: 5
 
-   function_namespaceLotus_1a893de9d4908114267fdfb6b93352a369.rst
+   function_python_8h_1a29d480f966b234b215ded6a0d26e4795.rst
 
 .. toctree::
    :maxdepth: 5
 
-   function_namespaceLotus_1a7b60e19a35f865bc192e239b4c579a73.rst
+   function_physics_8h_1a726f9b8e02e75b52c1f7df5480868381.rst
 
 .. toctree::
    :maxdepth: 5
 
-   function_namespaceLotus_1a6b8ce6b82e47ad6e7d1368b2b414eccb.rst
+   function_physics_8h_1a893de9d4908114267fdfb6b93352a369.rst
 
 .. toctree::
    :maxdepth: 5
 
-   function_namespaceLotus_1a2d8bf4ad45a5ac17b5f8188ad4b9f3af.rst
+   function_physics_8h_1a7b60e19a35f865bc192e239b4c579a73.rst
 
 .. toctree::
    :maxdepth: 5
 
-   function_namespaceLotus_1ac760cc5e35d95f3e943583f3d17bce53.rst
+   function_Cubemap_8h_1a6d3c6424b1092d6cd3ac50ecab2dfe65.rst
 
 .. toctree::
    :maxdepth: 5
 
-   function_namespaceLotus_1a7121c0742be7d02d3edeb1c095879776.rst
+   function_Material_8h_1ae86fe9c4a845408e36e31f0fc546af1e.rst
 
 .. toctree::
    :maxdepth: 5
 
-   function_namespaceLotus_1a7a89c7b9bf8fff8323baaeeefe2a8927.rst
+   function_Model_8h_1a3f9208ab6e148adc2f9c58c59780c7ce.rst
 
 .. toctree::
    :maxdepth: 5
 
-   function_namespaceLotus_1a345ef21a7417df1d4107f40e48490a79.rst
+   function_Shader_8h_1acb1322af7fe93c1368708656d979b3d9.rst
 
 .. toctree::
    :maxdepth: 5
 
-   function_namespaceLotus_1a14c15fa7611b1fff9231f9ecee70e5f7.rst
+   function_Texture_8h_1ae6968b6433d74dc3ce6d7f93ac886187.rst
 
 .. toctree::
    :maxdepth: 5
 
-   function_namespaceLotus_1a0aee522b724c634c46d97e2e2ad030f5.rst
+   function_physics_8h_1a6b8ce6b82e47ad6e7d1368b2b414eccb.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_physics_8h_1a2d8bf4ad45a5ac17b5f8188ad4b9f3af.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_physics_8h_1ac760cc5e35d95f3e943583f3d17bce53.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_physics_8h_1a7121c0742be7d02d3edeb1c095879776.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_Event_8h_1a75dfbd9f988cb79d117e09ff6c6f0f32.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_Event_8h_1a027067e953b657dc705d2882f94d1322.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_physics_8h_1a14c15fa7611b1fff9231f9ecee70e5f7.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_physics_8h_1a0aee522b724c634c46d97e2e2ad030f5.rst
+
+Variables
+*********
+
+
+.. toctree::
+   :maxdepth: 5
+
+   variable_Event_8h_1a9fa6513523393acfab1e787fdfaf7d96.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   variable_Event_8h_1ab81ca9153c95d55639b4ab520bb2aa4d.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   variable_Event_8h_1a9cac8350acb7e117f4adf7fe75c2bb47.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   variable_Event_8h_1ad201ad7fb9674045709e794c843d37fc.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   variable_Event_8h_1a41b99746213bcbbc8433f7a25d999e44.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   variable_Event_8h_1a828f48b63b87fb587dfdc0b6752fbae7.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   variable_Event_8h_1a6c153c49f8b599bc1f3d3a401ba46426.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   variable_Event_8h_1a1d6e11f6ceaee990c4c45fb699618462.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   variable_Event_8h_1aed33feb307536967c772b666a0f51dce.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   variable_Event_8h_1ad432f0e5d42c16af9b552825cceaf392.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   variable_Event_8h_1a6c427ef0a5b57b5d3fcafae7358f6d7d.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   variable_Event_8h_1a5521cd08d6a90f2cad02bd0c65ace718.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   variable_Event_8h_1ab079205170bed9de40485343a4d95264.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   variable_Event_8h_1ae09c4c1573b3532a4207cfe668a83c56.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   variable_Event_8h_1a236ef538639962bf4b599012e26b3ad6.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   variable_Event_8h_1a899caa602e4fff675b17cdbab33607ec.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   variable_Event_8h_1a5233c989a91a39f8630900f1d3c23ba5.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   variable_Event_8h_1a82706b9ddae70c884978ccef628fc2d5.rst
 
 Defines
 *******
@@ -290,12 +459,7 @@ Defines
 .. toctree::
    :maxdepth: 5
 
-   define_Event_8h_1ad27cc17b25bb93134368d5eb21126eae.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   define_resources_8h_1ad071b7b1c98f623fbf2246f33687f0e0.rst
+   define_Texture_8h_1ad071b7b1c98f623fbf2246f33687f0e0.rst
 
 .. toctree::
    :maxdepth: 5
@@ -305,77 +469,27 @@ Defines
 .. toctree::
    :maxdepth: 5
 
+   define_ISerializable_8h_1abfdee8ad625fefeb9ba75d3c85f114fa.rst
+
+.. toctree::
+   :maxdepth: 5
+
    define_physics_8h_1ac25c6a324554f8ae267ad7c1638074a8.rst
 
 .. toctree::
    :maxdepth: 5
 
-   define_resources_8h_1a4a79d571b12106c7d8d8a6536b5d0b30.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   define_resources_8h_1afe51edf3f40363f5d09129360f325b72.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   define_Event_8h_1afab985ea642b06058606f89e117e2bf7.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   define_Event_8h_1aa6b4d2ab56a84b248ef2e2afc67fd82f.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   define_Event_8h_1a669a55606aaabcce8a56bd13971e2fe8.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   define_Event_8h_1aae2d740f21e8afe73fafd960d2987d48.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   define_Event_8h_1ad4012af5b07d914a243bc7429539d3ed.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   define_Event_8h_1a6ac13f8363c4a9bf676a550dc83cb7d1.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   define_Event_8h_1a3e8a9e8f8defea19263d4b4847d1b2bb.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   define_Event_8h_1adad4024bd2ecd378b0f7f348c031173f.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   define_Event_8h_1a7e903d9308f586ab04aaaa781cbaba9f.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   define_Event_8h_1a1b517388acb29a44945d4a92f10d1deb.rst
-
-.. toctree::
-   :maxdepth: 5
-
-   define_Event_8h_1a639d8c7c1fe837bf253d54ae5217c2f8.rst
+   define_lcommon_8h_1a784c41a02958c5fc15b972fd2a77c2ba.rst
 
 .. toctree::
    :maxdepth: 5
 
    define_physics_8h_1a437ef08681e7210d6678427030446a54.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   define_lcommon_8h_1a914bab389639249543e304f117855323.rst
 
 .. toctree::
    :maxdepth: 5
@@ -395,6 +509,31 @@ Defines
 .. toctree::
    :maxdepth: 5
 
+   define_lotus__export_8h_1a6844f05c542edd3895a21e614409d121.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   define_lotus__export_8h_1a292e8b03622c52e8dd3f5ebadecd7e3b.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   define_lotus__export_8h_1a0afcf963f5221e058e99076ae209bf4d.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   define_lotus__export_8h_1ad755f8db83fb66c1ea4e8f1f40e82680.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   define_lotus__export_8h_1a894eb7bfaa12220b213e401badfd7021.rst
+
+.. toctree::
+   :maxdepth: 5
+
    define_Scene_8h_1ad5385c5f26ed92f11423b6783a37f309.rst
 
 .. toctree::
@@ -405,17 +544,22 @@ Defines
 .. toctree::
    :maxdepth: 5
 
-   define_resources_8h_1a8d23feea868a983c8c2b661e1e16972f.rst
+   define_Texture_8h_1a8d23feea868a983c8c2b661e1e16972f.rst
 
 .. toctree::
    :maxdepth: 5
 
-   define_resources_8h_1af66629d6b00cab37ec92e3933efa4bcc.rst
+   define_AssetRegistry_8h_1a1103d3698258a2520fd3b6aebc3e04d5.rst
 
 .. toctree::
    :maxdepth: 5
 
-   define_resources_8h_1abe284e6dd85278d8672eae96f282eddd.rst
+   define_Texture_8h_1af66629d6b00cab37ec92e3933efa4bcc.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   define_Texture_8h_1abe284e6dd85278d8672eae96f282eddd.rst
 
 .. toctree::
    :maxdepth: 5
@@ -425,7 +569,7 @@ Defines
 .. toctree::
    :maxdepth: 5
 
-   define_resources_8h_1ab24a1924d30905579baa6ceff4710c2e.rst
+   define_Texture_8h_1ab24a1924d30905579baa6ceff4710c2e.rst
 
 .. toctree::
    :maxdepth: 5
@@ -454,22 +598,37 @@ Typedefs
 .. toctree::
    :maxdepth: 5
 
-   typedef_namespaceLotus_1af674a4a55348c0da8fef03f022a6c8e2.rst
+   typedef_Scene_8h_1af674a4a55348c0da8fef03f022a6c8e2.rst
 
 .. toctree::
    :maxdepth: 5
 
-   typedef_namespaceLotus_1acd408d6810128a5ee2f4d2105a8cdb32.rst
+   typedef_Scene_8h_1acd408d6810128a5ee2f4d2105a8cdb32.rst
 
 .. toctree::
    :maxdepth: 5
 
-   typedef_namespaceLotus_1a0ca822b05156da4e9ea13e492f68032e.rst
+   typedef_lcommon_8h_1a28ddd2debe7f1c7e5f33e1a637b6b84f.rst
 
 .. toctree::
    :maxdepth: 5
 
-   typedef_namespaceLotus_1a6f22aaa2432738d028a1ddf0eba60054.rst
+   typedef_ISerializable_8h_1a186727d646d3c1df36b63232dc2e492a.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   typedef_ISerializable_8h_1af13b7c55f035a10d77186e339bf6926a.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   typedef_lcommon_8h_1a0ca822b05156da4e9ea13e492f68032e.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   typedef_lcommon_8h_1a6f22aaa2432738d028a1ddf0eba60054.rst
 
 .. toctree::
    :maxdepth: 5

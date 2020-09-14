@@ -1,0 +1,13 @@
+.. _exhale_variable_Event_8h_1a5233c989a91a39f8630900f1d3c23ba5:
+
+Variable WINDOW
+===============
+
+- Defined in :ref:`file_include_lotus_events_Event.h`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: WINDOW

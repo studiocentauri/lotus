@@ -1,0 +1,13 @@
+.. _exhale_enum_lcommon_8h_1ae825578a38779239ed42a80e8048dfb3:
+
+Enum ERenderAPI
+===============
+
+- Defined in :ref:`file_include_lotus_lcommon.h`
+
+
+Enum Documentation
+------------------
+
+
+.. doxygenenum:: Lotus::ERenderAPI

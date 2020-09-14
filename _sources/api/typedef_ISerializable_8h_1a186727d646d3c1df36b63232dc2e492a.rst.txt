@@ -1,0 +1,13 @@
+.. _exhale_typedef_ISerializable_8h_1a186727d646d3c1df36b63232dc2e492a:
+
+Typedef Lotus::IArchive
+=======================
+
+- Defined in :ref:`file_include_lotus_ISerializable.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: Lotus::IArchive

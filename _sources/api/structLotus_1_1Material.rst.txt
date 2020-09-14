@@ -1,0 +1,16 @@
+.. _exhale_struct_structLotus_1_1Material:
+
+Struct Material
+===============
+
+- Defined in :ref:`file_include_lotus_resources_Material.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: Lotus::Material
+   :members:
+   :protected-members:
+   :undoc-members:

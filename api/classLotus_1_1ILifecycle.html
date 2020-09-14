@@ -7,13 +7,14 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Class ILifecycle &mdash; Lotus 0.0.1 documentation</title>
+  <title>Class ILifecycle &mdash; Lotus 0.1.0 documentation</title>
   
 
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/navbar.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists\css\tree_view.css" type="text/css" />
 
   
   
@@ -31,8 +32,8 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/language_data.js"></script>
-        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
-        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script src="../_static/collapsible-lists\js\CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists\js\apply-collapsible-lists.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -54,9 +55,12 @@
           
 
           
-            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Lotus
+            <a href="../index.html">
           
 
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -85,9 +89,14 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents</span></p>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/ecs.html">Entity Component System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/renderer.html">Renderer</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="lotus.html">API Reference</a></li>
 </ul>
 
@@ -159,7 +168,7 @@
   <div class="section" id="class-ilifecycle">
 <span id="exhale-class-classlotus-1-1ilifecycle"></span><h1>Class ILifecycle<a class="headerlink" href="#class-ilifecycle" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><p>Defined in <a class="reference internal" href="file_include_lotus_lcommon.h.html#file-include-lotus-lcommon-h"><span class="std std-ref">File lcommon.h</span></a></p></li>
+<li><p>Defined in <a class="reference internal" href="file_include_lotus_ILifecycle.h.html#file-include-lotus-ilifecycle-h"><span class="std std-ref">File ILifecycle.h</span></a></p></li>
 </ul>
 <div class="section" id="inheritance-relationships">
 <h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
@@ -168,6 +177,7 @@
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Lotus::IWindow</span></code> (<a class="reference internal" href="classLotus_1_1IWindow.html#exhale-class-classlotus-1-1iwindow"><span class="std std-ref">Class IWindow</span></a>)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Lotus::Renderer</span></code> (<a class="reference internal" href="classLotus_1_1Renderer.html#exhale-class-classlotus-1-1renderer"><span class="std std-ref">Class Renderer</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">private</span> <span class="pre">Lotus::SceneManager</span></code> (<a class="reference internal" href="classLotus_1_1SceneManager.html#exhale-class-classlotus-1-1scenemanager"><span class="std std-ref">Class SceneManager</span></a>)</p></li>
 </ul>
 </div>
 </div>
@@ -176,48 +186,53 @@
 <dl class="cpp class">
 <dt id="_CPPv4N5Lotus10ILifecycleE">
 <span id="_CPPv3N5Lotus10ILifecycleE"></span><span id="_CPPv2N5Lotus10ILifecycleE"></span><span id="Lotus::ILifecycle"></span><span class="target" id="classLotus_1_1ILifecycle"></span><em class="property">class </em><code class="sig-prename descclassname">Lotus<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">ILifecycle</code><a class="headerlink" href="#_CPPv4N5Lotus10ILifecycleE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Base class to define lifecyle hooks </p>
-<p>Subclassed by <a class="reference internal" href="classLotus_1_1IWindow.html#classLotus_1_1IWindow"><span class="std std-ref">Lotus::IWindow</span></a>, <a class="reference internal" href="classLotus_1_1Renderer.html#classLotus_1_1Renderer"><span class="std std-ref">Lotus::Renderer</span></a></p>
+<dd><p>Base class to define lifecycle hooks </p>
+<p>Subclassed by <a class="reference internal" href="classLotus_1_1IWindow.html#classLotus_1_1IWindow"><span class="std std-ref">Lotus::IWindow</span></a>, <a class="reference internal" href="classLotus_1_1Renderer.html#classLotus_1_1Renderer"><span class="std std-ref">Lotus::Renderer</span></a>, <a class="reference internal" href="classLotus_1_1SceneManager.html#classLotus_1_1SceneManager"><span class="std std-ref">Lotus::SceneManager</span></a></p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Public Functions</p>
 <dl class="cpp function">
-<dt id="_CPPv4N5Lotus10ILifecycle6OnInitEv">
-<span id="_CPPv3N5Lotus10ILifecycle6OnInitEv"></span><span id="_CPPv2N5Lotus10ILifecycle6OnInitEv"></span><span id="Lotus::ILifecycle::OnInit"></span><span class="target" id="classLotus_1_1ILifecycle_1adc8ddf59eb37cd3c4cbbbe6898ab615c"></span>void <code class="sig-name descname">OnInit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus10ILifecycle6OnInitEv" title="Permalink to this definition">¶</a><br /></dt>
+<dt id="_CPPv4N5Lotus10ILifecycleD0Ev">
+<span id="_CPPv3N5Lotus10ILifecycleD0Ev"></span><span id="_CPPv2N5Lotus10ILifecycleD0Ev"></span><span id="Lotus::ILifecycle::~ILifecycle"></span><span class="target" id="classLotus_1_1ILifecycle_1a41dcdcf69b0b269de4e250203a37a08a"></span><code class="sig-name descname">~ILifecycle</code><span class="sig-paren">(</span><span class="sig-paren">)</span> = default<a class="headerlink" href="#_CPPv4N5Lotus10ILifecycleD0Ev" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp function">
-<dt id="_CPPv4N5Lotus10ILifecycle7OnBeginEv">
-<span id="_CPPv3N5Lotus10ILifecycle7OnBeginEv"></span><span id="_CPPv2N5Lotus10ILifecycle7OnBeginEv"></span><span id="Lotus::ILifecycle::OnBegin"></span><span class="target" id="classLotus_1_1ILifecycle_1aac44a58eaa175c1d4cba07371edeb0f1"></span>void <code class="sig-name descname">OnBegin</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus10ILifecycle7OnBeginEv" title="Permalink to this definition">¶</a><br /></dt>
+<dt id="_CPPv4N5Lotus10ILifecycle6OnInitERK9InitEvent">
+<span id="_CPPv3N5Lotus10ILifecycle6OnInitERK9InitEvent"></span><span id="_CPPv2N5Lotus10ILifecycle6OnInitERK9InitEvent"></span><span id="Lotus::ILifecycle::OnInit__InitEventCR"></span><span class="target" id="classLotus_1_1ILifecycle_1a5812c2bcfdb31ecc0abe1416073d60d2"></span>void <code class="sig-name descname">OnInit</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="structLotus_1_1InitEvent.html#_CPPv4N5Lotus9InitEventE" title="Lotus::InitEvent">InitEvent</a> &amp;<em>event</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus10ILifecycle6OnInitERK9InitEvent" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp function">
-<dt id="_CPPv4N5Lotus10ILifecycle11OnPreUpdateEv">
-<span id="_CPPv3N5Lotus10ILifecycle11OnPreUpdateEv"></span><span id="_CPPv2N5Lotus10ILifecycle11OnPreUpdateEv"></span><span id="Lotus::ILifecycle::OnPreUpdate"></span><span class="target" id="classLotus_1_1ILifecycle_1a61377a367b5f4f4be534a4fd2d1ff4f7"></span>void <code class="sig-name descname">OnPreUpdate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus10ILifecycle11OnPreUpdateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dt id="_CPPv4N5Lotus10ILifecycle7OnBeginERK10BeginEvent">
+<span id="_CPPv3N5Lotus10ILifecycle7OnBeginERK10BeginEvent"></span><span id="_CPPv2N5Lotus10ILifecycle7OnBeginERK10BeginEvent"></span><span id="Lotus::ILifecycle::OnBegin__BeginEventCR"></span><span class="target" id="classLotus_1_1ILifecycle_1a295a48ac803500408d54bfdfc327b00e"></span>void <code class="sig-name descname">OnBegin</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="structLotus_1_1BeginEvent.html#_CPPv4N5Lotus10BeginEventE" title="Lotus::BeginEvent">BeginEvent</a> &amp;<em>event</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus10ILifecycle7OnBeginERK10BeginEvent" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp function">
-<dt id="_CPPv4N5Lotus10ILifecycle8OnUpdateEf">
-<span id="_CPPv3N5Lotus10ILifecycle8OnUpdateEf"></span><span id="_CPPv2N5Lotus10ILifecycle8OnUpdateEf"></span><span id="Lotus::ILifecycle::OnUpdate__float"></span><span class="target" id="classLotus_1_1ILifecycle_1ad94482711b6cc4ee22bd21cfdba1fe0d"></span>void <code class="sig-name descname">OnUpdate</code><span class="sig-paren">(</span>float <em>delta</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus10ILifecycle8OnUpdateEf" title="Permalink to this definition">¶</a><br /></dt>
+<dt id="_CPPv4N5Lotus10ILifecycle11OnPreUpdateERK14PreUpdateEvent">
+<span id="_CPPv3N5Lotus10ILifecycle11OnPreUpdateERK14PreUpdateEvent"></span><span id="_CPPv2N5Lotus10ILifecycle11OnPreUpdateERK14PreUpdateEvent"></span><span id="Lotus::ILifecycle::OnPreUpdate__PreUpdateEventCR"></span><span class="target" id="classLotus_1_1ILifecycle_1a2b8033fff7dc4dbb170488e7453d0951"></span>void <code class="sig-name descname">OnPreUpdate</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="structLotus_1_1PreUpdateEvent.html#_CPPv4N5Lotus14PreUpdateEventE" title="Lotus::PreUpdateEvent">PreUpdateEvent</a> &amp;<em>event</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus10ILifecycle11OnPreUpdateERK14PreUpdateEvent" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp function">
-<dt id="_CPPv4N5Lotus10ILifecycle12OnPostUpdateEv">
-<span id="_CPPv3N5Lotus10ILifecycle12OnPostUpdateEv"></span><span id="_CPPv2N5Lotus10ILifecycle12OnPostUpdateEv"></span><span id="Lotus::ILifecycle::OnPostUpdate"></span><span class="target" id="classLotus_1_1ILifecycle_1aa68cbb6df1b3712e26700208bf208b1e"></span>void <code class="sig-name descname">OnPostUpdate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus10ILifecycle12OnPostUpdateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dt id="_CPPv4N5Lotus10ILifecycle8OnUpdateERK11UpdateEvent">
+<span id="_CPPv3N5Lotus10ILifecycle8OnUpdateERK11UpdateEvent"></span><span id="_CPPv2N5Lotus10ILifecycle8OnUpdateERK11UpdateEvent"></span><span id="Lotus::ILifecycle::OnUpdate__UpdateEventCR"></span><span class="target" id="classLotus_1_1ILifecycle_1aadac9ed3f98dbb7489f1a342d063cc2a"></span>void <code class="sig-name descname">OnUpdate</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="structLotus_1_1UpdateEvent.html#_CPPv4N5Lotus11UpdateEventE" title="Lotus::UpdateEvent">UpdateEvent</a> &amp;<em>event</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus10ILifecycle8OnUpdateERK11UpdateEvent" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp function">
-<dt id="_CPPv4N5Lotus10ILifecycle12OnPreDestroyEv">
-<span id="_CPPv3N5Lotus10ILifecycle12OnPreDestroyEv"></span><span id="_CPPv2N5Lotus10ILifecycle12OnPreDestroyEv"></span><span id="Lotus::ILifecycle::OnPreDestroy"></span><span class="target" id="classLotus_1_1ILifecycle_1a2ca70e2ecf9d89ad024a4620185d9085"></span>void <code class="sig-name descname">OnPreDestroy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus10ILifecycle12OnPreDestroyEv" title="Permalink to this definition">¶</a><br /></dt>
+<dt id="_CPPv4N5Lotus10ILifecycle12OnPostUpdateERK15PostUpdateEvent">
+<span id="_CPPv3N5Lotus10ILifecycle12OnPostUpdateERK15PostUpdateEvent"></span><span id="_CPPv2N5Lotus10ILifecycle12OnPostUpdateERK15PostUpdateEvent"></span><span id="Lotus::ILifecycle::OnPostUpdate__PostUpdateEventCR"></span><span class="target" id="classLotus_1_1ILifecycle_1a3e85ef7e56e97463d287fb8fe3376a41"></span>void <code class="sig-name descname">OnPostUpdate</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="structLotus_1_1PostUpdateEvent.html#_CPPv4N5Lotus15PostUpdateEventE" title="Lotus::PostUpdateEvent">PostUpdateEvent</a> &amp;<em>event</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus10ILifecycle12OnPostUpdateERK15PostUpdateEvent" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp function">
-<dt id="_CPPv4N5Lotus10ILifecycle9OnDestroyEv">
-<span id="_CPPv3N5Lotus10ILifecycle9OnDestroyEv"></span><span id="_CPPv2N5Lotus10ILifecycle9OnDestroyEv"></span><span id="Lotus::ILifecycle::OnDestroy"></span><span class="target" id="classLotus_1_1ILifecycle_1a300203b9eac17be9b92eda7126fafeb4"></span>void <code class="sig-name descname">OnDestroy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus10ILifecycle9OnDestroyEv" title="Permalink to this definition">¶</a><br /></dt>
+<dt id="_CPPv4N5Lotus10ILifecycle12OnPreDestroyERK15PreDestroyEvent">
+<span id="_CPPv3N5Lotus10ILifecycle12OnPreDestroyERK15PreDestroyEvent"></span><span id="_CPPv2N5Lotus10ILifecycle12OnPreDestroyERK15PreDestroyEvent"></span><span id="Lotus::ILifecycle::OnPreDestroy__PreDestroyEventCR"></span><span class="target" id="classLotus_1_1ILifecycle_1a8d95ae415cba6ec92c0c09106d25db82"></span>void <code class="sig-name descname">OnPreDestroy</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="structLotus_1_1PreDestroyEvent.html#_CPPv4N5Lotus15PreDestroyEventE" title="Lotus::PreDestroyEvent">PreDestroyEvent</a> &amp;<em>event</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus10ILifecycle12OnPreDestroyERK15PreDestroyEvent" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp function">
-<dt id="_CPPv4N5Lotus10ILifecycle10OnShutdownEv">
-<span id="_CPPv3N5Lotus10ILifecycle10OnShutdownEv"></span><span id="_CPPv2N5Lotus10ILifecycle10OnShutdownEv"></span><span id="Lotus::ILifecycle::OnShutdown"></span><span class="target" id="classLotus_1_1ILifecycle_1ae999d1998f86ecde54f395bd5747700d"></span>void <code class="sig-name descname">OnShutdown</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus10ILifecycle10OnShutdownEv" title="Permalink to this definition">¶</a><br /></dt>
+<dt id="_CPPv4N5Lotus10ILifecycle9OnDestroyERK12DestroyEvent">
+<span id="_CPPv3N5Lotus10ILifecycle9OnDestroyERK12DestroyEvent"></span><span id="_CPPv2N5Lotus10ILifecycle9OnDestroyERK12DestroyEvent"></span><span id="Lotus::ILifecycle::OnDestroy__DestroyEventCR"></span><span class="target" id="classLotus_1_1ILifecycle_1a466688ef6d3295dd1e620f0430f1524e"></span>void <code class="sig-name descname">OnDestroy</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="structLotus_1_1DestroyEvent.html#_CPPv4N5Lotus12DestroyEventE" title="Lotus::DestroyEvent">DestroyEvent</a> &amp;<em>event</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus10ILifecycle9OnDestroyERK12DestroyEvent" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4N5Lotus10ILifecycle10OnShutdownERK13ShutdownEvent">
+<span id="_CPPv3N5Lotus10ILifecycle10OnShutdownERK13ShutdownEvent"></span><span id="_CPPv2N5Lotus10ILifecycle10OnShutdownERK13ShutdownEvent"></span><span id="Lotus::ILifecycle::OnShutdown__ShutdownEventCR"></span><span class="target" id="classLotus_1_1ILifecycle_1ab7aa9b0110ee633964f8974ecff8d4ef"></span>void <code class="sig-name descname">OnShutdown</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="structLotus_1_1ShutdownEvent.html#_CPPv4N5Lotus13ShutdownEventE" title="Lotus::ShutdownEvent">ShutdownEvent</a> &amp;<em>event</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus10ILifecycle10OnShutdownERK13ShutdownEvent" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </div>
@@ -247,7 +262,7 @@
   <div role="contentinfo">
     <p>
         
-        &copy; Copyright 2020, Mayant Mukul
+        &copy; Copyright 2020, Studio Centauri
 
     </p>
   </div>

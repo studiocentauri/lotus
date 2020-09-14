@@ -1,0 +1,68 @@
+
+.. _file_include_lotus_resources_Material.h:
+
+File Material.h
+===============
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include\lotus\resources\Material.h``)
+---------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_lotus_resources_Material.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``Texture.h`` (:ref:`file_include_lotus_resources_Texture.h`)
+
+- ``lotus/physics.h``
+
+- ``optional``
+
+- ``variant``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_lotus_resources_Model.h`
+
+- :ref:`file_include_lotus_resources_Shader.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_Lotus`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structLotus_1_1Material`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_Material_8h_1ae86fe9c4a845408e36e31f0fc546af1e`
+

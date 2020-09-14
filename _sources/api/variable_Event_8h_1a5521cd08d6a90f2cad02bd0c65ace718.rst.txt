@@ -1,0 +1,13 @@
+.. _exhale_variable_Event_8h_1a5521cd08d6a90f2cad02bd0c65ace718:
+
+Variable Lotus::L_KEY_RELEASE
+=============================
+
+- Defined in :ref:`file_include_lotus_events_Event.h`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: Lotus::L_KEY_RELEASE

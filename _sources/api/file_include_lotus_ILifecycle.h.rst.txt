@@ -1,0 +1,73 @@
+
+.. _file_include_lotus_ILifecycle.h:
+
+File ILifecycle.h
+=================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include\lotus\ILifecycle.h``)
+-------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_lotus_ILifecycle.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``events/Event.h``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_lotus_events_IWindow.h`
+
+- :ref:`file_include_lotus_Renderer.h`
+
+- :ref:`file_include_lotus_scene_SceneManager.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_Lotus`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structLotus_1_1BeginEvent`
+
+- :ref:`exhale_struct_structLotus_1_1DestroyEvent`
+
+- :ref:`exhale_struct_structLotus_1_1InitEvent`
+
+- :ref:`exhale_struct_structLotus_1_1PostUpdateEvent`
+
+- :ref:`exhale_struct_structLotus_1_1PreDestroyEvent`
+
+- :ref:`exhale_struct_structLotus_1_1PreUpdateEvent`
+
+- :ref:`exhale_struct_structLotus_1_1ShutdownEvent`
+
+- :ref:`exhale_struct_structLotus_1_1UpdateEvent`
+
+- :ref:`exhale_class_classLotus_1_1ILifecycle`
+

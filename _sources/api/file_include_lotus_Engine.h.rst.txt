@@ -8,7 +8,7 @@ File Engine.h
    :local:
    :backlinks: none
 
-Definition (``include/lotus/Engine.h``)
+Definition (``include\lotus\Engine.h``)
 ---------------------------------------
 
 
@@ -25,21 +25,19 @@ Includes
 --------
 
 
-- ``events/EventManager.h`` (:ref:`file_include_lotus_events_EventManager.h`)
+- ``Renderer.h`` (:ref:`file_include_lotus_Renderer.h`)
 
-- ``events/Input.h`` (:ref:`file_include_lotus_events_Input.h`)
+- ``events/EventManager.h``
+
+- ``events/Input.h``
 
 - ``lcommon.h`` (:ref:`file_include_lotus_lcommon.h`)
-
-- ``rendering/Renderer.h`` (:ref:`file_include_lotus_rendering_Renderer.h`)
 
 
 
 Included By
 -----------
 
-
-- :ref:`file_include_lotus_events_EventManager.h`
 
 - :ref:`file_include_lotus_lotus.h`
 
@@ -56,8 +54,6 @@ Namespaces
 Classes
 -------
 
-
-- :ref:`exhale_struct_structLotus_1_1LotusOp`
 
 - :ref:`exhale_class_classLotus_1_1Engine`
 

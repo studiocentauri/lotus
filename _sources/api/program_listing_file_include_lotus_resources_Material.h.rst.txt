@@ -1,0 +1,36 @@
+
+.. _program_listing_file_include_lotus_resources_Material.h:
+
+Program Listing for File Material.h
+===================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_include_lotus_resources_Material.h>` (``include\lotus\resources\Material.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #pragma once
+   
+   #include "lotus/physics.h"
+   #include "Texture.h"
+   
+   #include <variant>
+   #include <optional>
+   
+   namespace Lotus
+   {
+       struct Material
+       {
+           std::variant<Vector3f, Handle<Texture>> Albedo;
+           std::optional<Handle<Texture>> Normal;
+           float Roughness;
+           float Metallic;
+           float AO;
+       };
+   
+       LOADER(MaterialLoader, Material)
+       {
+           SRef<Material> Load(const std::string& path) const;
+       };
+   }

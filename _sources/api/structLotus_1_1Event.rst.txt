@@ -12,8 +12,15 @@ Inheritance Relationships
 Derived Types
 *************
 
+- ``public Lotus::BeginEvent`` (:ref:`exhale_struct_structLotus_1_1BeginEvent`)
+- ``public Lotus::DestroyEvent`` (:ref:`exhale_struct_structLotus_1_1DestroyEvent`)
+- ``public Lotus::InitEvent`` (:ref:`exhale_struct_structLotus_1_1InitEvent`)
 - ``public Lotus::KeyboardEvent`` (:ref:`exhale_struct_structLotus_1_1KeyboardEvent`)
 - ``public Lotus::MouseEvent`` (:ref:`exhale_struct_structLotus_1_1MouseEvent`)
+- ``public Lotus::PostUpdateEvent`` (:ref:`exhale_struct_structLotus_1_1PostUpdateEvent`)
+- ``public Lotus::PreDestroyEvent`` (:ref:`exhale_struct_structLotus_1_1PreDestroyEvent`)
+- ``public Lotus::PreUpdateEvent`` (:ref:`exhale_struct_structLotus_1_1PreUpdateEvent`)
+- ``public Lotus::ShutdownEvent`` (:ref:`exhale_struct_structLotus_1_1ShutdownEvent`)
 - ``public Lotus::UpdateEvent`` (:ref:`exhale_struct_structLotus_1_1UpdateEvent`)
 - ``public Lotus::WindowCloseEvent`` (:ref:`exhale_struct_structLotus_1_1WindowCloseEvent`)
 

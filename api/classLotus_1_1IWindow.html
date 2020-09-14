@@ -7,13 +7,14 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Class IWindow &mdash; Lotus 0.0.1 documentation</title>
+  <title>Class IWindow &mdash; Lotus 0.1.0 documentation</title>
   
 
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/navbar.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists\css\tree_view.css" type="text/css" />
 
   
   
@@ -31,16 +32,16 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/language_data.js"></script>
-        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
-        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script src="../_static/collapsible-lists\js\CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists\js\apply-collapsible-lists.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Class LShader" href="classLotus_1_1LShader.html" />
-    <link rel="prev" title="Class IResource" href="classLotus_1_1IResource.html" /> 
+    <link rel="next" title="Class Renderer" href="classLotus_1_1Renderer.html" />
+    <link rel="prev" title="Class Input" href="classLotus_1_1Input.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -54,9 +55,12 @@
           
 
           
-            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Lotus
+            <a href="../index.html">
           
 
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -85,9 +89,14 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents</span></p>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/ecs.html">Entity Component System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/renderer.html">Renderer</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="lotus.html">API Reference</a></li>
 </ul>
 
@@ -214,18 +223,18 @@
 <dd></dd></dl>
 
 <dl class="cpp function">
-<dt id="_CPPv4N5Lotus7IWindow12OnPostUpdateEv">
-<span id="_CPPv3N5Lotus7IWindow12OnPostUpdateEv"></span><span id="_CPPv2N5Lotus7IWindow12OnPostUpdateEv"></span><span id="Lotus::IWindow::OnPostUpdate"></span><span class="target" id="classLotus_1_1IWindow_1a47b49d07308e0f167cf8e9b4e769d633"></span>void <code class="sig-name descname">OnPostUpdate</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">override</em> = 0<a class="headerlink" href="#_CPPv4N5Lotus7IWindow12OnPostUpdateEv" title="Permalink to this definition">¶</a><br /></dt>
+<dt id="_CPPv4N5Lotus7IWindow12OnPostUpdateERK15PostUpdateEvent">
+<span id="_CPPv3N5Lotus7IWindow12OnPostUpdateERK15PostUpdateEvent"></span><span id="_CPPv2N5Lotus7IWindow12OnPostUpdateERK15PostUpdateEvent"></span><span id="Lotus::IWindow::OnPostUpdate__PostUpdateEventCR"></span><span class="target" id="classLotus_1_1IWindow_1a81ae950026dff00419601aa516cf580c"></span>void <code class="sig-name descname">OnPostUpdate</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="structLotus_1_1PostUpdateEvent.html#_CPPv4N5Lotus15PostUpdateEventE" title="Lotus::PostUpdateEvent">PostUpdateEvent</a> &amp;<em>event</em><span class="sig-paren">)</span> <em class="property">override</em> = 0<a class="headerlink" href="#_CPPv4N5Lotus7IWindow12OnPostUpdateERK15PostUpdateEvent" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp function">
-<dt id="_CPPv4N5Lotus7IWindow9OnDestroyEv">
-<span id="_CPPv3N5Lotus7IWindow9OnDestroyEv"></span><span id="_CPPv2N5Lotus7IWindow9OnDestroyEv"></span><span id="Lotus::IWindow::OnDestroy"></span><span class="target" id="classLotus_1_1IWindow_1ac1b89ad1bad10e31fe134d2fd4bec612"></span>void <code class="sig-name descname">OnDestroy</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">override</em> = 0<a class="headerlink" href="#_CPPv4N5Lotus7IWindow9OnDestroyEv" title="Permalink to this definition">¶</a><br /></dt>
+<dt id="_CPPv4N5Lotus7IWindow9OnDestroyERK12DestroyEvent">
+<span id="_CPPv3N5Lotus7IWindow9OnDestroyERK12DestroyEvent"></span><span id="_CPPv2N5Lotus7IWindow9OnDestroyERK12DestroyEvent"></span><span id="Lotus::IWindow::OnDestroy__DestroyEventCR"></span><span class="target" id="classLotus_1_1IWindow_1a262aae48429419a8b7719b6358f95530"></span>void <code class="sig-name descname">OnDestroy</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="structLotus_1_1DestroyEvent.html#_CPPv4N5Lotus12DestroyEventE" title="Lotus::DestroyEvent">DestroyEvent</a> &amp;<em>event</em><span class="sig-paren">)</span> <em class="property">override</em> = 0<a class="headerlink" href="#_CPPv4N5Lotus7IWindow9OnDestroyERK12DestroyEvent" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp function">
-<dt id="_CPPv4N5Lotus7IWindow10OnShutdownEv">
-<span id="_CPPv3N5Lotus7IWindow10OnShutdownEv"></span><span id="_CPPv2N5Lotus7IWindow10OnShutdownEv"></span><span id="Lotus::IWindow::OnShutdown"></span><span class="target" id="classLotus_1_1IWindow_1a1ee13475b728b99c8822a582794cc4c8"></span>void <code class="sig-name descname">OnShutdown</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">override</em> = 0<a class="headerlink" href="#_CPPv4N5Lotus7IWindow10OnShutdownEv" title="Permalink to this definition">¶</a><br /></dt>
+<dt id="_CPPv4N5Lotus7IWindow10OnShutdownERK13ShutdownEvent">
+<span id="_CPPv3N5Lotus7IWindow10OnShutdownERK13ShutdownEvent"></span><span id="_CPPv2N5Lotus7IWindow10OnShutdownERK13ShutdownEvent"></span><span id="Lotus::IWindow::OnShutdown__ShutdownEventCR"></span><span class="target" id="classLotus_1_1IWindow_1a3b1fc6caf377e54ba12d90fcd6d58df3"></span>void <code class="sig-name descname">OnShutdown</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="structLotus_1_1ShutdownEvent.html#_CPPv4N5Lotus13ShutdownEventE" title="Lotus::ShutdownEvent">ShutdownEvent</a> &amp;<em>event</em><span class="sig-paren">)</span> <em class="property">override</em> = 0<a class="headerlink" href="#_CPPv4N5Lotus7IWindow10OnShutdownERK13ShutdownEvent" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </div>
@@ -250,10 +259,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="classLotus_1_1LShader.html" class="btn btn-neutral float-right" title="Class LShader" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="classLotus_1_1Renderer.html" class="btn btn-neutral float-right" title="Class Renderer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="classLotus_1_1IResource.html" class="btn btn-neutral float-left" title="Class IResource" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="classLotus_1_1Input.html" class="btn btn-neutral float-left" title="Class Input" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -263,7 +272,7 @@
   <div role="contentinfo">
     <p>
         
-        &copy; Copyright 2020, Mayant Mukul
+        &copy; Copyright 2020, Studio Centauri
 
     </p>
   </div>

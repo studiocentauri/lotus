@@ -1,0 +1,16 @@
+.. _exhale_struct_structLotus_1_1CSkybox:
+
+Struct CSkybox
+==============
+
+- Defined in :ref:`file_include_lotus_components_rendering.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: Lotus::CSkybox
+   :members:
+   :protected-members:
+   :undoc-members:

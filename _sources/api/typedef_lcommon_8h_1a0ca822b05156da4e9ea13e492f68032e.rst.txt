@@ -1,0 +1,13 @@
+.. _exhale_typedef_lcommon_8h_1a0ca822b05156da4e9ea13e492f68032e:
+
+Typedef Lotus::SRef
+===================
+
+- Defined in :ref:`file_include_lotus_lcommon.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: Lotus::SRef

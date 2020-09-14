@@ -1,0 +1,13 @@
+.. _exhale_function_physics_8h_1a14c15fa7611b1fff9231f9ecee70e5f7:
+
+Function Lotus::valuePtr(const Matrix4f&)
+=========================================
+
+- Defined in :ref:`file_include_lotus_physics.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: Lotus::valuePtr(const Matrix4f&)

@@ -9,9 +9,10 @@ Template Class Singleton
 Inheritance Relationships
 -------------------------
 
-Derived Type
-************
+Derived Types
+*************
 
+- ``public Lotus::Config`` (:ref:`exhale_class_classLotus_1_1Config`)
 - ``public Lotus::EventManager`` (:ref:`exhale_class_classLotus_1_1EventManager`)
 
 

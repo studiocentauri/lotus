@@ -1,0 +1,13 @@
+.. _exhale_variable_Event_8h_1a236ef538639962bf4b599012e26b3ad6:
+
+Variable Lotus::L_KEY_W
+=======================
+
+- Defined in :ref:`file_include_lotus_events_Event.h`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: Lotus::L_KEY_W

@@ -1,0 +1,13 @@
+.. _exhale_function_Event_8h_1a027067e953b657dc705d2882f94d1322:
+
+Function Lotus::operator|
+=========================
+
+- Defined in :ref:`file_include_lotus_events_Event.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: Lotus::operator|(EEventCategory, EEventCategory)

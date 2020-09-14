@@ -1,0 +1,13 @@
+.. _exhale_function_physics_8h_1a0aee522b724c634c46d97e2e2ad030f5:
+
+Function Lotus::valuePtr(const Vector3f&)
+=========================================
+
+- Defined in :ref:`file_include_lotus_physics.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: Lotus::valuePtr(const Vector3f&)

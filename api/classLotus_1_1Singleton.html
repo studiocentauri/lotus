@@ -7,13 +7,14 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Template Class Singleton &mdash; Lotus 0.0.1 documentation</title>
+  <title>Template Class Singleton &mdash; Lotus 0.1.0 documentation</title>
   
 
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/navbar.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists\css\tree_view.css" type="text/css" />
 
   
   
@@ -31,15 +32,15 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/language_data.js"></script>
-        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
-        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script src="../_static/collapsible-lists\js\CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists\js\apply-collapsible-lists.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Class Texture" href="classLotus_1_1Texture.html" />
+    <link rel="next" title="Enum ERenderAPI" href="enum_lcommon_8h_1ae825578a38779239ed42a80e8048dfb3.html" />
     <link rel="prev" title="Class SceneManager" href="classLotus_1_1SceneManager.html" /> 
 </head>
 
@@ -54,9 +55,12 @@
           
 
           
-            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Lotus
+            <a href="../index.html">
           
 
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -85,9 +89,14 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents</span></p>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/ecs.html">Entity Component System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/renderer.html">Renderer</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="lotus.html">API Reference</a></li>
 </ul>
 
@@ -163,9 +172,10 @@
 </ul>
 <div class="section" id="inheritance-relationships">
 <h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="derived-type">
-<h3>Derived Type<a class="headerlink" href="#derived-type" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="derived-types">
+<h3>Derived Types<a class="headerlink" href="#derived-types" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Lotus::Config</span></code> (<a class="reference internal" href="classLotus_1_1Config.html#exhale-class-classlotus-1-1config"><span class="std std-ref">Class Config</span></a>)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Lotus::EventManager</span></code> (<a class="reference internal" href="classLotus_1_1EventManager.html#exhale-class-classlotus-1-1eventmanager"><span class="std std-ref">Class EventManager</span></a>)</p></li>
 </ul>
 </div>
@@ -175,7 +185,14 @@
 <dl class="cpp class">
 <dt id="_CPPv4I0EN5Lotus9SingletonE">
 <span id="_CPPv3I0EN5Lotus9SingletonE"></span><span id="_CPPv2I0EN5Lotus9SingletonE"></span>template&lt;typename <code class="sig-name descname">T</code>&gt;<br /><span class="target" id="classLotus_1_1Singleton"></span><em class="property">class </em><code class="sig-prename descclassname">Lotus<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">Singleton</code><a class="headerlink" href="#_CPPv4I0EN5Lotus9SingletonE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Subclassed by <a class="reference internal" href="classLotus_1_1EventManager.html#classLotus_1_1EventManager"><span class="std std-ref">Lotus::EventManager</span></a></p>
+<dd><p>Base class that implements singleton behavior with CRTP. <dl class="simple">
+<dt><strong>Template Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">T</span></code>: Class that is to be defined as a singleton </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+<p>Subclassed by <a class="reference internal" href="classLotus_1_1Config.html#classLotus_1_1Config"><span class="std std-ref">Lotus::Config</span></a>, <a class="reference internal" href="classLotus_1_1EventManager.html#classLotus_1_1EventManager"><span class="std std-ref">Lotus::EventManager</span></a></p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Public Functions</p>
 <dl class="cpp function">
@@ -193,7 +210,7 @@
 <p class="breathe-sectiondef-title rubric">Public Static Functions</p>
 <dl class="cpp function">
 <dt id="_CPPv4N5Lotus9Singleton3GetEv">
-<span id="_CPPv3N5Lotus9Singleton3GetEv"></span><span id="_CPPv2N5Lotus9Singleton3GetEv"></span><span id="Lotus::Singleton::Get"></span><span class="target" id="classLotus_1_1Singleton_1aad832e89a2d484248523f52d8c7b6056"></span><a class="reference internal" href="#_CPPv4I0EN5Lotus9SingletonE" title="Lotus::Singleton::T">T</a> &amp;<code class="sig-name descname">Get</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">noexcept</em>(<code class="sig-name descname">value</code>)<a class="headerlink" href="#_CPPv4N5Lotus9Singleton3GetEv" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv3N5Lotus9Singleton3GetEv"></span><span id="_CPPv2N5Lotus9Singleton3GetEv"></span><span id="Lotus::Singleton::Get"></span><span class="target" id="classLotus_1_1Singleton_1a6688d70304f5736daf7a78b21134bdf3"></span><a class="reference internal" href="#_CPPv4I0EN5Lotus9SingletonE" title="Lotus::Singleton::T">T</a> &amp;<code class="sig-name descname">Get</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus9Singleton3GetEv" title="Permalink to this definition">¶</a><br /></dt>
 <dd><p>Get an instance to the class, creating it if none exist. <dl class="simple">
 <dt><strong>Return</strong></dt><dd><p>A reference to the active instance </p>
 </dd>
@@ -228,7 +245,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="classLotus_1_1Texture.html" class="btn btn-neutral float-right" title="Class Texture" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="enum_lcommon_8h_1ae825578a38779239ed42a80e8048dfb3.html" class="btn btn-neutral float-right" title="Enum ERenderAPI" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="classLotus_1_1SceneManager.html" class="btn btn-neutral float-left" title="Class SceneManager" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -241,7 +258,7 @@
   <div role="contentinfo">
     <p>
         
-        &copy; Copyright 2020, Mayant Mukul
+        &copy; Copyright 2020, Studio Centauri
 
     </p>
   </div>

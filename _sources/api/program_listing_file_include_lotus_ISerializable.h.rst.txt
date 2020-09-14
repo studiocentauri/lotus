@@ -1,0 +1,30 @@
+
+.. _program_listing_file_include_lotus_ISerializable.h:
+
+Program Listing for File ISerializable.h
+========================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_include_lotus_ISerializable.h>` (``include\lotus\ISerializable.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #pragma once
+   
+   #include "lotus/lcommon.h"
+   
+   namespace Lotus
+   {
+       using OArchive = cereal::JSONOutputArchive;
+       using IArchive = cereal::JSONInputArchive;
+   
+   #define FIELD(x, y) cereal::make_nvp(x, y)
+   
+       struct ISerializable
+       {
+           virtual ~ISerializable() = default;
+           virtual void Save(OArchive& archive) const = 0;
+           virtual void Load(IArchive& archive) = 0;
+       };
+   }

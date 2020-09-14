@@ -8,7 +8,7 @@ File SceneManager.h
    :local:
    :backlinks: none
 
-Definition (``include/lotus/scene/SceneManager.h``)
+Definition (``include\lotus\scene\SceneManager.h``)
 ---------------------------------------------------
 
 
@@ -27,7 +27,9 @@ Includes
 
 - ``Scene.h`` (:ref:`file_include_lotus_scene_Scene.h`)
 
-- ``lotus/lcommon.h`` (:ref:`file_include_lotus_lcommon.h`)
+- ``lotus/ILifecycle.h``
+
+- ``lotus/lcommon.h``
 
 
 

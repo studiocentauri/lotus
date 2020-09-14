@@ -4,7 +4,7 @@
 Program Listing for File lcommon.h
 ==================================
 
-|exhale_lsh| :ref:`Return to documentation for file <file_include_lotus_lcommon.h>` (``include/lotus/lcommon.h``)
+|exhale_lsh| :ref:`Return to documentation for file <file_include_lotus_lcommon.h>` (``include\lotus\lcommon.h``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -14,6 +14,18 @@ Program Listing for File lcommon.h
    #pragma once
    
    #include <memory>
+   #include <fstream>
+   
+   #include "lotus_export.h"
+   #include "lotus/internal/entt/entt.hpp"
+   #include "lotus/internal/cereal/cereal.hpp"
+   #include "lotus/internal/cereal/archives/json.hpp"
+   #include "lotus/internal/nlohmann/json.hpp"
+   
+   
+   // TODO: Convenient, but not very readable I guess.
+   #define LOADER(x, y) struct LOTUS_API x final: entt::resource_loader<x, y>
+   #define GET(x) x::Get()
    
    namespace Lotus
    {
@@ -23,6 +35,9 @@ Program Listing for File lcommon.h
        template<typename T>
        using SRef = std::shared_ptr<T>;
    
+       template<typename T>
+       using Handle = entt::resource_handle<T>;
+   
        enum class ERenderAPI
        {
            OPEN_GL,
@@ -31,16 +46,16 @@ Program Listing for File lcommon.h
        };
    
        template<typename T>
-       class Singleton
+       class LOTUS_API Singleton
        {
        public:
            Singleton(const Singleton&) = delete;
    
            Singleton& operator=(const Singleton&) = delete;
    
-           static T& Get() noexcept(std::is_nothrow_constructible<T>::value)
+           static T& Get()
            {
-               static T instance;
+               static T instance;  // NOLINT(clang-diagnostic-exit-time-destructors)
                return instance;
            }
    
@@ -48,33 +63,5 @@ Program Listing for File lcommon.h
            Singleton() noexcept = default;
    
            virtual ~Singleton() = default;
-       };
-   
-       class ILifecycle
-       {
-       public:
-           [[maybe_unused]] virtual void OnInit()
-           {}
-   
-           [[maybe_unused]] virtual void OnBegin()
-           {}
-   
-           [[maybe_unused]] virtual void OnPreUpdate()
-           {}
-   
-           [[maybe_unused]] virtual void OnUpdate(float delta)
-           {}
-   
-           [[maybe_unused]] virtual void OnPostUpdate()
-           {}
-   
-           [[maybe_unused]] virtual void OnPreDestroy()
-           {}
-   
-           [[maybe_unused]] virtual void OnDestroy()
-           {}
-   
-           [[maybe_unused]] virtual void OnShutdown()
-           {}
        };
    }

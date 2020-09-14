@@ -1,0 +1,13 @@
+.. _exhale_function_Material_8h_1ae86fe9c4a845408e36e31f0fc546af1e:
+
+Function Lotus::LOADER(MaterialLoader, Material)
+================================================
+
+- Defined in :ref:`file_include_lotus_resources_Material.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: Lotus::LOADER(MaterialLoader, Material)

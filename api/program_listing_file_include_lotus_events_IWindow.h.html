@@ -7,13 +7,14 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Program Listing for File IWindow.h &mdash; Lotus 0.0.1 documentation</title>
+  <title>Program Listing for File IWindow.h &mdash; Lotus 0.1.0 documentation</title>
   
 
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/navbar.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists\css\tree_view.css" type="text/css" />
 
   
   
@@ -31,8 +32,8 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/language_data.js"></script>
-        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
-        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script src="../_static/collapsible-lists\js\CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists\js\apply-collapsible-lists.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -52,9 +53,12 @@
           
 
           
-            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Lotus
+            <a href="../index.html">
           
 
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -83,9 +87,14 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents</span></p>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/ecs.html">Entity Component System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/renderer.html">Renderer</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="lotus.html">API Reference</a></li>
 </ul>
 
@@ -154,7 +163,7 @@
             
   <div class="section" id="program-listing-for-file-iwindow-h">
 <span id="program-listing-file-include-lotus-events-iwindow-h"></span><h1>Program Listing for File IWindow.h<a class="headerlink" href="#program-listing-for-file-iwindow-h" title="Permalink to this headline">¶</a></h1>
-<p>↰ <a class="reference internal" href="file_include_lotus_events_IWindow.h.html#file-include-lotus-events-iwindow-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">include/lotus/events/IWindow.h</span></code>)</p>
+<p>↰ <a class="reference internal" href="file_include_lotus_events_IWindow.h.html#file-include-lotus-events-iwindow-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">include\lotus\events\IWindow.h</span></code>)</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#pragma once</span>
 
 <span class="cp">#include</span> <span class="cpf">&quot;lotus/events/Event.h&quot;</span><span class="cp"></span>
@@ -163,9 +172,11 @@
 <span class="cp">#include</span> <span class="cpf">&lt;functional&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;utility&gt;</span><span class="cp"></span>
 
+<span class="cp">#include</span> <span class="cpf">&quot;lotus/ILifecycle.h&quot;</span><span class="cp"></span>
+
 <span class="k">namespace</span> <span class="n">Lotus</span>
 <span class="p">{</span>
-    <span class="k">struct</span> <span class="n">WindowOp</span>
+    <span class="k">struct</span> <span class="nc">WindowOp</span>
     <span class="p">{</span>
         <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">Title</span> <span class="o">=</span> <span class="s">&quot;Lotus&quot;</span><span class="p">;</span>
 
@@ -181,26 +192,21 @@
     <span class="k">protected</span><span class="o">:</span>
         <span class="n">WindowOp</span> <span class="n">_options</span><span class="p">;</span>
     <span class="k">public</span><span class="o">:</span>
-        <span class="n">IWindow</span><span class="p">(</span><span class="n">WindowOp</span> <span class="n">options</span><span class="p">)</span> <span class="o">:</span> <span class="n">_options</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">move</span><span class="p">(</span><span class="n">options</span><span class="p">))</span>
+        <span class="k">explicit</span> <span class="n">IWindow</span><span class="p">(</span><span class="n">WindowOp</span> <span class="n">options</span><span class="p">)</span> <span class="o">:</span> <span class="n">_options</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">move</span><span class="p">(</span><span class="n">options</span><span class="p">))</span>
         <span class="p">{}</span>
 
         <span class="k">virtual</span> <span class="kt">void</span> <span class="n">SetVSync</span><span class="p">(</span><span class="kt">bool</span> <span class="n">enabled</span><span class="p">)</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 
-        <span class="k">virtual</span> <span class="kt">bool</span> <span class="nf">IsVSync</span><span class="p">()</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span> <span class="k">virtual</span> <span class="kt">bool</span> <span class="n">IsVSync</span><span class="p">()</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span> <span class="k">virtual</span> <span class="kt">uint32_t</span> <span class="n">GetWidth</span><span class="p">()</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span> <span class="k">virtual</span> <span class="kt">uint32_t</span> <span class="n">GetHeight</span><span class="p">()</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="p">[[</span><span class="n">nodiscard</span><span class="p">]]</span> <span class="k">virtual</span> <span class="kt">void</span><span class="o">*</span> <span class="n">GetNativeWindow</span><span class="p">()</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 
-        <span class="k">virtual</span> <span class="kt">uint32_t</span> <span class="nf">GetWidth</span><span class="p">()</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="k">virtual</span> <span class="kt">void</span> <span class="n">SetEventCallback</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">function</span><span class="o">&lt;</span><span class="kt">void</span><span class="p">(</span><span class="n">Event</span><span class="o">&amp;</span><span class="p">)</span><span class="o">&gt;&amp;</span> <span class="n">callback</span><span class="p">)</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 
-        <span class="k">virtual</span> <span class="kt">uint32_t</span> <span class="nf">GetHeight</span><span class="p">()</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-
-        <span class="k">virtual</span> <span class="kt">void</span><span class="o">*</span> <span class="nf">GetNativeWindow</span><span class="p">()</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-
-        <span class="k">virtual</span> <span class="kt">void</span> <span class="nf">SetEventCallback</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">function</span><span class="o">&lt;</span><span class="kt">void</span><span class="p">(</span><span class="n">Event</span><span class="o">&amp;</span><span class="p">)</span><span class="o">&gt;&amp;</span> <span class="n">callback</span><span class="p">)</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-
-        <span class="kt">void</span> <span class="nf">OnPostUpdate</span><span class="p">()</span> <span class="k">override</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-
-        <span class="kt">void</span> <span class="nf">OnDestroy</span><span class="p">()</span> <span class="k">override</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-
-        <span class="kt">void</span> <span class="nf">OnShutdown</span><span class="p">()</span> <span class="k">override</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="kt">void</span> <span class="nf">OnPostUpdate</span><span class="p">(</span><span class="k">const</span> <span class="n">PostUpdateEvent</span><span class="o">&amp;</span> <span class="n">event</span><span class="p">)</span> <span class="k">override</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="kt">void</span> <span class="nf">OnDestroy</span><span class="p">(</span><span class="k">const</span> <span class="n">DestroyEvent</span><span class="o">&amp;</span> <span class="n">event</span><span class="p">)</span> <span class="k">override</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="kt">void</span> <span class="nf">OnShutdown</span><span class="p">(</span><span class="k">const</span> <span class="n">ShutdownEvent</span><span class="o">&amp;</span> <span class="n">event</span><span class="p">)</span> <span class="k">override</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
     <span class="p">};</span>
 <span class="p">}</span>
 </pre></div>
@@ -219,7 +225,7 @@
   <div role="contentinfo">
     <p>
         
-        &copy; Copyright 2020, Mayant Mukul
+        &copy; Copyright 2020, Studio Centauri
 
     </p>
   </div>

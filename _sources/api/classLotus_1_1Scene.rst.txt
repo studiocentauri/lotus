@@ -6,6 +6,15 @@ Class Scene
 - Defined in :ref:`file_include_lotus_scene_Scene.h`
 
 
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Lotus::ISerializable`` (:ref:`exhale_struct_structLotus_1_1ISerializable`)
+
+
 Class Documentation
 -------------------
 

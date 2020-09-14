@@ -1,0 +1,13 @@
+.. _exhale_define_Texture_8h_1abe284e6dd85278d8672eae96f282eddd:
+
+Define RGBA
+===========
+
+- Defined in :ref:`file_include_lotus_resources_Texture.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: RGBA

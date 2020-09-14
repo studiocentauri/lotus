@@ -7,13 +7,14 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Struct Event &mdash; Lotus 0.0.1 documentation</title>
+  <title>Struct Event &mdash; Lotus 0.1.0 documentation</title>
   
 
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/navbar.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists\css\tree_view.css" type="text/css" />
 
   
   
@@ -31,16 +32,16 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/language_data.js"></script>
-        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
-        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script src="../_static/collapsible-lists\js\CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists\js\apply-collapsible-lists.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Struct KeyboardEvent" href="structLotus_1_1KeyboardEvent.html" />
-    <link rel="prev" title="Struct CTransform" href="structLotus_1_1CTransform.html" /> 
+    <link rel="next" title="Struct InitEvent" href="structLotus_1_1InitEvent.html" />
+    <link rel="prev" title="Struct DestroyEvent" href="structLotus_1_1DestroyEvent.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -54,9 +55,12 @@
           
 
           
-            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Lotus
+            <a href="../index.html">
           
 
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -85,9 +89,14 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents</span></p>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/ecs.html">Entity Component System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/renderer.html">Renderer</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="lotus.html">API Reference</a></li>
 </ul>
 
@@ -166,8 +175,15 @@
 <div class="section" id="derived-types">
 <h3>Derived Types<a class="headerlink" href="#derived-types" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Lotus::BeginEvent</span></code> (<a class="reference internal" href="structLotus_1_1BeginEvent.html#exhale-struct-structlotus-1-1beginevent"><span class="std std-ref">Struct BeginEvent</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Lotus::DestroyEvent</span></code> (<a class="reference internal" href="structLotus_1_1DestroyEvent.html#exhale-struct-structlotus-1-1destroyevent"><span class="std std-ref">Struct DestroyEvent</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Lotus::InitEvent</span></code> (<a class="reference internal" href="structLotus_1_1InitEvent.html#exhale-struct-structlotus-1-1initevent"><span class="std std-ref">Struct InitEvent</span></a>)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Lotus::KeyboardEvent</span></code> (<a class="reference internal" href="structLotus_1_1KeyboardEvent.html#exhale-struct-structlotus-1-1keyboardevent"><span class="std std-ref">Struct KeyboardEvent</span></a>)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Lotus::MouseEvent</span></code> (<a class="reference internal" href="structLotus_1_1MouseEvent.html#exhale-struct-structlotus-1-1mouseevent"><span class="std std-ref">Struct MouseEvent</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Lotus::PostUpdateEvent</span></code> (<a class="reference internal" href="structLotus_1_1PostUpdateEvent.html#exhale-struct-structlotus-1-1postupdateevent"><span class="std std-ref">Struct PostUpdateEvent</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Lotus::PreDestroyEvent</span></code> (<a class="reference internal" href="structLotus_1_1PreDestroyEvent.html#exhale-struct-structlotus-1-1predestroyevent"><span class="std std-ref">Struct PreDestroyEvent</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Lotus::PreUpdateEvent</span></code> (<a class="reference internal" href="structLotus_1_1PreUpdateEvent.html#exhale-struct-structlotus-1-1preupdateevent"><span class="std std-ref">Struct PreUpdateEvent</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Lotus::ShutdownEvent</span></code> (<a class="reference internal" href="structLotus_1_1ShutdownEvent.html#exhale-struct-structlotus-1-1shutdownevent"><span class="std std-ref">Struct ShutdownEvent</span></a>)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Lotus::UpdateEvent</span></code> (<a class="reference internal" href="structLotus_1_1UpdateEvent.html#exhale-struct-structlotus-1-1updateevent"><span class="std std-ref">Struct UpdateEvent</span></a>)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Lotus::WindowCloseEvent</span></code> (<a class="reference internal" href="structLotus_1_1WindowCloseEvent.html#exhale-struct-structlotus-1-1windowcloseevent"><span class="std std-ref">Struct WindowCloseEvent</span></a>)</p></li>
 </ul>
@@ -178,17 +194,17 @@
 <dl class="cpp struct">
 <dt id="_CPPv4N5Lotus5EventE">
 <span id="_CPPv3N5Lotus5EventE"></span><span id="_CPPv2N5Lotus5EventE"></span><span id="Lotus::Event"></span><span class="target" id="structLotus_1_1Event"></span><em class="property">struct </em><code class="sig-prename descclassname">Lotus<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">Event</code><a class="headerlink" href="#_CPPv4N5Lotus5EventE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Subclassed by <a class="reference internal" href="structLotus_1_1KeyboardEvent.html#structLotus_1_1KeyboardEvent"><span class="std std-ref">Lotus::KeyboardEvent</span></a>, <a class="reference internal" href="structLotus_1_1MouseEvent.html#structLotus_1_1MouseEvent"><span class="std std-ref">Lotus::MouseEvent</span></a>, <a class="reference internal" href="structLotus_1_1UpdateEvent.html#structLotus_1_1UpdateEvent"><span class="std std-ref">Lotus::UpdateEvent</span></a>, <a class="reference internal" href="structLotus_1_1WindowCloseEvent.html#structLotus_1_1WindowCloseEvent"><span class="std std-ref">Lotus::WindowCloseEvent</span></a></p>
+<dd><p>Subclassed by <a class="reference internal" href="structLotus_1_1BeginEvent.html#structLotus_1_1BeginEvent"><span class="std std-ref">Lotus::BeginEvent</span></a>, <a class="reference internal" href="structLotus_1_1DestroyEvent.html#structLotus_1_1DestroyEvent"><span class="std std-ref">Lotus::DestroyEvent</span></a>, <a class="reference internal" href="structLotus_1_1InitEvent.html#structLotus_1_1InitEvent"><span class="std std-ref">Lotus::InitEvent</span></a>, <a class="reference internal" href="structLotus_1_1KeyboardEvent.html#structLotus_1_1KeyboardEvent"><span class="std std-ref">Lotus::KeyboardEvent</span></a>, <a class="reference internal" href="structLotus_1_1MouseEvent.html#structLotus_1_1MouseEvent"><span class="std std-ref">Lotus::MouseEvent</span></a>, <a class="reference internal" href="structLotus_1_1PostUpdateEvent.html#structLotus_1_1PostUpdateEvent"><span class="std std-ref">Lotus::PostUpdateEvent</span></a>, <a class="reference internal" href="structLotus_1_1PreDestroyEvent.html#structLotus_1_1PreDestroyEvent"><span class="std std-ref">Lotus::PreDestroyEvent</span></a>, <a class="reference internal" href="structLotus_1_1PreUpdateEvent.html#structLotus_1_1PreUpdateEvent"><span class="std std-ref">Lotus::PreUpdateEvent</span></a>, <a class="reference internal" href="structLotus_1_1ShutdownEvent.html#structLotus_1_1ShutdownEvent"><span class="std std-ref">Lotus::ShutdownEvent</span></a>, <a class="reference internal" href="structLotus_1_1UpdateEvent.html#structLotus_1_1UpdateEvent"><span class="std std-ref">Lotus::UpdateEvent</span></a>, <a class="reference internal" href="structLotus_1_1WindowCloseEvent.html#structLotus_1_1WindowCloseEvent"><span class="std std-ref">Lotus::WindowCloseEvent</span></a></p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Public Members</p>
 <dl class="cpp var">
 <dt id="_CPPv4N5Lotus5Event8CategoryE">
-<span id="_CPPv3N5Lotus5Event8CategoryE"></span><span id="_CPPv2N5Lotus5Event8CategoryE"></span><span id="Lotus::Event::Category__EEventCategory"></span><span class="target" id="structLotus_1_1Event_1ab24ac1b54a4ba1f7d365dcf66171b428"></span><a class="reference internal" href="enum_namespaceLotus_1af409efc59ac393913dd22929ded8d88a.html#_CPPv4N5Lotus14EEventCategoryE" title="Lotus::EEventCategory">EEventCategory</a> <code class="sig-name descname">Category</code> = <a class="reference internal" href="enum_namespaceLotus_1af409efc59ac393913dd22929ded8d88a.html#_CPPv4N5Lotus14EEventCategoryE" title="Lotus::EEventCategory">EEventCategory</a>::<a class="reference internal" href="enum_namespaceLotus_1af409efc59ac393913dd22929ded8d88a.html#_CPPv4N5Lotus14EEventCategory4NONEE" title="Lotus::EEventCategory::NONE">NONE</a><a class="headerlink" href="#_CPPv4N5Lotus5Event8CategoryE" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv3N5Lotus5Event8CategoryE"></span><span id="_CPPv2N5Lotus5Event8CategoryE"></span><span id="Lotus::Event::Category__EEventCategory"></span><span class="target" id="structLotus_1_1Event_1ab24ac1b54a4ba1f7d365dcf66171b428"></span>EEventCategory <code class="sig-name descname">Category</code> = EEventCategory::NONE<a class="headerlink" href="#_CPPv4N5Lotus5Event8CategoryE" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp var">
 <dt id="_CPPv4N5Lotus5Event4TypeE">
-<span id="_CPPv3N5Lotus5Event4TypeE"></span><span id="_CPPv2N5Lotus5Event4TypeE"></span><span id="Lotus::Event::Type__EEventType"></span><span class="target" id="structLotus_1_1Event_1aab6f244133a1b8e2730409d36ed35fce"></span><a class="reference internal" href="enum_namespaceLotus_1a95978c94165d403681026eb8f30f1797.html#_CPPv4N5Lotus10EEventTypeE" title="Lotus::EEventType">EEventType</a> <code class="sig-name descname">Type</code> = <a class="reference internal" href="enum_namespaceLotus_1a95978c94165d403681026eb8f30f1797.html#_CPPv4N5Lotus10EEventTypeE" title="Lotus::EEventType">EEventType</a>::<a class="reference internal" href="enum_namespaceLotus_1a95978c94165d403681026eb8f30f1797.html#_CPPv4N5Lotus10EEventType4NONEE" title="Lotus::EEventType::NONE">NONE</a><a class="headerlink" href="#_CPPv4N5Lotus5Event4TypeE" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv3N5Lotus5Event4TypeE"></span><span id="_CPPv2N5Lotus5Event4TypeE"></span><span id="Lotus::Event::Type__EEventType"></span><span class="target" id="structLotus_1_1Event_1aab6f244133a1b8e2730409d36ed35fce"></span>EEventType <code class="sig-name descname">Type</code> = EEventType::NONE<a class="headerlink" href="#_CPPv4N5Lotus5Event4TypeE" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </div>
@@ -205,10 +221,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="structLotus_1_1KeyboardEvent.html" class="btn btn-neutral float-right" title="Struct KeyboardEvent" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="structLotus_1_1InitEvent.html" class="btn btn-neutral float-right" title="Struct InitEvent" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="structLotus_1_1CTransform.html" class="btn btn-neutral float-left" title="Struct CTransform" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="structLotus_1_1DestroyEvent.html" class="btn btn-neutral float-left" title="Struct DestroyEvent" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -218,7 +234,7 @@
   <div role="contentinfo">
     <p>
         
-        &copy; Copyright 2020, Mayant Mukul
+        &copy; Copyright 2020, Studio Centauri
 
     </p>
   </div>

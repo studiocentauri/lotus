@@ -1,0 +1,16 @@
+.. _exhale_struct_structLotus_1_1Texture:
+
+Struct Texture
+==============
+
+- Defined in :ref:`file_include_lotus_resources_Texture.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: Lotus::Texture
+   :members:
+   :protected-members:
+   :undoc-members:

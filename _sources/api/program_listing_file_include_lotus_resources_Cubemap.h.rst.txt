@@ -1,0 +1,32 @@
+
+.. _program_listing_file_include_lotus_resources_Cubemap.h:
+
+Program Listing for File Cubemap.h
+==================================
+
+|exhale_lsh| :ref:`Return to documentation for file <file_include_lotus_resources_Cubemap.h>` (``include\lotus\resources\Cubemap.h``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+.. code-block:: cpp
+
+   #pragma once
+   
+   #include "lotus/lcommon.h"
+   
+   namespace Lotus
+   {
+       struct LOTUS_API Cubemap
+       {
+           unsigned int ID = 0;
+           unsigned int VAO = 0;
+           unsigned int VBO = 0;
+       };
+   
+       LOADER(CubemapLoader, Cubemap)
+       {
+           SRef<Cubemap> Load(const std::vector<std::string>& faces) const;
+   
+           SRef<Cubemap> Load(const std::string& hdri) const;
+       };
+   }

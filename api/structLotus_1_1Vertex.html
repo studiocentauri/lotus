@@ -7,13 +7,14 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Struct Vertex &mdash; Lotus 0.0.1 documentation</title>
+  <title>Struct Vertex &mdash; Lotus 0.1.0 documentation</title>
   
 
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/navbar.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists\css\tree_view.css" type="text/css" />
 
   
   
@@ -31,8 +32,8 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/language_data.js"></script>
-        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
-        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script src="../_static/collapsible-lists\js\CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists\js\apply-collapsible-lists.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -54,9 +55,12 @@
           
 
           
-            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Lotus
+            <a href="../index.html">
           
 
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -85,9 +89,14 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents</span></p>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/ecs.html">Entity Component System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/renderer.html">Renderer</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="lotus.html">API Reference</a></li>
 </ul>
 
@@ -159,7 +168,7 @@
   <div class="section" id="struct-vertex">
 <span id="exhale-struct-structlotus-1-1vertex"></span><h1>Struct Vertex<a class="headerlink" href="#struct-vertex" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><p>Defined in <a class="reference internal" href="file_include_lotus_resources.h.html#file-include-lotus-resources-h"><span class="std std-ref">File resources.h</span></a></p></li>
+<li><p>Defined in <a class="reference internal" href="file_include_lotus_resources_Model.h.html#file-include-lotus-resources-model-h"><span class="std std-ref">File Model.h</span></a></p></li>
 </ul>
 <div class="section" id="struct-documentation">
 <h2>Struct Documentation<a class="headerlink" href="#struct-documentation" title="Permalink to this headline">¶</a></h2>
@@ -169,18 +178,23 @@
 <dd><div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Public Members</p>
 <dl class="cpp var">
-<dt id="_CPPv4N5Lotus6Vertex8positionE">
-<span id="_CPPv3N5Lotus6Vertex8positionE"></span><span id="_CPPv2N5Lotus6Vertex8positionE"></span><span id="Lotus::Vertex::position__Vector3f"></span><span class="target" id="structLotus_1_1Vertex_1ae2d2f30219eb396bbd3abdac233d56cc"></span><a class="reference internal" href="typedef_physics_8h_1abbfe7ad4e3666fed6601f0532d9c2c6a.html#_CPPv48Vector3f" title="Vector3f">Vector3f</a> <code class="sig-name descname">position</code><a class="headerlink" href="#_CPPv4N5Lotus6Vertex8positionE" title="Permalink to this definition">¶</a><br /></dt>
+<dt id="_CPPv4N5Lotus6Vertex8PositionE">
+<span id="_CPPv3N5Lotus6Vertex8PositionE"></span><span id="_CPPv2N5Lotus6Vertex8PositionE"></span><span id="Lotus::Vertex::Position__Vector3f"></span><span class="target" id="structLotus_1_1Vertex_1a9f0c2552cf31098031db38b934f5e119"></span><a class="reference internal" href="typedef_physics_8h_1abbfe7ad4e3666fed6601f0532d9c2c6a.html#_CPPv48Vector3f" title="Vector3f">Vector3f</a> <code class="sig-name descname">Position</code><a class="headerlink" href="#_CPPv4N5Lotus6Vertex8PositionE" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp var">
-<dt id="_CPPv4N5Lotus6Vertex6normalE">
-<span id="_CPPv3N5Lotus6Vertex6normalE"></span><span id="_CPPv2N5Lotus6Vertex6normalE"></span><span id="Lotus::Vertex::normal__Vector3f"></span><span class="target" id="structLotus_1_1Vertex_1a0d097c139861ea663d34d1dba25eab27"></span><a class="reference internal" href="typedef_physics_8h_1abbfe7ad4e3666fed6601f0532d9c2c6a.html#_CPPv48Vector3f" title="Vector3f">Vector3f</a> <code class="sig-name descname">normal</code><a class="headerlink" href="#_CPPv4N5Lotus6Vertex6normalE" title="Permalink to this definition">¶</a><br /></dt>
+<dt id="_CPPv4N5Lotus6Vertex6NormalE">
+<span id="_CPPv3N5Lotus6Vertex6NormalE"></span><span id="_CPPv2N5Lotus6Vertex6NormalE"></span><span id="Lotus::Vertex::Normal__Vector3f"></span><span class="target" id="structLotus_1_1Vertex_1a401e7a8f12448ce698842048f49446d2"></span><a class="reference internal" href="typedef_physics_8h_1abbfe7ad4e3666fed6601f0532d9c2c6a.html#_CPPv48Vector3f" title="Vector3f">Vector3f</a> <code class="sig-name descname">Normal</code><a class="headerlink" href="#_CPPv4N5Lotus6Vertex6NormalE" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp var">
-<dt id="_CPPv4N5Lotus6Vertex9texCoordsE">
-<span id="_CPPv3N5Lotus6Vertex9texCoordsE"></span><span id="_CPPv2N5Lotus6Vertex9texCoordsE"></span><span id="Lotus::Vertex::texCoords__Vector2f"></span><span class="target" id="structLotus_1_1Vertex_1aa6dad5da8f9900a653b1c2c0cf3fd580"></span><a class="reference internal" href="typedef_physics_8h_1aacfb3298d638469bf9ebb3b8a0399453.html#_CPPv48Vector2f" title="Vector2f">Vector2f</a> <code class="sig-name descname">texCoords</code><a class="headerlink" href="#_CPPv4N5Lotus6Vertex9texCoordsE" title="Permalink to this definition">¶</a><br /></dt>
+<dt id="_CPPv4N5Lotus6Vertex9TexCoordsE">
+<span id="_CPPv3N5Lotus6Vertex9TexCoordsE"></span><span id="_CPPv2N5Lotus6Vertex9TexCoordsE"></span><span id="Lotus::Vertex::TexCoords__Vector2f"></span><span class="target" id="structLotus_1_1Vertex_1a8fc22208935f49b1c490d0958b738933"></span><a class="reference internal" href="typedef_physics_8h_1aacfb3298d638469bf9ebb3b8a0399453.html#_CPPv48Vector2f" title="Vector2f">Vector2f</a> <code class="sig-name descname">TexCoords</code><a class="headerlink" href="#_CPPv4N5Lotus6Vertex9TexCoordsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt id="_CPPv4N5Lotus6Vertex7TangentE">
+<span id="_CPPv3N5Lotus6Vertex7TangentE"></span><span id="_CPPv2N5Lotus6Vertex7TangentE"></span><span id="Lotus::Vertex::Tangent__Vector3f"></span><span class="target" id="structLotus_1_1Vertex_1a3bd8776a6dbf757068caf38e63b3584f"></span><a class="reference internal" href="typedef_physics_8h_1abbfe7ad4e3666fed6601f0532d9c2c6a.html#_CPPv48Vector3f" title="Vector3f">Vector3f</a> <code class="sig-name descname">Tangent</code><a class="headerlink" href="#_CPPv4N5Lotus6Vertex7TangentE" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </div>
@@ -210,7 +224,7 @@
   <div role="contentinfo">
     <p>
         
-        &copy; Copyright 2020, Mayant Mukul
+        &copy; Copyright 2020, Studio Centauri
 
     </p>
   </div>

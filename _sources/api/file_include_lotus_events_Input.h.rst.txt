@@ -8,7 +8,7 @@ File Input.h
    :local:
    :backlinks: none
 
-Definition (``include/lotus/events/Input.h``)
+Definition (``include\lotus\events\Input.h``)
 ---------------------------------------------
 
 
@@ -27,7 +27,7 @@ Includes
 
 - ``Event.h`` (:ref:`file_include_lotus_events_Event.h`)
 
-- ``lotus/lcommon.h`` (:ref:`file_include_lotus_lcommon.h`)
+- ``lotus/lcommon.h``
 
 - ``unordered_map``
 

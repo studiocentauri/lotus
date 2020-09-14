@@ -1,0 +1,70 @@
+
+.. _file_include_lotus_resources_Model.h:
+
+File Model.h
+============
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include\lotus\resources\Model.h``)
+------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_lotus_resources_Model.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``Material.h`` (:ref:`file_include_lotus_resources_Material.h`)
+
+- ``lotus/physics.h``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_lotus_components_rendering.h`
+
+- :ref:`file_include_lotus_lotus.h`
+
+- :ref:`file_include_lotus_resources_AssetRegistry.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_Lotus`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structLotus_1_1Model`
+
+- :ref:`exhale_struct_structLotus_1_1SubMesh`
+
+- :ref:`exhale_struct_structLotus_1_1Vertex`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_Model_8h_1a3f9208ab6e148adc2f9c58c59780c7ce`
+

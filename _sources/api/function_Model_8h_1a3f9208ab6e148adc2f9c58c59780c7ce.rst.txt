@@ -1,0 +1,13 @@
+.. _exhale_function_Model_8h_1a3f9208ab6e148adc2f9c58c59780c7ce:
+
+Function Lotus::LOADER(ModelLoader, Model)
+==========================================
+
+- Defined in :ref:`file_include_lotus_resources_Model.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: Lotus::LOADER(ModelLoader, Model)

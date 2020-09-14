@@ -1,0 +1,13 @@
+.. _exhale_typedef_Scene_8h_1acd408d6810128a5ee2f4d2105a8cdb32:
+
+Typedef Lotus::EntityRegistry
+=============================
+
+- Defined in :ref:`file_include_lotus_scene_Scene.h`
+
+
+Typedef Documentation
+---------------------
+
+
+.. doxygentypedef:: Lotus::EntityRegistry

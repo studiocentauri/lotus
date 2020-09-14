@@ -9,10 +9,11 @@ Class SceneManager
 Inheritance Relationships
 -------------------------
 
-Base Type
-*********
+Base Types
+**********
 
 - ``public Lotus::Singleton< SceneManager >`` (:ref:`exhale_class_classLotus_1_1Singleton`)
+- ``private Lotus::ILifecycle`` (:ref:`exhale_class_classLotus_1_1ILifecycle`)
 
 
 Class Documentation

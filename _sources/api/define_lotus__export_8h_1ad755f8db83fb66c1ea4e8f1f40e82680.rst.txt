@@ -1,0 +1,13 @@
+.. _exhale_define_lotus__export_8h_1ad755f8db83fb66c1ea4e8f1f40e82680:
+
+Define LOTUS_DEPRECATED_NO_EXPORT
+=================================
+
+- Defined in :ref:`file_include_lotus_lotus_export.h`
+
+
+Define Documentation
+--------------------
+
+
+.. doxygendefine:: LOTUS_DEPRECATED_NO_EXPORT

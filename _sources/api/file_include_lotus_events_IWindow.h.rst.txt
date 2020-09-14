@@ -8,7 +8,7 @@ File IWindow.h
    :local:
    :backlinks: none
 
-Definition (``include/lotus/events/IWindow.h``)
+Definition (``include\lotus\events\IWindow.h``)
 -----------------------------------------------
 
 
@@ -27,9 +27,11 @@ Includes
 
 - ``functional``
 
-- ``lotus/events/Event.h`` (:ref:`file_include_lotus_events_Event.h`)
+- ``lotus/ILifecycle.h``
 
-- ``lotus/lcommon.h`` (:ref:`file_include_lotus_lcommon.h`)
+- ``lotus/events/Event.h``
+
+- ``lotus/lcommon.h``
 
 - ``utility``
 
@@ -39,9 +41,9 @@ Included By
 -----------
 
 
-- :ref:`file_include_lotus_rendering_Renderer.h`
-
 - :ref:`file_include_lotus_lotus.h`
+
+- :ref:`file_include_lotus_Renderer.h`
 
 
 

@@ -4,7 +4,7 @@
 Program Listing for File lights.h
 =================================
 
-|exhale_lsh| :ref:`Return to documentation for file <file_include_lotus_components_lights.h>` (``include/lotus/components/lights.h``)
+|exhale_lsh| :ref:`Return to documentation for file <file_include_lotus_components_lights.h>` (``include\lotus\components\lights.h``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -18,7 +18,7 @@ Program Listing for File lights.h
    {
        struct CLight
        {
-           Vector3f ambient = Vector3f(0.2f);
+           Vector3f ambient = Vector3f(0.0f);
            Vector3f diffuse = Vector3f(1.0f);
            Vector3f specular = Vector3f(0.4f);
        };

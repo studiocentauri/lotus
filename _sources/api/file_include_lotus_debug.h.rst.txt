@@ -8,7 +8,7 @@ File debug.h
    :local:
    :backlinks: none
 
-Definition (``include/lotus/debug.h``)
+Definition (``include\lotus\debug.h``)
 --------------------------------------
 
 

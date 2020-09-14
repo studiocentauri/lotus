@@ -8,7 +8,7 @@ File EventManager.h
    :local:
    :backlinks: none
 
-Definition (``include/lotus/events/EventManager.h``)
+Definition (``include\lotus\events\EventManager.h``)
 ----------------------------------------------------
 
 
@@ -25,13 +25,9 @@ Includes
 --------
 
 
-- ``Event.h`` (:ref:`file_include_lotus_events_Event.h`)
+- ``lotus/internal/entt/entt.hpp``
 
-- ``lotus/Engine.h`` (:ref:`file_include_lotus_Engine.h`)
-
-- ``lotus/internal/entt.hpp``
-
-- ``lotus/lcommon.h`` (:ref:`file_include_lotus_lcommon.h`)
+- ``lotus/lcommon.h``
 
 
 

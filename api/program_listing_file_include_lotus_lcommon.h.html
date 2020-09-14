@@ -7,13 +7,14 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Program Listing for File lcommon.h &mdash; Lotus 0.0.1 documentation</title>
+  <title>Program Listing for File lcommon.h &mdash; Lotus 0.1.0 documentation</title>
   
 
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/navbar.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists\css\tree_view.css" type="text/css" />
 
   
   
@@ -31,8 +32,8 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/language_data.js"></script>
-        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
-        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script src="../_static/collapsible-lists\js\CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists\js\apply-collapsible-lists.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -52,9 +53,12 @@
           
 
           
-            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Lotus
+            <a href="../index.html">
           
 
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -83,9 +87,14 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents</span></p>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/ecs.html">Entity Component System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/renderer.html">Renderer</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="lotus.html">API Reference</a></li>
 </ul>
 
@@ -154,18 +163,33 @@
             
   <div class="section" id="program-listing-for-file-lcommon-h">
 <span id="program-listing-file-include-lotus-lcommon-h"></span><h1>Program Listing for File lcommon.h<a class="headerlink" href="#program-listing-for-file-lcommon-h" title="Permalink to this headline">¶</a></h1>
-<p>↰ <a class="reference internal" href="file_include_lotus_lcommon.h.html#file-include-lotus-lcommon-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">include/lotus/lcommon.h</span></code>)</p>
+<p>↰ <a class="reference internal" href="file_include_lotus_lcommon.h.html#file-include-lotus-lcommon-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">include\lotus\lcommon.h</span></code>)</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#pragma once</span>
 
 <span class="cp">#include</span> <span class="cpf">&lt;memory&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;fstream&gt;</span><span class="cp"></span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;lotus_export.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;lotus/internal/entt/entt.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;lotus/internal/cereal/cereal.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;lotus/internal/cereal/archives/json.hpp&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;lotus/internal/nlohmann/json.hpp&quot;</span><span class="cp"></span>
+
+
+<span class="c1">// TODO: Convenient, but not very readable I guess.</span>
+<span class="cp">#define LOADER(x, y) struct LOTUS_API x final: entt::resource_loader&lt;x, y&gt;</span>
+<span class="cp">#define GET(x) x::Get()</span>
 
 <span class="k">namespace</span> <span class="n">Lotus</span>
 <span class="p">{</span>
-    <span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+    <span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span>
     <span class="k">using</span> <span class="n">URef</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">unique_ptr</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">;</span>
 
-    <span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+    <span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span>
     <span class="k">using</span> <span class="n">SRef</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">;</span>
+
+    <span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span>
+    <span class="k">using</span> <span class="n">Handle</span> <span class="o">=</span> <span class="n">entt</span><span class="o">::</span><span class="n">resource_handle</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">;</span>
 
     <span class="k">enum</span> <span class="k">class</span> <span class="nc">ERenderAPI</span>
     <span class="p">{</span>
@@ -174,17 +198,17 @@
         <span class="n">VULKAN</span>
     <span class="p">};</span>
 
-    <span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
-    <span class="k">class</span> <span class="nc">Singleton</span>
+    <span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="nc">T</span><span class="o">&gt;</span>
+    <span class="k">class</span> <span class="nc">LOTUS_API</span> <span class="n">Singleton</span>
     <span class="p">{</span>
     <span class="k">public</span><span class="o">:</span>
         <span class="n">Singleton</span><span class="p">(</span><span class="k">const</span> <span class="n">Singleton</span><span class="o">&amp;</span><span class="p">)</span> <span class="o">=</span> <span class="k">delete</span><span class="p">;</span>
 
         <span class="n">Singleton</span><span class="o">&amp;</span> <span class="k">operator</span><span class="o">=</span><span class="p">(</span><span class="k">const</span> <span class="n">Singleton</span><span class="o">&amp;</span><span class="p">)</span> <span class="o">=</span> <span class="k">delete</span><span class="p">;</span>
 
-        <span class="k">static</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">Get</span><span class="p">()</span> <span class="k">noexcept</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">is_nothrow_constructible</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;::</span><span class="n">value</span><span class="p">)</span>
+        <span class="k">static</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">Get</span><span class="p">()</span>
         <span class="p">{</span>
-            <span class="k">static</span> <span class="n">T</span> <span class="n">instance</span><span class="p">;</span>
+            <span class="k">static</span> <span class="n">T</span> <span class="n">instance</span><span class="p">;</span>  <span class="c1">// NOLINT(clang-diagnostic-exit-time-destructors)</span>
             <span class="k">return</span> <span class="n">instance</span><span class="p">;</span>
         <span class="p">}</span>
 
@@ -192,34 +216,6 @@
         <span class="n">Singleton</span><span class="p">()</span> <span class="k">noexcept</span> <span class="o">=</span> <span class="k">default</span><span class="p">;</span>
 
         <span class="k">virtual</span> <span class="o">~</span><span class="n">Singleton</span><span class="p">()</span> <span class="o">=</span> <span class="k">default</span><span class="p">;</span>
-    <span class="p">};</span>
-
-    <span class="k">class</span> <span class="nc">ILifecycle</span>
-    <span class="p">{</span>
-    <span class="k">public</span><span class="o">:</span>
-        <span class="p">[[</span><span class="n">maybe_unused</span><span class="p">]]</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnInit</span><span class="p">()</span>
-        <span class="p">{}</span>
-
-        <span class="p">[[</span><span class="n">maybe_unused</span><span class="p">]]</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnBegin</span><span class="p">()</span>
-        <span class="p">{}</span>
-
-        <span class="p">[[</span><span class="n">maybe_unused</span><span class="p">]]</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnPreUpdate</span><span class="p">()</span>
-        <span class="p">{}</span>
-
-        <span class="p">[[</span><span class="n">maybe_unused</span><span class="p">]]</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnUpdate</span><span class="p">(</span><span class="kt">float</span> <span class="n">delta</span><span class="p">)</span>
-        <span class="p">{}</span>
-
-        <span class="p">[[</span><span class="n">maybe_unused</span><span class="p">]]</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnPostUpdate</span><span class="p">()</span>
-        <span class="p">{}</span>
-
-        <span class="p">[[</span><span class="n">maybe_unused</span><span class="p">]]</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnPreDestroy</span><span class="p">()</span>
-        <span class="p">{}</span>
-
-        <span class="p">[[</span><span class="n">maybe_unused</span><span class="p">]]</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnDestroy</span><span class="p">()</span>
-        <span class="p">{}</span>
-
-        <span class="p">[[</span><span class="n">maybe_unused</span><span class="p">]]</span> <span class="k">virtual</span> <span class="kt">void</span> <span class="n">OnShutdown</span><span class="p">()</span>
-        <span class="p">{}</span>
     <span class="p">};</span>
 <span class="p">}</span>
 </pre></div>
@@ -238,7 +234,7 @@
   <div role="contentinfo">
     <p>
         
-        &copy; Copyright 2020, Mayant Mukul
+        &copy; Copyright 2020, Studio Centauri
 
     </p>
   </div>

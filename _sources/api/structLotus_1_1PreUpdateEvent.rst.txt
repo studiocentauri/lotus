@@ -1,0 +1,25 @@
+.. _exhale_struct_structLotus_1_1PreUpdateEvent:
+
+Struct PreUpdateEvent
+=====================
+
+- Defined in :ref:`file_include_lotus_ILifecycle.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Lotus::Event`` (:ref:`exhale_struct_structLotus_1_1Event`)
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: Lotus::PreUpdateEvent
+   :members:
+   :protected-members:
+   :undoc-members:

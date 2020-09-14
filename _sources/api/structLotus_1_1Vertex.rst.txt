@@ -3,7 +3,7 @@
 Struct Vertex
 =============
 
-- Defined in :ref:`file_include_lotus_resources.h`
+- Defined in :ref:`file_include_lotus_resources_Model.h`
 
 
 Struct Documentation

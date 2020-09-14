@@ -4,7 +4,7 @@
 Program Listing for File lotus.h
 ================================
 
-|exhale_lsh| :ref:`Return to documentation for file <file_include_lotus_lotus.h>` (``include/lotus/lotus.h``)
+|exhale_lsh| :ref:`Return to documentation for file <file_include_lotus_lotus.h>` (``include\lotus\lotus.h``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,8 +13,8 @@ Program Listing for File lotus.h
    
    #pragma once
    
-   //#include <string>
-   //#define RESOURCE(x) Lotus::resource(__FILE__, x)
+   #include <string>
+   #include <filesystem>
    
    #include "physics.h"
    
@@ -22,14 +22,17 @@ Program Listing for File lotus.h
    #include "components/lights.h"
    #include "components/rendering.h"
    
-   #include "resources.h"
+   #include "resources/Shader.h"
+   #include "resources/AssetRegistry.h"
+   #include "resources/Cubemap.h"
+   #include "resources/Model.h"
+   #include "resources/Texture.h"
+   
+   #include "Renderer.h"
    
    #include "events/Event.h"
    #include "events/IWindow.h"
    #include "events/Input.h"
-   
-   #include "rendering/LShader.h"
-   #include "rendering/Renderer.h"
    
    #include "scene/Scene.h"
    #include "scene/SceneManager.h"
@@ -38,5 +41,3 @@ Program Listing for File lotus.h
    
    #include "python.h"
    #include "Engine.h"
-   
-   //    std::string resource(const std::string& root, const std::string& relPath);

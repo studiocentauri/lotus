@@ -4,7 +4,7 @@
 Program Listing for File EventManager.h
 =======================================
 
-|exhale_lsh| :ref:`Return to documentation for file <file_include_lotus_events_EventManager.h>` (``include/lotus/events/EventManager.h``)
+|exhale_lsh| :ref:`Return to documentation for file <file_include_lotus_events_EventManager.h>` (``include\lotus\events\EventManager.h``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -12,14 +12,12 @@ Program Listing for File EventManager.h
 
    #pragma once
    
-   #include <lotus/Engine.h>
-   #include "Event.h"
    #include "lotus/lcommon.h"
-   #include "lotus/internal/entt.hpp"
+   #include "lotus/internal/entt/entt.hpp"
    
    namespace Lotus
    {
-       class EventManager : public Singleton<EventManager>
+       class LOTUS_API EventManager : public Singleton<EventManager>
        {
            entt::dispatcher _dispatcher{};
    
@@ -50,7 +48,7 @@ Program Listing for File EventManager.h
                _dispatcher.sink<E>().template connect<F>();
            }
    
-           void BroadcastQueue()
+           void BroadcastQueue() const
            {
                // Call all events in queue
                _dispatcher.update();

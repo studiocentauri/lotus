@@ -7,13 +7,14 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>File lcommon.h &mdash; Lotus 0.0.1 documentation</title>
+  <title>File lcommon.h &mdash; Lotus 0.1.0 documentation</title>
   
 
   
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/navbar.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists\css\tree_view.css" type="text/css" />
 
   
   
@@ -31,8 +32,8 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/language_data.js"></script>
-        <script src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
-        <script src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script src="../_static/collapsible-lists\js\CollapsibleLists.compressed.js"></script>
+        <script src="../_static/collapsible-lists\js\apply-collapsible-lists.js"></script>
     
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
@@ -52,9 +53,12 @@
           
 
           
-            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> Lotus
+            <a href="../index.html">
           
 
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
           
           </a>
 
@@ -83,9 +87,14 @@
               
             
             
-              <p class="caption"><span class="caption-text">Contents</span></p>
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/ecs.html">Entity Component System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../_manuals/renderer.html">Renderer</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API Reference</span></p>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="lotus.html">API Reference</a></li>
 </ul>
 
@@ -157,15 +166,18 @@
 <div class="contents local topic" id="contents">
 <p class="topic-title">Contents</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#definition-include-lotus-lcommon-h" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">include/lotus/lcommon.h</span></code>)</a></p></li>
+<li><p><a class="reference internal" href="#definition-include-lotus-lcommon-h" id="id1">Definition (<code class="docutils literal notranslate"><span class="pre">include\lotus\lcommon.h</span></code>)</a></p></li>
 <li><p><a class="reference internal" href="#includes" id="id2">Includes</a></p></li>
 <li><p><a class="reference internal" href="#included-by" id="id3">Included By</a></p></li>
 <li><p><a class="reference internal" href="#namespaces" id="id4">Namespaces</a></p></li>
 <li><p><a class="reference internal" href="#classes" id="id5">Classes</a></p></li>
+<li><p><a class="reference internal" href="#enums" id="id6">Enums</a></p></li>
+<li><p><a class="reference internal" href="#defines" id="id7">Defines</a></p></li>
+<li><p><a class="reference internal" href="#typedefs" id="id8">Typedefs</a></p></li>
 </ul>
 </div>
 <div class="section" id="definition-include-lotus-lcommon-h">
-<h2>Definition (<code class="docutils literal notranslate"><span class="pre">include/lotus/lcommon.h</span></code>)<a class="headerlink" href="#definition-include-lotus-lcommon-h" title="Permalink to this headline">¶</a></h2>
+<h2>Definition (<code class="docutils literal notranslate"><span class="pre">include\lotus\lcommon.h</span></code>)<a class="headerlink" href="#definition-include-lotus-lcommon-h" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="program_listing_file_include_lotus_lcommon.h.html">Program Listing for File lcommon.h</a></li>
@@ -175,6 +187,12 @@
 <div class="section" id="includes">
 <h2>Includes<a class="headerlink" href="#includes" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">fstream</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lotus/internal/cereal/archives/json.hpp</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lotus/internal/cereal/cereal.hpp</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lotus/internal/entt/entt.hpp</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lotus/internal/nlohmann/json.hpp</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lotus_export.h</span></code> (<a class="reference internal" href="file_include_lotus_lotus_export.h.html#file-include-lotus-lotus-export-h"><span class="std std-ref">File lotus_export.h</span></a>)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">memory</span></code></p></li>
 </ul>
 </div>
@@ -182,11 +200,15 @@
 <h2>Included By<a class="headerlink" href="#included-by" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="file_include_lotus_components_rendering.h.html#file-include-lotus-components-rendering-h"><span class="std std-ref">File rendering.h</span></a></p></li>
+<li><p><a class="reference internal" href="file_include_lotus_Config.h.html#file-include-lotus-config-h"><span class="std std-ref">File Config.h</span></a></p></li>
 <li><p><a class="reference internal" href="file_include_lotus_Engine.h.html#file-include-lotus-engine-h"><span class="std std-ref">File Engine.h</span></a></p></li>
 <li><p><a class="reference internal" href="file_include_lotus_events_EventManager.h.html#file-include-lotus-events-eventmanager-h"><span class="std std-ref">File EventManager.h</span></a></p></li>
 <li><p><a class="reference internal" href="file_include_lotus_events_Input.h.html#file-include-lotus-events-input-h"><span class="std std-ref">File Input.h</span></a></p></li>
 <li><p><a class="reference internal" href="file_include_lotus_events_IWindow.h.html#file-include-lotus-events-iwindow-h"><span class="std std-ref">File IWindow.h</span></a></p></li>
-<li><p><a class="reference internal" href="file_include_lotus_resources.h.html#file-include-lotus-resources-h"><span class="std std-ref">File resources.h</span></a></p></li>
+<li><p><a class="reference internal" href="file_include_lotus_ISerializable.h.html#file-include-lotus-iserializable-h"><span class="std std-ref">File ISerializable.h</span></a></p></li>
+<li><p><a class="reference internal" href="file_include_lotus_resources_Cubemap.h.html#file-include-lotus-resources-cubemap-h"><span class="std std-ref">File Cubemap.h</span></a></p></li>
+<li><p><a class="reference internal" href="file_include_lotus_resources_Shader.h.html#file-include-lotus-resources-shader-h"><span class="std std-ref">File Shader.h</span></a></p></li>
+<li><p><a class="reference internal" href="file_include_lotus_resources_Texture.h.html#file-include-lotus-resources-texture-h"><span class="std std-ref">File Texture.h</span></a></p></li>
 <li><p><a class="reference internal" href="file_include_lotus_scene_SceneManager.h.html#file-include-lotus-scene-scenemanager-h"><span class="std std-ref">File SceneManager.h</span></a></p></li>
 </ul>
 </div>
@@ -199,8 +221,28 @@
 <div class="section" id="classes">
 <h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference internal" href="classLotus_1_1ILifecycle.html#exhale-class-classlotus-1-1ilifecycle"><span class="std std-ref">Class ILifecycle</span></a></p></li>
 <li><p><a class="reference internal" href="classLotus_1_1Singleton.html#exhale-class-classlotus-1-1singleton"><span class="std std-ref">Template Class Singleton</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="enums">
+<h2>Enums<a class="headerlink" href="#enums" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="enum_lcommon_8h_1ae825578a38779239ed42a80e8048dfb3.html#exhale-enum-lcommon-8h-1ae825578a38779239ed42a80e8048dfb3"><span class="std std-ref">Enum ERenderAPI</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="defines">
+<h2>Defines<a class="headerlink" href="#defines" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="define_lcommon_8h_1a784c41a02958c5fc15b972fd2a77c2ba.html#exhale-define-lcommon-8h-1a784c41a02958c5fc15b972fd2a77c2ba"><span class="std std-ref">Define GET</span></a></p></li>
+<li><p><a class="reference internal" href="define_lcommon_8h_1a914bab389639249543e304f117855323.html#exhale-define-lcommon-8h-1a914bab389639249543e304f117855323"><span class="std std-ref">Define LOADER</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="typedefs">
+<h2>Typedefs<a class="headerlink" href="#typedefs" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="typedef_lcommon_8h_1a28ddd2debe7f1c7e5f33e1a637b6b84f.html#exhale-typedef-lcommon-8h-1a28ddd2debe7f1c7e5f33e1a637b6b84f"><span class="std std-ref">Typedef Lotus::Handle</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_lcommon_8h_1a0ca822b05156da4e9ea13e492f68032e.html#exhale-typedef-lcommon-8h-1a0ca822b05156da4e9ea13e492f68032e"><span class="std std-ref">Typedef Lotus::SRef</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_lcommon_8h_1a6f22aaa2432738d028a1ddf0eba60054.html#exhale-typedef-lcommon-8h-1a6f22aaa2432738d028a1ddf0eba60054"><span class="std std-ref">Typedef Lotus::URef</span></a></p></li>
 </ul>
 </div>
 </div>
@@ -217,7 +259,7 @@
   <div role="contentinfo">
     <p>
         
-        &copy; Copyright 2020, Mayant Mukul
+        &copy; Copyright 2020, Studio Centauri
 
     </p>
   </div>

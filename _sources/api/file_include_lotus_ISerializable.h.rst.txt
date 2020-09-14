@@ -1,0 +1,69 @@
+
+.. _file_include_lotus_ISerializable.h:
+
+File ISerializable.h
+====================
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include\lotus\ISerializable.h``)
+----------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_lotus_ISerializable.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``lotus/lcommon.h``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_lotus_scene_Scene.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_Lotus`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structLotus_1_1ISerializable`
+
+
+Defines
+-------
+
+
+- :ref:`exhale_define_ISerializable_8h_1abfdee8ad625fefeb9ba75d3c85f114fa`
+
+
+Typedefs
+--------
+
+
+- :ref:`exhale_typedef_ISerializable_8h_1a186727d646d3c1df36b63232dc2e492a`
+
+- :ref:`exhale_typedef_ISerializable_8h_1af13b7c55f035a10d77186e339bf6926a`
+

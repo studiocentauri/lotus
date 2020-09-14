@@ -1,0 +1,13 @@
+.. _exhale_function_physics_8h_1a2d8bf4ad45a5ac17b5f8188ad4b9f3af:
+
+Function Lotus::LRotate
+=======================
+
+- Defined in :ref:`file_include_lotus_physics.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: Lotus::LRotate(Matrix4f, float, Vector3f)

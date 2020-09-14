@@ -4,7 +4,7 @@
 Program Listing for File rendering.h
 ====================================
 
-|exhale_lsh| :ref:`Return to documentation for file <file_include_lotus_components_rendering.h>` (``include/lotus/components/rendering.h``)
+|exhale_lsh| :ref:`Return to documentation for file <file_include_lotus_components_rendering.h>` (``include\lotus\components\rendering.h``)
 
 .. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
 
@@ -13,15 +13,21 @@ Program Listing for File rendering.h
    #pragma once
    
    #include "lotus/lcommon.h"
+   #include "lotus/resources/Model.h"
+   #include "lotus/resources/Cubemap.h"
+   #include "lotus/resources/Shader.h"
    
    namespace Lotus
    {
-       class LShader;
-       class LModel;
        struct CMeshRenderer
        {
            // Render data
-           SRef<LShader> Shader;
-           SRef<LModel> Model;
+           Handle<Shader> Shader;
+           Handle<Model> Model;
+       };
+   
+       struct CSkybox
+       {
+           Handle<Cubemap> Map;
        };
    }
