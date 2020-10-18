@@ -1,0 +1,16 @@
+.. _exhale_struct_structLotus_1_1Scene:
+
+Struct Scene
+============
+
+- Defined in :ref:`file_include_lotus_scene_Scene.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: Lotus::Scene
+   :members:
+   :protected-members:
+   :undoc-members:

@@ -1,0 +1,25 @@
+.. _exhale_struct_structLotus_1_1SpotLightInfo:
+
+Struct SpotLightInfo
+====================
+
+- Defined in :ref:`file_include_lotus_resources_Shader.h`
+
+
+Inheritance Relationships
+-------------------------
+
+Base Type
+*********
+
+- ``public Lotus::LightInfo`` (:ref:`exhale_struct_structLotus_1_1LightInfo`)
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: Lotus::SpotLightInfo
+   :members:
+   :protected-members:
+   :undoc-members:

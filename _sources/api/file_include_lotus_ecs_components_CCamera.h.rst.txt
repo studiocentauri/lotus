@@ -1,0 +1,60 @@
+
+.. _file_include_lotus_ecs_components_CCamera.h:
+
+File CCamera.h
+==============
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include\lotus\ecs\components\CCamera.h``)
+-------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_lotus_ecs_components_CCamera.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``lotus/ecs/components/CTransform.h``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_lotus_lotus.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_Lotus`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structLotus_1_1CCamera`
+
+
+Functions
+---------
+
+
+- :ref:`exhale_function_CCamera_8h_1a65b0262010c6cce509ca6cbf4f1e789e`
+

@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Program Listing for File lotus.h &mdash; Lotus 0.1.0 documentation</title>
+  <title>Program Listing for File lotus.h &mdash; Lotus 0.0.1 documentation</title>
   
 
   
@@ -89,9 +89,7 @@
             
               <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/install.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/ecs.html">Entity Component System</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/renderer.html">Renderer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manual/install.html">Installation</a></li>
 </ul>
 <p class="caption"><span class="caption-text">API Reference</span></p>
 <ul>
@@ -169,31 +167,35 @@
 <span class="cp">#include</span> <span class="cpf">&lt;string&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;filesystem&gt;</span><span class="cp"></span>
 
-<span class="cp">#include</span> <span class="cpf">&quot;physics.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;lcommon.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;physics/physics.h&quot;</span><span class="cp"></span>
 
-<span class="cp">#include</span> <span class="cpf">&quot;components/scene.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;components/lights.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;components/rendering.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;ecs/components/CTransform.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;ecs/components/CCamera.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;ecs/components/IComponentInfo.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;ecs/components/CLight.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;ecs/components/ComponentFactory.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;ecs/Entity.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;ecs/Event.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;ecs/EventManager.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;ecs/ISystem.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;ecs/Recipe.h&quot;</span><span class="cp"></span>
 
-<span class="cp">#include</span> <span class="cpf">&quot;resources/Shader.h&quot;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&quot;resources/AssetRegistry.h&quot;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&quot;resources/Cubemap.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;resources/Material.h&quot;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&quot;resources/Model.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;resources/Shader.h&quot;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&quot;resources/Texture.h&quot;</span><span class="cp"></span>
 
-<span class="cp">#include</span> <span class="cpf">&quot;Renderer.h&quot;</span><span class="cp"></span>
-
-<span class="cp">#include</span> <span class="cpf">&quot;events/Event.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;events/IWindow.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;events/Input.h&quot;</span><span class="cp"></span>
-
-<span class="cp">#include</span> <span class="cpf">&quot;scene/Scene.h&quot;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&quot;scene/SceneManager.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;scene/AActor.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;scene/ACamera.h&quot;</span><span class="cp"></span>
 
+<span class="cp">#include</span> <span class="cpf">&quot;Config.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;entry.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;ILifecycle.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;Input.h&quot;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&quot;python.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;Engine.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;Renderer.h&quot;</span><span class="cp"></span>
 </pre></div>
 </div>
 </div>

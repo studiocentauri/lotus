@@ -25,9 +25,7 @@ Includes
 --------
 
 
-- ``Material.h`` (:ref:`file_include_lotus_resources_Material.h`)
-
-- ``lotus/physics.h``
+- ``lotus/resources/Material.h``
 
 
 
@@ -35,9 +33,9 @@ Included By
 -----------
 
 
-- :ref:`file_include_lotus_components_rendering.h`
-
 - :ref:`file_include_lotus_lotus.h`
+
+- :ref:`file_include_lotus_Renderer.h`
 
 - :ref:`file_include_lotus_resources_AssetRegistry.h`
 

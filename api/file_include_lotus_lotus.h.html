@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>File lotus.h &mdash; Lotus 0.1.0 documentation</title>
+  <title>File lotus.h &mdash; Lotus 0.0.1 documentation</title>
   
 
   
@@ -89,9 +89,7 @@
             
               <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/install.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/ecs.html">Entity Component System</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/renderer.html">Renderer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manual/install.html">Installation</a></li>
 </ul>
 <p class="caption"><span class="caption-text">API Reference</span></p>
 <ul>
@@ -181,25 +179,31 @@
 <div class="section" id="includes">
 <h2>Includes<a class="headerlink" href="#includes" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Engine.h</span></code> (<a class="reference internal" href="file_include_lotus_Engine.h.html#file-include-lotus-engine-h"><span class="std std-ref">File Engine.h</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Config.h</span></code> (<a class="reference internal" href="file_include_lotus_Config.h.html#file-include-lotus-config-h"><span class="std std-ref">File Config.h</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ILifecycle.h</span></code> (<a class="reference internal" href="file_include_lotus_ILifecycle.h.html#file-include-lotus-ilifecycle-h"><span class="std std-ref">File ILifecycle.h</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Input.h</span></code> (<a class="reference internal" href="file_include_lotus_Input.h.html#file-include-lotus-input-h"><span class="std std-ref">File Input.h</span></a>)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Renderer.h</span></code> (<a class="reference internal" href="file_include_lotus_Renderer.h.html#file-include-lotus-renderer-h"><span class="std std-ref">File Renderer.h</span></a>)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">components/lights.h</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">components/rendering.h</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">components/scene.h</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">events/Event.h</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">events/IWindow.h</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">events/Input.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ecs/Entity.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ecs/Event.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ecs/EventManager.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ecs/ISystem.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ecs/Recipe.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ecs/components/CCamera.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ecs/components/CLight.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ecs/components/CTransform.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ecs/components/ComponentFactory.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ecs/components/IComponentInfo.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">entry.h</span></code> (<a class="reference internal" href="file_include_lotus_entry.h.html#file-include-lotus-entry-h"><span class="std std-ref">File entry.h</span></a>)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">filesystem</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">physics.h</span></code> (<a class="reference internal" href="file_include_lotus_physics.h.html#file-include-lotus-physics-h"><span class="std std-ref">File physics.h</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lcommon.h</span></code> (<a class="reference internal" href="file_include_lotus_lcommon.h.html#file-include-lotus-lcommon-h"><span class="std std-ref">File lcommon.h</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">physics/physics.h</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">python.h</span></code> (<a class="reference internal" href="file_include_lotus_python.h.html#file-include-lotus-python-h"><span class="std std-ref">File python.h</span></a>)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">resources/AssetRegistry.h</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">resources/Cubemap.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">resources/Material.h</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">resources/Model.h</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">resources/Shader.h</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">resources/Texture.h</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">scene/AActor.h</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">scene/ACamera.h</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">scene/Scene.h</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">scene/SceneManager.h</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">string</span></code></p></li>
 </ul>

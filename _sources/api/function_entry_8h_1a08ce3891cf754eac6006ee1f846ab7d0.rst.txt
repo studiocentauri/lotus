@@ -1,0 +1,13 @@
+.. _exhale_function_entry_8h_1a08ce3891cf754eac6006ee1f846ab7d0:
+
+Function Lotus::Run
+===================
+
+- Defined in :ref:`file_include_lotus_entry.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: Lotus::Run()

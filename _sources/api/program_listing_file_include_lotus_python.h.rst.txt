@@ -12,4 +12,12 @@ Program Listing for File python.h
 
    #include "lotus/lotus_export.h"
    
-   LOTUS_API void exec_file(const std::string& filepath);
+   namespace Lotus
+   {
+       LOTUS_API void exec_file(const std::string& filepath);
+   
+       struct CScript
+       {
+           std::string Path;
+       };
+   }

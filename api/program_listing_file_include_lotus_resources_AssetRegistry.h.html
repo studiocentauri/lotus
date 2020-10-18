@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Program Listing for File AssetRegistry.h &mdash; Lotus 0.1.0 documentation</title>
+  <title>Program Listing for File AssetRegistry.h &mdash; Lotus 0.0.1 documentation</title>
   
 
   
@@ -89,9 +89,7 @@
             
               <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/install.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/ecs.html">Entity Component System</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/renderer.html">Renderer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manual/install.html">Installation</a></li>
 </ul>
 <p class="caption"><span class="caption-text">API Reference</span></p>
 <ul>
@@ -166,24 +164,24 @@
 <p>↰ <a class="reference internal" href="file_include_lotus_resources_AssetRegistry.h.html#file-include-lotus-resources-assetregistry-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">include\lotus\resources\AssetRegistry.h</span></code>)</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#pragma once</span>
 
-<span class="cp">#include</span> <span class="cpf">&quot;Model.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;Cubemap.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;Shader.h&quot;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&quot;lotus/Config.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;lotus/resources/Model.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;lotus/resources/Shader.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;lotus/resources/Cubemap.h&quot;</span><span class="cp"></span>
 
 <span class="cp">#include</span> <span class="cpf">&lt;filesystem&gt;</span><span class="cp"></span>
 
 
 <span class="cp">#ifdef SHADER_ROOT</span>
 
-<span class="cp">#define __VERTEX_PATH(x)   __concatPath(SHADER_ROOT, x &quot;.vert&quot;)</span>
-<span class="cp">#define __FRAGMENT_PATH(x) __concatPath(SHADER_ROOT, x &quot;.frag&quot;)</span>
+<span class="cp">#define VERTEX_PATH(x)   concatPath(SHADER_ROOT, x &quot;.vert&quot;)</span>
+<span class="cp">#define FRAGMENT_PATH(x) concatPath(SHADER_ROOT, x &quot;.frag&quot;)</span>
 
-<span class="cp">#define SHADER_PBR_VERT  __VERTEX_PATH(&quot;pbr&quot;)</span>
-<span class="cp">#define SHADER_PBR_FRAG  __FRAGMENT_PATH(&quot;pbr&quot;)</span>
+<span class="cp">#define SHADER_PBR_VERT  VERTEX_PATH(&quot;pbr&quot;)</span>
+<span class="cp">#define SHADER_PBR_FRAG  FRAGMENT_PATH(&quot;pbr&quot;)</span>
 <span class="cp">#define SHADER_PBR SHADER_PBR_VERT, SHADER_PBR_FRAG</span>
 
-<span class="cp">#define INTERNAL_SHADERS(x) __VERTEX_PATH(x), __FRAGMENT_PATH(x)</span>
+<span class="cp">#define INTERNAL_SHADERS(x) VERTEX_PATH(x), FRAGMENT_PATH(x)</span>
 
 <span class="cp">#else</span>
 
@@ -191,15 +189,15 @@
 
 <span class="cp">#endif</span>
 
-<span class="cp">#define RESOURCE(x) __getConfigResourcePath(x)</span>
+<span class="cp">#define RESOURCE(x) getConfigResourcePath(x)</span>
 
-<span class="kr">inline</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">__concatPath</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">path1</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">path2</span><span class="p">)</span>
+<span class="kr">inline</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">concatPath</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">path1</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">path2</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="n">std</span><span class="o">::</span><span class="n">filesystem</span><span class="o">::</span><span class="n">path</span> <span class="n">base</span><span class="p">(</span><span class="n">path1</span><span class="p">);</span>
     <span class="k">return</span> <span class="n">base</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">path2</span><span class="p">).</span><span class="n">string</span><span class="p">();</span>
 <span class="p">}</span>
 
-<span class="kr">inline</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">__getConfigResourcePath</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">relPath</span><span class="p">)</span>
+<span class="kr">inline</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">getConfigResourcePath</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">relPath</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="n">std</span><span class="o">::</span><span class="n">filesystem</span><span class="o">::</span><span class="n">path</span> <span class="n">arg</span> <span class="o">=</span> <span class="n">relPath</span><span class="p">;</span>
     <span class="k">if</span> <span class="p">(</span><span class="n">arg</span><span class="p">.</span><span class="n">is_absolute</span><span class="p">())</span>
@@ -221,7 +219,8 @@
         <span class="n">entt</span><span class="o">::</span><span class="n">resource_cache</span><span class="o">&lt;</span><span class="n">Shader</span><span class="o">&gt;</span> <span class="n">_shaders</span><span class="p">;</span>
         <span class="n">entt</span><span class="o">::</span><span class="n">resource_cache</span><span class="o">&lt;</span><span class="n">Material</span><span class="o">&gt;</span> <span class="n">_materials</span><span class="p">;</span>
 
-        <span class="kt">uint32_t</span> <span class="n">_currentID</span><span class="p">;</span>
+        <span class="c1">// TODO: Get identifiers from asset path</span>
+        <span class="kt">uint32_t</span> <span class="n">_currentID</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
 
     <span class="k">public</span><span class="o">:</span>
         <span class="c1">// size_t Size() const</span>

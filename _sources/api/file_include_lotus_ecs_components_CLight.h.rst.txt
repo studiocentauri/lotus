@@ -1,0 +1,59 @@
+
+.. _file_include_lotus_ecs_components_CLight.h:
+
+File CLight.h
+=============
+
+.. contents:: Contents
+   :local:
+   :backlinks: none
+
+Definition (``include\lotus\ecs\components\CLight.h``)
+------------------------------------------------------
+
+
+.. toctree::
+   :maxdepth: 1
+
+   program_listing_file_include_lotus_ecs_components_CLight.h.rst
+
+
+
+
+
+Includes
+--------
+
+
+- ``lotus/physics/physics.h``
+
+
+
+Included By
+-----------
+
+
+- :ref:`file_include_lotus_lotus.h`
+
+- :ref:`file_include_lotus_resources_Shader.h`
+
+
+
+
+Namespaces
+----------
+
+
+- :ref:`namespace_Lotus`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structLotus_1_1CLight`
+
+- :ref:`exhale_struct_structLotus_1_1CPointLight`
+
+- :ref:`exhale_struct_structLotus_1_1CSpotlight`
+

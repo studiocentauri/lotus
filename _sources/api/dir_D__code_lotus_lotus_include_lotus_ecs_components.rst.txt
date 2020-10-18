@@ -1,0 +1,15 @@
+.. _dir_D__code_lotus_lotus_include_lotus_ecs_components:
+
+
+Directory components
+====================
+
+
+|exhale_lsh| :ref:`Parent directory <dir_D__code_lotus_lotus_include_lotus_ecs>` (``D:\code\lotus\lotus\include\lotus\ecs``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``D:\code\lotus\lotus\include\lotus\ecs\components``
+
+
+

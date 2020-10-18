@@ -3,7 +3,7 @@
 Struct CCamera
 ==============
 
-.. did not find file this was defined in
+- Defined in :ref:`file_include_lotus_ecs_components_CCamera.h`
 
 
 Struct Documentation

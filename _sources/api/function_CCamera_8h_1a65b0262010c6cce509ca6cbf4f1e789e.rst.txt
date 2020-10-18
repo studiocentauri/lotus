@@ -1,0 +1,13 @@
+.. _exhale_function_CCamera_8h_1a65b0262010c6cce509ca6cbf4f1e789e:
+
+Function Lotus::GetViewMatrix
+=============================
+
+- Defined in :ref:`file_include_lotus_ecs_components_CCamera.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: Lotus::GetViewMatrix(const CTransform&)

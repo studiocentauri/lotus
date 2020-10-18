@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Program Listing for File lcommon.h &mdash; Lotus 0.1.0 documentation</title>
+  <title>Program Listing for File lcommon.h &mdash; Lotus 0.0.1 documentation</title>
   
 
   
@@ -89,9 +89,7 @@
             
               <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/install.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/ecs.html">Entity Component System</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/renderer.html">Renderer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manual/install.html">Installation</a></li>
 </ul>
 <p class="caption"><span class="caption-text">API Reference</span></p>
 <ul>
@@ -168,11 +166,10 @@
 
 <span class="cp">#include</span> <span class="cpf">&lt;memory&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;fstream&gt;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&lt;type_traits&gt;</span><span class="cp"></span>
 
 <span class="cp">#include</span> <span class="cpf">&quot;lotus_export.h&quot;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&quot;lotus/internal/entt/entt.hpp&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;lotus/internal/cereal/cereal.hpp&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;lotus/internal/cereal/archives/json.hpp&quot;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&quot;lotus/internal/nlohmann/json.hpp&quot;</span><span class="cp"></span>
 
 
@@ -208,7 +205,7 @@
 
         <span class="k">static</span> <span class="n">T</span><span class="o">&amp;</span> <span class="n">Get</span><span class="p">()</span>
         <span class="p">{</span>
-            <span class="k">static</span> <span class="n">T</span> <span class="n">instance</span><span class="p">;</span>  <span class="c1">// NOLINT(clang-diagnostic-exit-time-destructors)</span>
+            <span class="k">static</span> <span class="n">T</span> <span class="n">instance</span><span class="p">;</span>
             <span class="k">return</span> <span class="n">instance</span><span class="p">;</span>
         <span class="p">}</span>
 

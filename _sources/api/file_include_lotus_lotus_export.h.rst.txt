@@ -27,13 +27,11 @@ Included By
 -----------
 
 
-- :ref:`file_include_lotus_events_Event.h`
+- :ref:`file_include_lotus_ecs_Event.h`
 
 - :ref:`file_include_lotus_lcommon.h`
 
 - :ref:`file_include_lotus_python.h`
-
-- :ref:`file_include_lotus_scene_Scene.h`
 
 
 

@@ -27,10 +27,6 @@ Includes
 
 - ``fstream``
 
-- ``lotus/internal/cereal/archives/json.hpp``
-
-- ``lotus/internal/cereal/cereal.hpp``
-
 - ``lotus/internal/entt/entt.hpp``
 
 - ``lotus/internal/nlohmann/json.hpp``
@@ -39,31 +35,31 @@ Includes
 
 - ``memory``
 
+- ``type_traits``
+
 
 
 Included By
 -----------
 
 
-- :ref:`file_include_lotus_components_rendering.h`
-
 - :ref:`file_include_lotus_Config.h`
 
-- :ref:`file_include_lotus_Engine.h`
+- :ref:`file_include_lotus_ecs_EventManager.h`
 
-- :ref:`file_include_lotus_events_EventManager.h`
+- :ref:`file_include_lotus_ecs_Recipe.h`
 
-- :ref:`file_include_lotus_events_Input.h`
+- :ref:`file_include_lotus_Input.h`
 
-- :ref:`file_include_lotus_events_IWindow.h`
-
-- :ref:`file_include_lotus_ISerializable.h`
+- :ref:`file_include_lotus_lotus.h`
 
 - :ref:`file_include_lotus_resources_Cubemap.h`
 
 - :ref:`file_include_lotus_resources_Shader.h`
 
 - :ref:`file_include_lotus_resources_Texture.h`
+
+- :ref:`file_include_lotus_scene_Scene.h`
 
 - :ref:`file_include_lotus_scene_SceneManager.h`
 

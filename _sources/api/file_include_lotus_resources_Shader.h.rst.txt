@@ -25,11 +25,11 @@ Includes
 --------
 
 
-- ``lotus/components/lights.h``
+- ``lotus/ecs/components/CLight.h``
 
 - ``lotus/lcommon.h``
 
-- ``lotus/physics.h``
+- ``lotus/physics/physics.h``
 
 - ``lotus/resources/Material.h``
 
@@ -39,9 +39,9 @@ Included By
 -----------
 
 
-- :ref:`file_include_lotus_components_rendering.h`
-
 - :ref:`file_include_lotus_lotus.h`
+
+- :ref:`file_include_lotus_Renderer.h`
 
 - :ref:`file_include_lotus_resources_AssetRegistry.h`
 
@@ -59,7 +59,13 @@ Classes
 -------
 
 
+- :ref:`exhale_struct_structLotus_1_1LightInfo`
+
+- :ref:`exhale_struct_structLotus_1_1PointLightInfo`
+
 - :ref:`exhale_struct_structLotus_1_1Shader`
+
+- :ref:`exhale_struct_structLotus_1_1SpotLightInfo`
 
 
 Functions

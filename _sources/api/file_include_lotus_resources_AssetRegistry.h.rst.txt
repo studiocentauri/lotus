@@ -25,15 +25,15 @@ Includes
 --------
 
 
-- ``Cubemap.h`` (:ref:`file_include_lotus_resources_Cubemap.h`)
-
-- ``Model.h`` (:ref:`file_include_lotus_resources_Model.h`)
-
-- ``Shader.h`` (:ref:`file_include_lotus_resources_Shader.h`)
-
 - ``filesystem``
 
 - ``lotus/Config.h``
+
+- ``lotus/resources/Cubemap.h``
+
+- ``lotus/resources/Model.h``
+
+- ``lotus/resources/Shader.h``
 
 
 
@@ -64,9 +64,9 @@ Functions
 ---------
 
 
-- :ref:`exhale_function_AssetRegistry_8h_1ad91370af6be232ffc36dbd0c28df178e`
+- :ref:`exhale_function_AssetRegistry_8h_1a9c9e7a964a6df47aa786638d46618ffd`
 
-- :ref:`exhale_function_AssetRegistry_8h_1af8d5a4fcf982327d3fd07841fc56ff20`
+- :ref:`exhale_function_AssetRegistry_8h_1a5e915621158d53e3828b222fe8775d12`
 
 
 Defines

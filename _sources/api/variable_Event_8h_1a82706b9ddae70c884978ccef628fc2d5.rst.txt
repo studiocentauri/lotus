@@ -3,7 +3,7 @@
 Variable WINDOW_CLOSE_EVENT
 ===========================
 
-- Defined in :ref:`file_include_lotus_events_Event.h`
+- Defined in :ref:`file_include_lotus_ecs_Event.h`
 
 
 Variable Documentation

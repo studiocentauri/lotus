@@ -9,12 +9,10 @@ Class ILifecycle
 Inheritance Relationships
 -------------------------
 
-Derived Types
-*************
+Derived Type
+************
 
-- ``public Lotus::IWindow`` (:ref:`exhale_class_classLotus_1_1IWindow`)
 - ``public Lotus::Renderer`` (:ref:`exhale_class_classLotus_1_1Renderer`)
-- ``private Lotus::SceneManager`` (:ref:`exhale_class_classLotus_1_1SceneManager`)
 
 
 Class Documentation

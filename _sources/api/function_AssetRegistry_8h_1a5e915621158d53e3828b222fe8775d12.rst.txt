@@ -1,0 +1,13 @@
+.. _exhale_function_AssetRegistry_8h_1a5e915621158d53e3828b222fe8775d12:
+
+Function getConfigResourcePath
+==============================
+
+- Defined in :ref:`file_include_lotus_resources_AssetRegistry.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: getConfigResourcePath(const std::string&)

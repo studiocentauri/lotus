@@ -1,0 +1,16 @@
+.. _exhale_class_classLotus_1_1SceneTreeNode:
+
+Class SceneTreeNode
+===================
+
+- Defined in :ref:`file_include_lotus_scene_SceneTreeNode.h`
+
+
+Class Documentation
+-------------------
+
+
+.. doxygenclass:: Lotus::SceneTreeNode
+   :members:
+   :protected-members:
+   :undoc-members:

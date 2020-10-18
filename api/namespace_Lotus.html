@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Namespace Lotus &mdash; Lotus 0.1.0 documentation</title>
+  <title>Namespace Lotus &mdash; Lotus 0.0.1 documentation</title>
   
 
   
@@ -91,9 +91,7 @@
             
               <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/install.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/ecs.html">Entity Component System</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/renderer.html">Renderer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manual/install.html">Installation</a></li>
 </ul>
 <p class="caption"><span class="caption-text">API Reference</span></p>
 <ul>
@@ -182,10 +180,12 @@
 <ul class="simple">
 <li><p><a class="reference internal" href="structLotus_1_1BeginEvent.html#exhale-struct-structlotus-1-1beginevent"><span class="std std-ref">Struct BeginEvent</span></a></p></li>
 <li><p><a class="reference internal" href="structLotus_1_1CCamera.html#exhale-struct-structlotus-1-1ccamera"><span class="std std-ref">Struct CCamera</span></a></p></li>
-<li><p><a class="reference internal" href="structLotus_1_1CDirectionalLight.html#exhale-struct-structlotus-1-1cdirectionallight"><span class="std std-ref">Struct CDirectionalLight</span></a></p></li>
+<li><p><a class="reference internal" href="structLotus_1_1CCollider.html#exhale-struct-structlotus-1-1ccollider"><span class="std std-ref">Struct CCollider</span></a></p></li>
 <li><p><a class="reference internal" href="structLotus_1_1CLight.html#exhale-struct-structlotus-1-1clight"><span class="std std-ref">Struct CLight</span></a></p></li>
 <li><p><a class="reference internal" href="structLotus_1_1CMeshRenderer.html#exhale-struct-structlotus-1-1cmeshrenderer"><span class="std std-ref">Struct CMeshRenderer</span></a></p></li>
+<li><p><a class="reference internal" href="structLotus_1_1ComponentCreateEvent.html#exhale-struct-structlotus-1-1componentcreateevent"><span class="std std-ref">Template Struct ComponentCreateEvent</span></a></p></li>
 <li><p><a class="reference internal" href="structLotus_1_1CPointLight.html#exhale-struct-structlotus-1-1cpointlight"><span class="std std-ref">Struct CPointLight</span></a></p></li>
+<li><p><a class="reference internal" href="structLotus_1_1CRigidBody.html#exhale-struct-structlotus-1-1crigidbody"><span class="std std-ref">Struct CRigidBody</span></a></p></li>
 <li><p><a class="reference internal" href="structLotus_1_1CScript.html#exhale-struct-structlotus-1-1cscript"><span class="std std-ref">Struct CScript</span></a></p></li>
 <li><p><a class="reference internal" href="structLotus_1_1CSkybox.html#exhale-struct-structlotus-1-1cskybox"><span class="std std-ref">Struct CSkybox</span></a></p></li>
 <li><p><a class="reference internal" href="structLotus_1_1CSpotlight.html#exhale-struct-structlotus-1-1cspotlight"><span class="std std-ref">Struct CSpotlight</span></a></p></li>
@@ -193,50 +193,61 @@
 <li><p><a class="reference internal" href="structLotus_1_1Cubemap.html#exhale-struct-structlotus-1-1cubemap"><span class="std std-ref">Struct Cubemap</span></a></p></li>
 <li><p><a class="reference internal" href="structLotus_1_1DestroyEvent.html#exhale-struct-structlotus-1-1destroyevent"><span class="std std-ref">Struct DestroyEvent</span></a></p></li>
 <li><p><a class="reference internal" href="structLotus_1_1Event.html#exhale-struct-structlotus-1-1event"><span class="std std-ref">Struct Event</span></a></p></li>
+<li><p><a class="reference internal" href="structLotus_1_1IComponentInfo.html#exhale-struct-structlotus-1-1icomponentinfo"><span class="std std-ref">Struct IComponentInfo</span></a></p></li>
 <li><p><a class="reference internal" href="structLotus_1_1InitEvent.html#exhale-struct-structlotus-1-1initevent"><span class="std std-ref">Struct InitEvent</span></a></p></li>
-<li><p><a class="reference internal" href="structLotus_1_1ISerializable.html#exhale-struct-structlotus-1-1iserializable"><span class="std std-ref">Struct ISerializable</span></a></p></li>
 <li><p><a class="reference internal" href="structLotus_1_1KeyboardEvent.html#exhale-struct-structlotus-1-1keyboardevent"><span class="std std-ref">Struct KeyboardEvent</span></a></p></li>
+<li><p><a class="reference internal" href="structLotus_1_1LightInfo.html#exhale-struct-structlotus-1-1lightinfo"><span class="std std-ref">Struct LightInfo</span></a></p></li>
 <li><p><a class="reference internal" href="structLotus_1_1Material.html#exhale-struct-structlotus-1-1material"><span class="std std-ref">Struct Material</span></a></p></li>
 <li><p><a class="reference internal" href="structLotus_1_1Model.html#exhale-struct-structlotus-1-1model"><span class="std std-ref">Struct Model</span></a></p></li>
 <li><p><a class="reference internal" href="structLotus_1_1MouseEvent.html#exhale-struct-structlotus-1-1mouseevent"><span class="std std-ref">Struct MouseEvent</span></a></p></li>
+<li><p><a class="reference internal" href="structLotus_1_1PointLightInfo.html#exhale-struct-structlotus-1-1pointlightinfo"><span class="std std-ref">Struct PointLightInfo</span></a></p></li>
 <li><p><a class="reference internal" href="structLotus_1_1PostUpdateEvent.html#exhale-struct-structlotus-1-1postupdateevent"><span class="std std-ref">Struct PostUpdateEvent</span></a></p></li>
 <li><p><a class="reference internal" href="structLotus_1_1PreDestroyEvent.html#exhale-struct-structlotus-1-1predestroyevent"><span class="std std-ref">Struct PreDestroyEvent</span></a></p></li>
 <li><p><a class="reference internal" href="structLotus_1_1PreUpdateEvent.html#exhale-struct-structlotus-1-1preupdateevent"><span class="std std-ref">Struct PreUpdateEvent</span></a></p></li>
 <li><p><a class="reference internal" href="structLotus_1_1RendererOp.html#exhale-struct-structlotus-1-1rendererop"><span class="std std-ref">Struct RendererOp</span></a></p></li>
+<li><p><a class="reference internal" href="structLotus_1_1Scene.html#exhale-struct-structlotus-1-1scene"><span class="std std-ref">Struct Scene</span></a></p></li>
 <li><p><a class="reference internal" href="structLotus_1_1Shader.html#exhale-struct-structlotus-1-1shader"><span class="std std-ref">Struct Shader</span></a></p></li>
 <li><p><a class="reference internal" href="structLotus_1_1ShutdownEvent.html#exhale-struct-structlotus-1-1shutdownevent"><span class="std std-ref">Struct ShutdownEvent</span></a></p></li>
+<li><p><a class="reference internal" href="structLotus_1_1SpotLightInfo.html#exhale-struct-structlotus-1-1spotlightinfo"><span class="std std-ref">Struct SpotLightInfo</span></a></p></li>
 <li><p><a class="reference internal" href="structLotus_1_1SubMesh.html#exhale-struct-structlotus-1-1submesh"><span class="std std-ref">Struct SubMesh</span></a></p></li>
 <li><p><a class="reference internal" href="structLotus_1_1Texture.html#exhale-struct-structlotus-1-1texture"><span class="std std-ref">Struct Texture</span></a></p></li>
 <li><p><a class="reference internal" href="structLotus_1_1UpdateEvent.html#exhale-struct-structlotus-1-1updateevent"><span class="std std-ref">Struct UpdateEvent</span></a></p></li>
 <li><p><a class="reference internal" href="structLotus_1_1Vertex.html#exhale-struct-structlotus-1-1vertex"><span class="std std-ref">Struct Vertex</span></a></p></li>
 <li><p><a class="reference internal" href="structLotus_1_1WindowCloseEvent.html#exhale-struct-structlotus-1-1windowcloseevent"><span class="std std-ref">Struct WindowCloseEvent</span></a></p></li>
-<li><p><a class="reference internal" href="structLotus_1_1WindowOp.html#exhale-struct-structlotus-1-1windowop"><span class="std std-ref">Struct WindowOp</span></a></p></li>
 <li><p><a class="reference internal" href="structLotus_1_1WindowResizeEvent.html#exhale-struct-structlotus-1-1windowresizeevent"><span class="std std-ref">Struct WindowResizeEvent</span></a></p></li>
-<li><p><a class="reference internal" href="classLotus_1_1AActor.html#exhale-class-classlotus-1-1aactor"><span class="std std-ref">Class AActor</span></a></p></li>
-<li><p><a class="reference internal" href="classLotus_1_1ACamera.html#exhale-class-classlotus-1-1acamera"><span class="std std-ref">Class ACamera</span></a></p></li>
 <li><p><a class="reference internal" href="classLotus_1_1AssetRegistry.html#exhale-class-classlotus-1-1assetregistry"><span class="std std-ref">Class AssetRegistry</span></a></p></li>
+<li><p><a class="reference internal" href="classLotus_1_1ComponentFactory.html#exhale-class-classlotus-1-1componentfactory"><span class="std std-ref">Class ComponentFactory</span></a></p></li>
 <li><p><a class="reference internal" href="classLotus_1_1Config.html#exhale-class-classlotus-1-1config"><span class="std std-ref">Class Config</span></a></p></li>
-<li><p><a class="reference internal" href="classLotus_1_1Engine.html#exhale-class-classlotus-1-1engine"><span class="std std-ref">Class Engine</span></a></p></li>
 <li><p><a class="reference internal" href="classLotus_1_1Entity.html#exhale-class-classlotus-1-1entity"><span class="std std-ref">Class Entity</span></a></p></li>
 <li><p><a class="reference internal" href="classLotus_1_1EventManager.html#exhale-class-classlotus-1-1eventmanager"><span class="std std-ref">Class EventManager</span></a></p></li>
 <li><p><a class="reference internal" href="classLotus_1_1ILifecycle.html#exhale-class-classlotus-1-1ilifecycle"><span class="std std-ref">Class ILifecycle</span></a></p></li>
 <li><p><a class="reference internal" href="classLotus_1_1Input.html#exhale-class-classlotus-1-1input"><span class="std std-ref">Class Input</span></a></p></li>
-<li><p><a class="reference internal" href="classLotus_1_1IWindow.html#exhale-class-classlotus-1-1iwindow"><span class="std std-ref">Class IWindow</span></a></p></li>
+<li><p><a class="reference internal" href="classLotus_1_1ISystem.html#exhale-class-classlotus-1-1isystem"><span class="std std-ref">Class ISystem</span></a></p></li>
+<li><p><a class="reference internal" href="classLotus_1_1Recipe.html#exhale-class-classlotus-1-1recipe"><span class="std std-ref">Class Recipe</span></a></p></li>
 <li><p><a class="reference internal" href="classLotus_1_1Renderer.html#exhale-class-classlotus-1-1renderer"><span class="std std-ref">Class Renderer</span></a></p></li>
-<li><p><a class="reference internal" href="classLotus_1_1Scene.html#exhale-class-classlotus-1-1scene"><span class="std std-ref">Class Scene</span></a></p></li>
 <li><p><a class="reference internal" href="classLotus_1_1SceneManager.html#exhale-class-classlotus-1-1scenemanager"><span class="std std-ref">Class SceneManager</span></a></p></li>
+<li><p><a class="reference internal" href="classLotus_1_1SceneTreeNode.html#exhale-class-classlotus-1-1scenetreenode"><span class="std std-ref">Class SceneTreeNode</span></a></p></li>
 <li><p><a class="reference internal" href="classLotus_1_1Singleton.html#exhale-class-classlotus-1-1singleton"><span class="std std-ref">Template Class Singleton</span></a></p></li>
 </ul>
 </div>
 <div class="section" id="enums">
 <h2>Enums<a class="headerlink" href="#enums" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
+<li><p><a class="reference internal" href="enum_physics_8h_1ad662a876065d9195e2b74d1ac740f96f.html#exhale-enum-physics-8h-1ad662a876065d9195e2b74d1ac740f96f"><span class="std std-ref">Enum EPhysicsShape</span></a></p></li>
 <li><p><a class="reference internal" href="enum_lcommon_8h_1ae825578a38779239ed42a80e8048dfb3.html#exhale-enum-lcommon-8h-1ae825578a38779239ed42a80e8048dfb3"><span class="std std-ref">Enum ERenderAPI</span></a></p></li>
 </ul>
 </div>
 <div class="section" id="functions">
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
+<li><p><a class="reference internal" href="function_Entity_8h_1aabe0c16a083cafda79d9c244d057c122.html#exhale-function-entity-8h-1aabe0c16a083cafda79d9c244d057c122"><span class="std std-ref">Function Lotus::ECSInitialize</span></a></p></li>
+<li><p><a class="reference internal" href="function_Entity_8h_1ac5bcfd24bd3cb661b7b53050f822db5d.html#exhale-function-entity-8h-1ac5bcfd24bd3cb661b7b53050f822db5d"><span class="std std-ref">Function Lotus::ECSShutdown</span></a></p></li>
+<li><p><a class="reference internal" href="function_python_8h_1a39255d6efe972e030dc521b3363ff2da.html#exhale-function-python-8h-1a39255d6efe972e030dc521b3363ff2da"><span class="std std-ref">Function Lotus::exec_file</span></a></p></li>
+<li><p><a class="reference internal" href="function_CTransform_8h_1ada809878939f381775227b977dc1a54c.html#exhale-function-ctransform-8h-1ada809878939f381775227b977dc1a54c"><span class="std std-ref">Function Lotus::GetForwardVector</span></a></p></li>
+<li><p><a class="reference internal" href="function_CTransform_8h_1a35a04b715a08991168cc31988864cf00.html#exhale-function-ctransform-8h-1a35a04b715a08991168cc31988864cf00"><span class="std std-ref">Function Lotus::GetRightVector</span></a></p></li>
+<li><p><a class="reference internal" href="function_CTransform_8h_1add79c43acb117e49e987f5442850e9a0.html#exhale-function-ctransform-8h-1add79c43acb117e49e987f5442850e9a0"><span class="std std-ref">Function Lotus::GetUpVector</span></a></p></li>
+<li><p><a class="reference internal" href="function_CCamera_8h_1a65b0262010c6cce509ca6cbf4f1e789e.html#exhale-function-ccamera-8h-1a65b0262010c6cce509ca6cbf4f1e789e"><span class="std std-ref">Function Lotus::GetViewMatrix</span></a></p></li>
+<li><p><a class="reference internal" href="function_entry_8h_1abca73e006590bd784520a220d58b4899.html#exhale-function-entry-8h-1abca73e006590bd784520a220d58b4899"><span class="std std-ref">Function Lotus::Initialize</span></a></p></li>
 <li><p><a class="reference internal" href="function_physics_8h_1a726f9b8e02e75b52c1f7df5480868381.html#exhale-function-physics-8h-1a726f9b8e02e75b52c1f7df5480868381"><span class="std std-ref">Function Lotus::LCross</span></a></p></li>
 <li><p><a class="reference internal" href="function_physics_8h_1a893de9d4908114267fdfb6b93352a369.html#exhale-function-physics-8h-1a893de9d4908114267fdfb6b93352a369"><span class="std std-ref">Function Lotus::LLookAt</span></a></p></li>
 <li><p><a class="reference internal" href="function_physics_8h_1a7b60e19a35f865bc192e239b4c579a73.html#exhale-function-physics-8h-1a7b60e19a35f865bc192e239b4c579a73"><span class="std std-ref">Function Lotus::LNormalize</span></a></p></li>
@@ -251,6 +262,7 @@
 <li><p><a class="reference internal" href="function_physics_8h_1a7121c0742be7d02d3edeb1c095879776.html#exhale-function-physics-8h-1a7121c0742be7d02d3edeb1c095879776"><span class="std std-ref">Function Lotus::LTranslate</span></a></p></li>
 <li><p><a class="reference internal" href="function_Event_8h_1a75dfbd9f988cb79d117e09ff6c6f0f32.html#exhale-function-event-8h-1a75dfbd9f988cb79d117e09ff6c6f0f32"><span class="std std-ref">Function Lotus::operator&amp;</span></a></p></li>
 <li><p><a class="reference internal" href="function_Event_8h_1a027067e953b657dc705d2882f94d1322.html#exhale-function-event-8h-1a027067e953b657dc705d2882f94d1322"><span class="std std-ref">Function Lotus::operator|</span></a></p></li>
+<li><p><a class="reference internal" href="function_entry_8h_1a08ce3891cf754eac6006ee1f846ab7d0.html#exhale-function-entry-8h-1a08ce3891cf754eac6006ee1f846ab7d0"><span class="std std-ref">Function Lotus::Run</span></a></p></li>
 <li><p><a class="reference internal" href="function_physics_8h_1a14c15fa7611b1fff9231f9ecee70e5f7.html#exhale-function-physics-8h-1a14c15fa7611b1fff9231f9ecee70e5f7"><span class="std std-ref">Function Lotus::valuePtr(const Matrix4f&amp;)</span></a></p></li>
 <li><p><a class="reference internal" href="function_physics_8h_1a0aee522b724c634c46d97e2e2ad030f5.html#exhale-function-physics-8h-1a0aee522b724c634c46d97e2e2ad030f5"><span class="std std-ref">Function Lotus::valuePtr(const Vector3f&amp;)</span></a></p></li>
 </ul>
@@ -258,11 +270,8 @@
 <div class="section" id="typedefs">
 <h2>Typedefs<a class="headerlink" href="#typedefs" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference internal" href="typedef_Scene_8h_1af674a4a55348c0da8fef03f022a6c8e2.html#exhale-typedef-scene-8h-1af674a4a55348c0da8fef03f022a6c8e2"><span class="std std-ref">Typedef Lotus::EntityID</span></a></p></li>
-<li><p><a class="reference internal" href="typedef_Scene_8h_1acd408d6810128a5ee2f4d2105a8cdb32.html#exhale-typedef-scene-8h-1acd408d6810128a5ee2f4d2105a8cdb32"><span class="std std-ref">Typedef Lotus::EntityRegistry</span></a></p></li>
+<li><p><a class="reference internal" href="typedef_Entity_8h_1af674a4a55348c0da8fef03f022a6c8e2.html#exhale-typedef-entity-8h-1af674a4a55348c0da8fef03f022a6c8e2"><span class="std std-ref">Typedef Lotus::EntityID</span></a></p></li>
 <li><p><a class="reference internal" href="typedef_lcommon_8h_1a28ddd2debe7f1c7e5f33e1a637b6b84f.html#exhale-typedef-lcommon-8h-1a28ddd2debe7f1c7e5f33e1a637b6b84f"><span class="std std-ref">Typedef Lotus::Handle</span></a></p></li>
-<li><p><a class="reference internal" href="typedef_ISerializable_8h_1a186727d646d3c1df36b63232dc2e492a.html#exhale-typedef-iserializable-8h-1a186727d646d3c1df36b63232dc2e492a"><span class="std std-ref">Typedef Lotus::IArchive</span></a></p></li>
-<li><p><a class="reference internal" href="typedef_ISerializable_8h_1af13b7c55f035a10d77186e339bf6926a.html#exhale-typedef-iserializable-8h-1af13b7c55f035a10d77186e339bf6926a"><span class="std std-ref">Typedef Lotus::OArchive</span></a></p></li>
 <li><p><a class="reference internal" href="typedef_lcommon_8h_1a0ca822b05156da4e9ea13e492f68032e.html#exhale-typedef-lcommon-8h-1a0ca822b05156da4e9ea13e492f68032e"><span class="std std-ref">Typedef Lotus::SRef</span></a></p></li>
 <li><p><a class="reference internal" href="typedef_lcommon_8h_1a6f22aaa2432738d028a1ddf0eba60054.html#exhale-typedef-lcommon-8h-1a6f22aaa2432738d028a1ddf0eba60054"><span class="std std-ref">Typedef Lotus::URef</span></a></p></li>
 </ul>
@@ -270,17 +279,7 @@
 <div class="section" id="variables">
 <h2>Variables<a class="headerlink" href="#variables" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference internal" href="variable_Event_8h_1a41b99746213bcbbc8433f7a25d999e44.html#exhale-variable-event-8h-1a41b99746213bcbbc8433f7a25d999e44"><span class="std std-ref">Variable Lotus::L_KEY_A</span></a></p></li>
-<li><p><a class="reference internal" href="variable_Event_8h_1a828f48b63b87fb587dfdc0b6752fbae7.html#exhale-variable-event-8h-1a828f48b63b87fb587dfdc0b6752fbae7"><span class="std std-ref">Variable Lotus::L_KEY_D</span></a></p></li>
-<li><p><a class="reference internal" href="variable_Event_8h_1a6c153c49f8b599bc1f3d3a401ba46426.html#exhale-variable-event-8h-1a6c153c49f8b599bc1f3d3a401ba46426"><span class="std std-ref">Variable Lotus::L_KEY_E</span></a></p></li>
-<li><p><a class="reference internal" href="variable_Event_8h_1a1d6e11f6ceaee990c4c45fb699618462.html#exhale-variable-event-8h-1a1d6e11f6ceaee990c4c45fb699618462"><span class="std std-ref">Variable Lotus::L_KEY_ESC</span></a></p></li>
-<li><p><a class="reference internal" href="variable_Event_8h_1aed33feb307536967c772b666a0f51dce.html#exhale-variable-event-8h-1aed33feb307536967c772b666a0f51dce"><span class="std std-ref">Variable Lotus::L_KEY_NONE</span></a></p></li>
-<li><p><a class="reference internal" href="variable_Event_8h_1ad432f0e5d42c16af9b552825cceaf392.html#exhale-variable-event-8h-1ad432f0e5d42c16af9b552825cceaf392"><span class="std std-ref">Variable Lotus::L_KEY_PRESS</span></a></p></li>
-<li><p><a class="reference internal" href="variable_Event_8h_1a6c427ef0a5b57b5d3fcafae7358f6d7d.html#exhale-variable-event-8h-1a6c427ef0a5b57b5d3fcafae7358f6d7d"><span class="std std-ref">Variable Lotus::L_KEY_Q</span></a></p></li>
-<li><p><a class="reference internal" href="variable_Event_8h_1a5521cd08d6a90f2cad02bd0c65ace718.html#exhale-variable-event-8h-1a5521cd08d6a90f2cad02bd0c65ace718"><span class="std std-ref">Variable Lotus::L_KEY_RELEASE</span></a></p></li>
-<li><p><a class="reference internal" href="variable_Event_8h_1ab079205170bed9de40485343a4d95264.html#exhale-variable-event-8h-1ab079205170bed9de40485343a4d95264"><span class="std std-ref">Variable Lotus::L_KEY_REPEAT</span></a></p></li>
-<li><p><a class="reference internal" href="variable_Event_8h_1ae09c4c1573b3532a4207cfe668a83c56.html#exhale-variable-event-8h-1ae09c4c1573b3532a4207cfe668a83c56"><span class="std std-ref">Variable Lotus::L_KEY_S</span></a></p></li>
-<li><p><a class="reference internal" href="variable_Event_8h_1a236ef538639962bf4b599012e26b3ad6.html#exhale-variable-event-8h-1a236ef538639962bf4b599012e26b3ad6"><span class="std std-ref">Variable Lotus::L_KEY_W</span></a></p></li>
+<li><p><a class="reference internal" href="variable_Entity_8h_1a493ac41bab074a98321b2ea1c823702c.html#exhale-variable-entity-8h-1a493ac41bab074a98321b2ea1c823702c"><span class="std std-ref">Variable Lotus::NULL_ENTITY</span></a></p></li>
 </ul>
 </div>
 </div>

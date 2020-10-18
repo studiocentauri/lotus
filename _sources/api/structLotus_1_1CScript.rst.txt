@@ -3,7 +3,7 @@
 Struct CScript
 ==============
 
-.. did not find file this was defined in
+- Defined in :ref:`file_include_lotus_python.h`
 
 
 Struct Documentation

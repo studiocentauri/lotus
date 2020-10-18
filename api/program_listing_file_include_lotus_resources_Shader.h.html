@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Program Listing for File Shader.h &mdash; Lotus 0.1.0 documentation</title>
+  <title>Program Listing for File Shader.h &mdash; Lotus 0.0.1 documentation</title>
   
 
   
@@ -89,9 +89,7 @@
             
               <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/install.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/ecs.html">Entity Component System</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/renderer.html">Renderer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manual/install.html">Installation</a></li>
 </ul>
 <p class="caption"><span class="caption-text">API Reference</span></p>
 <ul>
@@ -167,13 +165,65 @@
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#pragma once</span>
 
 <span class="cp">#include</span> <span class="cpf">&quot;lotus/lcommon.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;lotus/physics.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;lotus/components/lights.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;lotus/physics/physics.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;lotus/ecs/components/CLight.h&quot;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&quot;lotus/resources/Material.h&quot;</span><span class="cp"></span>
-
 
 <span class="k">namespace</span> <span class="n">Lotus</span>
 <span class="p">{</span>
+    <span class="k">struct</span> <span class="nc">LightInfo</span>
+    <span class="p">{</span>
+        <span class="n">Vector3f</span> <span class="n">ambient</span> <span class="o">=</span> <span class="n">Vector3f</span><span class="p">(</span><span class="mf">0.0f</span><span class="p">);</span>
+        <span class="n">Vector3f</span> <span class="n">diffuse</span> <span class="o">=</span> <span class="n">Vector3f</span><span class="p">(</span><span class="mf">1.0f</span><span class="p">);</span>
+        <span class="n">Vector3f</span> <span class="n">specular</span> <span class="o">=</span> <span class="n">Vector3f</span><span class="p">(</span><span class="mf">0.4f</span><span class="p">);</span>
+        <span class="n">Vector3f</span> <span class="n">direction</span> <span class="o">=</span> <span class="n">Vector3f</span><span class="p">(</span><span class="mf">1.0f</span><span class="p">);</span>
+
+        <span class="c1">// TODO: Remove the default constructor? This should hold only temporary information</span>
+        <span class="c1">// relevant for rendering that frame, and should hence be created by the component</span>
+        <span class="n">LightInfo</span><span class="p">()</span> <span class="o">=</span> <span class="k">default</span><span class="p">;</span>
+        <span class="k">explicit</span> <span class="nf">LightInfo</span><span class="p">(</span><span class="k">const</span> <span class="n">CLight</span><span class="o">&amp;</span> <span class="n">light</span><span class="p">)</span>
+        <span class="o">:</span> <span class="n">ambient</span><span class="p">(</span><span class="n">light</span><span class="p">.</span><span class="n">ambient</span><span class="p">),</span>
+          <span class="n">diffuse</span><span class="p">(</span><span class="n">light</span><span class="p">.</span><span class="n">diffuse</span><span class="p">),</span>
+          <span class="n">specular</span><span class="p">(</span><span class="n">light</span><span class="p">.</span><span class="n">specular</span><span class="p">)</span>
+        <span class="p">{}</span>
+    <span class="p">};</span>
+
+    <span class="k">struct</span> <span class="nc">PointLightInfo</span> <span class="o">:</span> <span class="n">LightInfo</span>
+    <span class="p">{</span>
+        <span class="kt">float</span> <span class="n">constant</span> <span class="o">=</span> <span class="mf">1.0f</span><span class="p">;</span>
+        <span class="kt">float</span> <span class="n">linear</span> <span class="o">=</span> <span class="mf">0.22f</span><span class="p">;</span>
+        <span class="kt">float</span> <span class="n">quadratic</span> <span class="o">=</span> <span class="mf">0.20f</span><span class="p">;</span>
+        <span class="n">Vector3f</span> <span class="n">position</span> <span class="o">=</span> <span class="n">ORIGIN</span><span class="p">;</span>
+
+        <span class="n">PointLightInfo</span><span class="p">()</span> <span class="o">=</span> <span class="k">default</span><span class="p">;</span>
+        <span class="k">explicit</span> <span class="nf">PointLightInfo</span><span class="p">(</span><span class="k">const</span> <span class="n">CPointLight</span><span class="o">&amp;</span> <span class="n">light</span><span class="p">)</span>
+                <span class="o">:</span> <span class="n">LightInfo</span><span class="p">(</span><span class="n">light</span><span class="p">),</span>
+                  <span class="n">constant</span><span class="p">(</span><span class="n">light</span><span class="p">.</span><span class="n">constant</span><span class="p">),</span>
+                  <span class="n">linear</span><span class="p">(</span><span class="n">light</span><span class="p">.</span><span class="n">linear</span><span class="p">),</span>
+                  <span class="n">quadratic</span><span class="p">(</span><span class="n">light</span><span class="p">.</span><span class="n">quadratic</span><span class="p">)</span>
+        <span class="p">{}</span>
+    <span class="p">};</span>
+
+    <span class="k">struct</span> <span class="nc">SpotLightInfo</span> <span class="o">:</span> <span class="n">LightInfo</span>
+    <span class="p">{</span>
+        <span class="kt">float</span> <span class="n">constant</span> <span class="o">=</span> <span class="mf">1.0f</span><span class="p">;</span>
+        <span class="kt">float</span> <span class="n">linear</span> <span class="o">=</span> <span class="mf">0.07f</span><span class="p">;</span>
+        <span class="kt">float</span> <span class="n">quadratic</span> <span class="o">=</span> <span class="mf">0.017f</span><span class="p">;</span>
+        <span class="kt">float</span> <span class="n">innerCutOff</span> <span class="o">=</span> <span class="mf">12.5f</span><span class="p">;</span>
+        <span class="kt">float</span> <span class="n">outerCutOff</span> <span class="o">=</span> <span class="mf">17.5f</span><span class="p">;</span>
+        <span class="n">Vector3f</span> <span class="n">position</span> <span class="o">=</span> <span class="n">ORIGIN</span><span class="p">;</span>
+
+        <span class="n">SpotLightInfo</span><span class="p">()</span> <span class="o">=</span> <span class="k">default</span><span class="p">;</span>
+        <span class="k">explicit</span> <span class="nf">SpotLightInfo</span><span class="p">(</span><span class="k">const</span> <span class="n">CSpotlight</span><span class="o">&amp;</span> <span class="n">light</span><span class="p">)</span>
+                <span class="o">:</span> <span class="n">LightInfo</span><span class="p">(</span><span class="n">light</span><span class="p">),</span>
+                  <span class="n">constant</span><span class="p">(</span><span class="n">light</span><span class="p">.</span><span class="n">constant</span><span class="p">),</span>
+                  <span class="n">linear</span><span class="p">(</span><span class="n">light</span><span class="p">.</span><span class="n">linear</span><span class="p">),</span>
+                  <span class="n">quadratic</span><span class="p">(</span><span class="n">light</span><span class="p">.</span><span class="n">quadratic</span><span class="p">),</span>
+                  <span class="n">innerCutOff</span><span class="p">(</span><span class="n">light</span><span class="p">.</span><span class="n">innerCutOff</span><span class="p">),</span>
+                  <span class="n">outerCutOff</span><span class="p">(</span><span class="n">light</span><span class="p">.</span><span class="n">outerCutOff</span><span class="p">)</span>
+        <span class="p">{}</span>
+    <span class="p">};</span>
+
     <span class="k">struct</span> <span class="nc">LOTUS_API</span> <span class="n">Shader</span>
     <span class="p">{</span>
         <span class="kt">uint32_t</span> <span class="n">ID</span><span class="p">;</span>
@@ -184,12 +234,12 @@
         <span class="k">virtual</span> <span class="kt">void</span> <span class="n">SetBool</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">value</span><span class="p">)</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
         <span class="k">virtual</span> <span class="kt">void</span> <span class="n">SetMat4f</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">,</span> <span class="k">const</span> <span class="n">Matrix4f</span><span class="o">&amp;</span> <span class="n">mat</span><span class="p">)</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
         <span class="k">virtual</span> <span class="kt">void</span> <span class="n">SetVec3f</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">,</span> <span class="k">const</span> <span class="n">Vector3f</span><span class="o">&amp;</span> <span class="n">vec</span><span class="p">)</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-        <span class="k">virtual</span> <span class="kt">void</span> <span class="n">SetPointLight</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">,</span> <span class="k">const</span> <span class="n">CPointLight</span><span class="o">&amp;</span> <span class="n">options</span><span class="p">)</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-        <span class="k">virtual</span> <span class="kt">void</span> <span class="n">SetSpotlight</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">,</span> <span class="k">const</span> <span class="n">CSpotlight</span><span class="o">&amp;</span> <span class="n">options</span><span class="p">)</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-        <span class="k">virtual</span> <span class="kt">void</span> <span class="n">SetDirectionalLight</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">,</span> <span class="k">const</span> <span class="n">CDirectionalLight</span><span class="o">&amp;</span> <span class="n">options</span><span class="p">)</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-        <span class="k">virtual</span> <span class="kt">void</span> <span class="n">SetPointLightArray</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">CPointLight</span><span class="o">&gt;&amp;</span> <span class="n">lights</span><span class="p">)</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-        <span class="k">virtual</span> <span class="kt">void</span> <span class="n">SetSpotlightArray</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">CSpotlight</span><span class="o">&gt;&amp;</span> <span class="n">lights</span><span class="p">)</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-        <span class="k">virtual</span> <span class="kt">void</span> <span class="n">SetDirLightArray</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">CDirectionalLight</span><span class="o">&gt;&amp;</span> <span class="n">lights</span><span class="p">)</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="k">virtual</span> <span class="kt">void</span> <span class="n">SetPointLight</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">,</span> <span class="k">const</span> <span class="n">PointLightInfo</span><span class="o">&amp;</span> <span class="n">options</span><span class="p">)</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="k">virtual</span> <span class="kt">void</span> <span class="n">SetSpotlight</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">,</span> <span class="k">const</span> <span class="n">SpotLightInfo</span><span class="o">&amp;</span> <span class="n">options</span><span class="p">)</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="k">virtual</span> <span class="kt">void</span> <span class="n">SetDirectionalLight</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">,</span> <span class="k">const</span> <span class="n">LightInfo</span><span class="o">&amp;</span> <span class="n">options</span><span class="p">)</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="k">virtual</span> <span class="kt">void</span> <span class="n">SetPointLightArray</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">PointLightInfo</span><span class="o">&gt;&amp;</span> <span class="n">lights</span><span class="p">)</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="k">virtual</span> <span class="kt">void</span> <span class="n">SetSpotlightArray</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">SpotLightInfo</span><span class="o">&gt;&amp;</span> <span class="n">lights</span><span class="p">)</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="k">virtual</span> <span class="kt">void</span> <span class="n">SetDirLightArray</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">LightInfo</span><span class="o">&gt;&amp;</span> <span class="n">lights</span><span class="p">)</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
         <span class="k">virtual</span> <span class="kt">void</span> <span class="n">SetMaterial</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">name</span><span class="p">,</span> <span class="n">Handle</span><span class="o">&lt;</span><span class="n">Material</span><span class="o">&gt;</span> <span class="n">mat</span><span class="p">)</span> <span class="k">const</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
         <span class="k">virtual</span> <span class="o">~</span><span class="n">Shader</span><span class="p">()</span> <span class="o">=</span> <span class="k">default</span><span class="p">;</span>
     <span class="p">};</span>

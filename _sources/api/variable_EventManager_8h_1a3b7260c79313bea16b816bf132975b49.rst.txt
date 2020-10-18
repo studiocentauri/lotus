@@ -1,0 +1,13 @@
+.. _exhale_variable_EventManager_8h_1a3b7260c79313bea16b816bf132975b49:
+
+Variable CREATE_OF_TYPE
+=======================
+
+- Defined in :ref:`file_include_lotus_ecs_EventManager.h`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: CREATE_OF_TYPE

@@ -1,0 +1,13 @@
+.. _exhale_function_Entity_8h_1a87991e17ac23c76e0864d643b64568ee:
+
+Function Lotus::GetRegistry
+===========================
+
+- Defined in :ref:`file_include_lotus_ecs_Entity.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: Lotus::GetRegistry()

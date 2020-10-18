@@ -1,0 +1,16 @@
+.. _exhale_struct_structLotus_1_1CCollider:
+
+Struct CCollider
+================
+
+- Defined in :ref:`file_include_lotus_physics_physics.h`
+
+
+Struct Documentation
+--------------------
+
+
+.. doxygenstruct:: Lotus::CCollider
+   :members:
+   :protected-members:
+   :undoc-members:

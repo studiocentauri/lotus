@@ -38,9 +38,23 @@ Included By
 
 
 
+Namespaces
+----------
+
+
+- :ref:`namespace_Lotus`
+
+
+Classes
+-------
+
+
+- :ref:`exhale_struct_structLotus_1_1CScript`
+
+
 Functions
 ---------
 
 
-- :ref:`exhale_function_python_8h_1a29d480f966b234b215ded6a0d26e4795`
+- :ref:`exhale_function_python_8h_1a39255d6efe972e030dc521b3363ff2da`
 

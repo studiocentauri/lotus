@@ -1,0 +1,16 @@
+.. _dir_.:
+
+
+Directory .
+===========
+
+
+*Directory path:* ``.``
+
+Subdirectories
+--------------
+
+- :ref:`dir_D__code_lotus_lotus_include`
+
+
+

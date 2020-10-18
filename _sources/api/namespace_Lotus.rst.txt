@@ -21,13 +21,17 @@ Classes
 
 - :ref:`exhale_struct_structLotus_1_1CCamera`
 
-- :ref:`exhale_struct_structLotus_1_1CDirectionalLight`
+- :ref:`exhale_struct_structLotus_1_1CCollider`
 
 - :ref:`exhale_struct_structLotus_1_1CLight`
 
 - :ref:`exhale_struct_structLotus_1_1CMeshRenderer`
 
+- :ref:`exhale_struct_structLotus_1_1ComponentCreateEvent`
+
 - :ref:`exhale_struct_structLotus_1_1CPointLight`
+
+- :ref:`exhale_struct_structLotus_1_1CRigidBody`
 
 - :ref:`exhale_struct_structLotus_1_1CScript`
 
@@ -43,17 +47,21 @@ Classes
 
 - :ref:`exhale_struct_structLotus_1_1Event`
 
+- :ref:`exhale_struct_structLotus_1_1IComponentInfo`
+
 - :ref:`exhale_struct_structLotus_1_1InitEvent`
 
-- :ref:`exhale_struct_structLotus_1_1ISerializable`
-
 - :ref:`exhale_struct_structLotus_1_1KeyboardEvent`
+
+- :ref:`exhale_struct_structLotus_1_1LightInfo`
 
 - :ref:`exhale_struct_structLotus_1_1Material`
 
 - :ref:`exhale_struct_structLotus_1_1Model`
 
 - :ref:`exhale_struct_structLotus_1_1MouseEvent`
+
+- :ref:`exhale_struct_structLotus_1_1PointLightInfo`
 
 - :ref:`exhale_struct_structLotus_1_1PostUpdateEvent`
 
@@ -63,9 +71,13 @@ Classes
 
 - :ref:`exhale_struct_structLotus_1_1RendererOp`
 
+- :ref:`exhale_struct_structLotus_1_1Scene`
+
 - :ref:`exhale_struct_structLotus_1_1Shader`
 
 - :ref:`exhale_struct_structLotus_1_1ShutdownEvent`
+
+- :ref:`exhale_struct_structLotus_1_1SpotLightInfo`
 
 - :ref:`exhale_struct_structLotus_1_1SubMesh`
 
@@ -77,19 +89,13 @@ Classes
 
 - :ref:`exhale_struct_structLotus_1_1WindowCloseEvent`
 
-- :ref:`exhale_struct_structLotus_1_1WindowOp`
-
 - :ref:`exhale_struct_structLotus_1_1WindowResizeEvent`
-
-- :ref:`exhale_class_classLotus_1_1AActor`
-
-- :ref:`exhale_class_classLotus_1_1ACamera`
 
 - :ref:`exhale_class_classLotus_1_1AssetRegistry`
 
-- :ref:`exhale_class_classLotus_1_1Config`
+- :ref:`exhale_class_classLotus_1_1ComponentFactory`
 
-- :ref:`exhale_class_classLotus_1_1Engine`
+- :ref:`exhale_class_classLotus_1_1Config`
 
 - :ref:`exhale_class_classLotus_1_1Entity`
 
@@ -99,13 +105,15 @@ Classes
 
 - :ref:`exhale_class_classLotus_1_1Input`
 
-- :ref:`exhale_class_classLotus_1_1IWindow`
+- :ref:`exhale_class_classLotus_1_1ISystem`
+
+- :ref:`exhale_class_classLotus_1_1Recipe`
 
 - :ref:`exhale_class_classLotus_1_1Renderer`
 
-- :ref:`exhale_class_classLotus_1_1Scene`
-
 - :ref:`exhale_class_classLotus_1_1SceneManager`
+
+- :ref:`exhale_class_classLotus_1_1SceneTreeNode`
 
 - :ref:`exhale_class_classLotus_1_1Singleton`
 
@@ -114,12 +122,30 @@ Enums
 -----
 
 
+- :ref:`exhale_enum_physics_8h_1ad662a876065d9195e2b74d1ac740f96f`
+
 - :ref:`exhale_enum_lcommon_8h_1ae825578a38779239ed42a80e8048dfb3`
 
 
 Functions
 ---------
 
+
+- :ref:`exhale_function_Entity_8h_1aabe0c16a083cafda79d9c244d057c122`
+
+- :ref:`exhale_function_Entity_8h_1ac5bcfd24bd3cb661b7b53050f822db5d`
+
+- :ref:`exhale_function_python_8h_1a39255d6efe972e030dc521b3363ff2da`
+
+- :ref:`exhale_function_CTransform_8h_1ada809878939f381775227b977dc1a54c`
+
+- :ref:`exhale_function_CTransform_8h_1a35a04b715a08991168cc31988864cf00`
+
+- :ref:`exhale_function_CTransform_8h_1add79c43acb117e49e987f5442850e9a0`
+
+- :ref:`exhale_function_CCamera_8h_1a65b0262010c6cce509ca6cbf4f1e789e`
+
+- :ref:`exhale_function_entry_8h_1abca73e006590bd784520a220d58b4899`
 
 - :ref:`exhale_function_physics_8h_1a726f9b8e02e75b52c1f7df5480868381`
 
@@ -149,6 +175,8 @@ Functions
 
 - :ref:`exhale_function_Event_8h_1a027067e953b657dc705d2882f94d1322`
 
+- :ref:`exhale_function_entry_8h_1a08ce3891cf754eac6006ee1f846ab7d0`
+
 - :ref:`exhale_function_physics_8h_1a14c15fa7611b1fff9231f9ecee70e5f7`
 
 - :ref:`exhale_function_physics_8h_1a0aee522b724c634c46d97e2e2ad030f5`
@@ -158,15 +186,9 @@ Typedefs
 --------
 
 
-- :ref:`exhale_typedef_Scene_8h_1af674a4a55348c0da8fef03f022a6c8e2`
-
-- :ref:`exhale_typedef_Scene_8h_1acd408d6810128a5ee2f4d2105a8cdb32`
+- :ref:`exhale_typedef_Entity_8h_1af674a4a55348c0da8fef03f022a6c8e2`
 
 - :ref:`exhale_typedef_lcommon_8h_1a28ddd2debe7f1c7e5f33e1a637b6b84f`
-
-- :ref:`exhale_typedef_ISerializable_8h_1a186727d646d3c1df36b63232dc2e492a`
-
-- :ref:`exhale_typedef_ISerializable_8h_1af13b7c55f035a10d77186e339bf6926a`
 
 - :ref:`exhale_typedef_lcommon_8h_1a0ca822b05156da4e9ea13e492f68032e`
 
@@ -177,24 +199,4 @@ Variables
 ---------
 
 
-- :ref:`exhale_variable_Event_8h_1a41b99746213bcbbc8433f7a25d999e44`
-
-- :ref:`exhale_variable_Event_8h_1a828f48b63b87fb587dfdc0b6752fbae7`
-
-- :ref:`exhale_variable_Event_8h_1a6c153c49f8b599bc1f3d3a401ba46426`
-
-- :ref:`exhale_variable_Event_8h_1a1d6e11f6ceaee990c4c45fb699618462`
-
-- :ref:`exhale_variable_Event_8h_1aed33feb307536967c772b666a0f51dce`
-
-- :ref:`exhale_variable_Event_8h_1ad432f0e5d42c16af9b552825cceaf392`
-
-- :ref:`exhale_variable_Event_8h_1a6c427ef0a5b57b5d3fcafae7358f6d7d`
-
-- :ref:`exhale_variable_Event_8h_1a5521cd08d6a90f2cad02bd0c65ace718`
-
-- :ref:`exhale_variable_Event_8h_1ab079205170bed9de40485343a4d95264`
-
-- :ref:`exhale_variable_Event_8h_1ae09c4c1573b3532a4207cfe668a83c56`
-
-- :ref:`exhale_variable_Event_8h_1a236ef538639962bf4b599012e26b3ad6`
+- :ref:`exhale_variable_Entity_8h_1a493ac41bab074a98321b2ea1c823702c`

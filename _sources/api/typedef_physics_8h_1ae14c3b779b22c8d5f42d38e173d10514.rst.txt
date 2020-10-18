@@ -3,7 +3,7 @@
 Typedef Matrix3i
 ================
 
-- Defined in :ref:`file_include_lotus_physics.h`
+- Defined in :ref:`file_include_lotus_physics_physics.h`
 
 
 Typedef Documentation

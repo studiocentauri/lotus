@@ -1,0 +1,13 @@
+.. _exhale_function_CTransform_8h_1ada809878939f381775227b977dc1a54c:
+
+Function Lotus::GetForwardVector
+================================
+
+- Defined in :ref:`file_include_lotus_ecs_components_CTransform.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: Lotus::GetForwardVector(const CTransform&)

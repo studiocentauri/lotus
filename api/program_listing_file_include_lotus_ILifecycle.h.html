@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Program Listing for File ILifecycle.h &mdash; Lotus 0.1.0 documentation</title>
+  <title>Program Listing for File ILifecycle.h &mdash; Lotus 0.0.1 documentation</title>
   
 
   
@@ -89,9 +89,7 @@
             
               <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/install.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/ecs.html">Entity Component System</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/renderer.html">Renderer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manual/install.html">Installation</a></li>
 </ul>
 <p class="caption"><span class="caption-text">API Reference</span></p>
 <ul>
@@ -166,19 +164,68 @@
 <p>↰ <a class="reference internal" href="file_include_lotus_ILifecycle.h.html#file-include-lotus-ilifecycle-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">include\lotus\ILifecycle.h</span></code>)</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#pragma once</span>
 
-<span class="cp">#include</span> <span class="cpf">&quot;events/Event.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;lotus/ecs/Event.h&quot;</span><span class="cp"></span>
 
 <span class="k">namespace</span> <span class="n">Lotus</span>
 <span class="p">{</span>
 
-    <span class="k">struct</span> <span class="nc">InitEvent</span> <span class="o">:</span> <span class="n">Event</span> <span class="p">{};</span>
-    <span class="k">struct</span> <span class="nc">BeginEvent</span> <span class="o">:</span> <span class="n">Event</span> <span class="p">{};</span>
-    <span class="k">struct</span> <span class="nc">PreUpdateEvent</span> <span class="o">:</span> <span class="n">Event</span> <span class="p">{};</span>
-    <span class="k">struct</span> <span class="nc">UpdateEvent</span> <span class="o">:</span> <span class="n">Event</span> <span class="p">{</span> <span class="kt">float</span> <span class="n">DeltaTime</span> <span class="o">=</span> <span class="mf">0.0f</span><span class="p">;</span> <span class="p">};</span>
-    <span class="k">struct</span> <span class="nc">PostUpdateEvent</span> <span class="o">:</span> <span class="n">Event</span> <span class="p">{};</span>
-    <span class="k">struct</span> <span class="nc">PreDestroyEvent</span> <span class="o">:</span> <span class="n">Event</span> <span class="p">{};</span>
-    <span class="k">struct</span> <span class="nc">DestroyEvent</span> <span class="o">:</span> <span class="n">Event</span> <span class="p">{};</span>
-    <span class="k">struct</span> <span class="nc">ShutdownEvent</span> <span class="o">:</span> <span class="n">Event</span> <span class="p">{};</span>
+    <span class="k">struct</span> <span class="nc">InitEvent</span> <span class="o">:</span> <span class="n">Event</span>
+    <span class="p">{</span>
+        <span class="n">InitEvent</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="n">Immediate</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">};</span>
+
+    <span class="k">struct</span> <span class="nc">BeginEvent</span> <span class="o">:</span> <span class="n">Event</span>
+    <span class="p">{</span>
+        <span class="n">BeginEvent</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="n">Immediate</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">};</span>
+
+    <span class="k">struct</span> <span class="nc">PreUpdateEvent</span> <span class="o">:</span> <span class="n">Event</span>
+    <span class="p">{</span>
+        <span class="n">PreUpdateEvent</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="n">Immediate</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">};</span>
+
+    <span class="k">struct</span> <span class="nc">UpdateEvent</span> <span class="o">:</span> <span class="n">Event</span>
+    <span class="p">{</span>
+        <span class="kt">float</span> <span class="n">DeltaTime</span> <span class="o">=</span> <span class="mf">0.0f</span><span class="p">;</span>
+
+        <span class="n">UpdateEvent</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="n">Immediate</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">};</span>
+
+    <span class="k">struct</span> <span class="nc">PostUpdateEvent</span> <span class="o">:</span> <span class="n">Event</span>
+    <span class="p">{</span>
+        <span class="n">PostUpdateEvent</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="n">Immediate</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">};</span>
+
+    <span class="k">struct</span> <span class="nc">PreDestroyEvent</span> <span class="o">:</span> <span class="n">Event</span>
+    <span class="p">{</span>
+        <span class="n">PreDestroyEvent</span><span class="p">()</span>
+        <span class="p">{</span>
+            <span class="n">Immediate</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">};</span>
+
+    <span class="k">struct</span> <span class="nc">DestroyEvent</span> <span class="o">:</span> <span class="n">Event</span>
+    <span class="p">{</span>
+    <span class="p">};</span>
+
+    <span class="k">struct</span> <span class="nc">ShutdownEvent</span> <span class="o">:</span> <span class="n">Event</span>
+    <span class="p">{</span>
+    <span class="p">};</span>
 
     <span class="k">class</span> <span class="nc">ILifecycle</span>
     <span class="p">{</span>

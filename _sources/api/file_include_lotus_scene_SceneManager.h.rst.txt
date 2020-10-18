@@ -25,11 +25,9 @@ Includes
 --------
 
 
-- ``Scene.h`` (:ref:`file_include_lotus_scene_Scene.h`)
-
-- ``lotus/ILifecycle.h``
-
 - ``lotus/lcommon.h``
+
+- ``lotus/scene/Scene.h``
 
 
 

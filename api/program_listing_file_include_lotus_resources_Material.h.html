@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Program Listing for File Material.h &mdash; Lotus 0.1.0 documentation</title>
+  <title>Program Listing for File Material.h &mdash; Lotus 0.0.1 documentation</title>
   
 
   
@@ -89,9 +89,7 @@
             
               <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/install.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/ecs.html">Entity Component System</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/renderer.html">Renderer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manual/install.html">Installation</a></li>
 </ul>
 <p class="caption"><span class="caption-text">API Reference</span></p>
 <ul>
@@ -166,8 +164,8 @@
 <p>↰ <a class="reference internal" href="file_include_lotus_resources_Material.h.html#file-include-lotus-resources-material-h"><span class="std std-ref">Return to documentation for file</span></a> (<code class="docutils literal notranslate"><span class="pre">include\lotus\resources\Material.h</span></code>)</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#pragma once</span>
 
-<span class="cp">#include</span> <span class="cpf">&quot;lotus/physics.h&quot;</span><span class="cp"></span>
-<span class="cp">#include</span> <span class="cpf">&quot;Texture.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;lotus/physics/physics.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;lotus/resources/Texture.h&quot;</span><span class="cp"></span>
 
 <span class="cp">#include</span> <span class="cpf">&lt;variant&gt;</span><span class="cp"></span>
 <span class="cp">#include</span> <span class="cpf">&lt;optional&gt;</span><span class="cp"></span>
@@ -178,9 +176,9 @@
     <span class="p">{</span>
         <span class="n">std</span><span class="o">::</span><span class="n">variant</span><span class="o">&lt;</span><span class="n">Vector3f</span><span class="p">,</span> <span class="n">Handle</span><span class="o">&lt;</span><span class="n">Texture</span><span class="o">&gt;&gt;</span> <span class="n">Albedo</span><span class="p">;</span>
         <span class="n">std</span><span class="o">::</span><span class="n">optional</span><span class="o">&lt;</span><span class="n">Handle</span><span class="o">&lt;</span><span class="n">Texture</span><span class="o">&gt;&gt;</span> <span class="n">Normal</span><span class="p">;</span>
-        <span class="kt">float</span> <span class="n">Roughness</span><span class="p">;</span>
-        <span class="kt">float</span> <span class="n">Metallic</span><span class="p">;</span>
-        <span class="kt">float</span> <span class="n">AO</span><span class="p">;</span>
+        <span class="kt">float</span> <span class="n">Roughness</span> <span class="o">=</span> <span class="mf">1.0f</span><span class="p">;</span>
+        <span class="kt">float</span> <span class="n">Metallic</span> <span class="o">=</span> <span class="mf">0.0f</span><span class="p">;</span>
+        <span class="kt">float</span> <span class="n">AO</span> <span class="o">=</span> <span class="mf">1.0f</span><span class="p">;</span>
     <span class="p">};</span>
 
     <span class="n">LOADER</span><span class="p">(</span><span class="n">MaterialLoader</span><span class="p">,</span> <span class="n">Material</span><span class="p">)</span>

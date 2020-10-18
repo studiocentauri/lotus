@@ -15,11 +15,10 @@ Program Listing for File lcommon.h
    
    #include <memory>
    #include <fstream>
+   #include <type_traits>
    
    #include "lotus_export.h"
    #include "lotus/internal/entt/entt.hpp"
-   #include "lotus/internal/cereal/cereal.hpp"
-   #include "lotus/internal/cereal/archives/json.hpp"
    #include "lotus/internal/nlohmann/json.hpp"
    
    
@@ -55,7 +54,7 @@ Program Listing for File lcommon.h
    
            static T& Get()
            {
-               static T instance;  // NOLINT(clang-diagnostic-exit-time-destructors)
+               static T instance;
                return instance;
            }
    

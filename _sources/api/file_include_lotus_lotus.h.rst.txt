@@ -25,25 +25,41 @@ Includes
 --------
 
 
-- ``Engine.h`` (:ref:`file_include_lotus_Engine.h`)
+- ``Config.h`` (:ref:`file_include_lotus_Config.h`)
+
+- ``ILifecycle.h`` (:ref:`file_include_lotus_ILifecycle.h`)
+
+- ``Input.h`` (:ref:`file_include_lotus_Input.h`)
 
 - ``Renderer.h`` (:ref:`file_include_lotus_Renderer.h`)
 
-- ``components/lights.h``
+- ``ecs/Entity.h``
 
-- ``components/rendering.h``
+- ``ecs/Event.h``
 
-- ``components/scene.h``
+- ``ecs/EventManager.h``
 
-- ``events/Event.h``
+- ``ecs/ISystem.h``
 
-- ``events/IWindow.h``
+- ``ecs/Recipe.h``
 
-- ``events/Input.h``
+- ``ecs/components/CCamera.h``
+
+- ``ecs/components/CLight.h``
+
+- ``ecs/components/CTransform.h``
+
+- ``ecs/components/ComponentFactory.h``
+
+- ``ecs/components/IComponentInfo.h``
+
+- ``entry.h`` (:ref:`file_include_lotus_entry.h`)
 
 - ``filesystem``
 
-- ``physics.h`` (:ref:`file_include_lotus_physics.h`)
+- ``lcommon.h`` (:ref:`file_include_lotus_lcommon.h`)
+
+- ``physics/physics.h``
 
 - ``python.h`` (:ref:`file_include_lotus_python.h`)
 
@@ -51,17 +67,13 @@ Includes
 
 - ``resources/Cubemap.h``
 
+- ``resources/Material.h``
+
 - ``resources/Model.h``
 
 - ``resources/Shader.h``
 
 - ``resources/Texture.h``
-
-- ``scene/AActor.h``
-
-- ``scene/ACamera.h``
-
-- ``scene/Scene.h``
 
 - ``scene/SceneManager.h``
 

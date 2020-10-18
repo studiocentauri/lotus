@@ -25,21 +25,19 @@ Includes
 --------
 
 
-- ``ILifecycle.h`` (:ref:`file_include_lotus_ILifecycle.h`)
+- ``lotus/ILifecycle.h``
 
-- ``lotus/components/rendering.h``
+- ``lotus/ecs/components/CTransform.h``
 
-- ``lotus/components/scene.h``
+- ``lotus/resources/Model.h``
 
-- ``lotus/events/IWindow.h``
+- ``lotus/resources/Shader.h``
 
 
 
 Included By
 -----------
 
-
-- :ref:`file_include_lotus_Engine.h`
 
 - :ref:`file_include_lotus_lotus.h`
 
@@ -56,6 +54,8 @@ Namespaces
 Classes
 -------
 
+
+- :ref:`exhale_struct_structLotus_1_1CMeshRenderer`
 
 - :ref:`exhale_struct_structLotus_1_1RendererOp`
 

@@ -25,9 +25,9 @@ Includes
 --------
 
 
-- ``Texture.h`` (:ref:`file_include_lotus_resources_Texture.h`)
+- ``lotus/physics/physics.h``
 
-- ``lotus/physics.h``
+- ``lotus/resources/Texture.h``
 
 - ``optional``
 
@@ -38,6 +38,8 @@ Includes
 Included By
 -----------
 
+
+- :ref:`file_include_lotus_lotus.h`
 
 - :ref:`file_include_lotus_resources_Model.h`
 

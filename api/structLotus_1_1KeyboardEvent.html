@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Struct KeyboardEvent &mdash; Lotus 0.1.0 documentation</title>
+  <title>Struct KeyboardEvent &mdash; Lotus 0.0.1 documentation</title>
   
 
   
@@ -40,8 +40,8 @@
     
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Struct Material" href="structLotus_1_1Material.html" />
-    <link rel="prev" title="Struct ISerializable" href="structLotus_1_1ISerializable.html" /> 
+    <link rel="next" title="Struct LightInfo" href="structLotus_1_1LightInfo.html" />
+    <link rel="prev" title="Struct InitEvent" href="structLotus_1_1InitEvent.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -91,9 +91,7 @@
             
               <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/install.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/ecs.html">Entity Component System</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/renderer.html">Renderer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manual/install.html">Installation</a></li>
 </ul>
 <p class="caption"><span class="caption-text">API Reference</span></p>
 <ul>
@@ -168,7 +166,7 @@
   <div class="section" id="struct-keyboardevent">
 <span id="exhale-struct-structlotus-1-1keyboardevent"></span><h1>Struct KeyboardEvent<a class="headerlink" href="#struct-keyboardevent" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><p>Defined in <a class="reference internal" href="file_include_lotus_events_Event.h.html#file-include-lotus-events-event-h"><span class="std std-ref">File Event.h</span></a></p></li>
+<li><p>Defined in <a class="reference internal" href="file_include_lotus_ecs_Event.h.html#file-include-lotus-ecs-event-h"><span class="std std-ref">File Event.h</span></a></p></li>
 </ul>
 <div class="section" id="inheritance-relationships">
 <h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
@@ -184,7 +182,8 @@
 <dl class="cpp struct">
 <dt id="_CPPv4N5Lotus13KeyboardEventE">
 <span id="_CPPv3N5Lotus13KeyboardEventE"></span><span id="_CPPv2N5Lotus13KeyboardEventE"></span><span id="Lotus::KeyboardEvent"></span><span class="target" id="structLotus_1_1KeyboardEvent"></span><em class="property">struct </em><code class="sig-prename descclassname">Lotus<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">KeyboardEvent</code> : <em class="property">public</em> Lotus::<a class="reference internal" href="structLotus_1_1Event.html#_CPPv4N5Lotus5EventE" title="Lotus::Event">Event</a><a class="headerlink" href="#_CPPv4N5Lotus13KeyboardEventE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><div class="breathe-sectiondef docutils container">
+<dd><p><a class="reference internal" href="classLotus_1_1Input.html#classLotus_1_1Input"><span class="std std-ref">Input</span></a> events </p>
+<div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Public Functions</p>
 <dl class="cpp function">
 <dt id="_CPPv4N5Lotus13KeyboardEvent13KeyboardEventEv">
@@ -196,12 +195,12 @@
 <p class="breathe-sectiondef-title rubric">Public Members</p>
 <dl class="cpp var">
 <dt id="_CPPv4N5Lotus13KeyboardEvent7KeyCodeE">
-<span id="_CPPv3N5Lotus13KeyboardEvent7KeyCodeE"></span><span id="_CPPv2N5Lotus13KeyboardEvent7KeyCodeE"></span><span id="Lotus::KeyboardEvent::KeyCode__i"></span><span class="target" id="structLotus_1_1KeyboardEvent_1af586df3042c73f7ec9743856c390096f"></span>int <code class="sig-name descname">KeyCode</code> = <a class="reference internal" href="variable_Event_8h_1aed33feb307536967c772b666a0f51dce.html#_CPPv4N5Lotus10L_KEY_NONEE" title="Lotus::L_KEY_NONE">L_KEY_NONE</a><a class="headerlink" href="#_CPPv4N5Lotus13KeyboardEvent7KeyCodeE" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv3N5Lotus13KeyboardEvent7KeyCodeE"></span><span id="_CPPv2N5Lotus13KeyboardEvent7KeyCodeE"></span><span id="Lotus::KeyboardEvent::KeyCode__i"></span><span class="target" id="structLotus_1_1KeyboardEvent_1af586df3042c73f7ec9743856c390096f"></span>int <code class="sig-name descname">KeyCode</code> = <a class="reference internal" href="variable_Event_8h_1a781309883d8bf9116e689ee8f7f73c72.html#_CPPv410L_KEY_NONE" title="L_KEY_NONE">L_KEY_NONE</a><a class="headerlink" href="#_CPPv4N5Lotus13KeyboardEvent7KeyCodeE" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp var">
 <dt id="_CPPv4N5Lotus13KeyboardEvent5StateE">
-<span id="_CPPv3N5Lotus13KeyboardEvent5StateE"></span><span id="_CPPv2N5Lotus13KeyboardEvent5StateE"></span><span id="Lotus::KeyboardEvent::State__i"></span><span class="target" id="structLotus_1_1KeyboardEvent_1a3548b56caece6961ed36925a3ef08ed6"></span>int <code class="sig-name descname">State</code> = <a class="reference internal" href="variable_Event_8h_1aed33feb307536967c772b666a0f51dce.html#_CPPv4N5Lotus10L_KEY_NONEE" title="Lotus::L_KEY_NONE">L_KEY_NONE</a><a class="headerlink" href="#_CPPv4N5Lotus13KeyboardEvent5StateE" title="Permalink to this definition">¶</a><br /></dt>
+<span id="_CPPv3N5Lotus13KeyboardEvent5StateE"></span><span id="_CPPv2N5Lotus13KeyboardEvent5StateE"></span><span id="Lotus::KeyboardEvent::State__i"></span><span class="target" id="structLotus_1_1KeyboardEvent_1a3548b56caece6961ed36925a3ef08ed6"></span>int <code class="sig-name descname">State</code> = <a class="reference internal" href="variable_Event_8h_1a781309883d8bf9116e689ee8f7f73c72.html#_CPPv410L_KEY_NONE" title="L_KEY_NONE">L_KEY_NONE</a><a class="headerlink" href="#_CPPv4N5Lotus13KeyboardEvent5StateE" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </div>
@@ -218,10 +217,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="structLotus_1_1Material.html" class="btn btn-neutral float-right" title="Struct Material" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="structLotus_1_1LightInfo.html" class="btn btn-neutral float-right" title="Struct LightInfo" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="structLotus_1_1ISerializable.html" class="btn btn-neutral float-left" title="Struct ISerializable" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="structLotus_1_1InitEvent.html" class="btn btn-neutral float-left" title="Struct InitEvent" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

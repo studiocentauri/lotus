@@ -33,6 +33,10 @@ Included By
 -----------
 
 
+- :ref:`file_include_lotus_entry.h`
+
+- :ref:`file_include_lotus_lotus.h`
+
 - :ref:`file_include_lotus_resources_AssetRegistry.h`
 
 

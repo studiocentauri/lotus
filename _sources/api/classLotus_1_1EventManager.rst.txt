@@ -3,7 +3,7 @@
 Class EventManager
 ==================
 
-- Defined in :ref:`file_include_lotus_events_EventManager.h`
+- Defined in :ref:`file_include_lotus_ecs_EventManager.h`
 
 
 Inheritance Relationships

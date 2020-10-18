@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Class Entity &mdash; Lotus 0.1.0 documentation</title>
+  <title>Class Entity &mdash; Lotus 0.0.1 documentation</title>
   
 
   
@@ -41,7 +41,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Class EventManager" href="classLotus_1_1EventManager.html" />
-    <link rel="prev" title="Class Engine" href="classLotus_1_1Engine.html" /> 
+    <link rel="prev" title="Class Config" href="classLotus_1_1Config.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -91,9 +91,7 @@
             
               <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/install.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/ecs.html">Entity Component System</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/renderer.html">Renderer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manual/install.html">Installation</a></li>
 </ul>
 <p class="caption"><span class="caption-text">API Reference</span></p>
 <ul>
@@ -168,56 +166,75 @@
   <div class="section" id="class-entity">
 <span id="exhale-class-classlotus-1-1entity"></span><h1>Class Entity<a class="headerlink" href="#class-entity" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><p>Defined in <a class="reference internal" href="file_include_lotus_scene_Scene.h.html#file-include-lotus-scene-scene-h"><span class="std std-ref">File Scene.h</span></a></p></li>
+<li><p>Defined in <a class="reference internal" href="file_include_lotus_ecs_Entity.h.html#file-include-lotus-ecs-entity-h"><span class="std std-ref">File Entity.h</span></a></p></li>
 </ul>
-<div class="section" id="inheritance-relationships">
-<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="derived-type">
-<h3>Derived Type<a class="headerlink" href="#derived-type" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">Lotus::AActor</span></code> (<a class="reference internal" href="classLotus_1_1AActor.html#exhale-class-classlotus-1-1aactor"><span class="std std-ref">Class AActor</span></a>)</p></li>
-</ul>
-</div>
-</div>
 <div class="section" id="class-documentation">
 <h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
 <dl class="cpp class">
 <dt id="_CPPv4N5Lotus6EntityE">
 <span id="_CPPv3N5Lotus6EntityE"></span><span id="_CPPv2N5Lotus6EntityE"></span><span id="Lotus::Entity"></span><span class="target" id="classLotus_1_1Entity"></span><em class="property">class </em><code class="sig-prename descclassname">Lotus<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">Entity</code><a class="headerlink" href="#_CPPv4N5Lotus6EntityE" title="Permalink to this definition">¶</a><br /></dt>
-<dd><p>Subclassed by <a class="reference internal" href="classLotus_1_1AActor.html#classLotus_1_1AActor"><span class="std std-ref">Lotus::AActor</span></a></p>
+<dd><p>Lightweight wrapper class to represent entities. </p>
+<p>This class is the main interface through which the user should manipulate entities. It provides methods to manipulate components and destroy the entity. The class wraps an entity handle and a registry pointer, and is therefore lightweight enough to be passed around. </p>
 <div class="breathe-sectiondef docutils container">
 <p class="breathe-sectiondef-title rubric">Public Functions</p>
 <dl class="cpp function">
-<dt id="_CPPv4N5Lotus6Entity6EntityE8EntityIDP5Scene">
-<span id="_CPPv3N5Lotus6Entity6EntityE8EntityIDP5Scene"></span><span id="_CPPv2N5Lotus6Entity6EntityE8EntityIDP5Scene"></span><span id="Lotus::Entity::Entity__EntityID.SceneP"></span><span class="target" id="classLotus_1_1Entity_1ab21b9f957fd3e24e120b426687bd0a73"></span><code class="sig-name descname">Entity</code><span class="sig-paren">(</span><a class="reference internal" href="typedef_Scene_8h_1af674a4a55348c0da8fef03f022a6c8e2.html#_CPPv4N5Lotus8EntityIDE" title="Lotus::EntityID">EntityID</a> <em>id</em> = NULL_ENTITY, <a class="reference internal" href="classLotus_1_1Scene.html#_CPPv4N5Lotus5SceneE" title="Lotus::Scene">Scene</a> *<em>scene</em> = nullptr<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus6Entity6EntityE8EntityIDP5Scene" title="Permalink to this definition">¶</a><br /></dt>
+<dt id="_CPPv4N5Lotus6Entity6EntityE8EntityIDPN4entt8registryE">
+<span id="_CPPv3N5Lotus6Entity6EntityE8EntityIDPN4entt8registryE"></span><span id="_CPPv2N5Lotus6Entity6EntityE8EntityIDPN4entt8registryE"></span><span id="Lotus::Entity::Entity__EntityID.entt::registryP"></span><span class="target" id="classLotus_1_1Entity_1ad1a098f6591950a6c21b255ed84bce18"></span><code class="sig-name descname">Entity</code><span class="sig-paren">(</span><a class="reference internal" href="typedef_Entity_8h_1af674a4a55348c0da8fef03f022a6c8e2.html#_CPPv4N5Lotus8EntityIDE" title="Lotus::EntityID">EntityID</a> <em>id</em>, entt::registry *<em>registry</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus6Entity6EntityE8EntityIDPN4entt8registryE" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 <dl class="cpp function">
-<dt id="_CPPv4I0DpEN5Lotus6Entity12AddComponentER1TDpRR4Args">
-<span id="_CPPv3I0DpEN5Lotus6Entity12AddComponentEDpRR4Args"></span><span id="_CPPv2I0DpEN5Lotus6Entity12AddComponentEDpRR4Args"></span>template&lt;typename <code class="sig-name descname">T</code>, typename ...<code class="sig-name descname">Args</code>&gt;<br /><span class="target" id="classLotus_1_1Entity_1a2eaf5c74c9b0f2d75d46dfad6a7d9c7d"></span><a class="reference internal" href="#_CPPv4I0DpEN5Lotus6Entity12AddComponentER1TDpRR4Args" title="Lotus::Entity::AddComponent::T">T</a> &amp;<code class="sig-name descname">AddComponent</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I0DpEN5Lotus6Entity12AddComponentER1TDpRR4Args" title="Lotus::Entity::AddComponent::Args">Args</a>&amp;&amp;... <em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0DpEN5Lotus6Entity12AddComponentER1TDpRR4Args" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dt id="_CPPv4NK5Lotus6Entitycv8EntityIDEv">
+<span id="_CPPv3NK5Lotus6Entitycv8EntityIDEv"></span><span id="_CPPv2NK5Lotus6Entitycv8EntityIDEv"></span><span id="Lotus::Entity::castto-EntityID-operatorC"></span><span class="target" id="classLotus_1_1Entity_1a6632822abd792a3bf2cda827455e90d5"></span><code class="sig-name descname">operator EntityID</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK5Lotus6Entitycv8EntityIDEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Overload this operator to allow casts to EntityID. </p>
+</dd></dl>
 
 <dl class="cpp function">
-<dt id="_CPPv4I0EN5Lotus6Entity12GetComponentER1Tv">
-<span id="_CPPv3I0EN5Lotus6Entity12GetComponentEv"></span><span id="_CPPv2I0EN5Lotus6Entity12GetComponentEv"></span>template&lt;typename <code class="sig-name descname">T</code>&gt;<br /><span class="target" id="classLotus_1_1Entity_1ad1d2036b86a31522bf48cc39572125c0"></span><a class="reference internal" href="#_CPPv4I0EN5Lotus6Entity12GetComponentER1Tv" title="Lotus::Entity::GetComponent::T">T</a> &amp;<code class="sig-name descname">GetComponent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0EN5Lotus6Entity12GetComponentER1Tv" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dt id="_CPPv4I0DpEN5Lotus6Entity12AddComponentER9ComponentDpRR4Args">
+<span id="_CPPv3I0DpEN5Lotus6Entity12AddComponentEDpRR4Args"></span><span id="_CPPv2I0DpEN5Lotus6Entity12AddComponentEDpRR4Args"></span>template&lt;typename <code class="sig-name descname">Component</code>, typename ...<code class="sig-name descname">Args</code>&gt;<br /><span class="target" id="classLotus_1_1Entity_1a84be326c22eb1d2cabc5e5b3190638da"></span><a class="reference internal" href="#_CPPv4I0DpEN5Lotus6Entity12AddComponentER9ComponentDpRR4Args" title="Lotus::Entity::AddComponent::Component">Component</a> &amp;<code class="sig-name descname">AddComponent</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4I0DpEN5Lotus6Entity12AddComponentER9ComponentDpRR4Args" title="Lotus::Entity::AddComponent::Args">Args</a>&amp;&amp;... <em>args</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4I0DpEN5Lotus6Entity12AddComponentER9ComponentDpRR4Args" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Add a component to this entity. </p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>A reference to the newly created component </p>
+</dd>
+<dt><strong>Template Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Component</span></code>: Type of the component </p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Args</span></code>: Types for optional parameters </p></li>
+</ul>
+</dd>
+<dt><strong>Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">args</span></code>: Optional parameters, used to create the component in-place </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="cpp function">
+<dt id="_CPPv4IDpEN5Lotus6Entity12GetComponentEDcv">
+<span id="_CPPv3IDpEN5Lotus6Entity12GetComponentEv"></span><span id="_CPPv2IDpEN5Lotus6Entity12GetComponentEv"></span>template&lt;typename ...<code class="sig-name descname">Components</code>&gt;<br /><span class="target" id="classLotus_1_1Entity_1aae7a02a25247e102e84a75f96fe0d364"></span>decltype(auto) <code class="sig-name descname">GetComponent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4IDpEN5Lotus6Entity12GetComponentEDcv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get components from this entity. </p>
+<p><dl class="simple">
+<dt><strong>Return</strong></dt><dd><p>Tuple with all components </p>
+</dd>
+<dt><strong>Template Parameters</strong></dt><dd><ul class="breatheparameterlist simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Components</span></code>: Types of the components to get </p></li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
 
 <dl class="cpp function">
 <dt id="_CPPv4N5Lotus6Entity7DestroyEv">
 <span id="_CPPv3N5Lotus6Entity7DestroyEv"></span><span id="_CPPv2N5Lotus6Entity7DestroyEv"></span><span id="Lotus::Entity::Destroy"></span><span class="target" id="classLotus_1_1Entity_1a69a075a0e668a9f1d2a92ddad83e4ba4"></span>void <code class="sig-name descname">Destroy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus6Entity7DestroyEv" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
+<dd><p>Destroy this entity and remove it from the scene. </p>
+</dd></dl>
 
 </div>
 <div class="breathe-sectiondef docutils container">
-<p class="breathe-sectiondef-title rubric">Protected Attributes</p>
-<dl class="cpp var">
-<dt id="_CPPv4N5Lotus6Entity3_idE">
-<span id="_CPPv3N5Lotus6Entity3_idE"></span><span id="_CPPv2N5Lotus6Entity3_idE"></span><span id="Lotus::Entity::_id__EntityID"></span><span class="target" id="classLotus_1_1Entity_1af8472524b6ff662ad11e420eec8ee4a3"></span><a class="reference internal" href="typedef_Scene_8h_1af674a4a55348c0da8fef03f022a6c8e2.html#_CPPv4N5Lotus8EntityIDE" title="Lotus::EntityID">EntityID</a> <code class="sig-name descname">_id</code><a class="headerlink" href="#_CPPv4N5Lotus6Entity3_idE" title="Permalink to this definition">¶</a><br /></dt>
-<dd></dd></dl>
-
-<dl class="cpp var">
-<dt id="_CPPv4N5Lotus6Entity7_pSceneE">
-<span id="_CPPv3N5Lotus6Entity7_pSceneE"></span><span id="_CPPv2N5Lotus6Entity7_pSceneE"></span><span id="Lotus::Entity::_pScene__SceneP"></span><span class="target" id="classLotus_1_1Entity_1acbfc3bacf6712bc9ab849aad6d734907"></span><a class="reference internal" href="classLotus_1_1Scene.html#_CPPv4N5Lotus5SceneE" title="Lotus::Scene">Scene</a> *<code class="sig-name descname">_pScene</code><a class="headerlink" href="#_CPPv4N5Lotus6Entity7_pSceneE" title="Permalink to this definition">¶</a><br /></dt>
+<p class="breathe-sectiondef-title rubric">Public Static Functions</p>
+<dl class="cpp function">
+<dt id="_CPPv4N5Lotus6Entity9GetRecipeEv">
+<span id="_CPPv3N5Lotus6Entity9GetRecipeEv"></span><span id="_CPPv2N5Lotus6Entity9GetRecipeEv"></span><span id="Lotus::Entity::GetRecipe"></span><span class="target" id="classLotus_1_1Entity_1adbdd0e716c51cb75dc0dc974cb37b609"></span>std::vector&lt;nlohmann::json&gt; <code class="sig-name descname">GetRecipe</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N5Lotus6Entity9GetRecipeEv" title="Permalink to this definition">¶</a><br /></dt>
 <dd></dd></dl>
 
 </div>
@@ -237,7 +254,7 @@
         <a href="classLotus_1_1EventManager.html" class="btn btn-neutral float-right" title="Class EventManager" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="classLotus_1_1Engine.html" class="btn btn-neutral float-left" title="Class Engine" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="classLotus_1_1Config.html" class="btn btn-neutral float-left" title="Class Config" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

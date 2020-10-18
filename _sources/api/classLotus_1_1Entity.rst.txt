@@ -3,16 +3,7 @@
 Class Entity
 ============
 
-- Defined in :ref:`file_include_lotus_scene_Scene.h`
-
-
-Inheritance Relationships
--------------------------
-
-Derived Type
-************
-
-- ``public Lotus::AActor`` (:ref:`exhale_class_classLotus_1_1AActor`)
+- Defined in :ref:`file_include_lotus_ecs_Entity.h`
 
 
 Class Documentation

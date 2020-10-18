@@ -25,7 +25,7 @@ Includes
 --------
 
 
-- ``events/Event.h``
+- ``lotus/ecs/Event.h``
 
 
 
@@ -33,11 +33,9 @@ Included By
 -----------
 
 
-- :ref:`file_include_lotus_events_IWindow.h`
+- :ref:`file_include_lotus_lotus.h`
 
 - :ref:`file_include_lotus_Renderer.h`
-
-- :ref:`file_include_lotus_scene_SceneManager.h`
 
 
 

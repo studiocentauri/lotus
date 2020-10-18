@@ -1,0 +1,13 @@
+.. _exhale_function_entry_8h_1abca73e006590bd784520a220d58b4899:
+
+Function Lotus::Initialize
+==========================
+
+- Defined in :ref:`file_include_lotus_entry.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: Lotus::Initialize(const Config&)

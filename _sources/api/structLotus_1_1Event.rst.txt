@@ -3,7 +3,7 @@
 Struct Event
 ============
 
-- Defined in :ref:`file_include_lotus_events_Event.h`
+- Defined in :ref:`file_include_lotus_ecs_Event.h`
 
 
 Inheritance Relationships
@@ -13,6 +13,7 @@ Derived Types
 *************
 
 - ``public Lotus::BeginEvent`` (:ref:`exhale_struct_structLotus_1_1BeginEvent`)
+- ``public Lotus::ComponentCreateEvent< T >`` (:ref:`exhale_struct_structLotus_1_1ComponentCreateEvent`)
 - ``public Lotus::DestroyEvent`` (:ref:`exhale_struct_structLotus_1_1DestroyEvent`)
 - ``public Lotus::InitEvent`` (:ref:`exhale_struct_structLotus_1_1InitEvent`)
 - ``public Lotus::KeyboardEvent`` (:ref:`exhale_struct_structLotus_1_1KeyboardEvent`)

@@ -1,0 +1,23 @@
+.. _dir_D__code_lotus_lotus_include_lotus:
+
+
+Directory lotus
+===============
+
+
+|exhale_lsh| :ref:`Parent directory <dir_D__code_lotus_lotus_include>` (``D:\code\lotus\lotus\include``)
+
+.. |exhale_lsh| unicode:: U+021B0 .. UPWARDS ARROW WITH TIP LEFTWARDS
+
+*Directory path:* ``D:\code\lotus\lotus\include\lotus``
+
+Subdirectories
+--------------
+
+- :ref:`dir_D__code_lotus_lotus_include_lotus_ecs`
+- :ref:`dir_D__code_lotus_lotus_include_lotus_physics`
+- :ref:`dir_D__code_lotus_lotus_include_lotus_resources`
+- :ref:`dir_D__code_lotus_lotus_include_lotus_scene`
+
+
+

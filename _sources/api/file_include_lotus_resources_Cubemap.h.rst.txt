@@ -33,8 +33,6 @@ Included By
 -----------
 
 
-- :ref:`file_include_lotus_components_rendering.h`
-
 - :ref:`file_include_lotus_lotus.h`
 
 - :ref:`file_include_lotus_resources_AssetRegistry.h`
@@ -52,6 +50,8 @@ Namespaces
 Classes
 -------
 
+
+- :ref:`exhale_struct_structLotus_1_1CSkybox`
 
 - :ref:`exhale_struct_structLotus_1_1Cubemap`
 

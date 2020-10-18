@@ -1,0 +1,13 @@
+.. _exhale_function_Entity_8h_1aabe0c16a083cafda79d9c244d057c122:
+
+Function Lotus::ECSInitialize
+=============================
+
+- Defined in :ref:`file_include_lotus_ecs_Entity.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: Lotus::ECSInitialize()

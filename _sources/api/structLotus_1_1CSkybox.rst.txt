@@ -3,7 +3,7 @@
 Struct CSkybox
 ==============
 
-- Defined in :ref:`file_include_lotus_components_rendering.h`
+- Defined in :ref:`file_include_lotus_resources_Cubemap.h`
 
 
 Struct Documentation

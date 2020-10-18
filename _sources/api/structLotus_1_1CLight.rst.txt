@@ -3,7 +3,7 @@
 Struct CLight
 =============
 
-- Defined in :ref:`file_include_lotus_components_lights.h`
+- Defined in :ref:`file_include_lotus_ecs_components_CLight.h`
 
 
 Inheritance Relationships
@@ -12,7 +12,6 @@ Inheritance Relationships
 Derived Types
 *************
 
-- ``public Lotus::CDirectionalLight`` (:ref:`exhale_struct_structLotus_1_1CDirectionalLight`)
 - ``public Lotus::CPointLight`` (:ref:`exhale_struct_structLotus_1_1CPointLight`)
 - ``public Lotus::CSpotlight`` (:ref:`exhale_struct_structLotus_1_1CSpotlight`)
 

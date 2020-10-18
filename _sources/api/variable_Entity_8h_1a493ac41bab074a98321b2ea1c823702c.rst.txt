@@ -1,0 +1,13 @@
+.. _exhale_variable_Entity_8h_1a493ac41bab074a98321b2ea1c823702c:
+
+Variable Lotus::NULL_ENTITY
+===========================
+
+- Defined in :ref:`file_include_lotus_ecs_Entity.h`
+
+
+Variable Documentation
+----------------------
+
+
+.. doxygenvariable:: Lotus::NULL_ENTITY

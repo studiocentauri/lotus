@@ -1,0 +1,13 @@
+.. _exhale_function_CTransform_8h_1a35a04b715a08991168cc31988864cf00:
+
+Function Lotus::GetRightVector
+==============================
+
+- Defined in :ref:`file_include_lotus_ecs_components_CTransform.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: Lotus::GetRightVector(const CTransform&)

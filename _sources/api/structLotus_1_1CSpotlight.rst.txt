@@ -3,7 +3,7 @@
 Struct CSpotlight
 =================
 
-- Defined in :ref:`file_include_lotus_components_lights.h`
+- Defined in :ref:`file_include_lotus_ecs_components_CLight.h`
 
 
 Inheritance Relationships

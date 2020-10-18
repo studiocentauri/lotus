@@ -3,7 +3,7 @@
 Define Z_AXIS
 =============
 
-- Defined in :ref:`file_include_lotus_physics.h`
+- Defined in :ref:`file_include_lotus_physics_physics.h`
 
 
 Define Documentation

@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Program Listing for File Config.h &mdash; Lotus 0.1.0 documentation</title>
+  <title>Program Listing for File Config.h &mdash; Lotus 0.0.1 documentation</title>
   
 
   
@@ -89,9 +89,7 @@
             
               <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/install.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/ecs.html">Entity Component System</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../_manuals/renderer.html">Renderer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../manual/install.html">Installation</a></li>
 </ul>
 <p class="caption"><span class="caption-text">API Reference</span></p>
 <ul>
@@ -172,14 +170,18 @@
 <span class="p">{</span>
     <span class="k">class</span> <span class="nc">Config</span> <span class="o">:</span> <span class="k">public</span> <span class="n">Singleton</span><span class="o">&lt;</span><span class="n">Config</span><span class="o">&gt;</span>
     <span class="p">{</span>
-        <span class="n">Config</span><span class="p">()</span> <span class="o">=</span> <span class="k">default</span><span class="p">;</span>
-        <span class="k">friend</span> <span class="n">Singleton</span><span class="o">&lt;</span><span class="n">Config</span><span class="o">&gt;</span><span class="p">;</span>
     <span class="k">public</span><span class="o">:</span>
+        <span class="c1">// TODO: Pick this up from an INI file</span>
+        <span class="c1">// TODO: Should this be a singleton?</span>
         <span class="n">ERenderAPI</span> <span class="n">RenderAPI</span> <span class="o">=</span> <span class="n">ERenderAPI</span><span class="o">::</span><span class="n">OPEN_GL</span><span class="p">;</span>
         <span class="kt">bool</span> <span class="n">IsDebug</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
         <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">Width</span> <span class="o">=</span> <span class="mi">800</span><span class="p">;</span>
         <span class="kt">unsigned</span> <span class="kt">int</span> <span class="n">Height</span> <span class="o">=</span> <span class="mi">600</span><span class="p">;</span>
         <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">ResourceRoot</span> <span class="o">=</span> <span class="s">&quot;&quot;</span><span class="p">;</span>
+
+    <span class="k">private</span><span class="o">:</span>
+        <span class="n">Config</span><span class="p">()</span> <span class="o">=</span> <span class="k">default</span><span class="p">;</span>
+        <span class="k">friend</span> <span class="n">Singleton</span><span class="o">&lt;</span><span class="n">Config</span><span class="o">&gt;</span><span class="p">;</span>
     <span class="p">};</span>
 <span class="p">}</span>
 </pre></div>
