@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structLotus_1_1Material" kind="struct" language="C++" prot="public">
+    <compoundname>Lotus::Material</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLotus_1_1Material_1ab86527dbfe65e5a6696686d776b777e4" prot="public" static="no" mutable="no">
+        <type>std::variant&lt; Vector3f, Handle&lt; <ref refid="structLotus_1_1Texture" kindref="compound">Texture</ref> &gt; &gt;</type>
+        <definition>std::variant&lt;Vector3f, Handle&lt;Texture&gt; &gt; Lotus::Material::Albedo</definition>
+        <argsstring></argsstring>
+        <name>Albedo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h" line="14" column="22" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1Material_1a7b3a73801a660284cd670717d1bc6636" prot="public" static="no" mutable="no">
+        <type>std::optional&lt; Handle&lt; <ref refid="structLotus_1_1Texture" kindref="compound">Texture</ref> &gt; &gt;</type>
+        <definition>std::optional&lt;Handle&lt;Texture&gt; &gt; Lotus::Material::Normal</definition>
+        <argsstring></argsstring>
+        <name>Normal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h" line="15" column="23" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1Material_1a1a30652cbc54576797984f828f9d4666" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Lotus::Material::Roughness</definition>
+        <argsstring></argsstring>
+        <name>Roughness</name>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h" line="16" column="15" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1Material_1a907dd79f744f40bbd24e12329d0facef" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Lotus::Material::Metallic</definition>
+        <argsstring></argsstring>
+        <name>Metallic</name>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h" line="17" column="15" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1Material_1a8ae308ddfa7e7b8ad7202f87950191fb" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Lotus::Material::AO</definition>
+        <argsstring></argsstring>
+        <name>AO</name>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h" line="18" column="15" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h" line="12" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h" bodystart="13" bodyend="19"/>
+    <listofallmembers>
+      <member refid="structLotus_1_1Material_1ab86527dbfe65e5a6696686d776b777e4" prot="public" virt="non-virtual"><scope>Lotus::Material</scope><name>Albedo</name></member>
+      <member refid="structLotus_1_1Material_1a8ae308ddfa7e7b8ad7202f87950191fb" prot="public" virt="non-virtual"><scope>Lotus::Material</scope><name>AO</name></member>
+      <member refid="structLotus_1_1Material_1a907dd79f744f40bbd24e12329d0facef" prot="public" virt="non-virtual"><scope>Lotus::Material</scope><name>Metallic</name></member>
+      <member refid="structLotus_1_1Material_1a7b3a73801a660284cd670717d1bc6636" prot="public" virt="non-virtual"><scope>Lotus::Material</scope><name>Normal</name></member>
+      <member refid="structLotus_1_1Material_1a1a30652cbc54576797984f828f9d4666" prot="public" virt="non-virtual"><scope>Lotus::Material</scope><name>Roughness</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

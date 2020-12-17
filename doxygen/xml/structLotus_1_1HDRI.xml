@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structLotus_1_1HDRI" kind="struct" language="C++" prot="public">
+    <compoundname>Lotus::HDRI</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLotus_1_1HDRI_1ab3bcd13a1c00c65bb965fd9c8b6b2ecf" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Lotus::HDRI::EnvironmentMap</definition>
+        <argsstring></argsstring>
+        <name>EnvironmentMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="13" column="22" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1HDRI_1a3066adf5111dac8193c5f01ffcf3ba2a" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Lotus::HDRI::Irradiance</definition>
+        <argsstring></argsstring>
+        <name>Irradiance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="14" column="22" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="11" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" bodystart="12" bodyend="15"/>
+    <listofallmembers>
+      <member refid="structLotus_1_1HDRI_1ab3bcd13a1c00c65bb965fd9c8b6b2ecf" prot="public" virt="non-virtual"><scope>Lotus::HDRI</scope><name>EnvironmentMap</name></member>
+      <member refid="structLotus_1_1HDRI_1a3066adf5111dac8193c5f01ffcf3ba2a" prot="public" virt="non-virtual"><scope>Lotus::HDRI</scope><name>Irradiance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

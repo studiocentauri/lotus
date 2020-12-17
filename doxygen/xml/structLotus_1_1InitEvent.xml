@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structLotus_1_1InitEvent" kind="struct" language="C++" prot="public">
+    <compoundname>Lotus::InitEvent</compoundname>
+    <basecompoundref refid="structLotus_1_1Event" prot="public" virt="non-virtual">Lotus::Event</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structLotus_1_1InitEvent_1a033a9f5e5dfc66ac6cdb3a8afe7e5fe0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Lotus::InitEvent::InitEvent</definition>
+        <argsstring>()</argsstring>
+        <name>InitEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ILifecycle.h" line="10" column="9" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ILifecycle.h" bodystart="10" bodyend="13"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Lotus::InitEvent</label>
+        <link refid="structLotus_1_1InitEvent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Lotus::Event</label>
+        <link refid="structLotus_1_1Event"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Lotus::InitEvent</label>
+        <link refid="structLotus_1_1InitEvent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Lotus::Event</label>
+        <link refid="structLotus_1_1Event"/>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/ILifecycle.h" line="8" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ILifecycle.h" bodystart="9" bodyend="14"/>
+    <listofallmembers>
+      <member refid="structLotus_1_1Event_1ab24ac1b54a4ba1f7d365dcf66171b428" prot="public" virt="non-virtual"><scope>Lotus::InitEvent</scope><name>Category</name></member>
+      <member refid="structLotus_1_1Event_1aa80e0ce0e15e954acb56de6979e88a78" prot="public" virt="non-virtual"><scope>Lotus::InitEvent</scope><name>Immediate</name></member>
+      <member refid="structLotus_1_1InitEvent_1a033a9f5e5dfc66ac6cdb3a8afe7e5fe0" prot="public" virt="non-virtual"><scope>Lotus::InitEvent</scope><name>InitEvent</name></member>
+      <member refid="structLotus_1_1Event_1aab6f244133a1b8e2730409d36ed35fce" prot="public" virt="non-virtual"><scope>Lotus::InitEvent</scope><name>Type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

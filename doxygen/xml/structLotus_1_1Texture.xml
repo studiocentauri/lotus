@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structLotus_1_1Texture" kind="struct" language="C++" prot="public">
+    <compoundname>Lotus::Texture</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLotus_1_1Texture_1a983b538ba8f96889ffb99d32e5c2388b" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Lotus::Texture::ID</definition>
+        <argsstring></argsstring>
+        <name>ID</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Texture.h" line="10" column="22" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Texture.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Texture.h" line="8" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Texture.h" bodystart="9" bodyend="11"/>
+    <listofallmembers>
+      <member refid="structLotus_1_1Texture_1a983b538ba8f96889ffb99d32e5c2388b" prot="public" virt="non-virtual"><scope>Lotus::Texture</scope><name>ID</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

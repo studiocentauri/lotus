@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structLotus_1_1CLight" kind="struct" language="C++" prot="public">
+    <compoundname>Lotus::CLight</compoundname>
+    <derivedcompoundref refid="structLotus_1_1CPointLight" prot="public" virt="non-virtual">Lotus::CPointLight</derivedcompoundref>
+    <derivedcompoundref refid="structLotus_1_1CSpotlight" prot="public" virt="non-virtual">Lotus::CSpotlight</derivedcompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLotus_1_1CLight_1a8cef82e47113f060086b7e6bbc6f62c3" prot="public" static="no" mutable="no">
+        <type>Vector3f</type>
+        <definition>Vector3f Lotus::CLight::ambient</definition>
+        <argsstring></argsstring>
+        <name>ambient</name>
+        <initializer>= Vector3f(0.0f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" line="10" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1CLight_1a2fffb72c62fd2376fd966dc001bb0e79" prot="public" static="no" mutable="no">
+        <type>Vector3f</type>
+        <definition>Vector3f Lotus::CLight::diffuse</definition>
+        <argsstring></argsstring>
+        <name>diffuse</name>
+        <initializer>= Vector3f(1.0f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" line="11" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1CLight_1ad12d3571d6a0fbfaecf1681b0e06ca87" prot="public" static="no" mutable="no">
+        <type>Vector3f</type>
+        <definition>Vector3f Lotus::CLight::specular</definition>
+        <argsstring></argsstring>
+        <name>specular</name>
+        <initializer>= Vector3f(0.4f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" line="12" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structLotus_1_1CLight_1a2f88a65e08c675d0727c754f5b496e6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Lotus::CLight::REGISTER_DECL</definition>
+        <argsstring>()</argsstring>
+        <name>REGISTER_DECL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" line="14" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Lotus::CSpotlight</label>
+        <link refid="structLotus_1_1CSpotlight"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Lotus::CPointLight</label>
+        <link refid="structLotus_1_1CPointLight"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Lotus::CLight</label>
+        <link refid="structLotus_1_1CLight"/>
+      </node>
+    </inheritancegraph>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" line="8" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" bodystart="9" bodyend="15"/>
+    <listofallmembers>
+      <member refid="structLotus_1_1CLight_1a8cef82e47113f060086b7e6bbc6f62c3" prot="public" virt="non-virtual"><scope>Lotus::CLight</scope><name>ambient</name></member>
+      <member refid="structLotus_1_1CLight_1a2fffb72c62fd2376fd966dc001bb0e79" prot="public" virt="non-virtual"><scope>Lotus::CLight</scope><name>diffuse</name></member>
+      <member refid="structLotus_1_1CLight_1a2f88a65e08c675d0727c754f5b496e6b" prot="public" virt="non-virtual"><scope>Lotus::CLight</scope><name>REGISTER_DECL</name></member>
+      <member refid="structLotus_1_1CLight_1ad12d3571d6a0fbfaecf1681b0e06ca87" prot="public" virt="non-virtual"><scope>Lotus::CLight</scope><name>specular</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

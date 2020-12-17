@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structLotus_1_1CCapsuleCollider" kind="struct" language="C++" prot="public">
+    <compoundname>Lotus::CCapsuleCollider</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLotus_1_1CCapsuleCollider_1a4d67eab1db6907b401ccbac8283ec87a" prot="public" static="no" mutable="no">
+        <type>Vector3f</type>
+        <definition>Vector3f Lotus::CCapsuleCollider::Position</definition>
+        <argsstring></argsstring>
+        <name>Position</name>
+        <initializer>{0.0f}</initializer>
+        <briefdescription>
+<para>Center of the capsule. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="37" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1CCapsuleCollider_1a72ed6926e3ae566786c1871f1f431288" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Lotus::CCapsuleCollider::Radius</definition>
+        <argsstring></argsstring>
+        <name>Radius</name>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+<para>Radius of the capsule. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="40" column="15" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1CCapsuleCollider_1a4968f2d67527c75a910e302d9b608b71" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Lotus::CCapsuleCollider::Height</definition>
+        <argsstring></argsstring>
+        <name>Height</name>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+<para>Height of the capsule. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="43" column="15" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structLotus_1_1CCapsuleCollider_1ad95f1fb5b2b970f6060af5b48d0118fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Lotus::CCapsuleCollider::REGISTER_DECL</definition>
+        <argsstring>()</argsstring>
+        <name>REGISTER_DECL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="45" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="34" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="35" bodyend="46"/>
+    <listofallmembers>
+      <member refid="structLotus_1_1CCapsuleCollider_1a4968f2d67527c75a910e302d9b608b71" prot="public" virt="non-virtual"><scope>Lotus::CCapsuleCollider</scope><name>Height</name></member>
+      <member refid="structLotus_1_1CCapsuleCollider_1a4d67eab1db6907b401ccbac8283ec87a" prot="public" virt="non-virtual"><scope>Lotus::CCapsuleCollider</scope><name>Position</name></member>
+      <member refid="structLotus_1_1CCapsuleCollider_1a72ed6926e3ae566786c1871f1f431288" prot="public" virt="non-virtual"><scope>Lotus::CCapsuleCollider</scope><name>Radius</name></member>
+      <member refid="structLotus_1_1CCapsuleCollider_1ad95f1fb5b2b970f6060af5b48d0118fd" prot="public" virt="non-virtual"><scope>Lotus::CCapsuleCollider</scope><name>REGISTER_DECL</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

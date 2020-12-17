@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="ISystem_8h" kind="file" language="C++">
+    <compoundname>ISystem.h</compoundname>
+    <includedby refid="lotus_8h" local="yes">/builds/centauri/lotus/lotus/include/lotus/lotus.h</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>/builds/centauri/lotus/lotus/include/lotus/lotus.h</label>
+        <link refid="lotus_8h_source"/>
+      </node>
+      <node id="1">
+        <label>/builds/centauri/lotus/lotus/include/lotus/ecs/ISystem.h</label>
+        <link refid="ISystem_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classLotus_1_1ISystem" prot="public">Lotus::ISystem</innerclass>
+    <innernamespace refid="namespaceLotus">Lotus</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Lotus</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>Should<sp/>I<sp/>split<sp/>&quot;systems&quot;<sp/>into<sp/>two<sp/>parts?<sp/>One<sp/>with<sp/>static<sp/>callbacks<sp/>and<sp/>the<sp/>other<sp/>with<sp/>the<sp/>actual<sp/>data.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>So<sp/>the<sp/>&quot;InputSystem&quot;<sp/>would<sp/>be<sp/>callbacks<sp/>for<sp/>input<sp/>events,<sp/>but<sp/>state<sp/>will<sp/>be<sp/>maintained<sp/>in<sp/>&quot;InputSystemData&quot;,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>that<sp/>users<sp/>will<sp/>be<sp/>able<sp/>to<sp/>query.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classLotus_1_1ISystem" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classLotus_1_1ISystem" kindref="compound">ISystem</ref><sp/></highlight><highlight class="comment">//<sp/>:<sp/>public<sp/>ILifecycle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Register<sp/>a<sp/>set<sp/>of<sp/>callbacks<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>EVENT()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>void<sp/>OnCustomEvent(const<sp/>CustomEvent&amp;<sp/>event,<sp/>Args&amp;&amp;<sp/>args...)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ISystem.h"/>
+  </compounddef>
+</doxygen>

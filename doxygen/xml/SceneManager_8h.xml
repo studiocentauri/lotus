@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="SceneManager_8h" kind="file" language="C++">
+    <compoundname>SceneManager.h</compoundname>
+    <includes refid="lcommon_8h" local="no">lotus/lcommon.h</includes>
+    <includes refid="SceneTreeNode_8h" local="yes">SceneTreeNode.h</includes>
+    <includedby refid="lotus_8h" local="yes">/builds/centauri/lotus/lotus/include/lotus/lotus.h</includedby>
+    <incdepgraph>
+      <node id="7">
+        <label>lotus/internal/entt/entt.hpp</label>
+      </node>
+      <node id="4">
+        <label>fstream</label>
+      </node>
+      <node id="9">
+        <label>SceneTreeNode.h</label>
+        <link refid="SceneTreeNode_8h_source"/>
+      </node>
+      <node id="2">
+        <label>lotus/lcommon.h</label>
+        <link refid="lcommon_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/builds/centauri/lotus/lotus/include/lotus/scene/SceneManager.h</label>
+        <link refid="SceneManager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lotus_export.h</label>
+        <link refid="lotus__export_8h_source"/>
+      </node>
+      <node id="5">
+        <label>type_traits</label>
+      </node>
+      <node id="3">
+        <label>memory</label>
+      </node>
+      <node id="8">
+        <label>lotus/internal/nlohmann/json.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/builds/centauri/lotus/lotus/include/lotus/lotus.h</label>
+        <link refid="lotus_8h_source"/>
+      </node>
+      <node id="1">
+        <label>/builds/centauri/lotus/lotus/include/lotus/scene/SceneManager.h</label>
+        <link refid="SceneManager_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceLotus">Lotus</innernamespace>
+    <innernamespace refid="namespaceLotus_1_1SceneManager">Lotus::SceneManager</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;lotus/lcommon.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;SceneTreeNode.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Lotus::SceneManager</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>LOTUS_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LoadScene(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>path);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/scene/SceneManager.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structLotus_1_1PointLightInfo" kind="struct" language="C++" prot="public">
+    <compoundname>Lotus::PointLightInfo</compoundname>
+    <basecompoundref refid="structLotus_1_1LightInfo" prot="public" virt="non-virtual">Lotus::LightInfo</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLotus_1_1PointLightInfo_1a5211875c9ecb37fdf55e9a518b9f433e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Lotus::PointLightInfo::constant</definition>
+        <argsstring></argsstring>
+        <name>constant</name>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="30" column="15" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1PointLightInfo_1a32bd0d0b54481d83a4dd8c0ad582fba4" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Lotus::PointLightInfo::linear</definition>
+        <argsstring></argsstring>
+        <name>linear</name>
+        <initializer>= 0.22f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="31" column="15" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1PointLightInfo_1aa4268cd407f9a651324e879513950d26" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Lotus::PointLightInfo::quadratic</definition>
+        <argsstring></argsstring>
+        <name>quadratic</name>
+        <initializer>= 0.20f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="32" column="15" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1PointLightInfo_1a391029cda61d21b137d223fd5f6fb36a" prot="public" static="no" mutable="no">
+        <type>Vector3f</type>
+        <definition>Vector3f Lotus::PointLightInfo::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <initializer>= ORIGIN</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="33" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structLotus_1_1PointLightInfo_1aa7a610593773615aa555fdcc4b09de4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Lotus::PointLightInfo::PointLightInfo</definition>
+        <argsstring>()=default</argsstring>
+        <name>PointLightInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="35" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="structLotus_1_1PointLightInfo_1ab0f329ab8925d6e35c32706d439d2b42" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Lotus::PointLightInfo::PointLightInfo</definition>
+        <argsstring>(const CPointLight &amp;light)</argsstring>
+        <name>PointLightInfo</name>
+        <param>
+          <type>const <ref refid="structLotus_1_1CPointLight" kindref="compound">CPointLight</ref> &amp;</type>
+          <declname>light</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="36" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" bodystart="36" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Lotus::PointLightInfo</label>
+        <link refid="structLotus_1_1PointLightInfo"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Lotus::LightInfo</label>
+        <link refid="structLotus_1_1LightInfo"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Lotus::PointLightInfo</label>
+        <link refid="structLotus_1_1PointLightInfo"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Lotus::LightInfo</label>
+        <link refid="structLotus_1_1LightInfo"/>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="28" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" bodystart="29" bodyend="42"/>
+    <listofallmembers>
+      <member refid="structLotus_1_1LightInfo_1a1fd69338a8425d313f6d5b55fa4fff0f" prot="public" virt="non-virtual"><scope>Lotus::PointLightInfo</scope><name>ambient</name></member>
+      <member refid="structLotus_1_1PointLightInfo_1a5211875c9ecb37fdf55e9a518b9f433e" prot="public" virt="non-virtual"><scope>Lotus::PointLightInfo</scope><name>constant</name></member>
+      <member refid="structLotus_1_1LightInfo_1aebd9b32f824e78c9a0608a1362e3a5dc" prot="public" virt="non-virtual"><scope>Lotus::PointLightInfo</scope><name>diffuse</name></member>
+      <member refid="structLotus_1_1LightInfo_1af86d4a154e01cd674a4df65ec728a128" prot="public" virt="non-virtual"><scope>Lotus::PointLightInfo</scope><name>direction</name></member>
+      <member refid="structLotus_1_1LightInfo_1a569616755a5dc1eea10b25bba4905e5a" prot="public" virt="non-virtual"><scope>Lotus::PointLightInfo</scope><name>LightInfo</name></member>
+      <member refid="structLotus_1_1LightInfo_1ab5df78d43f18f0a85d84b83ad595ddc9" prot="public" virt="non-virtual"><scope>Lotus::PointLightInfo</scope><name>LightInfo</name></member>
+      <member refid="structLotus_1_1PointLightInfo_1a32bd0d0b54481d83a4dd8c0ad582fba4" prot="public" virt="non-virtual"><scope>Lotus::PointLightInfo</scope><name>linear</name></member>
+      <member refid="structLotus_1_1PointLightInfo_1aa7a610593773615aa555fdcc4b09de4a" prot="public" virt="non-virtual"><scope>Lotus::PointLightInfo</scope><name>PointLightInfo</name></member>
+      <member refid="structLotus_1_1PointLightInfo_1ab0f329ab8925d6e35c32706d439d2b42" prot="public" virt="non-virtual"><scope>Lotus::PointLightInfo</scope><name>PointLightInfo</name></member>
+      <member refid="structLotus_1_1PointLightInfo_1a391029cda61d21b137d223fd5f6fb36a" prot="public" virt="non-virtual"><scope>Lotus::PointLightInfo</scope><name>position</name></member>
+      <member refid="structLotus_1_1PointLightInfo_1aa4268cd407f9a651324e879513950d26" prot="public" virt="non-virtual"><scope>Lotus::PointLightInfo</scope><name>quadratic</name></member>
+      <member refid="structLotus_1_1LightInfo_1a0fa4554de02543f1c005a5de6ea6ac8e" prot="public" virt="non-virtual"><scope>Lotus::PointLightInfo</scope><name>specular</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

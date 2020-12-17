@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="namespaceLotus_1_1Input" kind="namespace" language="C++">
+    <compoundname>Lotus::Input</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceLotus_1_1Input_1a8efbd8e3c670c25f4f644be0c2c15971" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LOTUS_API void</type>
+        <definition>LOTUS_API void Lotus::Input::UpdateKeyState</definition>
+        <argsstring>(const KeyboardEvent &amp;event)</argsstring>
+        <name>UpdateKeyState</name>
+        <param>
+          <type>const <ref refid="structLotus_1_1KeyboardEvent" kindref="compound">KeyboardEvent</ref> &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="structLotus_1_1KeyboardEvent" kindref="compound">KeyboardEvent</ref> receiver that updates internal keyboard state. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Keyboard input data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="17" column="20" declfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" declline="17" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceLotus_1_1Input_1aebb9f7678c07bac91f56e72e35a49cc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LOTUS_API void</type>
+        <definition>LOTUS_API void Lotus::Input::UpdateMouseState</definition>
+        <argsstring>(const MouseEvent &amp;event)</argsstring>
+        <name>UpdateMouseState</name>
+        <param>
+          <type>const <ref refid="structLotus_1_1MouseEvent" kindref="compound">MouseEvent</ref> &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="structLotus_1_1MouseEvent" kindref="compound">MouseEvent</ref> receiver that updates internal mouse state. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mouse input data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="23" column="20" declfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" declline="23" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceLotus_1_1Input_1a4bb0baa54e994bb8e5b78b270291c52e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LOTUS_API bool</type>
+        <definition>LOTUS_API bool Lotus::Input::GetKeyPressed</definition>
+        <argsstring>(int key)</argsstring>
+        <name>GetKeyPressed</name>
+        <param>
+          <type>int</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query the keyboard state for a particular key <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Keycode for the requested key </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if the key is pressed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="30" column="20" declfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" declline="30" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceLotus_1_1Input_1ae316f56496d2fdb2de8ccf41b49add95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LOTUS_API std::pair&lt; float, float &gt;</type>
+        <definition>LOTUS_API std::pair&lt;float, float&gt; Lotus::Input::GetMouseDelta</definition>
+        <argsstring>()</argsstring>
+        <name>GetMouseDelta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query the mouse state for mouse cursor delta since the last mouse event <simplesect kind="return"><para>Pair of floats with X and Y deltas </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="36" column="25" declfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" declline="36" declcolumn="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="namespaceLotus_1_1Input" kindref="compound">Input</ref> manager that receives window events and maintains input state. Users should query this class to get input information. This is to avoid end users interacting with low level window implementations themselves. </para>
+    </detaileddescription>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="11" column="1"/>
+  </compounddef>
+</doxygen>

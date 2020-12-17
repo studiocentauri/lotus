@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dir_4989a77b3c136dda68ec15625c2fa143" kind="dir">
+    <compoundname>/builds/centauri/lotus/lotus/include/lotus/ecs/components</compoundname>
+    <innerfile refid="CCamera_8h">CCamera.h</innerfile>
+    <innerfile refid="CLight_8h">CLight.h</innerfile>
+    <innerfile refid="CTransform_8h">CTransform.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/"/>
+  </compounddef>
+</doxygen>

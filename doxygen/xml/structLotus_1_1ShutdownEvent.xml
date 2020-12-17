@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structLotus_1_1ShutdownEvent" kind="struct" language="C++" prot="public">
+    <compoundname>Lotus::ShutdownEvent</compoundname>
+    <basecompoundref refid="structLotus_1_1Event" prot="public" virt="non-virtual">Lotus::Event</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Lotus::Event</label>
+        <link refid="structLotus_1_1Event"/>
+      </node>
+      <node id="1">
+        <label>Lotus::ShutdownEvent</label>
+        <link refid="structLotus_1_1ShutdownEvent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Lotus::Event</label>
+        <link refid="structLotus_1_1Event"/>
+      </node>
+      <node id="1">
+        <label>Lotus::ShutdownEvent</label>
+        <link refid="structLotus_1_1ShutdownEvent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/ILifecycle.h" line="62" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ILifecycle.h" bodystart="63" bodyend="64"/>
+    <listofallmembers>
+      <member refid="structLotus_1_1Event_1ab24ac1b54a4ba1f7d365dcf66171b428" prot="public" virt="non-virtual"><scope>Lotus::ShutdownEvent</scope><name>Category</name></member>
+      <member refid="structLotus_1_1Event_1aa80e0ce0e15e954acb56de6979e88a78" prot="public" virt="non-virtual"><scope>Lotus::ShutdownEvent</scope><name>Immediate</name></member>
+      <member refid="structLotus_1_1Event_1aab6f244133a1b8e2730409d36ed35fce" prot="public" virt="non-virtual"><scope>Lotus::ShutdownEvent</scope><name>Type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

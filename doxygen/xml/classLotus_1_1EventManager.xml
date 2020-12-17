@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classLotus_1_1EventManager" kind="class" language="C++" prot="public">
+    <compoundname>Lotus::EventManager</compoundname>
+    <basecompoundref refid="classLotus_1_1Singleton" prot="public" virt="non-virtual">Lotus::Singleton&lt; EventManager &gt;</basecompoundref>
+    <includes refid="EventManager_8h" local="no">EventManager.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classLotus_1_1EventManager_1aa717be92d66acd491bc0786e7524e4f6" prot="private" static="no" mutable="no">
+        <type>entt::dispatcher</type>
+        <definition>entt::dispatcher Lotus::EventManager::_dispatcher</definition>
+        <argsstring></argsstring>
+        <name>_dispatcher</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/EventManager.h" line="16" column="26" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/EventManager.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLotus_1_1EventManager_1a6c66319ab680d75434a24608f0346be6" prot="private" static="no" mutable="no">
+        <type>friend</type>
+        <definition>friend Lotus::EventManager::Singleton&lt; EventManager &gt;</definition>
+        <argsstring></argsstring>
+        <name>Singleton&lt; EventManager &gt;</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/EventManager.h" line="80" column="9" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/EventManager.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classLotus_1_1EventManager_1aa19842134ec409a0fc74df98cda5b880" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Lotus::EventManager::Dispatch</definition>
+        <argsstring>(T event)</argsstring>
+        <name>Dispatch</name>
+        <param>
+          <type>T</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+<para>Dispatch an event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Use this function to dispatch an event. If the <computeroutput>Immediate</computeroutput> property is true, the registered callback will be immediately invoked. Otherwise, the event will be queued and dispatched at the end of the frame.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type parameter for the event to be dispatched </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>event</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structLotus_1_1Event" kindref="compound">Event</ref> object to be dispatched </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/EventManager.h" line="31" column="14" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/EventManager.h" bodystart="31" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classLotus_1_1EventManager_1a1d1f84c8c2883b91604d2af8664d0ed5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename E</type>
+          </param>
+          <param>
+            <type>auto</type>
+            <declname>F</declname>
+            <defname>F</defname>
+          </param>
+          <param>
+            <type>typename L</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Lotus::EventManager::Bind</definition>
+        <argsstring>(L arg)</argsstring>
+        <name>Bind</name>
+        <param>
+          <type>L</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register an event callback which is a non-static member function <parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>E</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the event to register this callback for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>F</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the callback </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the listener class </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Listener class instance on which the callback is to be invoked </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/EventManager.h" line="52" column="14" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/EventManager.h" bodystart="52" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classLotus_1_1EventManager_1a4ba9e061d7cd436326f8be37102f2300" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename E</type>
+          </param>
+          <param>
+            <type>auto</type>
+            <declname>F</declname>
+            <defname>F</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Lotus::EventManager::Bind</definition>
+        <argsstring>()</argsstring>
+        <name>Bind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Register a static or free function callback <parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>E</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the event to register this callback for </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>F</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the callback </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/EventManager.h" line="64" column="14" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/EventManager.h" bodystart="64" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classLotus_1_1EventManager_1a55c85bf91622edb76447e4f8a2fa4bb8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Lotus::EventManager::DispatchAll</definition>
+        <argsstring>() const</argsstring>
+        <name>DispatchAll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Dispatch all queued events </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/EventManager.h" line="73" column="14" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/EventManager.h" bodystart="73" bodyend="77"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classLotus_1_1EventManager_1ac6c607a008a9e8dff120040941a21f5e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Lotus::EventManager::EventManager</definition>
+        <argsstring>()=default</argsstring>
+        <name>EventManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/EventManager.h" line="81" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Wrapper class over EnTT to bind, queue and dispatch events. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Lotus::Singleton&lt; EventManager &gt;</label>
+        <link refid="classLotus_1_1Singleton"/>
+      </node>
+      <node id="1">
+        <label>Lotus::EventManager</label>
+        <link refid="classLotus_1_1EventManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Lotus::Singleton&lt; EventManager &gt;</label>
+        <link refid="classLotus_1_1Singleton"/>
+      </node>
+      <node id="1">
+        <label>Lotus::EventManager</label>
+        <link refid="classLotus_1_1EventManager"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/EventManager.h" line="14" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/EventManager.h" bodystart="15" bodyend="82"/>
+    <listofallmembers>
+      <member refid="classLotus_1_1EventManager_1aa717be92d66acd491bc0786e7524e4f6" prot="private" virt="non-virtual"><scope>Lotus::EventManager</scope><name>_dispatcher</name></member>
+      <member refid="classLotus_1_1EventManager_1a1d1f84c8c2883b91604d2af8664d0ed5" prot="public" virt="non-virtual"><scope>Lotus::EventManager</scope><name>Bind</name></member>
+      <member refid="classLotus_1_1EventManager_1a4ba9e061d7cd436326f8be37102f2300" prot="public" virt="non-virtual"><scope>Lotus::EventManager</scope><name>Bind</name></member>
+      <member refid="classLotus_1_1EventManager_1aa19842134ec409a0fc74df98cda5b880" prot="public" virt="non-virtual"><scope>Lotus::EventManager</scope><name>Dispatch</name></member>
+      <member refid="classLotus_1_1EventManager_1a55c85bf91622edb76447e4f8a2fa4bb8" prot="public" virt="non-virtual"><scope>Lotus::EventManager</scope><name>DispatchAll</name></member>
+      <member refid="classLotus_1_1EventManager_1ac6c607a008a9e8dff120040941a21f5e" prot="private" virt="non-virtual"><scope>Lotus::EventManager</scope><name>EventManager</name></member>
+      <member refid="classLotus_1_1Singleton_1a6688d70304f5736daf7a78b21134bdf3" prot="public" virt="non-virtual"><scope>Lotus::EventManager</scope><name>Get</name></member>
+      <member refid="classLotus_1_1Singleton_1a104a760426c0baa9cda479eac85c8548" prot="public" virt="non-virtual"><scope>Lotus::EventManager</scope><name>operator=</name></member>
+      <member refid="classLotus_1_1Singleton_1a9fa3a0a341a27cfca21dfb266400437e" prot="public" virt="non-virtual"><scope>Lotus::EventManager</scope><name>Singleton</name></member>
+      <member refid="classLotus_1_1Singleton_1ad54362d8fcc18348eaa0d5c4b49320e0" prot="protected" virt="non-virtual"><scope>Lotus::EventManager</scope><name>Singleton</name></member>
+      <member refid="classLotus_1_1EventManager_1a6c66319ab680d75434a24608f0346be6" prot="private" virt="non-virtual"><scope>Lotus::EventManager</scope><name>Singleton&lt; EventManager &gt;</name></member>
+      <member refid="classLotus_1_1Singleton_1a64cd7a713206b6bfb83bffdbf3c6df09" prot="protected" virt="virtual"><scope>Lotus::EventManager</scope><name>~Singleton</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

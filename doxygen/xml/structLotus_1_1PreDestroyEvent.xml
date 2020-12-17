@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structLotus_1_1PreDestroyEvent" kind="struct" language="C++" prot="public">
+    <compoundname>Lotus::PreDestroyEvent</compoundname>
+    <basecompoundref refid="structLotus_1_1Event" prot="public" virt="non-virtual">Lotus::Event</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structLotus_1_1PreDestroyEvent_1a3f9552824536f5883ce5274dc4db27ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Lotus::PreDestroyEvent::PreDestroyEvent</definition>
+        <argsstring>()</argsstring>
+        <name>PreDestroyEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ILifecycle.h" line="52" column="9" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ILifecycle.h" bodystart="52" bodyend="55"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Lotus::Event</label>
+        <link refid="structLotus_1_1Event"/>
+      </node>
+      <node id="1">
+        <label>Lotus::PreDestroyEvent</label>
+        <link refid="structLotus_1_1PreDestroyEvent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Lotus::Event</label>
+        <link refid="structLotus_1_1Event"/>
+      </node>
+      <node id="1">
+        <label>Lotus::PreDestroyEvent</label>
+        <link refid="structLotus_1_1PreDestroyEvent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/ILifecycle.h" line="50" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ILifecycle.h" bodystart="51" bodyend="56"/>
+    <listofallmembers>
+      <member refid="structLotus_1_1Event_1ab24ac1b54a4ba1f7d365dcf66171b428" prot="public" virt="non-virtual"><scope>Lotus::PreDestroyEvent</scope><name>Category</name></member>
+      <member refid="structLotus_1_1Event_1aa80e0ce0e15e954acb56de6979e88a78" prot="public" virt="non-virtual"><scope>Lotus::PreDestroyEvent</scope><name>Immediate</name></member>
+      <member refid="structLotus_1_1PreDestroyEvent_1a3f9552824536f5883ce5274dc4db27ef" prot="public" virt="non-virtual"><scope>Lotus::PreDestroyEvent</scope><name>PreDestroyEvent</name></member>
+      <member refid="structLotus_1_1Event_1aab6f244133a1b8e2730409d36ed35fce" prot="public" virt="non-virtual"><scope>Lotus::PreDestroyEvent</scope><name>Type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

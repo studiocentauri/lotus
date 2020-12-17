@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structLotus_1_1WindowCloseEvent" kind="struct" language="C++" prot="public">
+    <compoundname>Lotus::WindowCloseEvent</compoundname>
+    <basecompoundref refid="structLotus_1_1Event" prot="public" virt="non-virtual">Lotus::Event</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structLotus_1_1WindowCloseEvent_1a423bc926e9d94de9ee304d27e58b48c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Lotus::WindowCloseEvent::WindowCloseEvent</definition>
+        <argsstring>()</argsstring>
+        <name>WindowCloseEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Event.h" line="61" column="9" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Event.h" bodystart="61" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Lotus::WindowCloseEvent</label>
+        <link refid="structLotus_1_1WindowCloseEvent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Lotus::Event</label>
+        <link refid="structLotus_1_1Event"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Lotus::WindowCloseEvent</label>
+        <link refid="structLotus_1_1WindowCloseEvent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Lotus::Event</label>
+        <link refid="structLotus_1_1Event"/>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Event.h" line="59" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Event.h" bodystart="60" bodyend="67"/>
+    <listofallmembers>
+      <member refid="structLotus_1_1Event_1ab24ac1b54a4ba1f7d365dcf66171b428" prot="public" virt="non-virtual"><scope>Lotus::WindowCloseEvent</scope><name>Category</name></member>
+      <member refid="structLotus_1_1Event_1aa80e0ce0e15e954acb56de6979e88a78" prot="public" virt="non-virtual"><scope>Lotus::WindowCloseEvent</scope><name>Immediate</name></member>
+      <member refid="structLotus_1_1Event_1aab6f244133a1b8e2730409d36ed35fce" prot="public" virt="non-virtual"><scope>Lotus::WindowCloseEvent</scope><name>Type</name></member>
+      <member refid="structLotus_1_1WindowCloseEvent_1a423bc926e9d94de9ee304d27e58b48c0" prot="public" virt="non-virtual"><scope>Lotus::WindowCloseEvent</scope><name>WindowCloseEvent</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

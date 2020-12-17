@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="ComponentRegistry_8h" kind="file" language="C++">
+    <compoundname>ComponentRegistry.h</compoundname>
+    <includes local="no">lotus/internal/nlohmann/json.hpp</includes>
+    <includes local="no">lotus/internal/entt/entt.hpp</includes>
+    <includes local="no">unordered_map</includes>
+    <includes local="no">functional</includes>
+    <includedby refid="CCamera_8h" local="yes">/builds/centauri/lotus/lotus/include/lotus/ecs/components/CCamera.h</includedby>
+    <includedby refid="CLight_8h" local="yes">/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h</includedby>
+    <includedby refid="CTransform_8h" local="yes">/builds/centauri/lotus/lotus/include/lotus/ecs/components/CTransform.h</includedby>
+    <includedby refid="components_8h" local="no">/builds/centauri/lotus/lotus/include/lotus/physics/components.h</includedby>
+    <includedby refid="lotus_8h" local="yes">/builds/centauri/lotus/lotus/include/lotus/lotus.h</includedby>
+    <includedby refid="HDRI_8h" local="no">/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>functional</label>
+      </node>
+      <node id="3">
+        <label>lotus/internal/entt/entt.hpp</label>
+      </node>
+      <node id="4">
+        <label>unordered_map</label>
+      </node>
+      <node id="1">
+        <label>/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h</label>
+        <link refid="ComponentRegistry_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lotus/internal/nlohmann/json.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6">
+        <label>/builds/centauri/lotus/lotus/include/lotus/Renderer.h</label>
+        <link refid="Renderer_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/builds/centauri/lotus/lotus/include/lotus/lotus.h</label>
+        <link refid="lotus_8h_source"/>
+      </node>
+      <node id="4">
+        <label>/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h</label>
+        <link refid="CLight_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/builds/centauri/lotus/lotus/include/lotus/ecs/components/CCamera.h</label>
+        <link refid="CCamera_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h</label>
+        <link refid="Shader_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h</label>
+        <link refid="ComponentRegistry_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/builds/centauri/lotus/lotus/include/lotus/physics/components.h</label>
+        <link refid="components_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/builds/centauri/lotus/lotus/include/lotus/ecs/components/CTransform.h</label>
+        <link refid="CTransform_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h</label>
+        <link refid="HDRI_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structLotus_1_1ComponentRegistry" prot="public">Lotus::ComponentRegistry</innerclass>
+    <innernamespace refid="namespaceLotus">Lotus</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="ComponentRegistry_8h_1ae2e65deacc8e7e61f1e3f4001c0e7ca8" prot="public" static="no">
+        <name>GENERATE_COMPONENT_GET_NAME_DECL</name>
+        <param></param>
+        <initializer>static std::string GetName();</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="10" column="9" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ComponentRegistry_8h_1aecdc8190c786678dc9f18ea4aecf7c38" prot="public" static="no">
+        <name>GENERATE_COMPONENT_GET_NAME_BODY</name>
+        <param><defname>component</defname></param>
+        <initializer>    inline std::string component::GetName() { \
+        return QUOTE(component); \
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="13" column="9" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ComponentRegistry_8h_1aec9e813e3bba13f499ecbfcba5f12a32" prot="public" static="no">
+        <name>GENERATE_COMPONENT_ASSIGN_DECL</name>
+        <param></param>
+        <initializer>static void assign(const entt::entity entity, entt::registry&amp; registry, const data_t&amp; data);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="18" column="9" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ComponentRegistry_8h_1a21301f9f95a708601c211ee6f8002383" prot="public" static="no">
+        <name>GENERATE_COMPONENT_ASSIGN_BODY</name>
+        <param><defname>component</defname></param>
+        <initializer>    inline void component::assign(const entt::entity entity, entt::registry&amp; registry, const data_t&amp; data) { \
+        component tmp; \
+        from_json(data, tmp); \
+        registry.emplace_or_replace&lt;component&gt;(entity, std::move(tmp)); \
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="21" column="9" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ComponentRegistry_8h_1a6e8a064886439687307466c3e87739c2" prot="public" static="no">
+        <name>GENERATE_COMPONENT_REGISTER_DECL</name>
+        <param></param>
+        <initializer>static const <ref refid="structLotus_1_1ComponentRegistry" kindref="compound">Lotus::ComponentRegistry</ref> registry; \</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="28" column="9" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ComponentRegistry_8h_1acb477d3812cbad606fcd8ddf8af50fd7" prot="public" static="no">
+        <name>GENERATE_COMPONENT_REGISTER_BODY</name>
+        <param><defname>component</defname></param>
+        <initializer>inline const <ref refid="structLotus_1_1ComponentRegistry" kindref="compound">Lotus::ComponentRegistry</ref> component::registry = { entt::hashed_string::value(QUOTE(component)), &amp;component::assign };</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="31" column="9" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ComponentRegistry_8h_1a89970fa6cfd497abf8d51efa23beef8d" prot="public" static="no">
+        <name>REGISTER_DECL</name>
+        <param></param>
+        <initializer>public: \
+    GENERATE_COMPONENT_GET_NAME_DECL() \
+private: \
+    GENERATE_COMPONENT_ASSIGN_DECL() \
+    GENERATE_COMPONENT_REGISTER_DECL()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="34" column="9" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ComponentRegistry_8h_1a36735419cbedc538c1235ff346ed2b5b" prot="public" static="no">
+        <name>REGISTER_BODY</name>
+        <param><defname>component</defname></param>
+        <initializer>    GENERATE_COMPONENT_GET_NAME_BODY(component) \
+    GENERATE_COMPONENT_ASSIGN_BODY(component) \
+    GENERATE_COMPONENT_REGISTER_BODY(component)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="41" column="9" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ComponentRegistry_8h_1a6f9e756910d2d070670721fb84805fcd" prot="public" static="no">
+        <name>GET_COMPONENT_CTOR</name>
+        <param><defname>name</defname></param>
+        <initializer>Lotus::ComponentRegistry::Get(entt::hashed_string::value(name.c_str()));</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="46" column="9" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;lotus/internal/nlohmann/json.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;lotus/internal/entt/entt.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GENERATE_COMPONENT_GET_NAME_DECL()<sp/>\</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>static<sp/>std::string<sp/>GetName();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GENERATE_COMPONENT_GET_NAME_BODY(component)<sp/>\</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>inline<sp/>std::string<sp/>component::GetName()<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>QUOTE(component);<sp/>\</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GENERATE_COMPONENT_ASSIGN_DECL()<sp/>\</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>static<sp/>void<sp/>assign(const<sp/>entt::entity<sp/>entity,<sp/>entt::registry&amp;<sp/>registry,<sp/>const<sp/>data_t&amp;<sp/>data);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GENERATE_COMPONENT_ASSIGN_BODY(component)<sp/>\</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>inline<sp/>void<sp/>component::assign(const<sp/>entt::entity<sp/>entity,<sp/>entt::registry&amp;<sp/>registry,<sp/>const<sp/>data_t&amp;<sp/>data)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>component<sp/>tmp;<sp/>\</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>from_json(data,<sp/>tmp);<sp/>\</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>registry.emplace_or_replace&lt;component&gt;(entity,<sp/>std::move(tmp));<sp/>\</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GENERATE_COMPONENT_REGISTER_DECL()<sp/>\</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>static<sp/>const<sp/>Lotus::ComponentRegistry<sp/>registry;<sp/>\</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GENERATE_COMPONENT_REGISTER_BODY(component)<sp/>\</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>inline<sp/>const<sp/>Lotus::ComponentRegistry<sp/>component::registry<sp/>=<sp/>{<sp/>entt::hashed_string::value(QUOTE(component)),<sp/>&amp;component::assign<sp/>};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>REGISTER_DECL()<sp/>\</highlight></codeline>
+<codeline lineno="35"><highlight class="preprocessor">public:<sp/>\</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>GENERATE_COMPONENT_GET_NAME_DECL()<sp/>\</highlight></codeline>
+<codeline lineno="37"><highlight class="preprocessor">private:<sp/>\</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>GENERATE_COMPONENT_ASSIGN_DECL()<sp/>\</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>GENERATE_COMPONENT_REGISTER_DECL()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>REGISTER_BODY(component)<sp/>\</highlight></codeline>
+<codeline lineno="42"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>GENERATE_COMPONENT_GET_NAME_BODY(component)<sp/>\</highlight></codeline>
+<codeline lineno="43"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>GENERATE_COMPONENT_ASSIGN_BODY(component)<sp/>\</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>GENERATE_COMPONENT_REGISTER_BODY(component)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GET_COMPONENT_CTOR(name)<sp/>Lotus::ComponentRegistry::Get(entt::hashed_string::value(name.c_str()));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Lotus</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>key_t<sp/>=<sp/>entt::id_type;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>data_t<sp/>=<sp/>nlohmann::json;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>ctor_t<sp/>=<sp/>std::function&lt;void(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>entt::entity,<sp/>entt::registry&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>data_t&amp;<sp/>data)&gt;;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="structLotus_1_1ComponentRegistry" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structLotus_1_1ComponentRegistry" kindref="compound">ComponentRegistry</ref></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structLotus_1_1ComponentRegistry" kindref="compound">ComponentRegistry</ref>(key_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>ctor_t<sp/>func)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ctors.insert({id,<sp/>func});</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ctor_t&amp;<sp/>Get(key_t<sp/>key)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ctors.at(key);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::unordered_map&lt;key_t,<sp/>ctor_t&gt;<sp/>ctors;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h"/>
+  </compounddef>
+</doxygen>

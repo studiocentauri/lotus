@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structLotus_1_1PostUpdateEvent" kind="struct" language="C++" prot="public">
+    <compoundname>Lotus::PostUpdateEvent</compoundname>
+    <basecompoundref refid="structLotus_1_1Event" prot="public" virt="non-virtual">Lotus::Event</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structLotus_1_1PostUpdateEvent_1a0e26b4fb12acf777af46ee32bc728d4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Lotus::PostUpdateEvent::PostUpdateEvent</definition>
+        <argsstring>()</argsstring>
+        <name>PostUpdateEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ILifecycle.h" line="44" column="9" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ILifecycle.h" bodystart="44" bodyend="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Lotus::PostUpdateEvent</label>
+        <link refid="structLotus_1_1PostUpdateEvent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Lotus::Event</label>
+        <link refid="structLotus_1_1Event"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Lotus::PostUpdateEvent</label>
+        <link refid="structLotus_1_1PostUpdateEvent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Lotus::Event</label>
+        <link refid="structLotus_1_1Event"/>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/ILifecycle.h" line="42" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ILifecycle.h" bodystart="43" bodyend="48"/>
+    <listofallmembers>
+      <member refid="structLotus_1_1Event_1ab24ac1b54a4ba1f7d365dcf66171b428" prot="public" virt="non-virtual"><scope>Lotus::PostUpdateEvent</scope><name>Category</name></member>
+      <member refid="structLotus_1_1Event_1aa80e0ce0e15e954acb56de6979e88a78" prot="public" virt="non-virtual"><scope>Lotus::PostUpdateEvent</scope><name>Immediate</name></member>
+      <member refid="structLotus_1_1PostUpdateEvent_1a0e26b4fb12acf777af46ee32bc728d4e" prot="public" virt="non-virtual"><scope>Lotus::PostUpdateEvent</scope><name>PostUpdateEvent</name></member>
+      <member refid="structLotus_1_1Event_1aab6f244133a1b8e2730409d36ed35fce" prot="public" virt="non-virtual"><scope>Lotus::PostUpdateEvent</scope><name>Type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

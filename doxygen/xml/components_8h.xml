@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="components_8h" kind="file" language="C++">
+    <compoundname>components.h</compoundname>
+    <includes refid="ComponentRegistry_8h" local="no">lotus/ecs/ComponentRegistry.h</includes>
+    <includes refid="physics_8h" local="no">lotus/physics/physics.h</includes>
+    <includedby refid="lotus_8h" local="yes">/builds/centauri/lotus/lotus/include/lotus/lotus.h</includedby>
+    <incdepgraph>
+      <node id="10">
+        <label>lotus/internal/glm/gtx/matrix_decompose.hpp</label>
+      </node>
+      <node id="6">
+        <label>functional</label>
+      </node>
+      <node id="11">
+        <label>lotus/internal/glm/gtc/type_ptr.hpp</label>
+      </node>
+      <node id="4">
+        <label>lotus/internal/entt/entt.hpp</label>
+      </node>
+      <node id="14">
+        <label>fstream</label>
+      </node>
+      <node id="8">
+        <label>lotus/internal/glm/glm.hpp</label>
+      </node>
+      <node id="12">
+        <label>lotus/lcommon.h</label>
+        <link refid="lcommon_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>lotus/physics/physics.h</label>
+        <link refid="physics_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>unordered_map</label>
+      </node>
+      <node id="16">
+        <label>lotus_export.h</label>
+        <link refid="lotus__export_8h_source"/>
+      </node>
+      <node id="2">
+        <label>lotus/ecs/ComponentRegistry.h</label>
+        <link refid="ComponentRegistry_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>type_traits</label>
+      </node>
+      <node id="1">
+        <label>/builds/centauri/lotus/lotus/include/lotus/physics/components.h</label>
+        <link refid="components_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>memory</label>
+      </node>
+      <node id="9">
+        <label>lotus/internal/glm/gtc/matrix_transform.hpp</label>
+      </node>
+      <node id="3">
+        <label>lotus/internal/nlohmann/json.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/builds/centauri/lotus/lotus/include/lotus/lotus.h</label>
+        <link refid="lotus_8h_source"/>
+      </node>
+      <node id="1">
+        <label>/builds/centauri/lotus/lotus/include/lotus/physics/components.h</label>
+        <link refid="components_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structLotus_1_1CSphereCollider" prot="public">Lotus::CSphereCollider</innerclass>
+    <innerclass refid="structLotus_1_1CBoxCollider" prot="public">Lotus::CBoxCollider</innerclass>
+    <innerclass refid="structLotus_1_1CCapsuleCollider" prot="public">Lotus::CCapsuleCollider</innerclass>
+    <innerclass refid="structLotus_1_1CRigidBody" prot="public">Lotus::CRigidBody</innerclass>
+    <innernamespace refid="namespaceLotus">Lotus</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;lotus/ecs/ComponentRegistry.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;lotus/physics/physics.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Lotus</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8" refid="structLotus_1_1CSphereCollider" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structLotus_1_1CSphereCollider" kindref="compound">CSphereCollider</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11" refid="structLotus_1_1CSphereCollider_1a5c78e6ec76d420bc06eb90175ff78783" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector3f<sp/><ref refid="structLotus_1_1CSphereCollider_1a5c78e6ec76d420bc06eb90175ff78783" kindref="member">Position</ref><sp/>{0.0f};</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="structLotus_1_1CSphereCollider_1a670435ec4d8d71d1d5189a97352ce3f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structLotus_1_1CSphereCollider_1a670435ec4d8d71d1d5189a97352ce3f2" kindref="member">Radius</ref><sp/>=<sp/>1.0f;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>REGISTER_DECL();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>SERIALIZE(<ref refid="structLotus_1_1CSphereCollider" kindref="compound">CSphereCollider</ref>,<sp/>Position,<sp/>Radius);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>REGISTER_BODY(<ref refid="structLotus_1_1CSphereCollider" kindref="compound">CSphereCollider</ref>);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="structLotus_1_1CBoxCollider" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structLotus_1_1CBoxCollider" kindref="compound">CBoxCollider</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24" refid="structLotus_1_1CBoxCollider_1a5d833c05997e1590273db89c3bf46c21" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector3f<sp/><ref refid="structLotus_1_1CBoxCollider_1a5d833c05997e1590273db89c3bf46c21" kindref="member">Position</ref><sp/>{0.0f};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="structLotus_1_1CBoxCollider_1ad838a8bdca0c581aabe775b873b25d40" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector3f<sp/><ref refid="structLotus_1_1CBoxCollider_1ad838a8bdca0c581aabe775b873b25d40" kindref="member">Dimensions</ref><sp/>{1.0f};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>REGISTER_DECL();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>SERIALIZE(CBoxCollider,<sp/>Position,<sp/>Dimensions);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>REGISTER_BODY(CBoxCollider);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="structLotus_1_1CCapsuleCollider" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structLotus_1_1CCapsuleCollider" kindref="compound">CCapsuleCollider</ref></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37" refid="structLotus_1_1CCapsuleCollider_1a4d67eab1db6907b401ccbac8283ec87a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector3f<sp/><ref refid="structLotus_1_1CCapsuleCollider_1a4d67eab1db6907b401ccbac8283ec87a" kindref="member">Position</ref><sp/>{0.0f};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="structLotus_1_1CCapsuleCollider_1a72ed6926e3ae566786c1871f1f431288" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structLotus_1_1CCapsuleCollider_1a72ed6926e3ae566786c1871f1f431288" kindref="member">Radius</ref><sp/>=<sp/>1.0f;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="structLotus_1_1CCapsuleCollider_1a4968f2d67527c75a910e302d9b608b71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="structLotus_1_1CCapsuleCollider_1a4968f2d67527c75a910e302d9b608b71" kindref="member">Height</ref><sp/>=<sp/>1.0f;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>REGISTER_DECL();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>SERIALIZE(<ref refid="structLotus_1_1CCapsuleCollider" kindref="compound">CCapsuleCollider</ref>,<sp/>Position,<sp/>Radius,<sp/>Height);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>REGISTER_BODY(<ref refid="structLotus_1_1CCapsuleCollider" kindref="compound">CCapsuleCollider</ref>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="structLotus_1_1CRigidBody" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structLotus_1_1CRigidBody" kindref="compound">CRigidBody</ref></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>Gravity<sp/>=<sp/>1.0f;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>IsKinematic<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>REGISTER_DECL();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>SERIALIZE(<ref refid="structLotus_1_1CRigidBody" kindref="compound">CRigidBody</ref>,<sp/>Gravity,<sp/>IsKinematic);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>REGISTER_BODY(<ref refid="structLotus_1_1CRigidBody" kindref="compound">CRigidBody</ref>);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dir_c73cbe7cd2a4fd591b4c82d1afe873df" kind="dir">
+    <compoundname>/builds/centauri/lotus</compoundname>
+    <innerdir refid="dir_7b4480b3fe3c69bde3333c6613a02b39">/builds/centauri/lotus/docs</innerdir>
+    <innerdir refid="dir_5f1cc2c4481f90d74bb6ec98cfb94441">/builds/centauri/lotus/lotus</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/centauri/lotus/"/>
+  </compounddef>
+</doxygen>

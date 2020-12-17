@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classLotus_1_1Renderer" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Lotus::Renderer</compoundname>
+    <basecompoundref refid="classLotus_1_1ILifecycle" prot="public" virt="non-virtual">Lotus::ILifecycle</basecompoundref>
+    <includes refid="Renderer_8h" local="no">Renderer.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classLotus_1_1Renderer_1a6a82a006e6bcd6de47a0d6376112c76e" prot="protected" static="no" mutable="no">
+        <type><ref refid="structLotus_1_1RendererOp" kindref="compound">RendererOp</ref></type>
+        <definition>RendererOp Lotus::Renderer::_options</definition>
+        <argsstring></argsstring>
+        <name>_options</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Renderer.h" line="70" column="20" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Renderer.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classLotus_1_1Renderer_1afd0235d803925767494aeb79b53d5f63" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Lotus::Renderer::Initialize</definition>
+        <argsstring>(const RendererOp &amp;options)</argsstring>
+        <name>Initialize</name>
+        <param>
+          <type>const <ref refid="structLotus_1_1RendererOp" kindref="compound">RendererOp</ref> &amp;</type>
+          <declname>options</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the renderer. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Options to configure the renderer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Renderer.h" line="77" column="22" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Renderer.h" bodystart="77" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classLotus_1_1Renderer_1a1d627fefc6486ad1c592d58bd21f697f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Lotus::Renderer::SetViewport</definition>
+        <argsstring>(int x, int y, int width, int height)</argsstring>
+        <name>SetViewport</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set viewport dimensions <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Origin x-coordinate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Origin y-coordinate </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Desired viewport width </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Desired viewport height </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Renderer.h" line="87" column="22" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Renderer.h" bodystart="87" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classLotus_1_1Renderer_1a1e623c460723c453cacbb3473bda828b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Lotus::Renderer::DrawMesh</definition>
+        <argsstring>(const CMeshRenderer &amp;data, const CTransform &amp;transform)</argsstring>
+        <name>DrawMesh</name>
+        <param>
+          <type>const <ref refid="structLotus_1_1CMeshRenderer" kindref="compound">CMeshRenderer</ref> &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structLotus_1_1CTransform" kindref="compound">CTransform</ref> &amp;</type>
+          <declname>transform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Draw a mesh <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structLotus_1_1CMeshRenderer" kindref="compound">CMeshRenderer</ref> object reference holding data for the mesh to be drawn </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="structLotus_1_1CTransform" kindref="compound">CTransform</ref> reference for the mesh to be drawn </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Renderer.h" line="95" column="22" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Renderer.h" bodystart="95" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classLotus_1_1Renderer_1ac4312f27afbed8f0d66ffa0f6e8c18ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>void Lotus::Renderer::OnPreUpdate</definition>
+        <argsstring>(const PreUpdateEvent &amp;event) override=0</argsstring>
+        <name>OnPreUpdate</name>
+        <reimplements refid="classLotus_1_1ILifecycle_1a2b8033fff7dc4dbb170488e7453d0951">OnPreUpdate</reimplements>
+        <param>
+          <type>const <ref refid="structLotus_1_1PreUpdateEvent" kindref="compound">PreUpdateEvent</ref> &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Renderer.h" line="98" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classLotus_1_1Renderer_1a9df4d09b87d95a1db7b85e695f860a88" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>void Lotus::Renderer::OnUpdate</definition>
+        <argsstring>(const UpdateEvent &amp;event) override=0</argsstring>
+        <name>OnUpdate</name>
+        <reimplements refid="classLotus_1_1ILifecycle_1aadac9ed3f98dbb7489f1a342d063cc2a">OnUpdate</reimplements>
+        <param>
+          <type>const <ref refid="structLotus_1_1UpdateEvent" kindref="compound">UpdateEvent</ref> &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Renderer.h" line="99" column="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="classLotus_1_1Renderer" kindref="compound">Renderer</ref> class used by the end user. Abstracts away platform specific implementation details. All implementations must subclass this. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Lotus::Renderer</label>
+        <link refid="classLotus_1_1Renderer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Lotus::ILifecycle</label>
+        <link refid="classLotus_1_1ILifecycle"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Lotus::Renderer</label>
+        <link refid="classLotus_1_1Renderer"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_options</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Lotus::ILifecycle</label>
+        <link refid="classLotus_1_1ILifecycle"/>
+      </node>
+      <node id="3">
+        <label>Lotus::RendererOp</label>
+        <link refid="structLotus_1_1RendererOp"/>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/Renderer.h" line="67" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Renderer.h" bodystart="68" bodyend="100"/>
+    <listofallmembers>
+      <member refid="classLotus_1_1Renderer_1a6a82a006e6bcd6de47a0d6376112c76e" prot="protected" virt="non-virtual"><scope>Lotus::Renderer</scope><name>_options</name></member>
+      <member refid="classLotus_1_1Renderer_1a1e623c460723c453cacbb3473bda828b" prot="public" virt="virtual"><scope>Lotus::Renderer</scope><name>DrawMesh</name></member>
+      <member refid="classLotus_1_1Renderer_1afd0235d803925767494aeb79b53d5f63" prot="public" virt="virtual"><scope>Lotus::Renderer</scope><name>Initialize</name></member>
+      <member refid="classLotus_1_1ILifecycle_1a295a48ac803500408d54bfdfc327b00e" prot="public" virt="virtual"><scope>Lotus::Renderer</scope><name>OnBegin</name></member>
+      <member refid="classLotus_1_1ILifecycle_1a466688ef6d3295dd1e620f0430f1524e" prot="public" virt="virtual"><scope>Lotus::Renderer</scope><name>OnDestroy</name></member>
+      <member refid="classLotus_1_1ILifecycle_1a5812c2bcfdb31ecc0abe1416073d60d2" prot="public" virt="virtual"><scope>Lotus::Renderer</scope><name>OnInit</name></member>
+      <member refid="classLotus_1_1ILifecycle_1a3e85ef7e56e97463d287fb8fe3376a41" prot="public" virt="virtual"><scope>Lotus::Renderer</scope><name>OnPostUpdate</name></member>
+      <member refid="classLotus_1_1ILifecycle_1a8d95ae415cba6ec92c0c09106d25db82" prot="public" virt="virtual"><scope>Lotus::Renderer</scope><name>OnPreDestroy</name></member>
+      <member refid="classLotus_1_1Renderer_1ac4312f27afbed8f0d66ffa0f6e8c18ca" prot="public" virt="pure-virtual"><scope>Lotus::Renderer</scope><name>OnPreUpdate</name></member>
+      <member refid="classLotus_1_1ILifecycle_1ab7aa9b0110ee633964f8974ecff8d4ef" prot="public" virt="virtual"><scope>Lotus::Renderer</scope><name>OnShutdown</name></member>
+      <member refid="classLotus_1_1Renderer_1a9df4d09b87d95a1db7b85e695f860a88" prot="public" virt="pure-virtual"><scope>Lotus::Renderer</scope><name>OnUpdate</name></member>
+      <member refid="classLotus_1_1Renderer_1a1d627fefc6486ad1c592d58bd21f697f" prot="public" virt="virtual"><scope>Lotus::Renderer</scope><name>SetViewport</name></member>
+      <member refid="classLotus_1_1ILifecycle_1a41dcdcf69b0b269de4e250203a37a08a" prot="public" virt="virtual"><scope>Lotus::Renderer</scope><name>~ILifecycle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

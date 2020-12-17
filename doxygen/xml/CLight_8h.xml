@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="CLight_8h" kind="file" language="C++">
+    <compoundname>CLight.h</compoundname>
+    <includes refid="physics_8h" local="yes">lotus/physics/physics.h</includes>
+    <includes refid="ComponentRegistry_8h" local="yes">lotus/ecs/ComponentRegistry.h</includes>
+    <includedby refid="lotus_8h" local="yes">/builds/centauri/lotus/lotus/include/lotus/lotus.h</includedby>
+    <includedby refid="Shader_8h" local="yes">/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>lotus/internal/glm/gtx/matrix_decompose.hpp</label>
+      </node>
+      <node id="16">
+        <label>functional</label>
+      </node>
+      <node id="6">
+        <label>lotus/internal/glm/gtc/type_ptr.hpp</label>
+      </node>
+      <node id="12">
+        <label>lotus/internal/entt/entt.hpp</label>
+      </node>
+      <node id="9">
+        <label>fstream</label>
+      </node>
+      <node id="1">
+        <label>/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h</label>
+        <link refid="CLight_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>lotus/internal/glm/glm.hpp</label>
+      </node>
+      <node id="7">
+        <label>lotus/lcommon.h</label>
+        <link refid="lcommon_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>lotus/physics/physics.h</label>
+        <link refid="physics_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>unordered_map</label>
+      </node>
+      <node id="11">
+        <label>lotus_export.h</label>
+        <link refid="lotus__export_8h_source"/>
+      </node>
+      <node id="14">
+        <label>lotus/ecs/ComponentRegistry.h</label>
+        <link refid="ComponentRegistry_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>type_traits</label>
+      </node>
+      <node id="8">
+        <label>memory</label>
+      </node>
+      <node id="4">
+        <label>lotus/internal/glm/gtc/matrix_transform.hpp</label>
+      </node>
+      <node id="13">
+        <label>lotus/internal/nlohmann/json.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>/builds/centauri/lotus/lotus/include/lotus/Renderer.h</label>
+        <link refid="Renderer_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/builds/centauri/lotus/lotus/include/lotus/lotus.h</label>
+        <link refid="lotus_8h_source"/>
+      </node>
+      <node id="1">
+        <label>/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h</label>
+        <link refid="CLight_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h</label>
+        <link refid="Shader_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structLotus_1_1CLight" prot="public">Lotus::CLight</innerclass>
+    <innerclass refid="structLotus_1_1CPointLight" prot="public">Lotus::CPointLight</innerclass>
+    <innerclass refid="structLotus_1_1CSpotlight" prot="public">Lotus::CSpotlight</innerclass>
+    <innernamespace refid="namespaceLotus">Lotus</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lotus/physics/physics.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lotus/ecs/ComponentRegistry.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Lotus</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="8" refid="structLotus_1_1CLight" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structLotus_1_1CLight" kindref="compound">CLight</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector3f<sp/>ambient<sp/>=<sp/>Vector3f(0.0f);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector3f<sp/>diffuse<sp/>=<sp/>Vector3f(1.0f);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector3f<sp/>specular<sp/>=<sp/>Vector3f(0.4f);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>REGISTER_DECL();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>SERIALIZE(<ref refid="structLotus_1_1CLight" kindref="compound">CLight</ref>,<sp/>ambient,<sp/>diffuse,<sp/>specular);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>REGISTER_BODY(<ref refid="structLotus_1_1CLight" kindref="compound">CLight</ref>);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="structLotus_1_1CPointLight" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structLotus_1_1CPointLight" kindref="compound">CPointLight</ref><sp/>:<sp/><ref refid="structLotus_1_1CLight" kindref="compound">CLight</ref></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>constant<sp/>=<sp/>1.0f;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>linear<sp/>=<sp/>0.22f;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>quadratic<sp/>=<sp/>0.20f;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>REGISTER_DECL();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>SERIALIZE(<ref refid="structLotus_1_1CPointLight" kindref="compound">CPointLight</ref>,<sp/>ambient,<sp/>diffuse,<sp/>specular,<sp/>constant,<sp/>linear,<sp/>quadratic);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>REGISTER_BODY(<ref refid="structLotus_1_1CPointLight" kindref="compound">CPointLight</ref>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="structLotus_1_1CSpotlight" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structLotus_1_1CSpotlight" kindref="compound">CSpotlight</ref><sp/>:<sp/><ref refid="structLotus_1_1CLight" kindref="compound">CLight</ref></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>constant<sp/>=<sp/>1.0f;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>linear<sp/>=<sp/>0.07f;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>quadratic<sp/>=<sp/>0.017f;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>innerCutOff<sp/>=<sp/>12.5f;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>outerCutOff<sp/>=<sp/>17.5f;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>REGISTER_DECL();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>Better<sp/>serialize<sp/>nested<sp/>components<sp/>so<sp/>that<sp/>I<sp/>don&apos;t<sp/>have<sp/>to<sp/>write<sp/>this<sp/>huge<sp/>list</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>SERIALIZE(<ref refid="structLotus_1_1CSpotlight" kindref="compound">CSpotlight</ref>,<sp/>ambient,<sp/>diffuse,<sp/>specular,<sp/>constant,<sp/>linear,<sp/>quadratic,<sp/>innerCutOff,<sp/>outerCutOff);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>REGISTER_BODY(<ref refid="structLotus_1_1CSpotlight" kindref="compound">CSpotlight</ref>);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classLotus_1_1Entity" kind="class" language="C++" prot="public">
+    <compoundname>Lotus::Entity</compoundname>
+    <includes refid="Entity_8h" local="no">Entity.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classLotus_1_1Entity_1af8472524b6ff662ad11e420eec8ee4a3" prot="private" static="no" mutable="no">
+        <type>EntityID</type>
+        <definition>EntityID Lotus::Entity::_id</definition>
+        <argsstring></argsstring>
+        <name>_id</name>
+        <initializer>= entt::null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="25" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLotus_1_1Entity_1aa070da2fdb4fde7ae921b72d66e25098" prot="private" static="no" mutable="no">
+        <type>entt::registry *</type>
+        <definition>entt::registry* Lotus::Entity::_registry</definition>
+        <argsstring></argsstring>
+        <name>_registry</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="28" column="24" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classLotus_1_1Entity_1ad1a098f6591950a6c21b255ed84bce18" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Lotus::Entity::Entity</definition>
+        <argsstring>(EntityID id, entt::registry *registry)</argsstring>
+        <name>Entity</name>
+        <param>
+          <type>EntityID</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>entt::registry *</type>
+          <declname>registry</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="31" column="9" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classLotus_1_1Entity_1a6632822abd792a3bf2cda827455e90d5" prot="public" static="no" const="yes" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Lotus::Entity::operator EntityID</definition>
+        <argsstring>() const</argsstring>
+        <name>operator EntityID</name>
+        <briefdescription>
+<para>Overload this operator to allow casts to EntityID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="36" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classLotus_1_1Entity_1a84be326c22eb1d2cabc5e5b3190638da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Component</type>
+          </param>
+          <param>
+            <type>typename ...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>Component &amp;</type>
+        <definition>Component&amp; Lotus::Entity::AddComponent</definition>
+        <argsstring>(Args &amp;&amp;...args)</argsstring>
+        <name>AddComponent</name>
+        <param>
+          <type>Args &amp;&amp;...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Add a component to this entity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Component</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the component </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Types for optional parameters </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional parameters, used to create the component in-place </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to the newly created component </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="49" column="19" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classLotus_1_1Entity_1aae7a02a25247e102e84a75f96fe0d364" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Components</declname>
+            <defname>Components</defname>
+          </param>
+        </templateparamlist>
+        <type>decltype(auto)</type>
+        <definition>decltype(auto) Lotus::Entity::GetComponent</definition>
+        <argsstring>()</argsstring>
+        <name>GetComponent</name>
+        <briefdescription>
+<para>Get components from this entity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Components</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Types of the components to get </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Tuple with all components </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="60" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classLotus_1_1Entity_1a69a075a0e668a9f1d2a92ddad83e4ba4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Lotus::Entity::Destroy</definition>
+        <argsstring>()</argsstring>
+        <name>Destroy</name>
+        <briefdescription>
+<para>Destroy this entity and remove it from the scene. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="69" column="14" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" bodystart="69" bodyend="72"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Lightweight wrapper class to represent entities. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>This class is the main interface through which the user should manipulate entities. It provides methods to manipulate components and destroy the entity. The class wraps an entity handle and a registry pointer, and is therefore lightweight enough to be passed around. </para>
+    </detaileddescription>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="23" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" bodystart="24" bodyend="73"/>
+    <listofallmembers>
+      <member refid="classLotus_1_1Entity_1af8472524b6ff662ad11e420eec8ee4a3" prot="private" virt="non-virtual"><scope>Lotus::Entity</scope><name>_id</name></member>
+      <member refid="classLotus_1_1Entity_1aa070da2fdb4fde7ae921b72d66e25098" prot="private" virt="non-virtual"><scope>Lotus::Entity</scope><name>_registry</name></member>
+      <member refid="classLotus_1_1Entity_1a84be326c22eb1d2cabc5e5b3190638da" prot="public" virt="non-virtual"><scope>Lotus::Entity</scope><name>AddComponent</name></member>
+      <member refid="classLotus_1_1Entity_1a69a075a0e668a9f1d2a92ddad83e4ba4" prot="public" virt="non-virtual"><scope>Lotus::Entity</scope><name>Destroy</name></member>
+      <member refid="classLotus_1_1Entity_1ad1a098f6591950a6c21b255ed84bce18" prot="public" virt="non-virtual"><scope>Lotus::Entity</scope><name>Entity</name></member>
+      <member refid="classLotus_1_1Entity_1aae7a02a25247e102e84a75f96fe0d364" prot="public" virt="non-virtual"><scope>Lotus::Entity</scope><name>GetComponent</name></member>
+      <member refid="classLotus_1_1Entity_1a6632822abd792a3bf2cda827455e90d5" prot="public" virt="non-virtual"><scope>Lotus::Entity</scope><name>operator EntityID</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

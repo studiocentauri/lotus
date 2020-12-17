@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dir_44851c931ec4356d9f7d8ff6feb7e36d" kind="dir">
+    <compoundname>/builds/centauri/lotus/lotus/include/lotus/scene</compoundname>
+    <innerfile refid="Scene_8h">Scene.h</innerfile>
+    <innerfile refid="SceneManager_8h">SceneManager.h</innerfile>
+    <innerfile refid="SceneTreeNode_8h">SceneTreeNode.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/scene/"/>
+  </compounddef>
+</doxygen>

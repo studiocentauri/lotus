@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dir_0f5a2218f5a7b7e55e1d3fdb00ec9077" kind="dir">
+    <compoundname>/builds/centauri/lotus/lotus/include/lotus/resources</compoundname>
+    <innerfile refid="AssetRegistry_8h">AssetRegistry.h</innerfile>
+    <innerfile refid="HDRI_8h">HDRI.h</innerfile>
+    <innerfile refid="Material_8h">Material.h</innerfile>
+    <innerfile refid="Model_8h">Model.h</innerfile>
+    <innerfile refid="Shader_8h">Shader.h</innerfile>
+    <innerfile refid="Texture_8h">Texture.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/resources/"/>
+  </compounddef>
+</doxygen>

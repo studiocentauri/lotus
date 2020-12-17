@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structLotus_1_1ComponentRegistry" kind="struct" language="C++" prot="public">
+    <compoundname>Lotus::ComponentRegistry</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="structLotus_1_1ComponentRegistry_1a059a8814e60166847e40581049e676c5" prot="private" static="yes" mutable="no">
+        <type>std::unordered_map&lt; key_t, ctor_t &gt;</type>
+        <definition>std::unordered_map&lt;key_t, ctor_t&gt; Lotus::ComponentRegistry::ctors</definition>
+        <argsstring></argsstring>
+        <name>ctors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="68" column="42" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structLotus_1_1ComponentRegistry_1ac659d994c91479596c5e7b3cd228d259" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Lotus::ComponentRegistry::ComponentRegistry</definition>
+        <argsstring>(key_t id, ctor_t func)</argsstring>
+        <name>ComponentRegistry</name>
+        <param>
+          <type>key_t</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>ctor_t</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="57" column="9" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="57" bodyend="60"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structLotus_1_1ComponentRegistry_1af1417309f10e3a3436909b82048a7619" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const ctor_t &amp;</type>
+        <definition>static const ctor_t&amp; Lotus::ComponentRegistry::Get</definition>
+        <argsstring>(key_t key)</argsstring>
+        <name>Get</name>
+        <param>
+          <type>key_t</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="62" column="29" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="62" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="55" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="56" bodyend="69"/>
+    <listofallmembers>
+      <member refid="structLotus_1_1ComponentRegistry_1ac659d994c91479596c5e7b3cd228d259" prot="public" virt="non-virtual"><scope>Lotus::ComponentRegistry</scope><name>ComponentRegistry</name></member>
+      <member refid="structLotus_1_1ComponentRegistry_1a059a8814e60166847e40581049e676c5" prot="private" virt="non-virtual"><scope>Lotus::ComponentRegistry</scope><name>ctors</name></member>
+      <member refid="structLotus_1_1ComponentRegistry_1af1417309f10e3a3436909b82048a7619" prot="public" virt="non-virtual"><scope>Lotus::ComponentRegistry</scope><name>Get</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

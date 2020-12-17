@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dir_146493e3f23dceffbe9186c2ccedb199" kind="dir">
+    <compoundname>/builds/centauri/lotus/lotus/include/lotus/ecs</compoundname>
+    <innerdir refid="dir_4989a77b3c136dda68ec15625c2fa143">/builds/centauri/lotus/lotus/include/lotus/ecs/components</innerdir>
+    <innerfile refid="ComponentRegistry_8h">ComponentRegistry.h</innerfile>
+    <innerfile refid="Entity_8h">Entity.h</innerfile>
+    <innerfile refid="Event_8h">Event.h</innerfile>
+    <innerfile refid="EventManager_8h">EventManager.h</innerfile>
+    <innerfile refid="ISystem_8h">ISystem.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/"/>
+  </compounddef>
+</doxygen>

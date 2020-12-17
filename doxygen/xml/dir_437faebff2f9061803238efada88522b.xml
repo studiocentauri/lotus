@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="dir_437faebff2f9061803238efada88522b" kind="dir">
+    <compoundname>/builds/centauri/lotus/lotus/include/lotus/physics</compoundname>
+    <innerfile refid="components_8h">components.h</innerfile>
+    <innerfile refid="physics_8h">physics.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/physics/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classLotus_1_1Config" kind="class" language="C++" prot="public">
+    <compoundname>Lotus::Config</compoundname>
+    <includes refid="Config_8h" local="no">Config.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classLotus_1_1Config_1a5dab5aa5285b7c7f06c0d00d25fc7351" prot="public" static="no" mutable="no">
+        <type>ERenderAPI</type>
+        <definition>ERenderAPI Lotus::Config::RenderAPI</definition>
+        <argsstring></argsstring>
+        <name>RenderAPI</name>
+        <initializer>= ERenderAPI::OPEN_GL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Config.h" line="14" column="20" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Config.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLotus_1_1Config_1a924eaf3d075e529a0209623ae3691fe8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Lotus::Config::IsDebug</definition>
+        <argsstring></argsstring>
+        <name>IsDebug</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Config.h" line="15" column="14" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Config.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLotus_1_1Config_1afac636242bea3cec6b39b6c7065cb6ac" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Lotus::Config::Width</definition>
+        <argsstring></argsstring>
+        <name>Width</name>
+        <initializer>= 800</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Config.h" line="16" column="22" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Config.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLotus_1_1Config_1a43f8555204aff5cca0ecde11a55cce38" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Lotus::Config::Height</definition>
+        <argsstring></argsstring>
+        <name>Height</name>
+        <initializer>= 600</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Config.h" line="17" column="22" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Config.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Class that holds all configuration options for the engine. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/Config.h" line="10" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Config.h" bodystart="11" bodyend="18"/>
+    <listofallmembers>
+      <member refid="classLotus_1_1Config_1a43f8555204aff5cca0ecde11a55cce38" prot="public" virt="non-virtual"><scope>Lotus::Config</scope><name>Height</name></member>
+      <member refid="classLotus_1_1Config_1a924eaf3d075e529a0209623ae3691fe8" prot="public" virt="non-virtual"><scope>Lotus::Config</scope><name>IsDebug</name></member>
+      <member refid="classLotus_1_1Config_1a5dab5aa5285b7c7f06c0d00d25fc7351" prot="public" virt="non-virtual"><scope>Lotus::Config</scope><name>RenderAPI</name></member>
+      <member refid="classLotus_1_1Config_1afac636242bea3cec6b39b6c7065cb6ac" prot="public" virt="non-virtual"><scope>Lotus::Config</scope><name>Width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

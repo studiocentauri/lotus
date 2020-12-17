@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="namespaceglm" kind="namespace" language="C++">
+    <compoundname>glm</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="physics_8h_1a654d7f7e06cc1b5d975d0a124d66d684" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void glm::to_json</definition>
+        <argsstring>(nlohmann::json &amp;data, const Vector3f &amp;vec)</argsstring>
+        <name>to_json</name>
+        <param>
+          <type>nlohmann::json &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const Vector3f &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/physics.h" line="29" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/physics.h" bodystart="29" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="physics_8h_1abb2bb72753f95eacb74e3888d8e2a760" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void glm::from_json</definition>
+        <argsstring>(const nlohmann::json &amp;data, Vector3f &amp;vec)</argsstring>
+        <name>from_json</name>
+        <param>
+          <type>const nlohmann::json &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>Vector3f &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/physics.h" line="37" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/physics.h" bodystart="37" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/physics/physics.h" line="26" column="1"/>
+  </compounddef>
+</doxygen>
