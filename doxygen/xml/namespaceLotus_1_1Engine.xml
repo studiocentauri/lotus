@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="namespaceLotus_1_1Engine" kind="namespace" language="C++">
+    <compoundname>Lotus::Engine</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="Engine_8h_1a5b7a35a10f9877018cd419713ede6504" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LOTUS_API void</type>
+        <definition>LOTUS_API void Lotus::Engine::Initialize</definition>
+        <argsstring>()</argsstring>
+        <name>Initialize</name>
+        <briefdescription>
+<para>Initializes the engine and various subsystems. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Engine.h" line="8" column="20" declfile="/builds/centauri/lotus/lotus/include/lotus/Engine.h" declline="8" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="Engine_8h_1aabd36551aef967622218227a1659ebd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LOTUS_API void</type>
+        <definition>LOTUS_API void Lotus::Engine::Tick</definition>
+        <argsstring>(double deltaTime)</argsstring>
+        <name>Tick</name>
+        <param>
+          <type>double</type>
+          <declname>deltaTime</declname>
+        </param>
+        <briefdescription>
+<para>Logic for a single engine tick. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Engine.h" line="11" column="20" declfile="/builds/centauri/lotus/lotus/include/lotus/Engine.h" declline="11" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="Engine_8h_1ac1eb1c2a10efaf8643cebef853584f63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LOTUS_API void</type>
+        <definition>LOTUS_API void Lotus::Engine::Shutdown</definition>
+        <argsstring>()</argsstring>
+        <name>Shutdown</name>
+        <briefdescription>
+<para>Cleanup and shutdown. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Engine.h" line="14" column="20" declfile="/builds/centauri/lotus/lotus/include/lotus/Engine.h" declline="14" declcolumn="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/Engine.h" line="5" column="1"/>
+  </compounddef>
+</doxygen>

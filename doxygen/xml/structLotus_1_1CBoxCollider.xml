@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="24" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="24" bodyend="-1"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="22" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="22" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structLotus_1_1CBoxCollider_1ad838a8bdca0c581aabe775b873b25d40" prot="public" static="no" mutable="no">
         <type>Vector3f</type>
@@ -31,33 +31,42 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="27" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="27" bodyend="-1"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="25" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="25" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="structLotus_1_1CBoxCollider_1aae5bb04009ff3239cd68b37fffd62ecb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structLotus_1_1CBoxCollider_1ae0895f5d53bc6427c6fb55cef36e67d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
-        <definition>Lotus::CBoxCollider::REGISTER_DECL</definition>
-        <argsstring>()</argsstring>
-        <name>REGISTER_DECL</name>
+        <definition>Lotus::CBoxCollider::GENERATED_BODY</definition>
+        <argsstring>(CBoxCollider, Position, Dimensions)</argsstring>
+        <name>GENERATED_BODY</name>
+        <param>
+          <type><ref refid="structLotus_1_1CBoxCollider" kindref="compound">CBoxCollider</ref></type>
+        </param>
+        <param>
+          <type><ref refid="structLotus_1_1CBoxCollider_1a5d833c05997e1590273db89c3bf46c21" kindref="member">Position</ref></type>
+        </param>
+        <param>
+          <type><ref refid="structLotus_1_1CBoxCollider_1ad838a8bdca0c581aabe775b873b25d40" kindref="member">Dimensions</ref></type>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="29" column="9"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="27" column="9"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="21" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="22" bodyend="30"/>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="19" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="20" bodyend="28"/>
     <listofallmembers>
       <member refid="structLotus_1_1CBoxCollider_1ad838a8bdca0c581aabe775b873b25d40" prot="public" virt="non-virtual"><scope>Lotus::CBoxCollider</scope><name>Dimensions</name></member>
+      <member refid="structLotus_1_1CBoxCollider_1ae0895f5d53bc6427c6fb55cef36e67d7" prot="public" virt="non-virtual"><scope>Lotus::CBoxCollider</scope><name>GENERATED_BODY</name></member>
       <member refid="structLotus_1_1CBoxCollider_1a5d833c05997e1590273db89c3bf46c21" prot="public" virt="non-virtual"><scope>Lotus::CBoxCollider</scope><name>Position</name></member>
-      <member refid="structLotus_1_1CBoxCollider_1aae5bb04009ff3239cd68b37fffd62ecb" prot="public" virt="non-virtual"><scope>Lotus::CBoxCollider</scope><name>REGISTER_DECL</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

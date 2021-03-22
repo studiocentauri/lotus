@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['updatekeystate_135',['UpdateKeyState',['../namespaceLotus_1_1Input.html#a8efbd8e3c670c25f4f644be0c2c15971',1,'Lotus::Input']]],
-  ['updatemousestate_136',['UpdateMouseState',['../namespaceLotus_1_1Input.html#aebb9f7678c07bac91f56e72e35a49cc5',1,'Lotus::Input']]]
+  ['updatekeystate_103',['UpdateKeyState',['../namespaceLotus_1_1Input.html#af5cdc22b0275cab4194ccba2b4c0670e',1,'Lotus::Input']]],
+  ['updatemousestate_104',['UpdateMouseState',['../namespaceLotus_1_1Input.html#a8cf47af6e1567dba2467c2b1204b3112',1,'Lotus::Input']]]
 ];

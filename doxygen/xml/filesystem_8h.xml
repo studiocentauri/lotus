@@ -6,7 +6,7 @@
     <includes local="no">string</includes>
     <includedby refid="lotus_8h" local="yes">/builds/centauri/lotus/lotus/include/lotus/lotus.h</includedby>
     <includedby refid="HDRI_8h" local="no">/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h</includedby>
-    <includedby refid="Renderer_8h" local="no">/builds/centauri/lotus/lotus/include/lotus/Renderer.h</includedby>
+    <includedby refid="CMeshRenderer_8h" local="no">/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h</includedby>
     <incdepgraph>
       <node id="3">
         <label>string</label>
@@ -25,15 +25,15 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="4">
-        <label>/builds/centauri/lotus/lotus/include/lotus/Renderer.h</label>
-        <link refid="Renderer_8h_source"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-      </node>
       <node id="2">
         <label>/builds/centauri/lotus/lotus/include/lotus/lotus.h</label>
         <link refid="lotus_8h_source"/>
+      </node>
+      <node id="4">
+        <label>/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h</label>
+        <link refid="CMeshRenderer_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
       </node>
       <node id="1">
         <label>/builds/centauri/lotus/lotus/include/lotus/filesystem.h</label>
@@ -65,11 +65,8 @@
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Lotus</highlight></codeline>
 <codeline lineno="7"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>LOTUS_API<sp/>std::string<sp/>GetProjectResourceRoot();</highlight></codeline>
-<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>LOTUS_API<sp/>std::string<sp/>GetEngineResourceRoot();</highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>LOTUS_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SetProjectResourceRoot(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>path);</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>LOTUS_API<sp/>std::string<sp/>ExpandPath(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>path);</highlight></codeline>
-<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>LOTUS_API<sp/>std::string<sp/>ExpandPath(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>path);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="/builds/centauri/lotus/lotus/include/lotus/filesystem.h"/>
   </compounddef>

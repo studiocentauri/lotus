@@ -1,0 +1,280 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Quickstart &mdash; Lotus 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/navbar.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="The Entity Component System" href="ecs.html" />
+    <link rel="prev" title="Installation" href="install.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Quickstart</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#scenes">Scenes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#events">Events</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#main-loop">Main loop</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ecs.html">The Entity Component System</a></li>
+<li class="toctree-l1"><a class="reference internal" href="importing.html">Importing Assets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="thirdparty.html">Third Party</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Lotus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Quickstart</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/manual/quickstart.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="quickstart">
+<h1>Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this headline">¶</a></h1>
+<p>This page describes the provided quickstart example and some key concepts that one should be aware of when using the
+engine. Head over to <code class="docutils literal notranslate"><span class="pre">examples/quickstart</span></code> (this will be assumed to be the root directory from now on). The suggested project
+structure includes a <code class="docutils literal notranslate"><span class="pre">main.cpp</span></code> file, a <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> and a <code class="docutils literal notranslate"><span class="pre">resources/</span></code> directory. We’ll focus on what’s happening
+in <code class="docutils literal notranslate"><span class="pre">main.cpp</span></code> first.</p>
+<div class="section" id="configuration">
+<h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
+<p>Lotus is a library and depends on the user to supply a main function. The first step is to initialize the engine and specify
+configuration options. This is done through the <code class="docutils literal notranslate"><span class="pre">.lproject</span></code> file, kept alongside your <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code>.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">LoadConfig</span><span class="p">(</span><span class="n">PROJECT_SETTINGS</span><span class="p">);</span>
+<span class="n">Lotus</span><span class="o">::</span><span class="n">Initialize</span><span class="p">();</span>
+</pre></div>
+</div>
+<p>For now, we have to explicitly tell Lotus where this file is. A <code class="docutils literal notranslate"><span class="pre">PROJECT_SETTINGS</span></code> macro is defined that can be passed if
+the file is in its default location.</p>
+<p>The project file is processed by CMake before being used by the engine, and therefore variables from the build system can
+be easily used. The <code class="docutils literal notranslate"><span class="pre">Project.ProjectResourceRoot</span></code> field exploits this to point to the <code class="docutils literal notranslate"><span class="pre">resources/</span></code> directory of the project.
+This way one does not need to use absolute paths in the configuration file. To insert the value of a CMake variable <code class="docutils literal notranslate"><span class="pre">&lt;VAR&gt;</span></code>,
+simply surround it with ‘&#64;’ like so</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="s">&quot;KeyFilledByCMake&quot;</span><span class="o">:</span> <span class="s">&quot;@&lt;VAR&gt;@&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="scenes">
+<h2>Scenes<a class="headerlink" href="#scenes" title="Permalink to this headline">¶</a></h2>
+<p>Scene files describe entities that can be loaded together. The <code class="docutils literal notranslate"><span class="pre">SceneManager</span></code> can be used for loading and unloading scenes,
+and that is what we’re going to do next.:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">SceneManager</span><span class="o">::</span><span class="n">LoadScene</span><span class="p">(</span><span class="n">ExpandPath</span><span class="p">(</span><span class="s">&quot;res://scenes/SampleScene.json&quot;</span><span class="p">));</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">LoadScene</span></code> function, like all other loaders in Lotus, take the absolute path of the resource as argument. The
+<code class="docutils literal notranslate"><span class="pre">ExpandPath</span></code> function resolves a relative path and returns its absolute counterpart.</p>
+<p>There are two roots when dealing with resources: <code class="docutils literal notranslate"><span class="pre">res://</span></code> and <code class="docutils literal notranslate"><span class="pre">int://</span></code>. The former refers to your project’s resources,
+and uses the path set with <code class="docutils literal notranslate"><span class="pre">SetProjectResourceRoot</span></code>. <code class="docutils literal notranslate"><span class="pre">int://</span></code> on the other hand refers to the resources supplied with the
+engine, like basic meshes and shaders. It resolves to whatever path the engine sources are on.</p>
+<p>For more information on how entities are actually serialized in <code class="docutils literal notranslate"><span class="pre">SampleScene.json</span></code>, refer to <a class="reference internal" href="ecs.html#component-serialization"><span class="std std-ref">Component Serialization</span></a>.</p>
+</div>
+<div class="section" id="events">
+<h2>Events<a class="headerlink" href="#events" title="Permalink to this headline">¶</a></h2>
+<p>The next few lines register custom events to control the camera. Lotus provides some lifecycle events (<code class="docutils literal notranslate"><span class="pre">UpdateEvent</span></code>)
+and some input events (<code class="docutils literal notranslate"><span class="pre">MouseEvent</span></code>) that can be registered with the event manager. <code class="docutils literal notranslate"><span class="pre">UpdateEvent</span></code> is called every
+render frame and therefore depends on the framerate. Use the <code class="docutils literal notranslate"><span class="pre">UpdateEvent::DeltaTime</span></code> field to get the time since the
+last frame.:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">EventManager</span><span class="o">&amp;</span> <span class="n">em</span> <span class="o">=</span> <span class="n">GET</span><span class="p">(</span><span class="n">EventManager</span><span class="p">);</span>
+<span class="n">em</span><span class="p">.</span><span class="n">Bind</span><span class="o">&lt;</span><span class="n">UpdateEvent</span><span class="p">,</span> <span class="n">CameraSystem</span><span class="o">::</span><span class="n">OnUpdate</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="n">em</span><span class="p">.</span><span class="n">Bind</span><span class="o">&lt;</span><span class="n">MouseEvent</span><span class="p">,</span> <span class="n">CameraSystem</span><span class="o">::</span><span class="n">OnMouseEvent</span><span class="o">&gt;</span><span class="p">();</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">GET(X)</span></code> is shorthand for <code class="docutils literal notranslate"><span class="pre">X::Get()</span></code>, which fetches the singleton <code class="docutils literal notranslate"><span class="pre">X</span></code>.</p>
+</div>
+<div class="section" id="main-loop">
+<h2>Main loop<a class="headerlink" href="#main-loop" title="Permalink to this headline">¶</a></h2>
+<p>Once all the configuration is done the main engine loop can be started with <code class="docutils literal notranslate"><span class="pre">Lotus::Run()</span></code>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ecs.html" class="btn btn-neutral float-right" title="The Entity Component System" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="install.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Studio Centauri
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

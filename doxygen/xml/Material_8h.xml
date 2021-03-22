@@ -2,16 +2,16 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
   <compounddef id="Material_8h" kind="file" language="C++">
     <compoundname>Material.h</compoundname>
-    <includes refid="physics_8h" local="yes">lotus/physics/physics.h</includes>
-    <includes refid="Texture_8h" local="yes">lotus/resources/Texture.h</includes>
-    <includes refid="AssetRegistry_8h" local="yes">lotus/resources/AssetRegistry.h</includes>
+    <includes refid="Texture_8h" local="yes">Texture.h</includes>
+    <includes refid="Shader_8h" local="yes">Shader.h</includes>
+    <includes refid="Vector_8h" local="no">lotus/physics/Vector.h</includes>
     <includes local="no">variant</includes>
     <includes local="no">optional</includes>
     <includedby refid="lotus_8h" local="yes">/builds/centauri/lotus/lotus/include/lotus/lotus.h</includedby>
     <includedby refid="Model_8h" local="yes">/builds/centauri/lotus/lotus/include/lotus/resources/Model.h</includedby>
-    <includedby refid="Shader_8h" local="yes">/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h</includedby>
+    <includedby refid="CMeshRenderer_8h" local="no">/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h</includedby>
     <incdepgraph>
-      <node id="5">
+      <node id="15">
         <label>lotus/internal/glm/gtx/matrix_decompose.hpp</label>
       </node>
       <node id="1">
@@ -19,66 +19,83 @@
         <link refid="Material_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>functional</label>
+      </node>
+      <node id="16">
+        <label>lotus/internal/glm/gtc/type_ptr.hpp</label>
+      </node>
+      <node id="12">
+        <label>lotus/physics/Vector.h</label>
+        <link refid="Vector_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
         <childnode refid="14" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
         <childnode refid="16" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="6">
-        <label>lotus/internal/glm/gtc/type_ptr.hpp</label>
-      </node>
-      <node id="12">
+      <node id="8">
         <label>lotus/internal/entt/entt.hpp</label>
       </node>
-      <node id="16">
+      <node id="22">
         <label>variant</label>
       </node>
-      <node id="15">
+      <node id="18">
+        <label>lotus/rendering/common.h</label>
+        <link refid="common_8h_source"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
         <label>lotus/resources/AssetRegistry.h</label>
         <link refid="AssetRegistry_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
       </node>
-      <node id="9">
+      <node id="5">
         <label>fstream</label>
       </node>
-      <node id="14">
-        <label>lotus/resources/Texture.h</label>
+      <node id="2">
+        <label>Texture.h</label>
         <link refid="Texture_8h_source"/>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>lotus/internal/glm/glm.hpp</label>
-      </node>
-      <node id="17">
-        <label>optional</label>
-      </node>
-      <node id="7">
-        <label>lotus/lcommon.h</label>
-        <link refid="lcommon_8h_source"/>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
+      </node>
+      <node id="17">
+        <label>lotus/ecs/components/CLight.h</label>
+        <link refid="CLight_8h_source"/>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
         </childnode>
       </node>
-      <node id="2">
-        <label>lotus/physics/physics.h</label>
-        <link refid="physics_8h_source"/>
-        <childnode refid="3" relation="include">
-        </childnode>
+      <node id="13">
+        <label>lotus/internal/glm/glm.hpp</label>
+      </node>
+      <node id="23">
+        <label>optional</label>
+      </node>
+      <node id="3">
+        <label>lotus/lcommon.h</label>
+        <link refid="lcommon_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
@@ -87,21 +104,54 @@
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
       </node>
       <node id="11">
+        <label>Shader.h</label>
+        <link refid="Shader_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>unordered_map</label>
+      </node>
+      <node id="7">
         <label>lotus_export.h</label>
         <link refid="lotus__export_8h_source"/>
       </node>
-      <node id="10">
+      <node id="19">
+        <label>lotus/ecs/ComponentRegistry.h</label>
+        <link refid="ComponentRegistry_8h_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
         <label>type_traits</label>
       </node>
-      <node id="8">
+      <node id="4">
         <label>memory</label>
       </node>
-      <node id="4">
+      <node id="14">
         <label>lotus/internal/glm/gtc/matrix_transform.hpp</label>
       </node>
-      <node id="13">
+      <node id="9">
         <label>lotus/internal/nlohmann/json.hpp</label>
       </node>
     </incdepgraph>
@@ -113,25 +163,17 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>/builds/centauri/lotus/lotus/include/lotus/Renderer.h</label>
-        <link refid="Renderer_8h_source"/>
-        <childnode refid="2" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
       <node id="2">
         <label>/builds/centauri/lotus/lotus/include/lotus/lotus.h</label>
         <link refid="lotus_8h_source"/>
       </node>
-      <node id="5">
-        <label>/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h</label>
-        <link refid="Shader_8h_source"/>
+      <node id="4">
+        <label>/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h</label>
+        <link refid="CMeshRenderer_8h_source"/>
         <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -152,29 +194,31 @@
     <programlisting>
 <codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lotus/physics/physics.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lotus/resources/Texture.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lotus/resources/AssetRegistry.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;variant&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;optional&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Lotus</highlight></codeline>
-<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="12" refid="structLotus_1_1Material" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structLotus_1_1Material" kindref="compound">Material</ref></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::variant&lt;Vector3f,<sp/>Handle&lt;Texture&gt;&gt;<sp/>Albedo;</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::optional&lt;Handle&lt;Texture&gt;&gt;<sp/>Normal;</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>Roughness<sp/>=<sp/>1.0f;</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>Metallic<sp/>=<sp/>0.0f;</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>AO<sp/>=<sp/>1.0f;</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>LOADER(<ref refid="structLotus_1_1Material" kindref="compound">Material</ref>)</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>SRef&lt;Material&gt;<sp/>Load(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>path)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Texture.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Shader.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;lotus/physics/Vector.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;variant&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;optional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Lotus</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13" refid="structLotus_1_1Material" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structLotus_1_1Material" kindref="compound">Material</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Handle&lt;Shader&gt;<sp/>MaterialShader;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::variant&lt;Color,<sp/>Handle&lt;Texture&gt;&gt;<sp/>Albedo;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::variant&lt;float,<sp/>Handle&lt;Texture&gt;&gt;<sp/>AO;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::optional&lt;Handle&lt;Texture&gt;&gt;<sp/>Normal;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>Roughness<sp/>=<sp/>1.0f;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>Metallic<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>LOADER(<ref refid="structLotus_1_1Material" kindref="compound">Material</ref>)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/>SRef&lt;Material&gt;<sp/>Load(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>path)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h"/>
   </compounddef>

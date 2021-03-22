@@ -74,7 +74,7 @@ $(function() {
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;lotus/ecs/ComponentRegistry.h&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;lotus/physics/physics.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;lotus/physics/Vector.h&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>Lotus</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
@@ -84,57 +84,49 @@ $(function() {
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="structLotus_1_1CSphereCollider.html#a670435ec4d8d71d1d5189a97352ce3f2">   14</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="structLotus_1_1CSphereCollider.html#a670435ec4d8d71d1d5189a97352ce3f2">Radius</a> = 1.0f;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        REGISTER_DECL();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        GENERATED_BODY(<a class="code" href="structLotus_1_1CSphereCollider.html">CSphereCollider</a>, <a class="code" href="structLotus_1_1CSphereCollider.html#a5c78e6ec76d420bc06eb90175ff78783">Position</a>, <a class="code" href="structLotus_1_1CSphereCollider.html#a670435ec4d8d71d1d5189a97352ce3f2">Radius</a>);</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    };</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    SERIALIZE(<a class="code" href="structLotus_1_1CSphereCollider.html">CSphereCollider</a>, Position, Radius);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    REGISTER_BODY(<a class="code" href="structLotus_1_1CSphereCollider.html">CSphereCollider</a>);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="structLotus_1_1CBoxCollider.html">   21</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structLotus_1_1CBoxCollider.html">CBoxCollider</a></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    {</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structLotus_1_1CBoxCollider.html#a5d833c05997e1590273db89c3bf46c21">   24</a></span>&#160;        Vector3f <a class="code" href="structLotus_1_1CBoxCollider.html#a5d833c05997e1590273db89c3bf46c21">Position</a> {0.0f};</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structLotus_1_1CBoxCollider.html#ad838a8bdca0c581aabe775b873b25d40">   27</a></span>&#160;        Vector3f <a class="code" href="structLotus_1_1CBoxCollider.html#ad838a8bdca0c581aabe775b873b25d40">Dimensions</a> {1.0f};</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        REGISTER_DECL();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    };</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    SERIALIZE(CBoxCollider, Position, Dimensions);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    REGISTER_BODY(CBoxCollider);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="structLotus_1_1CCapsuleCollider.html">   34</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structLotus_1_1CCapsuleCollider.html">CCapsuleCollider</a></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structLotus_1_1CCapsuleCollider.html#a4d67eab1db6907b401ccbac8283ec87a">   37</a></span>&#160;        Vector3f <a class="code" href="structLotus_1_1CCapsuleCollider.html#a4d67eab1db6907b401ccbac8283ec87a">Position</a> {0.0f};</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="structLotus_1_1CCapsuleCollider.html#a72ed6926e3ae566786c1871f1f431288">   40</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="structLotus_1_1CCapsuleCollider.html#a72ed6926e3ae566786c1871f1f431288">Radius</a> = 1.0f;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structLotus_1_1CCapsuleCollider.html#a4968f2d67527c75a910e302d9b608b71">   43</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="structLotus_1_1CCapsuleCollider.html#a4968f2d67527c75a910e302d9b608b71">Height</a> = 1.0f;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        REGISTER_DECL();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    };</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    SERIALIZE(<a class="code" href="structLotus_1_1CCapsuleCollider.html">CCapsuleCollider</a>, Position, Radius, Height);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    REGISTER_BODY(<a class="code" href="structLotus_1_1CCapsuleCollider.html">CCapsuleCollider</a>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structLotus_1_1CBoxCollider.html">   19</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structLotus_1_1CBoxCollider.html">CBoxCollider</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="structLotus_1_1CBoxCollider.html#a5d833c05997e1590273db89c3bf46c21">   22</a></span>&#160;        Vector3f <a class="code" href="structLotus_1_1CBoxCollider.html#a5d833c05997e1590273db89c3bf46c21">Position</a> {0.0f};</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structLotus_1_1CBoxCollider.html#ad838a8bdca0c581aabe775b873b25d40">   25</a></span>&#160;        Vector3f <a class="code" href="structLotus_1_1CBoxCollider.html#ad838a8bdca0c581aabe775b873b25d40">Dimensions</a> {1.0f};</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        GENERATED_BODY(<a class="code" href="structLotus_1_1CBoxCollider.html">CBoxCollider</a>, <a class="code" href="structLotus_1_1CBoxCollider.html#a5d833c05997e1590273db89c3bf46c21">Position</a>, <a class="code" href="structLotus_1_1CBoxCollider.html#ad838a8bdca0c581aabe775b873b25d40">Dimensions</a>);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    };</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structLotus_1_1CCapsuleCollider.html">   30</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structLotus_1_1CCapsuleCollider.html">CCapsuleCollider</a></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structLotus_1_1CCapsuleCollider.html#a4d67eab1db6907b401ccbac8283ec87a">   33</a></span>&#160;        Vector3f <a class="code" href="structLotus_1_1CCapsuleCollider.html#a4d67eab1db6907b401ccbac8283ec87a">Position</a> {0.0f};</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structLotus_1_1CCapsuleCollider.html#a72ed6926e3ae566786c1871f1f431288">   36</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="structLotus_1_1CCapsuleCollider.html#a72ed6926e3ae566786c1871f1f431288">Radius</a> = 1.0f;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structLotus_1_1CCapsuleCollider.html#a4968f2d67527c75a910e302d9b608b71">   39</a></span>&#160;        <span class="keywordtype">float</span> <a class="code" href="structLotus_1_1CCapsuleCollider.html#a4968f2d67527c75a910e302d9b608b71">Height</a> = 1.0f;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        GENERATED_BODY(<a class="code" href="structLotus_1_1CCapsuleCollider.html">CCapsuleCollider</a>, <a class="code" href="structLotus_1_1CCapsuleCollider.html#a4d67eab1db6907b401ccbac8283ec87a">Position</a>, <a class="code" href="structLotus_1_1CCapsuleCollider.html#a72ed6926e3ae566786c1871f1f431288">Radius</a>, <a class="code" href="structLotus_1_1CCapsuleCollider.html#a4968f2d67527c75a910e302d9b608b71">Height</a>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    };</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structLotus_1_1CRigidBody.html">   45</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structLotus_1_1CRigidBody.html">CRigidBody</a></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">float</span> Gravity = 1.0f;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordtype">bool</span> IsKinematic = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="structLotus_1_1CRigidBody.html">   51</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structLotus_1_1CRigidBody.html">CRigidBody</a></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordtype">float</span> Gravity = 1.0f;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordtype">bool</span> IsKinematic = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        REGISTER_DECL();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    };</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    SERIALIZE(<a class="code" href="structLotus_1_1CRigidBody.html">CRigidBody</a>, Gravity, IsKinematic);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    REGISTER_BODY(<a class="code" href="structLotus_1_1CRigidBody.html">CRigidBody</a>);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        GENERATED_BODY(<a class="code" href="structLotus_1_1CRigidBody.html">CRigidBody</a>, Gravity, IsKinematic);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    };</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="astructLotus_1_1CSphereCollider_html"><div class="ttname"><a href="structLotus_1_1CSphereCollider.html">Lotus::CSphereCollider</a></div><div class="ttdef"><b>Definition:</b> components.h:9</div></div>
-<div class="ttc" id="astructLotus_1_1CCapsuleCollider_html_a72ed6926e3ae566786c1871f1f431288"><div class="ttname"><a href="structLotus_1_1CCapsuleCollider.html#a72ed6926e3ae566786c1871f1f431288">Lotus::CCapsuleCollider::Radius</a></div><div class="ttdeci">float Radius</div><div class="ttdoc">Radius of the capsule.</div><div class="ttdef"><b>Definition:</b> components.h:40</div></div>
+<div class="ttc" id="astructLotus_1_1CCapsuleCollider_html_a72ed6926e3ae566786c1871f1f431288"><div class="ttname"><a href="structLotus_1_1CCapsuleCollider.html#a72ed6926e3ae566786c1871f1f431288">Lotus::CCapsuleCollider::Radius</a></div><div class="ttdeci">float Radius</div><div class="ttdoc">Radius of the capsule.</div><div class="ttdef"><b>Definition:</b> components.h:36</div></div>
 <div class="ttc" id="astructLotus_1_1CSphereCollider_html_a5c78e6ec76d420bc06eb90175ff78783"><div class="ttname"><a href="structLotus_1_1CSphereCollider.html#a5c78e6ec76d420bc06eb90175ff78783">Lotus::CSphereCollider::Position</a></div><div class="ttdeci">Vector3f Position</div><div class="ttdoc">Center of the sphere.</div><div class="ttdef"><b>Definition:</b> components.h:11</div></div>
-<div class="ttc" id="astructLotus_1_1CCapsuleCollider_html_a4d67eab1db6907b401ccbac8283ec87a"><div class="ttname"><a href="structLotus_1_1CCapsuleCollider.html#a4d67eab1db6907b401ccbac8283ec87a">Lotus::CCapsuleCollider::Position</a></div><div class="ttdeci">Vector3f Position</div><div class="ttdoc">Center of the capsule.</div><div class="ttdef"><b>Definition:</b> components.h:37</div></div>
+<div class="ttc" id="astructLotus_1_1CCapsuleCollider_html_a4d67eab1db6907b401ccbac8283ec87a"><div class="ttname"><a href="structLotus_1_1CCapsuleCollider.html#a4d67eab1db6907b401ccbac8283ec87a">Lotus::CCapsuleCollider::Position</a></div><div class="ttdeci">Vector3f Position</div><div class="ttdoc">Center of the capsule.</div><div class="ttdef"><b>Definition:</b> components.h:33</div></div>
 <div class="ttc" id="astructLotus_1_1CSphereCollider_html_a670435ec4d8d71d1d5189a97352ce3f2"><div class="ttname"><a href="structLotus_1_1CSphereCollider.html#a670435ec4d8d71d1d5189a97352ce3f2">Lotus::CSphereCollider::Radius</a></div><div class="ttdeci">float Radius</div><div class="ttdoc">Radius of the sphere.</div><div class="ttdef"><b>Definition:</b> components.h:14</div></div>
-<div class="ttc" id="astructLotus_1_1CBoxCollider_html_ad838a8bdca0c581aabe775b873b25d40"><div class="ttname"><a href="structLotus_1_1CBoxCollider.html#ad838a8bdca0c581aabe775b873b25d40">Lotus::CBoxCollider::Dimensions</a></div><div class="ttdeci">Vector3f Dimensions</div><div class="ttdoc">Dimensions of the box on local X, Y, Z.</div><div class="ttdef"><b>Definition:</b> components.h:27</div></div>
-<div class="ttc" id="astructLotus_1_1CBoxCollider_html_a5d833c05997e1590273db89c3bf46c21"><div class="ttname"><a href="structLotus_1_1CBoxCollider.html#a5d833c05997e1590273db89c3bf46c21">Lotus::CBoxCollider::Position</a></div><div class="ttdeci">Vector3f Position</div><div class="ttdoc">Center of the box.</div><div class="ttdef"><b>Definition:</b> components.h:24</div></div>
-<div class="ttc" id="astructLotus_1_1CBoxCollider_html"><div class="ttname"><a href="structLotus_1_1CBoxCollider.html">Lotus::CBoxCollider</a></div><div class="ttdef"><b>Definition:</b> components.h:22</div></div>
-<div class="ttc" id="astructLotus_1_1CCapsuleCollider_html_a4968f2d67527c75a910e302d9b608b71"><div class="ttname"><a href="structLotus_1_1CCapsuleCollider.html#a4968f2d67527c75a910e302d9b608b71">Lotus::CCapsuleCollider::Height</a></div><div class="ttdeci">float Height</div><div class="ttdoc">Height of the capsule.</div><div class="ttdef"><b>Definition:</b> components.h:43</div></div>
-<div class="ttc" id="astructLotus_1_1CCapsuleCollider_html"><div class="ttname"><a href="structLotus_1_1CCapsuleCollider.html">Lotus::CCapsuleCollider</a></div><div class="ttdef"><b>Definition:</b> components.h:35</div></div>
-<div class="ttc" id="astructLotus_1_1CRigidBody_html"><div class="ttname"><a href="structLotus_1_1CRigidBody.html">Lotus::CRigidBody</a></div><div class="ttdef"><b>Definition:</b> components.h:52</div></div>
+<div class="ttc" id="astructLotus_1_1CBoxCollider_html_ad838a8bdca0c581aabe775b873b25d40"><div class="ttname"><a href="structLotus_1_1CBoxCollider.html#ad838a8bdca0c581aabe775b873b25d40">Lotus::CBoxCollider::Dimensions</a></div><div class="ttdeci">Vector3f Dimensions</div><div class="ttdoc">Dimensions of the box on local X, Y, Z.</div><div class="ttdef"><b>Definition:</b> components.h:25</div></div>
+<div class="ttc" id="astructLotus_1_1CBoxCollider_html_a5d833c05997e1590273db89c3bf46c21"><div class="ttname"><a href="structLotus_1_1CBoxCollider.html#a5d833c05997e1590273db89c3bf46c21">Lotus::CBoxCollider::Position</a></div><div class="ttdeci">Vector3f Position</div><div class="ttdoc">Center of the box.</div><div class="ttdef"><b>Definition:</b> components.h:22</div></div>
+<div class="ttc" id="astructLotus_1_1CBoxCollider_html"><div class="ttname"><a href="structLotus_1_1CBoxCollider.html">Lotus::CBoxCollider</a></div><div class="ttdef"><b>Definition:</b> components.h:20</div></div>
+<div class="ttc" id="astructLotus_1_1CCapsuleCollider_html_a4968f2d67527c75a910e302d9b608b71"><div class="ttname"><a href="structLotus_1_1CCapsuleCollider.html#a4968f2d67527c75a910e302d9b608b71">Lotus::CCapsuleCollider::Height</a></div><div class="ttdeci">float Height</div><div class="ttdoc">Height of the capsule.</div><div class="ttdef"><b>Definition:</b> components.h:39</div></div>
+<div class="ttc" id="astructLotus_1_1CCapsuleCollider_html"><div class="ttname"><a href="structLotus_1_1CCapsuleCollider.html">Lotus::CCapsuleCollider</a></div><div class="ttdef"><b>Definition:</b> components.h:31</div></div>
+<div class="ttc" id="astructLotus_1_1CRigidBody_html"><div class="ttname"><a href="structLotus_1_1CRigidBody.html">Lotus::CRigidBody</a></div><div class="ttdef"><b>Definition:</b> components.h:46</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

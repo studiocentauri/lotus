@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['keyboardevent_97',['KeyboardEvent',['../structLotus_1_1KeyboardEvent.html',1,'Lotus']]]
+  ['pointlightinfo_77',['PointLightInfo',['../structLotus_1_1PointLightInfo.html',1,'Lotus']]],
+  ['projectconfig_78',['ProjectConfig',['../structLotus_1_1ProjectConfig.html',1,'Lotus']]]
 ];

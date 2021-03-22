@@ -73,27 +73,73 @@ $(function() {
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;lotus/lcommon.h&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;lotus/ecs/Event.h&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;lotus/lotus_export.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="namespaceLotus_1_1Input.html">   11</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceLotus_1_1Input.html">Lotus::Input</a></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="namespaceLotus_1_1Input.html#a8efbd8e3c670c25f4f644be0c2c15971">   17</a></span>&#160;    LOTUS_API <span class="keywordtype">void</span> <a class="code" href="namespaceLotus_1_1Input.html#a8efbd8e3c670c25f4f644be0c2c15971">UpdateKeyState</a>(<span class="keyword">const</span> <a class="code" href="structLotus_1_1KeyboardEvent.html">KeyboardEvent</a>&amp; event);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="namespaceLotus_1_1Input.html#aebb9f7678c07bac91f56e72e35a49cc5">   23</a></span>&#160;    LOTUS_API <span class="keywordtype">void</span> <a class="code" href="namespaceLotus_1_1Input.html#aebb9f7678c07bac91f56e72e35a49cc5">UpdateMouseState</a>(<span class="keyword">const</span> <a class="code" href="structLotus_1_1MouseEvent.html">MouseEvent</a>&amp; event);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="namespaceLotus_1_1Input.html#a4bb0baa54e994bb8e5b78b270291c52e">   30</a></span>&#160;    LOTUS_API <span class="keywordtype">bool</span> <a class="code" href="namespaceLotus_1_1Input.html#a4bb0baa54e994bb8e5b78b270291c52e">GetKeyPressed</a>(<span class="keywordtype">int</span> key);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="namespaceLotus_1_1Input.html#ae316f56496d2fdb2de8ccf41b49add95">   36</a></span>&#160;    LOTUS_API std::pair&lt;float, float&gt; <a class="code" href="namespaceLotus_1_1Input.html#ae316f56496d2fdb2de8ccf41b49add95">GetMouseDelta</a>();</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>Lotus</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="comment">// TODO: Have sequential macros instead of this</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_NONE = 0;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_ESC = 1;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_A = 65;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_B = 66;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_C = 67;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_D = 68;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_E = 69;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_F = 70;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_G = 71;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_H = 72;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_I = 73;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_J = 74;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_K = 75;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_L = 76;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_M = 77;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_N = 78;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_O = 79;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_P = 80;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_Q = 81;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_R = 82;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_S = 83;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_T = 84;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_U = 85;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_V = 86;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_W = 87;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_X = 88;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_Y = 89;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_Z = 90;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_RELEASE = 0;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_PRESS = 1;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_KEY_REPEAT = 2;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> MOUSE_BUTTON_COUNT = 3;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_MOUSE_LEFT = 0;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_MOUSE_RIGHT = 1;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    constexpr <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> L_MOUSE_MIDDLE = 2;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="namespaceLotus_1_1Input.html">   54</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceLotus_1_1Input.html">Lotus::Input</a></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="namespaceLotus_1_1Input.html#af5cdc22b0275cab4194ccba2b4c0670e">   60</a></span>&#160;    LOTUS_API <span class="keywordtype">void</span> <a class="code" href="namespaceLotus_1_1Input.html#af5cdc22b0275cab4194ccba2b4c0670e">UpdateKeyState</a>(<span class="keywordtype">int</span> keycode, <span class="keywordtype">int</span> state);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    LOTUS_API <span class="keywordtype">void</span> UpdateMouseButtonState(<span class="keywordtype">int</span> button, <span class="keywordtype">bool</span> state);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="namespaceLotus_1_1Input.html#a8cf47af6e1567dba2467c2b1204b3112">   68</a></span>&#160;    LOTUS_API <span class="keywordtype">void</span> <a class="code" href="namespaceLotus_1_1Input.html#a8cf47af6e1567dba2467c2b1204b3112">UpdateMouseState</a>(<span class="keywordtype">double</span> xpos, <span class="keywordtype">double</span> ypos);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="namespaceLotus_1_1Input.html#a4bb0baa54e994bb8e5b78b270291c52e">   76</a></span>&#160;    LOTUS_API <span class="keywordtype">bool</span> <a class="code" href="namespaceLotus_1_1Input.html#a4bb0baa54e994bb8e5b78b270291c52e">GetKeyPressed</a>(<span class="keywordtype">int</span> key);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    LOTUS_API <span class="keywordtype">bool</span> GetMousePressed(<span class="keywordtype">int</span> mouse);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="namespaceLotus_1_1Input.html#a60dc0471ef5c22d1697eededaf239ef7">   84</a></span>&#160;    LOTUS_API std::pair&lt;double, double&gt; <a class="code" href="namespaceLotus_1_1Input.html#a60dc0471ef5c22d1697eededaf239ef7">GetMouseDelta</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="anamespaceLotus_1_1Input_html_a4bb0baa54e994bb8e5b78b270291c52e"><div class="ttname"><a href="namespaceLotus_1_1Input.html#a4bb0baa54e994bb8e5b78b270291c52e">Lotus::Input::GetKeyPressed</a></div><div class="ttdeci">LOTUS_API bool GetKeyPressed(int key)</div></div>
-<div class="ttc" id="astructLotus_1_1MouseEvent_html"><div class="ttname"><a href="structLotus_1_1MouseEvent.html">Lotus::MouseEvent</a></div><div class="ttdef"><b>Definition:</b> Event.h:93</div></div>
-<div class="ttc" id="anamespaceLotus_1_1Input_html_ae316f56496d2fdb2de8ccf41b49add95"><div class="ttname"><a href="namespaceLotus_1_1Input.html#ae316f56496d2fdb2de8ccf41b49add95">Lotus::Input::GetMouseDelta</a></div><div class="ttdeci">LOTUS_API std::pair&lt; float, float &gt; GetMouseDelta()</div></div>
-<div class="ttc" id="anamespaceLotus_1_1Input_html"><div class="ttname"><a href="namespaceLotus_1_1Input.html">Lotus::Input</a></div><div class="ttdef"><b>Definition:</b> Input.h:12</div></div>
-<div class="ttc" id="anamespaceLotus_1_1Input_html_aebb9f7678c07bac91f56e72e35a49cc5"><div class="ttname"><a href="namespaceLotus_1_1Input.html#aebb9f7678c07bac91f56e72e35a49cc5">Lotus::Input::UpdateMouseState</a></div><div class="ttdeci">LOTUS_API void UpdateMouseState(const MouseEvent &amp;event)</div></div>
-<div class="ttc" id="anamespaceLotus_1_1Input_html_a8efbd8e3c670c25f4f644be0c2c15971"><div class="ttname"><a href="namespaceLotus_1_1Input.html#a8efbd8e3c670c25f4f644be0c2c15971">Lotus::Input::UpdateKeyState</a></div><div class="ttdeci">LOTUS_API void UpdateKeyState(const KeyboardEvent &amp;event)</div></div>
-<div class="ttc" id="astructLotus_1_1KeyboardEvent_html"><div class="ttname"><a href="structLotus_1_1KeyboardEvent.html">Lotus::KeyboardEvent</a></div><div class="ttdef"><b>Definition:</b> Event.h:80</div></div>
+<div class="ttc" id="anamespaceLotus_1_1Input_html_a60dc0471ef5c22d1697eededaf239ef7"><div class="ttname"><a href="namespaceLotus_1_1Input.html#a60dc0471ef5c22d1697eededaf239ef7">Lotus::Input::GetMouseDelta</a></div><div class="ttdeci">LOTUS_API std::pair&lt; double, double &gt; GetMouseDelta()</div></div>
+<div class="ttc" id="anamespaceLotus_1_1Input_html_a8cf47af6e1567dba2467c2b1204b3112"><div class="ttname"><a href="namespaceLotus_1_1Input.html#a8cf47af6e1567dba2467c2b1204b3112">Lotus::Input::UpdateMouseState</a></div><div class="ttdeci">LOTUS_API void UpdateMouseState(double xpos, double ypos)</div></div>
+<div class="ttc" id="anamespaceLotus_1_1Input_html_af5cdc22b0275cab4194ccba2b4c0670e"><div class="ttname"><a href="namespaceLotus_1_1Input.html#af5cdc22b0275cab4194ccba2b4c0670e">Lotus::Input::UpdateKeyState</a></div><div class="ttdeci">LOTUS_API void UpdateKeyState(int keycode, int state)</div></div>
+<div class="ttc" id="anamespaceLotus_1_1Input_html"><div class="ttname"><a href="namespaceLotus_1_1Input.html">Lotus::Input</a></div><div class="ttdef"><b>Definition:</b> Input.h:55</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

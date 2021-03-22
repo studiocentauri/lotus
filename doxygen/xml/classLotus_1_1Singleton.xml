@@ -23,7 +23,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" line="57" column="9"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" line="48" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classLotus_1_1Singleton_1a104a760426c0baa9cda479eac85c8548" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classLotus_1_1Singleton" kindref="compound">Singleton</ref> &amp;</type>
@@ -39,7 +39,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" line="59" column="19"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" line="50" column="19"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" line="65" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" bodystart="65" bodyend="69"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" line="56" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" bodystart="56" bodyend="60"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -72,7 +72,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" line="72" column="9"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" line="63" column="9"/>
       </memberdef>
       <memberdef kind="function" id="classLotus_1_1Singleton_1a64cd7a713206b6bfb83bffdbf3c6df09" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -85,7 +85,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" line="74" column="17"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" line="65" column="17"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -102,7 +102,7 @@
 </parameterlist>
 </para>
     </detaileddescription>
-    <location file="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" line="54" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" bodystart="55" bodyend="75"/>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" line="45" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" bodystart="46" bodyend="66"/>
     <listofallmembers>
       <member refid="classLotus_1_1Singleton_1a6688d70304f5736daf7a78b21134bdf3" prot="public" virt="non-virtual"><scope>Lotus::Singleton</scope><name>Get</name></member>
       <member refid="classLotus_1_1Singleton_1a104a760426c0baa9cda479eac85c8548" prot="public" virt="non-virtual"><scope>Lotus::Singleton</scope><name>operator=</name></member>

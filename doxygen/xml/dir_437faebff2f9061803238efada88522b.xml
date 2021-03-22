@@ -3,7 +3,7 @@
   <compounddef id="dir_437faebff2f9061803238efada88522b" kind="dir">
     <compoundname>/builds/centauri/lotus/lotus/include/lotus/physics</compoundname>
     <innerfile refid="components_8h">components.h</innerfile>
-    <innerfile refid="physics_8h">physics.h</innerfile>
+    <innerfile refid="Vector_8h">Vector.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

@@ -2,74 +2,62 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
   <compounddef id="namespaceLotus" kind="namespace" language="C++">
     <compoundname>Lotus</compoundname>
-    <innerclass refid="structLotus_1_1AssetCache" prot="public">Lotus::AssetCache</innerclass>
-    <innerclass refid="structLotus_1_1BeginEvent" prot="public">Lotus::BeginEvent</innerclass>
+    <innerclass refid="structLotus_1_1BuildConfig" prot="public">Lotus::BuildConfig</innerclass>
     <innerclass refid="structLotus_1_1CBoxCollider" prot="public">Lotus::CBoxCollider</innerclass>
     <innerclass refid="structLotus_1_1CCamera" prot="public">Lotus::CCamera</innerclass>
     <innerclass refid="structLotus_1_1CCapsuleCollider" prot="public">Lotus::CCapsuleCollider</innerclass>
-    <innerclass refid="structLotus_1_1CLight" prot="public">Lotus::CLight</innerclass>
     <innerclass refid="structLotus_1_1CMeshRenderer" prot="public">Lotus::CMeshRenderer</innerclass>
+    <innerclass refid="structLotus_1_1ComponentAssigner" prot="public">Lotus::ComponentAssigner</innerclass>
     <innerclass refid="structLotus_1_1ComponentCreateEvent" prot="public">Lotus::ComponentCreateEvent</innerclass>
-    <innerclass refid="structLotus_1_1ComponentRegistry" prot="public">Lotus::ComponentRegistry</innerclass>
-    <innerclass refid="classLotus_1_1Config" prot="public">Lotus::Config</innerclass>
+    <innerclass refid="structLotus_1_1ComponentDestroyEvent" prot="public">Lotus::ComponentDestroyEvent</innerclass>
     <innerclass refid="structLotus_1_1CPointLight" prot="public">Lotus::CPointLight</innerclass>
     <innerclass refid="structLotus_1_1CRigidBody" prot="public">Lotus::CRigidBody</innerclass>
     <innerclass refid="structLotus_1_1CSkybox" prot="public">Lotus::CSkybox</innerclass>
     <innerclass refid="structLotus_1_1CSphereCollider" prot="public">Lotus::CSphereCollider</innerclass>
     <innerclass refid="structLotus_1_1CSpotlight" prot="public">Lotus::CSpotlight</innerclass>
+    <innerclass refid="structLotus_1_1CSunLight" prot="public">Lotus::CSunLight</innerclass>
     <innerclass refid="structLotus_1_1CTransform" prot="public">Lotus::CTransform</innerclass>
-    <innerclass refid="structLotus_1_1DestroyEvent" prot="public">Lotus::DestroyEvent</innerclass>
     <innerclass refid="classLotus_1_1Entity" prot="public">Lotus::Entity</innerclass>
-    <innerclass refid="structLotus_1_1Event" prot="public">Lotus::Event</innerclass>
     <innerclass refid="classLotus_1_1EventManager" prot="public">Lotus::EventManager</innerclass>
+    <innerclass refid="structLotus_1_1Geometry" prot="public">Lotus::Geometry</innerclass>
     <innerclass refid="structLotus_1_1HDRI" prot="public">Lotus::HDRI</innerclass>
-    <innerclass refid="classLotus_1_1ILifecycle" prot="public">Lotus::ILifecycle</innerclass>
-    <innerclass refid="structLotus_1_1InitEvent" prot="public">Lotus::InitEvent</innerclass>
     <innerclass refid="classLotus_1_1ISystem" prot="public">Lotus::ISystem</innerclass>
-    <innerclass refid="structLotus_1_1KeyboardEvent" prot="public">Lotus::KeyboardEvent</innerclass>
-    <innerclass refid="structLotus_1_1LightInfo" prot="public">Lotus::LightInfo</innerclass>
     <innerclass refid="structLotus_1_1Material" prot="public">Lotus::Material</innerclass>
     <innerclass refid="structLotus_1_1Model" prot="public">Lotus::Model</innerclass>
-    <innerclass refid="structLotus_1_1MouseEvent" prot="public">Lotus::MouseEvent</innerclass>
     <innerclass refid="structLotus_1_1PointLightInfo" prot="public">Lotus::PointLightInfo</innerclass>
-    <innerclass refid="structLotus_1_1PostUpdateEvent" prot="public">Lotus::PostUpdateEvent</innerclass>
-    <innerclass refid="structLotus_1_1PreDestroyEvent" prot="public">Lotus::PreDestroyEvent</innerclass>
-    <innerclass refid="structLotus_1_1PreUpdateEvent" prot="public">Lotus::PreUpdateEvent</innerclass>
-    <innerclass refid="classLotus_1_1Renderer" prot="public">Lotus::Renderer</innerclass>
-    <innerclass refid="structLotus_1_1RendererOp" prot="public">Lotus::RendererOp</innerclass>
+    <innerclass refid="structLotus_1_1ProjectConfig" prot="public">Lotus::ProjectConfig</innerclass>
+    <innerclass refid="structLotus_1_1RenderConfig" prot="public">Lotus::RenderConfig</innerclass>
     <innerclass refid="structLotus_1_1Scene" prot="public">Lotus::Scene</innerclass>
     <innerclass refid="classLotus_1_1SceneTreeNode" prot="public">Lotus::SceneTreeNode</innerclass>
     <innerclass refid="structLotus_1_1Shader" prot="public">Lotus::Shader</innerclass>
-    <innerclass refid="structLotus_1_1ShutdownEvent" prot="public">Lotus::ShutdownEvent</innerclass>
     <innerclass refid="classLotus_1_1Singleton" prot="public">Lotus::Singleton</innerclass>
     <innerclass refid="structLotus_1_1SpotLightInfo" prot="public">Lotus::SpotLightInfo</innerclass>
-    <innerclass refid="structLotus_1_1SubMesh" prot="public">Lotus::SubMesh</innerclass>
+    <innerclass refid="structLotus_1_1SunLightInfo" prot="public">Lotus::SunLightInfo</innerclass>
     <innerclass refid="structLotus_1_1Texture" prot="public">Lotus::Texture</innerclass>
-    <innerclass refid="structLotus_1_1UpdateEvent" prot="public">Lotus::UpdateEvent</innerclass>
     <innerclass refid="structLotus_1_1Vertex" prot="public">Lotus::Vertex</innerclass>
-    <innerclass refid="structLotus_1_1WindowCloseEvent" prot="public">Lotus::WindowCloseEvent</innerclass>
-    <innerclass refid="structLotus_1_1WindowResizeEvent" prot="public">Lotus::WindowResizeEvent</innerclass>
+    <innernamespace refid="namespaceLotus_1_1Engine">Lotus::Engine</innernamespace>
     <innernamespace refid="namespaceLotus_1_1Input">Lotus::Input</innernamespace>
+    <innernamespace refid="namespaceLotus_1_1Renderer">Lotus::Renderer</innernamespace>
     <innernamespace refid="namespaceLotus_1_1SceneManager">Lotus::SceneManager</innernamespace>
       <sectiondef kind="enum">
-      <memberdef kind="enum" id="lcommon_8h_1ae825578a38779239ed42a80e8048dfb3" prot="public" static="no" strong="yes">
+      <memberdef kind="enum" id="Config_8h_1ae825578a38779239ed42a80e8048dfb3" prot="public" static="no" strong="yes">
         <type></type>
         <name>ERenderAPI</name>
-        <enumvalue id="lcommon_8h_1ae825578a38779239ed42a80e8048dfb3ab62148310752abc9080ba48032e5a61d" prot="public">
+        <enumvalue id="Config_8h_1ae825578a38779239ed42a80e8048dfb3ab62148310752abc9080ba48032e5a61d" prot="public">
           <name>OPEN_GL</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="lcommon_8h_1ae825578a38779239ed42a80e8048dfb3aeee703cc0a96c14f0661af3ae9420d08" prot="public">
+        <enumvalue id="Config_8h_1ae825578a38779239ed42a80e8048dfb3aeee703cc0a96c14f0661af3ae9420d08" prot="public">
           <name>DIRECTX</name>
           <briefdescription>
           </briefdescription>
           <detaileddescription>
           </detaileddescription>
         </enumvalue>
-        <enumvalue id="lcommon_8h_1ae825578a38779239ed42a80e8048dfb3ac60cacb57b9e78f018a9d973bee2f801" prot="public">
+        <enumvalue id="Config_8h_1ae825578a38779239ed42a80e8048dfb3ac60cacb57b9e78f018a9d973bee2f801" prot="public">
           <name>VULKAN</name>
           <briefdescription>
           </briefdescription>
@@ -77,55 +65,16 @@
           </detaileddescription>
         </enumvalue>
         <briefdescription>
+<para>Supported Render APIs. </para>
         </briefdescription>
         <detaileddescription>
-<para>Supported Render APIs. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" line="42" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" bodystart="43" bodyend="47"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Config.h" line="26" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Config.h" bodystart="27" bodyend="31"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
-      <memberdef kind="typedef" id="ComponentRegistry_8h_1a9a2e21372ab905cb1fd22c7adbb8f822" prot="public" static="no">
-        <type>entt::id_type</type>
-        <definition>using Lotus::key_t = typedef entt::id_type</definition>
-        <argsstring></argsstring>
-        <name>key_t</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="51" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="51" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="typedef" id="ComponentRegistry_8h_1ae0cfbbc64ac713deb68498a0676ff71b" prot="public" static="no">
-        <type>nlohmann::json</type>
-        <definition>using Lotus::data_t = typedef nlohmann::json</definition>
-        <argsstring></argsstring>
-        <name>data_t</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="52" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="52" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="typedef" id="ComponentRegistry_8h_1aae7b8099175e67eeb09b8ba9f6cc3a24" prot="public" static="no">
-        <type>std::function&lt; void(const entt::entity, entt::registry &amp;, const data_t &amp;data)&gt;</type>
-        <definition>using Lotus::ctor_t = typedef std::function&lt;void(const entt::entity, entt::registry&amp;, const data_t&amp; data)&gt;</definition>
-        <argsstring></argsstring>
-        <name>ctor_t</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="53" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="53" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="typedef" id="Entity_8h_1af674a4a55348c0da8fef03f022a6c8e2" prot="public" static="no">
         <type>entt::entity</type>
         <definition>typedef entt::entity Lotus::EntityID</definition>
@@ -157,7 +106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" line="28" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" bodystart="28" bodyend="-1"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" line="29" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="lcommon_8h_1a0ca822b05156da4e9ea13e492f68032e" prot="public" static="no">
         <templateparamlist>
@@ -176,7 +125,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" line="34" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" bodystart="34" bodyend="-1"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" line="35" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" bodystart="35" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="lcommon_8h_1a28ddd2debe7f1c7e5f33e1a637b6b84f" prot="public" static="no">
         <templateparamlist>
@@ -194,10 +143,36 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" line="37" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" bodystart="37" bodyend="-1"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" line="38" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/lcommon.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="common_8h_1aeca0c728cda940e8ba2a7bedae459620" prot="public" static="no">
+        <type>glm::vec4</type>
+        <definition>using Lotus::Color = typedef glm::vec4</definition>
+        <argsstring></argsstring>
+        <name>Color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/rendering/common.h" line="21" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/rendering/common.h" bodystart="21" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
+      <memberdef kind="variable" id="ComponentRegistry_8h_1a2447331b00cafb065edb0ebd73c712e0" prot="public" static="no" mutable="no">
+        <type>LOTUS_API std::unordered_map&lt; component_ctor_key_t, component_ctor_t &gt;</type>
+        <definition>LOTUS_API std::unordered_map&lt;component_ctor_key_t, component_ctor_t&gt; Lotus::ctors</definition>
+        <argsstring></argsstring>
+        <name>ctors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="19" column="41" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" declline="19" declcolumn="41"/>
+      </memberdef>
       <memberdef kind="variable" id="Entity_8h_1a493ac41bab074a98321b2ea1c823702c" prot="public" static="no" constexpr="yes" mutable="no">
         <type>constexpr auto</type>
         <definition>constexpr auto Lotus::NULL_ENTITY</definition>
@@ -212,21 +187,522 @@
         </inbodydescription>
         <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="13" column="20" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" bodystart="13" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="Input_8h_1a42a866ccdcf0b1074e72b1c7e8b2e590" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_NONE</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_NONE</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="9" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1aeb80b2a64d60a85f57c4a15d18190700" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_ESC</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_ESC</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="10" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1ab4b2527bc068132868b7898ee56b256e" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_A</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_A</name>
+        <initializer>= 65</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="12" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1a73b48574d2e81c093667f18ffeeb4571" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_B</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_B</name>
+        <initializer>= 66</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="13" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1aa5611e68b580329ef2dcf560c96bf85c" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_C</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_C</name>
+        <initializer>= 67</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="14" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1ae47fc73189a4c3b2b2ff4062bcf71a2f" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_D</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_D</name>
+        <initializer>= 68</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="15" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1ad19a3b4b7b8a6d0adb93a59ba42fe32a" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_E</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_E</name>
+        <initializer>= 69</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="16" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1a7607e9c6d4da1b7bdd345ae80adf3e5d" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_F</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_F</name>
+        <initializer>= 70</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="17" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1a16af685481bc5c061bebe7c61433aefe" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_G</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_G</name>
+        <initializer>= 71</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="18" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1a4e75bc152e29761077cc55ab8d319375" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_H</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_H</name>
+        <initializer>= 72</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="19" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1a4593d8849d2ba55c57935bc619c3a136" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_I</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_I</name>
+        <initializer>= 73</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="20" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1a9aa9edfe53fd2175f5f4808335a5560f" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_J</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_J</name>
+        <initializer>= 74</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="21" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1a8caf21db04115547e316f8c3d5dcd35e" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_K</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_K</name>
+        <initializer>= 75</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="22" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1a9364fb331f80e0b29d0b352fa60eb94f" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_L</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_L</name>
+        <initializer>= 76</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="23" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1a7dba39150dc029c987c52915bf373c4a" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_M</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_M</name>
+        <initializer>= 77</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="24" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1a64a0d955e109ae5616af1f1d3de156bc" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_N</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_N</name>
+        <initializer>= 78</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="25" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1a89a8957a27090636534aee15c1807f47" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_O</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_O</name>
+        <initializer>= 79</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="26" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1a99462f89650134ce8ed3d5b96740c7b7" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_P</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_P</name>
+        <initializer>= 80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="27" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1aaebe4f79b3dfea89d324c9a08e485f58" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_Q</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_Q</name>
+        <initializer>= 81</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="28" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1ac9d455ae07278da42267b1a4baabfa2c" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_R</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_R</name>
+        <initializer>= 82</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="29" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1aaa8d9e6ced76139fd5dbb1dde6e5176b" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_S</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_S</name>
+        <initializer>= 83</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="30" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1a77c823947fa0e288c078ae278f942765" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_T</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_T</name>
+        <initializer>= 84</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="31" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1a8d3258f9d04fa3192a8ed76b7a47b094" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_U</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_U</name>
+        <initializer>= 85</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="32" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1ad461f5b8f011e0e5a496e88ce1ddcf73" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_V</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_V</name>
+        <initializer>= 86</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="33" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1a8c45c6b67e09d2733e3cab65cb56edb4" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_W</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_W</name>
+        <initializer>= 87</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="34" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1a598df6c45d82d89b1bdb0ae3b9a9b121" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_X</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_X</name>
+        <initializer>= 88</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="35" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1a3698a70fb55460bfc61e377b1691ef69" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_Y</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_Y</name>
+        <initializer>= 89</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="36" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1a221e63780873e31d5fd9205d4a51d719" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_Z</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_Z</name>
+        <initializer>= 90</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="37" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1abb93c543d1dad559c82f5dcb075a1949" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_RELEASE</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_RELEASE</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="39" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1a0d461459ce97638e85ae0a79c1ee0b80" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_PRESS</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_PRESS</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="40" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1a6bcb04c563a745b6d30b9e14d0bacae1" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_KEY_REPEAT</definition>
+        <argsstring></argsstring>
+        <name>L_KEY_REPEAT</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="41" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1a059b1547618c0cbe91aa64bc5ea46a34" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::MOUSE_BUTTON_COUNT</definition>
+        <argsstring></argsstring>
+        <name>MOUSE_BUTTON_COUNT</name>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="43" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1ae15790d7a4ea2f42356c617b9e946b81" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_MOUSE_LEFT</definition>
+        <argsstring></argsstring>
+        <name>L_MOUSE_LEFT</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="44" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1ae1858521ccdb85c3c6ce494e5e7e2734" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_MOUSE_RIGHT</definition>
+        <argsstring></argsstring>
+        <name>L_MOUSE_RIGHT</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="45" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="Input_8h_1a1b5e629c86568cae33976bb9c469b08e" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr unsigned int</type>
+        <definition>constexpr unsigned int Lotus::L_MOUSE_MIDDLE</definition>
+        <argsstring></argsstring>
+        <name>L_MOUSE_MIDDLE</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Input.h" line="46" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Input.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="common_8h_1a0b3fd9f21512ac3bfaa397e5761af71e" prot="public" static="no" constexpr="yes" mutable="no">
+        <type>constexpr Color</type>
+        <definition>constexpr Color Lotus::COLOR_WHITE</definition>
+        <argsstring></argsstring>
+        <name>COLOR_WHITE</name>
+        <initializer>= {1.0f, 1.0f, 1.0f, 1.0f}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/rendering/common.h" line="22" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/rendering/common.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
       </sectiondef>
       <sectiondef kind="func">
-      <memberdef kind="function" id="CCamera_8h_1a6408c107073b3e735dfe5a29bcd20302" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="Config_8h_1a40e5ac7bb5080fa9a9e9758bf8583a21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
         <definition>Lotus::SERIALIZE</definition>
-        <argsstring>(CCamera, IsActive, FOV)</argsstring>
+        <argsstring>(ProjectConfig, StartScene)</argsstring>
         <name>SERIALIZE</name>
         <param>
-          <type><ref refid="structLotus_1_1CCamera" kindref="compound">CCamera</ref></type>
+          <type><ref refid="structLotus_1_1ProjectConfig" kindref="compound">ProjectConfig</ref></type>
         </param>
         <param>
-          <type>IsActive</type>
-        </param>
-        <param>
-          <type>FOV</type>
+          <type>StartScene</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -234,15 +710,18 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CCamera.h" line="15" column="5" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CCamera.h" declline="15" declcolumn="5"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Config.h" line="17" column="5" declfile="/builds/centauri/lotus/lotus/include/lotus/Config.h" declline="17" declcolumn="5"/>
       </memberdef>
-      <memberdef kind="function" id="CCamera_8h_1a5039cabb5cb4bb4b9f46fd487dd01de4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="Config_8h_1ab60e3318150b50aded02cb5d6436c2c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
-        <definition>Lotus::REGISTER_BODY</definition>
-        <argsstring>(CCamera)</argsstring>
-        <name>REGISTER_BODY</name>
+        <definition>Lotus::SERIALIZE</definition>
+        <argsstring>(BuildConfig, IsDebug)</argsstring>
+        <name>SERIALIZE</name>
         <param>
-          <type><ref refid="structLotus_1_1CCamera" kindref="compound">CCamera</ref></type>
+          <type><ref refid="structLotus_1_1BuildConfig" kindref="compound">BuildConfig</ref></type>
+        </param>
+        <param>
+          <type>IsDebug</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -250,7 +729,151 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CCamera.h" line="16" column="5" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CCamera.h" declline="16" declcolumn="5"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Config.h" line="23" column="5" declfile="/builds/centauri/lotus/lotus/include/lotus/Config.h" declline="23" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="Config_8h_1af59b06b1a82a24f961441cb1b9482d39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Lotus::SERIALIZE_ENUM</definition>
+        <argsstring>(ERenderAPI, { {ERenderAPI::OPEN_GL, &quot;opengl&quot;}, {ERenderAPI::DIRECTX, &quot;directx&quot;}, {ERenderAPI::VULKAN, &quot;vulkan&quot;} })</argsstring>
+        <name>SERIALIZE_ENUM</name>
+        <param>
+          <type>ERenderAPI</type>
+        </param>
+        <param>
+          <type>{ {ERenderAPI::OPEN_GL, &quot;opengl&quot;}, {ERenderAPI::DIRECTX, &quot;directx&quot;}, {ERenderAPI::VULKAN, &quot;vulkan&quot;} }</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Config.h" line="32" column="5" declfile="/builds/centauri/lotus/lotus/include/lotus/Config.h" declline="32" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="Config_8h_1a68eb601186e294208c45e75ef2ff35ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Lotus::SERIALIZE</definition>
+        <argsstring>(RenderConfig, RenderAPI, ViewportWidth, ViewportHeight, DepthTest, CullFace, MSAA)</argsstring>
+        <name>SERIALIZE</name>
+        <param>
+          <type><ref refid="structLotus_1_1RenderConfig" kindref="compound">RenderConfig</ref></type>
+        </param>
+        <param>
+          <type>RenderAPI</type>
+        </param>
+        <param>
+          <type>ViewportWidth</type>
+        </param>
+        <param>
+          <type>ViewportHeight</type>
+        </param>
+        <param>
+          <type>DepthTest</type>
+        </param>
+        <param>
+          <type>CullFace</type>
+        </param>
+        <param>
+          <type>MSAA</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Config.h" line="49" column="5" declfile="/builds/centauri/lotus/lotus/include/lotus/Config.h" declline="49" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="Config_8h_1a41e33e811b23edda138553194940bd0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LOTUS_API void</type>
+        <definition>LOTUS_API void Lotus::LoadConfig</definition>
+        <argsstring>(const std::filesystem::path &amp;path)</argsstring>
+        <name>LoadConfig</name>
+        <param>
+          <type>const std::filesystem::path &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Config.h" line="51" column="20" declfile="/builds/centauri/lotus/lotus/include/lotus/Config.h" declline="51" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="Config_8h_1a8fb7dc1457edae8c903da09302044253" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LOTUS_API const <ref refid="structLotus_1_1ProjectConfig" kindref="compound">ProjectConfig</ref> &amp;</type>
+        <definition>LOTUS_API const ProjectConfig&amp; Lotus::GetProjectConfig</definition>
+        <argsstring>()</argsstring>
+        <name>GetProjectConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Config.h" line="52" column="35" declfile="/builds/centauri/lotus/lotus/include/lotus/Config.h" declline="52" declcolumn="35"/>
+      </memberdef>
+      <memberdef kind="function" id="Config_8h_1ac9c12d177330e25a33a9e6b65248befd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LOTUS_API const <ref refid="structLotus_1_1RenderConfig" kindref="compound">RenderConfig</ref> &amp;</type>
+        <definition>LOTUS_API const RenderConfig&amp; Lotus::GetRenderConfig</definition>
+        <argsstring>()</argsstring>
+        <name>GetRenderConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Config.h" line="53" column="34" declfile="/builds/centauri/lotus/lotus/include/lotus/Config.h" declline="53" declcolumn="34"/>
+      </memberdef>
+      <memberdef kind="function" id="Config_8h_1ac7870810596e9c1f4cc2791e07e89d31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LOTUS_API const <ref refid="structLotus_1_1BuildConfig" kindref="compound">BuildConfig</ref> &amp;</type>
+        <definition>LOTUS_API const BuildConfig&amp; Lotus::GetBuildConfig</definition>
+        <argsstring>()</argsstring>
+        <name>GetBuildConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Config.h" line="54" column="33" declfile="/builds/centauri/lotus/lotus/include/lotus/Config.h" declline="54" declcolumn="33"/>
+      </memberdef>
+      <memberdef kind="function" id="ComponentRegistry_8h_1ab54e0e2471fa1caa7e671ef65983c635" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Lotus::RegisterComponent</definition>
+        <argsstring>()</argsstring>
+        <name>RegisterComponent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="33" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="ComponentRegistry_8h_1ab3068e58481471196b3cfa2114eec73a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const component_ctor_t &amp;</type>
+        <definition>const component_ctor_t&amp; Lotus::GetComponentCtor</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>GetComponentCtor</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="38" column="35" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="38" bodyend="41"/>
       </memberdef>
       <memberdef kind="function" id="CCamera_8h_1a65b0262010c6cce509ca6cbf4f1e789e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Matrix4f</type>
@@ -267,195 +890,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CCamera.h" line="18" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CCamera.h" bodystart="18" bodyend="21"/>
-      </memberdef>
-      <memberdef kind="function" id="CLight_8h_1aa03fdde68e08ec217b401867373f7434" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>Lotus::SERIALIZE</definition>
-        <argsstring>(CLight, ambient, diffuse, specular)</argsstring>
-        <name>SERIALIZE</name>
-        <param>
-          <type><ref refid="structLotus_1_1CLight" kindref="compound">CLight</ref></type>
-        </param>
-        <param>
-          <type>ambient</type>
-        </param>
-        <param>
-          <type>diffuse</type>
-        </param>
-        <param>
-          <type>specular</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" line="16" column="5" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" declline="16" declcolumn="5"/>
-      </memberdef>
-      <memberdef kind="function" id="CLight_8h_1a054c03998210cac816e2672f24a404f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>Lotus::REGISTER_BODY</definition>
-        <argsstring>(CLight)</argsstring>
-        <name>REGISTER_BODY</name>
-        <param>
-          <type><ref refid="structLotus_1_1CLight" kindref="compound">CLight</ref></type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" line="17" column="5" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" declline="17" declcolumn="5"/>
-      </memberdef>
-      <memberdef kind="function" id="CLight_8h_1abb6e6edf88a33366d2f49332cb0c959c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>Lotus::SERIALIZE</definition>
-        <argsstring>(CPointLight, ambient, diffuse, specular, constant, linear, quadratic)</argsstring>
-        <name>SERIALIZE</name>
-        <param>
-          <type><ref refid="structLotus_1_1CPointLight" kindref="compound">CPointLight</ref></type>
-        </param>
-        <param>
-          <type>ambient</type>
-        </param>
-        <param>
-          <type>diffuse</type>
-        </param>
-        <param>
-          <type>specular</type>
-        </param>
-        <param>
-          <type>constant</type>
-        </param>
-        <param>
-          <type>linear</type>
-        </param>
-        <param>
-          <type>quadratic</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" line="27" column="5" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" declline="27" declcolumn="5"/>
-      </memberdef>
-      <memberdef kind="function" id="CLight_8h_1a4f95de78169886d73aa3796d423521ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>Lotus::REGISTER_BODY</definition>
-        <argsstring>(CPointLight)</argsstring>
-        <name>REGISTER_BODY</name>
-        <param>
-          <type><ref refid="structLotus_1_1CPointLight" kindref="compound">CPointLight</ref></type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" line="28" column="5" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" declline="28" declcolumn="5"/>
-      </memberdef>
-      <memberdef kind="function" id="CLight_8h_1a6a0defd9025278ffbfd56426edac63a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>Lotus::SERIALIZE</definition>
-        <argsstring>(CSpotlight, ambient, diffuse, specular, constant, linear, quadratic, innerCutOff, outerCutOff)</argsstring>
-        <name>SERIALIZE</name>
-        <param>
-          <type><ref refid="structLotus_1_1CSpotlight" kindref="compound">CSpotlight</ref></type>
-        </param>
-        <param>
-          <type>ambient</type>
-        </param>
-        <param>
-          <type>diffuse</type>
-        </param>
-        <param>
-          <type>specular</type>
-        </param>
-        <param>
-          <type>constant</type>
-        </param>
-        <param>
-          <type>linear</type>
-        </param>
-        <param>
-          <type>quadratic</type>
-        </param>
-        <param>
-          <type>innerCutOff</type>
-        </param>
-        <param>
-          <type>outerCutOff</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" line="41" column="5" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" declline="41" declcolumn="5"/>
-      </memberdef>
-      <memberdef kind="function" id="CLight_8h_1a97b3ddce1a91e489924da0a12c0b7c26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>Lotus::REGISTER_BODY</definition>
-        <argsstring>(CSpotlight)</argsstring>
-        <name>REGISTER_BODY</name>
-        <param>
-          <type><ref refid="structLotus_1_1CSpotlight" kindref="compound">CSpotlight</ref></type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" line="42" column="5" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" declline="42" declcolumn="5"/>
-      </memberdef>
-      <memberdef kind="function" id="CTransform_8h_1adc914ee19bd934743d398e7f73d12e4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>Lotus::SERIALIZE</definition>
-        <argsstring>(CTransform, Position, Rotation, Scale)</argsstring>
-        <name>SERIALIZE</name>
-        <param>
-          <type><ref refid="structLotus_1_1CTransform" kindref="compound">CTransform</ref></type>
-        </param>
-        <param>
-          <type>Position</type>
-        </param>
-        <param>
-          <type>Rotation</type>
-        </param>
-        <param>
-          <type>Scale</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CTransform.h" line="16" column="5" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CTransform.h" declline="16" declcolumn="5"/>
-      </memberdef>
-      <memberdef kind="function" id="CTransform_8h_1a0f906b24f4cab31910cf2fa47fff3f55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>Lotus::REGISTER_BODY</definition>
-        <argsstring>(CTransform)</argsstring>
-        <name>REGISTER_BODY</name>
-        <param>
-          <type><ref refid="structLotus_1_1CTransform" kindref="compound">CTransform</ref></type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CTransform.h" line="17" column="5" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CTransform.h" declline="17" declcolumn="5"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CCamera.h" line="15" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CCamera.h" bodystart="15" bodyend="18"/>
       </memberdef>
       <memberdef kind="function" id="CTransform_8h_1ada809878939f381775227b977dc1a54c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Vector3f</type>
@@ -472,7 +907,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CTransform.h" line="19" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CTransform.h" bodystart="19" bodyend="26"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CTransform.h" line="17" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CTransform.h" bodystart="17" bodyend="24"/>
       </memberdef>
       <memberdef kind="function" id="CTransform_8h_1a35a04b715a08991168cc31988864cf00" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Vector3f</type>
@@ -489,7 +924,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CTransform.h" line="28" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CTransform.h" bodystart="28" bodyend="31"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CTransform.h" line="26" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CTransform.h" bodystart="26" bodyend="29"/>
       </memberdef>
       <memberdef kind="function" id="CTransform_8h_1add79c43acb117e49e987f5442850e9a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Vector3f</type>
@@ -506,7 +941,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CTransform.h" line="33" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CTransform.h" bodystart="33" bodyend="36"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CTransform.h" line="31" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CTransform.h" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="CTransform_8h_1ab456bed98c00402d4874fc59721df9fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Matrix4f</type>
+        <definition>Matrix4f Lotus::GetModelMatrix</definition>
+        <argsstring>(const CTransform &amp;transform)</argsstring>
+        <name>GetModelMatrix</name>
+        <param>
+          <type>const <ref refid="structLotus_1_1CTransform" kindref="compound">CTransform</ref> &amp;</type>
+          <declname>transform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CTransform.h" line="36" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CTransform.h" bodystart="36" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="Entity_8h_1aabe0c16a083cafda79d9c244d057c122" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -519,7 +971,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="81" column="10" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" declline="81" declcolumn="10"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="89" column="10" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" declline="89" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="Entity_8h_1ac5bcfd24bd3cb661b7b53050f822db5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -532,7 +984,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="82" column="10" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" declline="82" declcolumn="10"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="90" column="10" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" declline="90" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="Entity_8h_1a87991e17ac23c76e0864d643b64568ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>LOTUS_API entt::registry *</type>
@@ -545,7 +997,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="84" column="30" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" declline="84" declcolumn="30"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="92" column="30" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" declline="92" declcolumn="30"/>
       </memberdef>
       <memberdef kind="function" id="Entity_8h_1ad0d15c921ed8f52868575a2b668fa491" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>LOTUS_API <ref refid="classLotus_1_1Entity" kindref="compound">Entity</ref></type>
@@ -558,7 +1010,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="85" column="22" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" declline="85" declcolumn="22"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="93" column="22" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" declline="93" declcolumn="22"/>
       </memberdef>
       <memberdef kind="function" id="Entity_8h_1a31deb648a083999530f8978351b512e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>LOTUS_API <ref refid="classLotus_1_1Entity" kindref="compound">Entity</ref></type>
@@ -575,122 +1027,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="86" column="22" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" declline="86" declcolumn="22"/>
-      </memberdef>
-      <memberdef kind="function" id="Event_8h_1a027067e953b657dc705d2882f94d1322" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>LOTUS_API EEventCategory</type>
-        <definition>LOTUS_API EEventCategory Lotus::operator|</definition>
-        <argsstring>(EEventCategory A, EEventCategory B)</argsstring>
-        <name>operator|</name>
-        <param>
-          <type>EEventCategory</type>
-          <declname>A</declname>
-        </param>
-        <param>
-          <type>EEventCategory</type>
-          <declname>B</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Event.h" line="42" column="37" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Event.h" bodystart="42" bodyend="45"/>
-      </memberdef>
-      <memberdef kind="function" id="Event_8h_1a75dfbd9f988cb79d117e09ff6c6f0f32" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>LOTUS_API EEventCategory</type>
-        <definition>LOTUS_API EEventCategory Lotus::operator&amp;</definition>
-        <argsstring>(EEventCategory A, EEventCategory B)</argsstring>
-        <name>operator&amp;</name>
-        <param>
-          <type>EEventCategory</type>
-          <declname>A</declname>
-        </param>
-        <param>
-          <type>EEventCategory</type>
-          <declname>B</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Event.h" line="47" column="37" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Event.h" bodystart="47" bodyend="50"/>
-      </memberdef>
-      <memberdef kind="function" id="entry_8h_1abca73e006590bd784520a220d58b4899" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>LOTUS_API void</type>
-        <definition>LOTUS_API void Lotus::Initialize</definition>
-        <argsstring>(const Config &amp;config)</argsstring>
-        <name>Initialize</name>
-        <param>
-          <type>const <ref refid="classLotus_1_1Config" kindref="compound">Config</ref> &amp;</type>
-          <declname>config</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/entry.h" line="7" column="20" declfile="/builds/centauri/lotus/lotus/include/lotus/entry.h" declline="7" declcolumn="20"/>
-      </memberdef>
-      <memberdef kind="function" id="entry_8h_1a08ce3891cf754eac6006ee1f846ab7d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>LOTUS_API void</type>
-        <definition>LOTUS_API void Lotus::Run</definition>
-        <argsstring>()</argsstring>
-        <name>Run</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/entry.h" line="8" column="20" declfile="/builds/centauri/lotus/lotus/include/lotus/entry.h" declline="8" declcolumn="20"/>
-      </memberdef>
-      <memberdef kind="function" id="filesystem_8h_1a3f47890e0003e7cc1c60355109ba7c4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>LOTUS_API std::string</type>
-        <definition>LOTUS_API std::string Lotus::GetProjectResourceRoot</definition>
-        <argsstring>()</argsstring>
-        <name>GetProjectResourceRoot</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/filesystem.h" line="8" column="27" declfile="/builds/centauri/lotus/lotus/include/lotus/filesystem.h" declline="8" declcolumn="27"/>
-      </memberdef>
-      <memberdef kind="function" id="filesystem_8h_1aaf4ffd6f17b3c29da5966217c80ecced" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>LOTUS_API std::string</type>
-        <definition>LOTUS_API std::string Lotus::GetEngineResourceRoot</definition>
-        <argsstring>()</argsstring>
-        <name>GetEngineResourceRoot</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/filesystem.h" line="9" column="27" declfile="/builds/centauri/lotus/lotus/include/lotus/filesystem.h" declline="9" declcolumn="27"/>
-      </memberdef>
-      <memberdef kind="function" id="filesystem_8h_1ab6f73523d2dba30c153800fe538e6a1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>LOTUS_API void</type>
-        <definition>LOTUS_API void Lotus::SetProjectResourceRoot</definition>
-        <argsstring>(const std::string &amp;path)</argsstring>
-        <name>SetProjectResourceRoot</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>path</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/filesystem.h" line="10" column="20" declfile="/builds/centauri/lotus/lotus/include/lotus/filesystem.h" declline="10" declcolumn="20"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="94" column="22" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" declline="94" declcolumn="22"/>
       </memberdef>
       <memberdef kind="function" id="filesystem_8h_1a6e43518c23bc84d989e24e12b025caab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>LOTUS_API std::string</type>
@@ -702,169 +1039,28 @@
           <declname>path</declname>
         </param>
         <briefdescription>
+<para>Resolve a given relative path. </para>
         </briefdescription>
         <detaileddescription>
+<para>This function can be used to resolve paths relative to the configured project or engine resource roots. Use <computeroutput>res://</computeroutput> to refer to project resources and <computeroutput>int://</computeroutput> to refer to engine resources.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Relative path </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>string Absolute counterpart to the given path </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/filesystem.h" line="11" column="27" declfile="/builds/centauri/lotus/lotus/include/lotus/filesystem.h" declline="11" declcolumn="27"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/filesystem.h" line="18" column="27" declfile="/builds/centauri/lotus/lotus/include/lotus/filesystem.h" declline="18" declcolumn="27"/>
       </memberdef>
-      <memberdef kind="function" id="components_8h_1ace7b62a8c6b62c0ba77084678a3a1c5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>Lotus::SERIALIZE</definition>
-        <argsstring>(CSphereCollider, Position, Radius)</argsstring>
-        <name>SERIALIZE</name>
-        <param>
-          <type><ref refid="structLotus_1_1CSphereCollider" kindref="compound">CSphereCollider</ref></type>
-        </param>
-        <param>
-          <type>Position</type>
-        </param>
-        <param>
-          <type>Radius</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="18" column="5" declfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" declline="18" declcolumn="5"/>
-      </memberdef>
-      <memberdef kind="function" id="components_8h_1a5a23f2c7a8486c2c2a59231236430dc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>Lotus::REGISTER_BODY</definition>
-        <argsstring>(CSphereCollider)</argsstring>
-        <name>REGISTER_BODY</name>
-        <param>
-          <type><ref refid="structLotus_1_1CSphereCollider" kindref="compound">CSphereCollider</ref></type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="19" column="5" declfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" declline="19" declcolumn="5"/>
-      </memberdef>
-      <memberdef kind="function" id="components_8h_1a6f06f62eeedb6d46366f61b1bdc55651" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>Lotus::SERIALIZE</definition>
-        <argsstring>(CBoxCollider, Position, Dimensions)</argsstring>
-        <name>SERIALIZE</name>
-        <param>
-          <type><ref refid="structLotus_1_1CBoxCollider" kindref="compound">CBoxCollider</ref></type>
-        </param>
-        <param>
-          <type>Position</type>
-        </param>
-        <param>
-          <type>Dimensions</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="31" column="5" declfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" declline="31" declcolumn="5"/>
-      </memberdef>
-      <memberdef kind="function" id="components_8h_1aa02d23ec7c58225495eceef07235fa60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>Lotus::REGISTER_BODY</definition>
-        <argsstring>(CBoxCollider)</argsstring>
-        <name>REGISTER_BODY</name>
-        <param>
-          <type><ref refid="structLotus_1_1CBoxCollider" kindref="compound">CBoxCollider</ref></type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="32" column="5" declfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" declline="32" declcolumn="5"/>
-      </memberdef>
-      <memberdef kind="function" id="components_8h_1a178907e348c0d7ae6ccb2c8229fa5f80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>Lotus::SERIALIZE</definition>
-        <argsstring>(CCapsuleCollider, Position, Radius, Height)</argsstring>
-        <name>SERIALIZE</name>
-        <param>
-          <type><ref refid="structLotus_1_1CCapsuleCollider" kindref="compound">CCapsuleCollider</ref></type>
-        </param>
-        <param>
-          <type>Position</type>
-        </param>
-        <param>
-          <type>Radius</type>
-        </param>
-        <param>
-          <type>Height</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="47" column="5" declfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" declline="47" declcolumn="5"/>
-      </memberdef>
-      <memberdef kind="function" id="components_8h_1ae94aee9129ff919524a59982ca8e3ea1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>Lotus::REGISTER_BODY</definition>
-        <argsstring>(CCapsuleCollider)</argsstring>
-        <name>REGISTER_BODY</name>
-        <param>
-          <type><ref refid="structLotus_1_1CCapsuleCollider" kindref="compound">CCapsuleCollider</ref></type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="48" column="5" declfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" declline="48" declcolumn="5"/>
-      </memberdef>
-      <memberdef kind="function" id="components_8h_1a74c69bc8e15a4108b9e5224c8e714c4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>Lotus::SERIALIZE</definition>
-        <argsstring>(CRigidBody, Gravity, IsKinematic)</argsstring>
-        <name>SERIALIZE</name>
-        <param>
-          <type><ref refid="structLotus_1_1CRigidBody" kindref="compound">CRigidBody</ref></type>
-        </param>
-        <param>
-          <type>Gravity</type>
-        </param>
-        <param>
-          <type>IsKinematic</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="58" column="5" declfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" declline="58" declcolumn="5"/>
-      </memberdef>
-      <memberdef kind="function" id="components_8h_1ad5b772e36df15b31ab88d624f5220cbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>Lotus::REGISTER_BODY</definition>
-        <argsstring>(CRigidBody)</argsstring>
-        <name>REGISTER_BODY</name>
-        <param>
-          <type><ref refid="structLotus_1_1CRigidBody" kindref="compound">CRigidBody</ref></type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="59" column="5" declfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" declline="59" declcolumn="5"/>
-      </memberdef>
-      <memberdef kind="function" id="physics_8h_1a7b60e19a35f865bc192e239b4c579a73" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="Vector_8h_1a7b60e19a35f865bc192e239b4c579a73" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Vector3f</type>
         <definition>Vector3f Lotus::LNormalize</definition>
         <argsstring>(const Vector3f &amp;vec)</argsstring>
@@ -891,9 +1087,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/physics.h" line="75" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/physics.h" bodystart="75" bodyend="78"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="92" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="92" bodyend="95"/>
       </memberdef>
-      <memberdef kind="function" id="physics_8h_1a726f9b8e02e75b52c1f7df5480868381" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="Vector_8h_1a726f9b8e02e75b52c1f7df5480868381" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Vector3f</type>
         <definition>Vector3f Lotus::LCross</definition>
         <argsstring>(const Vector3f &amp;a, const Vector3f &amp;b)</argsstring>
@@ -932,9 +1128,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/physics.h" line="86" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/physics.h" bodystart="86" bodyend="89"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="103" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="103" bodyend="106"/>
       </memberdef>
-      <memberdef kind="function" id="physics_8h_1a893de9d4908114267fdfb6b93352a369" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="Vector_8h_1a893de9d4908114267fdfb6b93352a369" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Matrix4f</type>
         <definition>Matrix4f Lotus::LLookAt</definition>
         <argsstring>(const Vector3f &amp;eye, const Vector3f &amp;center, const Vector3f &amp;up)</argsstring>
@@ -985,9 +1181,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/physics.h" line="98" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/physics.h" bodystart="98" bodyend="101"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="115" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="115" bodyend="118"/>
       </memberdef>
-      <memberdef kind="function" id="physics_8h_1a6b8ce6b82e47ad6e7d1368b2b414eccb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="Vector_8h_1a6b8ce6b82e47ad6e7d1368b2b414eccb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Matrix4f</type>
         <definition>Matrix4f Lotus::LPerspective</definition>
         <argsstring>(float fov, float aspectRatio, float zNear, float zFar)</argsstring>
@@ -1050,9 +1246,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/physics.h" line="111" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/physics.h" bodystart="111" bodyend="114"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="128" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="128" bodyend="131"/>
       </memberdef>
-      <memberdef kind="function" id="physics_8h_1a7121c0742be7d02d3edeb1c095879776" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="Vector_8h_1a7121c0742be7d02d3edeb1c095879776" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Matrix4f</type>
         <definition>Matrix4f Lotus::LTranslate</definition>
         <argsstring>(const Matrix4f &amp;mat, const Vector3f &amp;translationVec)</argsstring>
@@ -1091,9 +1287,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/physics.h" line="122" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/physics.h" bodystart="122" bodyend="125"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="139" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="139" bodyend="142"/>
       </memberdef>
-      <memberdef kind="function" id="physics_8h_1ac760cc5e35d95f3e943583f3d17bce53" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="Vector_8h_1ac760cc5e35d95f3e943583f3d17bce53" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Matrix4f</type>
         <definition>Matrix4f Lotus::LScale</definition>
         <argsstring>(const Matrix4f &amp;mat, const Vector3f &amp;scaleVec)</argsstring>
@@ -1132,9 +1328,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/physics.h" line="133" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/physics.h" bodystart="133" bodyend="136"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="150" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="150" bodyend="153"/>
       </memberdef>
-      <memberdef kind="function" id="physics_8h_1a2d8bf4ad45a5ac17b5f8188ad4b9f3af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="Vector_8h_1a2d8bf4ad45a5ac17b5f8188ad4b9f3af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Matrix4f</type>
         <definition>Matrix4f Lotus::LRotate</definition>
         <argsstring>(Matrix4f mat, float deg, Vector3f axis)</argsstring>
@@ -1185,9 +1381,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/physics.h" line="145" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/physics.h" bodystart="145" bodyend="148"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="162" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="162" bodyend="165"/>
       </memberdef>
-      <memberdef kind="function" id="physics_8h_1a14c15fa7611b1fff9231f9ecee70e5f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="Vector_8h_1a14c15fa7611b1fff9231f9ecee70e5f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const float *</type>
         <definition>const float* Lotus::valuePtr</definition>
         <argsstring>(const Matrix4f &amp;mat)</argsstring>
@@ -1214,9 +1410,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/physics.h" line="155" column="24" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/physics.h" bodystart="155" bodyend="157"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="172" column="24" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="172" bodyend="174"/>
       </memberdef>
-      <memberdef kind="function" id="physics_8h_1a0aee522b724c634c46d97e2e2ad030f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="Vector_8h_1a0aee522b724c634c46d97e2e2ad030f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const float *</type>
         <definition>const float* Lotus::valuePtr</definition>
         <argsstring>(const Vector3f &amp;vec)</argsstring>
@@ -1243,9 +1439,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/physics.h" line="164" column="24" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/physics.h" bodystart="164" bodyend="167"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="181" column="24" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="181" bodyend="184"/>
       </memberdef>
-      <memberdef kind="function" id="Renderer_8h_1ac6abc462d0a09f476896cf45aac50bde" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="CMeshRenderer_8h_1ac6abc462d0a09f476896cf45aac50bde" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void Lotus::to_json</definition>
         <argsstring>(nlohmann::json &amp;data, const CMeshRenderer &amp;mr)</argsstring>
@@ -1264,9 +1460,9 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/Renderer.h" line="46" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Renderer.h" bodystart="46" bodyend="49"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h" line="21" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h" bodystart="21" bodyend="24"/>
       </memberdef>
-      <memberdef kind="function" id="Renderer_8h_1a9202fa7f1470d401d44312c40570e4ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="CMeshRenderer_8h_1a9202fa7f1470d401d44312c40570e4ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void Lotus::from_json</definition>
         <argsstring>(const nlohmann::json &amp;data, CMeshRenderer &amp;mr)</argsstring>
@@ -1285,23 +1481,39 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/Renderer.h" line="51" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Renderer.h" bodystart="51" bodyend="58"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h" line="26" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h" bodystart="26" bodyend="30"/>
       </memberdef>
-      <memberdef kind="function" id="Renderer_8h_1aade89488f1d97624467e774aeb15cba7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>Lotus::REGISTER_BODY</definition>
-        <argsstring>(CMeshRenderer)</argsstring>
-        <name>REGISTER_BODY</name>
-        <param>
-          <type><ref refid="structLotus_1_1CMeshRenderer" kindref="compound">CMeshRenderer</ref></type>
-        </param>
+      <memberdef kind="function" id="AssetRegistry_8h_1a004710358f7ce57ead893935e66a4eab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>entt::resource_cache&lt; T &gt; &amp;</type>
+        <definition>entt::resource_cache&lt;T&gt;&amp; Lotus::GetAssetCache</definition>
+        <argsstring>()</argsstring>
+        <name>GetAssetCache</name>
         <briefdescription>
+<para>Get the active instance of the resource cache. </para>
         </briefdescription>
         <detaileddescription>
+<para>A resource cache is an EnTT resource cache initialized in the engine dll. This function returns a reference to that cache instance. Each resource has a corresponding template specialization in AssetRegistry.cpp</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the resource to fetch the cache for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A reference to the cache instance </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/Renderer.h" line="60" column="5" declfile="/builds/centauri/lotus/lotus/include/lotus/Renderer.h" declline="60" declcolumn="5"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/AssetRegistry.h" line="24" column="26" declfile="/builds/centauri/lotus/lotus/include/lotus/resources/AssetRegistry.h" declline="24" declcolumn="26"/>
       </memberdef>
       <memberdef kind="function" id="AssetRegistry_8h_1a198b20be7046670d3dcff7064bc7a4c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -1330,12 +1542,111 @@
           <declname>args</declname>
         </param>
         <briefdescription>
+<para>Load an asset from the given path, or provide the existing asset if already loaded. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the resource to load </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Loader</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the resource loader to use </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Types of arguments to be passed to the resource loader </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Path of the resource to be loaded </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Arguments to be passed to the resource loader </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Handle to the loaded resource instance from the resource cache </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/AssetRegistry.h" line="12" column="19" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/AssetRegistry.h" bodystart="12" bodyend="16"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/AssetRegistry.h" line="36" column="20" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/AssetRegistry.h" bodystart="36" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="AssetRegistry_8h_1aefd8a07da9c5684d46b1cb944cebc439" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Resource</type>
+          </param>
+          <param>
+            <type>typename Func</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Lotus::ForEachAsset</definition>
+        <argsstring>(Func func)</argsstring>
+        <name>ForEachAsset</name>
+        <param>
+          <type>Func</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+<para>Execute a function for each asset in the resource cache. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>Resource</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the resource that is under consideration </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Type of the function pointer to execute </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function to execute </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/AssetRegistry.h" line="49" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/AssetRegistry.h" bodystart="49" bodyend="52"/>
       </memberdef>
       <memberdef kind="function" id="HDRI_8h_1a917742a76b28bdefa6a9d0a3e0041707" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1372,7 +1683,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="29" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" bodystart="29" bodyend="32"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="30" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" bodystart="30" bodyend="33"/>
       </memberdef>
       <memberdef kind="function" id="HDRI_8h_1a5cb36c93e35e551cb03619fb43a94735" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1393,23 +1704,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="34" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" bodystart="34" bodyend="37"/>
-      </memberdef>
-      <memberdef kind="function" id="HDRI_8h_1a0e179dd84fab9be10a3522d690e3a461" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>Lotus::REGISTER_BODY</definition>
-        <argsstring>(CSkybox)</argsstring>
-        <name>REGISTER_BODY</name>
-        <param>
-          <type><ref refid="structLotus_1_1CSkybox" kindref="compound">CSkybox</ref></type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="39" column="5" declfile="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" declline="39" declcolumn="5"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="35" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" bodystart="35" bodyend="38"/>
       </memberdef>
       <memberdef kind="function" id="Material_8h_1a33a48af55ceeac79cae0f2f3db59a918" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1425,7 +1720,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h" line="21" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h" bodystart="21" bodyend="24"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h" line="23" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h" bodystart="23" bodyend="26"/>
       </memberdef>
       <memberdef kind="function" id="Model_8h_1a5db7750526a824d731764815e5988276" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1441,7 +1736,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Model.h" line="34" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Model.h" bodystart="34" bodyend="37"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Model.h" line="13" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Model.h" bodystart="13" bodyend="18"/>
       </memberdef>
       <memberdef kind="function" id="Shader_8h_1a653aa6d797db88917a5fd4e41bffddee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1457,30 +1752,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="84" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" bodystart="84" bodyend="87"/>
-      </memberdef>
-      <memberdef kind="function" id="Shader_8h_1a2af0111de60ea6e7f1f4a6c0d45311f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-        </templateparamlist>
-        <type>Handle&lt; <ref refid="structLotus_1_1Shader" kindref="compound">Shader</ref> &gt;</type>
-        <definition>Handle&lt;Shader&gt; Lotus::LoadAsset&lt; Shader, ShaderLoader &gt;</definition>
-        <argsstring>(const std::string &amp;path, const std::string &amp;args)</argsstring>
-        <name>LoadAsset&lt; Shader, ShaderLoader &gt;</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>path</declname>
-        </param>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>args</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="84" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" bodystart="90" bodyend="94"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="77" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" bodystart="77" bodyend="80"/>
       </memberdef>
       <memberdef kind="function" id="Texture_8h_1a54c0c2d80676f9a85a61eea11acd65f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1503,6 +1775,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/builds/centauri/lotus/lotus/include/lotus/Config.h" line="5" column="1"/>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/Config.h" line="7" column="1"/>
   </compounddef>
 </doxygen>

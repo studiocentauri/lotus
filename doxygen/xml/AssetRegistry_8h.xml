@@ -2,26 +2,63 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
   <compounddef id="AssetRegistry_8h" kind="file" language="C++">
     <compoundname>AssetRegistry.h</compoundname>
+    <includes refid="lcommon_8h" local="no">lotus/lcommon.h</includes>
     <includedby refid="lotus_8h" local="yes">/builds/centauri/lotus/lotus/include/lotus/lotus.h</includedby>
     <includedby refid="HDRI_8h" local="no">/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h</includedby>
-    <includedby refid="Material_8h" local="yes">/builds/centauri/lotus/lotus/include/lotus/resources/Material.h</includedby>
-    <includedby refid="Shader_8h" local="yes">/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h</includedby>
     <includedby refid="Texture_8h" local="yes">/builds/centauri/lotus/lotus/include/lotus/resources/Texture.h</includedby>
-    <invincdepgraph>
+    <includedby refid="Shader_8h" local="yes">/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h</includedby>
+    <incdepgraph>
+      <node id="7">
+        <label>lotus/internal/entt/entt.hpp</label>
+      </node>
+      <node id="1">
+        <label>/builds/centauri/lotus/lotus/include/lotus/resources/AssetRegistry.h</label>
+        <link refid="AssetRegistry_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
       <node id="4">
+        <label>fstream</label>
+      </node>
+      <node id="2">
+        <label>lotus/lcommon.h</label>
+        <link refid="lcommon_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>lotus_export.h</label>
+        <link refid="lotus__export_8h_source"/>
+      </node>
+      <node id="5">
+        <label>type_traits</label>
+      </node>
+      <node id="3">
+        <label>memory</label>
+      </node>
+      <node id="8">
+        <label>lotus/internal/nlohmann/json.hpp</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5">
         <label>/builds/centauri/lotus/lotus/include/lotus/resources/Material.h</label>
         <link refid="Material_8h_source"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="6">
-        <label>/builds/centauri/lotus/lotus/include/lotus/Renderer.h</label>
-        <link refid="Renderer_8h_source"/>
-        <childnode refid="2" relation="include">
         </childnode>
       </node>
       <node id="2">
@@ -37,35 +74,39 @@
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
         <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="8">
+      <node id="7">
+        <label>/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h</label>
+        <link refid="CMeshRenderer_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
         <label>/builds/centauri/lotus/lotus/include/lotus/resources/Texture.h</label>
         <link refid="Texture_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="4" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="7">
+      <node id="8">
         <label>/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h</label>
         <link refid="Shader_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
       </node>
-      <node id="5">
+      <node id="6">
         <label>/builds/centauri/lotus/lotus/include/lotus/resources/Model.h</label>
         <link refid="Model_8h_source"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -75,7 +116,6 @@
         </childnode>
       </node>
     </invincdepgraph>
-    <innerclass refid="structLotus_1_1AssetCache" prot="public">Lotus::AssetCache</innerclass>
     <innernamespace refid="namespaceLotus">Lotus</innernamespace>
       <sectiondef kind="define">
       <memberdef kind="define" id="AssetRegistry_8h_1a2f18db18bca26cafa95e9719de4a41ef" prot="public" static="no">
@@ -84,24 +124,26 @@
         <param><defname>y</defname></param>
         <initializer>x ## y</initializer>
         <briefdescription>
+<para>Concatenate two strings. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/AssetRegistry.h" line="3" column="9" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/AssetRegistry.h" bodystart="3" bodyend="-1"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/AssetRegistry.h" line="6" column="9" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/AssetRegistry.h" bodystart="6" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="AssetRegistry_8h_1a20edbee202dea152d938e47211223cc3" prot="public" static="no">
         <name>LOADER</name>
         <param><defname>x</defname></param>
         <initializer>struct LOTUS_API CONCAT(x, Loader) final: public entt::resource_loader&lt;CONCAT(x, Loader), x&gt;</initializer>
         <briefdescription>
+<para>Macro to conveniently declare asset loaders. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/AssetRegistry.h" line="4" column="9" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/AssetRegistry.h" bodystart="4" bodyend="-1"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/AssetRegistry.h" line="9" column="9" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/AssetRegistry.h" bodystart="9" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -111,21 +153,30 @@
     <programlisting>
 <codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONCAT(x,<sp/>y)<sp/>x<sp/>##<sp/>y</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOADER(x)<sp/>struct<sp/>LOTUS_API<sp/>CONCAT(x,<sp/>Loader)<sp/>final:<sp/>public<sp/>entt::resource_loader&lt;CONCAT(x,<sp/>Loader),<sp/>x&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Lotus</highlight></codeline>
-<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="9" refid="structLotus_1_1AssetCache" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structLotus_1_1AssetCache" kindref="compound">AssetCache</ref><sp/>{<sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>entt::resource_cache&lt;T&gt;<sp/>cache<sp/>{};<sp/>};</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;lotus/lcommon.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="preprocessor">#define<sp/>CONCAT(x,<sp/>y)<sp/>x<sp/>##<sp/>y</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor">#define<sp/>LOADER(x)<sp/>struct<sp/>LOTUS_API<sp/>CONCAT(x,<sp/>Loader)<sp/>final:<sp/>public<sp/>entt::resource_loader&lt;CONCAT(x,<sp/>Loader),<sp/>x&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Resource,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Loader,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Args&gt;</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>Handle&lt;Resource&gt;<sp/>LoadAsset(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>path,<sp/>Args&amp;&amp;<sp/>...args)</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>entt::hashed_string::value(path.c_str());</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structLotus_1_1AssetCache" kindref="compound">AssetCache&lt;Resource&gt;::cache</ref>.template<sp/>load&lt;Loader&gt;(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>path,<sp/>std::forward&lt;Args&gt;(args)...);</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Lotus</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>entt::resource_cache&lt;T&gt;&amp;<sp/>GetAssetCache();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Resource,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Loader,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>Args&gt;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>Handle<sp/>&lt;Resource&gt;<sp/>LoadAsset(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>path,<sp/>Args&amp;&amp;<sp/>...args)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>entt::hashed_string::value(path.c_str());</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>GetAssetCache&lt;Resource&gt;().template<sp/>load&lt;Loader&gt;(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>path,<sp/>std::forward&lt;Args&gt;(args)...);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Resource,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Func&gt;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ForEachAsset(Func<sp/>func)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetAssetCache&lt;Resource&gt;().each(func);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="/builds/centauri/lotus/lotus/include/lotus/resources/AssetRegistry.h"/>
   </compounddef>

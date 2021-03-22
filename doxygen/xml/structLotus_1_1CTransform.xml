@@ -47,11 +47,23 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="structLotus_1_1CTransform_1a78d5586dd628ef0d0f8310c37d1f8f94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structLotus_1_1CTransform_1aa6d370560bf53d3a40556651dcdd8da6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
-        <definition>Lotus::CTransform::REGISTER_DECL</definition>
-        <argsstring>()</argsstring>
-        <name>REGISTER_DECL</name>
+        <definition>Lotus::CTransform::GENERATED_BODY</definition>
+        <argsstring>(CTransform, Position, Rotation, Scale)</argsstring>
+        <name>GENERATED_BODY</name>
+        <param>
+          <type><ref refid="structLotus_1_1CTransform" kindref="compound">CTransform</ref></type>
+        </param>
+        <param>
+          <type>Position</type>
+        </param>
+        <param>
+          <type>Rotation</type>
+        </param>
+        <param>
+          <type>Scale</type>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -67,8 +79,8 @@
     </detaileddescription>
     <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CTransform.h" line="8" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CTransform.h" bodystart="9" bodyend="15"/>
     <listofallmembers>
+      <member refid="structLotus_1_1CTransform_1aa6d370560bf53d3a40556651dcdd8da6" prot="public" virt="non-virtual"><scope>Lotus::CTransform</scope><name>GENERATED_BODY</name></member>
       <member refid="structLotus_1_1CTransform_1a306b9c403bf311b49358d153fc7978f7" prot="public" virt="non-virtual"><scope>Lotus::CTransform</scope><name>Position</name></member>
-      <member refid="structLotus_1_1CTransform_1a78d5586dd628ef0d0f8310c37d1f8f94" prot="public" virt="non-virtual"><scope>Lotus::CTransform</scope><name>REGISTER_DECL</name></member>
       <member refid="structLotus_1_1CTransform_1a336d5f659bffd20bf980b12d8525e6c2" prot="public" virt="non-virtual"><scope>Lotus::CTransform</scope><name>Rotation</name></member>
       <member refid="structLotus_1_1CTransform_1a8590b81a90145a182ebd30d36d2eb9b4" prot="public" virt="non-virtual"><scope>Lotus::CTransform</scope><name>Scale</name></member>
     </listofallmembers>

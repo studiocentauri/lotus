@@ -2,7 +2,6 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
   <compounddef id="structLotus_1_1ComponentCreateEvent" kind="struct" language="C++" prot="public">
     <compoundname>Lotus::ComponentCreateEvent</compoundname>
-    <basecompoundref refid="structLotus_1_1Event" prot="public" virt="non-virtual">Lotus::Event</basecompoundref>
     <templateparamlist>
       <param>
         <type>typename T</type>
@@ -20,43 +19,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="78" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" bodystart="78" bodyend="-1"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="80" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" bodystart="80" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <inheritancegraph>
-      <node id="1">
-        <label>Lotus::ComponentCreateEvent&lt; T &gt;</label>
-        <link refid="structLotus_1_1ComponentCreateEvent"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>Lotus::Event</label>
-        <link refid="structLotus_1_1Event"/>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
-      <node id="1">
-        <label>Lotus::ComponentCreateEvent&lt; T &gt;</label>
-        <link refid="structLotus_1_1ComponentCreateEvent"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>Lotus::Event</label>
-        <link refid="structLotus_1_1Event"/>
-      </node>
-    </collaborationgraph>
-    <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="76" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" bodystart="77" bodyend="79"/>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="78" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" bodystart="79" bodyend="81"/>
     <listofallmembers>
-      <member refid="structLotus_1_1Event_1ab24ac1b54a4ba1f7d365dcf66171b428" prot="public" virt="non-virtual"><scope>Lotus::ComponentCreateEvent</scope><name>Category</name></member>
       <member refid="structLotus_1_1ComponentCreateEvent_1a3687f7e1d72c31e1932403877b70be97" prot="public" virt="non-virtual"><scope>Lotus::ComponentCreateEvent</scope><name>entityID</name></member>
-      <member refid="structLotus_1_1Event_1aa80e0ce0e15e954acb56de6979e88a78" prot="public" virt="non-virtual"><scope>Lotus::ComponentCreateEvent</scope><name>Immediate</name></member>
-      <member refid="structLotus_1_1Event_1aab6f244133a1b8e2730409d36ed35fce" prot="public" virt="non-virtual"><scope>Lotus::ComponentCreateEvent</scope><name>Type</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structLotus_1_1Geometry" kind="struct" language="C++" prot="public">
+    <compoundname>Lotus::Geometry</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLotus_1_1Geometry_1a76927238b19b4a36f1723a359322d819" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structLotus_1_1Vertex" kindref="compound">Vertex</ref> &gt;</type>
+        <definition>std::vector&lt;Vertex&gt; Lotus::Geometry::Vertices</definition>
+        <argsstring></argsstring>
+        <name>Vertices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/rendering/common.h" line="17" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/rendering/common.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1Geometry_1a23cf92c795237328299621d320ff8a72" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; unsigned int &gt;</type>
+        <definition>std::vector&lt;unsigned int&gt; Lotus::Geometry::Indices</definition>
+        <argsstring></argsstring>
+        <name>Indices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/rendering/common.h" line="18" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/rendering/common.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/rendering/common.h" line="15" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/rendering/common.h" bodystart="16" bodyend="19"/>
+    <listofallmembers>
+      <member refid="structLotus_1_1Geometry_1a23cf92c795237328299621d320ff8a72" prot="public" virt="non-virtual"><scope>Lotus::Geometry</scope><name>Indices</name></member>
+      <member refid="structLotus_1_1Geometry_1a76927238b19b4a36f1723a359322d819" prot="public" virt="non-virtual"><scope>Lotus::Geometry</scope><name>Vertices</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

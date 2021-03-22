@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="66" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" bodystart="66" bodyend="-1"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="40" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" bodystart="40" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="68" column="22"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="42" column="22"/>
       </memberdef>
       <memberdef kind="function" id="structLotus_1_1Shader_1a5d919fea1b36dafc05229a78b1284b6a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -50,7 +50,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="69" column="22"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="44" column="22"/>
       </memberdef>
       <memberdef kind="function" id="structLotus_1_1Shader_1a1b2c7dae3d59d58eac043ca251f51516" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -71,7 +71,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="70" column="22"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="46" column="22"/>
       </memberdef>
       <memberdef kind="function" id="structLotus_1_1Shader_1a371c1100880f41ca0d889e88e7324f6e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -92,7 +92,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="71" column="22"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="48" column="22"/>
       </memberdef>
       <memberdef kind="function" id="structLotus_1_1Shader_1a3615d5ad2d96561e68ceccab395eba16" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -113,7 +113,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="72" column="22"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="50" column="22"/>
       </memberdef>
       <memberdef kind="function" id="structLotus_1_1Shader_1ac9c965e0857d735e545d9107565dc95f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -134,7 +134,28 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="73" column="22"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="52" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="structLotus_1_1Shader_1a6aec2fa47dfcc112b0a69690083415f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Lotus::Shader::SetColor</definition>
+        <argsstring>(const std::string &amp;name, const Color &amp;vec) const =0</argsstring>
+        <name>SetColor</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const Color &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="54" column="22"/>
       </memberdef>
       <memberdef kind="function" id="structLotus_1_1Shader_1abacf5241859b15cdcc9653aa8ae71548" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -155,7 +176,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="74" column="22"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="56" column="22"/>
       </memberdef>
       <memberdef kind="function" id="structLotus_1_1Shader_1ab7a688488a87f49b6a489d8957184cb4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -176,19 +197,19 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="75" column="22"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="58" column="22"/>
       </memberdef>
-      <memberdef kind="function" id="structLotus_1_1Shader_1ad0b54caf22011970d06af443c2d4af77" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+      <memberdef kind="function" id="structLotus_1_1Shader_1a097e0fba1a160a76e50388dda6bf1a55" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
         <definition>virtual void Lotus::Shader::SetDirectionalLight</definition>
-        <argsstring>(const std::string &amp;name, const LightInfo &amp;options) const =0</argsstring>
+        <argsstring>(const std::string &amp;name, const SunLightInfo &amp;options) const =0</argsstring>
         <name>SetDirectionalLight</name>
         <param>
           <type>const std::string &amp;</type>
           <declname>name</declname>
         </param>
         <param>
-          <type>const <ref refid="structLotus_1_1LightInfo" kindref="compound">LightInfo</ref> &amp;</type>
+          <type>const <ref refid="structLotus_1_1SunLightInfo" kindref="compound">SunLightInfo</ref> &amp;</type>
           <declname>options</declname>
         </param>
         <briefdescription>
@@ -197,7 +218,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="76" column="22"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="60" column="22"/>
       </memberdef>
       <memberdef kind="function" id="structLotus_1_1Shader_1a10287405a64dc72de69c119b46886031" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -218,7 +239,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="77" column="22"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="62" column="22"/>
       </memberdef>
       <memberdef kind="function" id="structLotus_1_1Shader_1a124f3dc72a9408ec64cd7386f336934a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -239,19 +260,19 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="78" column="22"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="64" column="22"/>
       </memberdef>
-      <memberdef kind="function" id="structLotus_1_1Shader_1aafde59982423f4449bd8c2a28e031f6c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+      <memberdef kind="function" id="structLotus_1_1Shader_1a89a8109df65abe34e7604294bf3bea98" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
         <definition>virtual void Lotus::Shader::SetDirLightArray</definition>
-        <argsstring>(const std::string &amp;name, const std::vector&lt; LightInfo &gt; &amp;lights) const =0</argsstring>
+        <argsstring>(const std::string &amp;name, const std::vector&lt; SunLightInfo &gt; &amp;lights) const =0</argsstring>
         <name>SetDirLightArray</name>
         <param>
           <type>const std::string &amp;</type>
           <declname>name</declname>
         </param>
         <param>
-          <type>const std::vector&lt; <ref refid="structLotus_1_1LightInfo" kindref="compound">LightInfo</ref> &gt; &amp;</type>
+          <type>const std::vector&lt; <ref refid="structLotus_1_1SunLightInfo" kindref="compound">SunLightInfo</ref> &gt; &amp;</type>
           <declname>lights</declname>
         </param>
         <briefdescription>
@@ -260,7 +281,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="79" column="22"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="66" column="22"/>
       </memberdef>
       <memberdef kind="function" id="structLotus_1_1Shader_1a290fe2696fb778475749bdaae76f6c0c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
@@ -281,7 +302,33 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="80" column="22"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="68" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="structLotus_1_1Shader_1ade3a7fb529de7d44b14e32cf5b606edb" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Lotus::Shader::Compile</definition>
+        <argsstring>()=0</argsstring>
+        <name>Compile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="70" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="structLotus_1_1Shader_1a0489ec5b5dfb64018174f1940afc6a17" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Lotus::Shader::Reload</definition>
+        <argsstring>()=0</argsstring>
+        <name>Reload</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="72" column="22"/>
       </memberdef>
       <memberdef kind="function" id="structLotus_1_1Shader_1a552e358f2f0231250976337b7cbdbc22" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type></type>
@@ -294,19 +341,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="81" column="17"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="74" column="17"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="64" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" bodystart="65" bodyend="82"/>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="38" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" bodystart="39" bodyend="75"/>
     <listofallmembers>
+      <member refid="structLotus_1_1Shader_1ade3a7fb529de7d44b14e32cf5b606edb" prot="public" virt="pure-virtual"><scope>Lotus::Shader</scope><name>Compile</name></member>
       <member refid="structLotus_1_1Shader_1a0a9d2c7133e246ea52b5a8a47e44d840" prot="public" virt="non-virtual"><scope>Lotus::Shader</scope><name>ID</name></member>
+      <member refid="structLotus_1_1Shader_1a0489ec5b5dfb64018174f1940afc6a17" prot="public" virt="pure-virtual"><scope>Lotus::Shader</scope><name>Reload</name></member>
       <member refid="structLotus_1_1Shader_1a371c1100880f41ca0d889e88e7324f6e" prot="public" virt="pure-virtual"><scope>Lotus::Shader</scope><name>SetBool</name></member>
-      <member refid="structLotus_1_1Shader_1ad0b54caf22011970d06af443c2d4af77" prot="public" virt="pure-virtual"><scope>Lotus::Shader</scope><name>SetDirectionalLight</name></member>
-      <member refid="structLotus_1_1Shader_1aafde59982423f4449bd8c2a28e031f6c" prot="public" virt="pure-virtual"><scope>Lotus::Shader</scope><name>SetDirLightArray</name></member>
+      <member refid="structLotus_1_1Shader_1a6aec2fa47dfcc112b0a69690083415f2" prot="public" virt="pure-virtual"><scope>Lotus::Shader</scope><name>SetColor</name></member>
+      <member refid="structLotus_1_1Shader_1a097e0fba1a160a76e50388dda6bf1a55" prot="public" virt="pure-virtual"><scope>Lotus::Shader</scope><name>SetDirectionalLight</name></member>
+      <member refid="structLotus_1_1Shader_1a89a8109df65abe34e7604294bf3bea98" prot="public" virt="pure-virtual"><scope>Lotus::Shader</scope><name>SetDirLightArray</name></member>
       <member refid="structLotus_1_1Shader_1a1b2c7dae3d59d58eac043ca251f51516" prot="public" virt="pure-virtual"><scope>Lotus::Shader</scope><name>SetFloat</name></member>
       <member refid="structLotus_1_1Shader_1a5d919fea1b36dafc05229a78b1284b6a" prot="public" virt="pure-virtual"><scope>Lotus::Shader</scope><name>SetInt</name></member>
       <member refid="structLotus_1_1Shader_1a3615d5ad2d96561e68ceccab395eba16" prot="public" virt="pure-virtual"><scope>Lotus::Shader</scope><name>SetMat4f</name></member>

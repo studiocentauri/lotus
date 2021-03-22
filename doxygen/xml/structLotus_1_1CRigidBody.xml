@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="53" column="15" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="53" bodyend="-1"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="47" column="15" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="47" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structLotus_1_1CRigidBody_1a8f269efae758e54c2bd60efc733a17f7" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -30,22 +30,31 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="54" column="14" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="54" bodyend="-1"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="48" column="14" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="48" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="structLotus_1_1CRigidBody_1a0af3702107a0c4cefe29925a52c86885" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structLotus_1_1CRigidBody_1a48aded464e47b22eb88cf6208f941310" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
-        <definition>Lotus::CRigidBody::REGISTER_DECL</definition>
-        <argsstring>()</argsstring>
-        <name>REGISTER_DECL</name>
+        <definition>Lotus::CRigidBody::GENERATED_BODY</definition>
+        <argsstring>(CRigidBody, Gravity, IsKinematic)</argsstring>
+        <name>GENERATED_BODY</name>
+        <param>
+          <type><ref refid="structLotus_1_1CRigidBody" kindref="compound">CRigidBody</ref></type>
+        </param>
+        <param>
+          <type>Gravity</type>
+        </param>
+        <param>
+          <type>IsKinematic</type>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="56" column="9"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="50" column="9"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -55,11 +64,11 @@
 </simplesect>
 </para>
     </detaileddescription>
-    <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="51" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="52" bodyend="57"/>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="45" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="46" bodyend="51"/>
     <listofallmembers>
+      <member refid="structLotus_1_1CRigidBody_1a48aded464e47b22eb88cf6208f941310" prot="public" virt="non-virtual"><scope>Lotus::CRigidBody</scope><name>GENERATED_BODY</name></member>
       <member refid="structLotus_1_1CRigidBody_1add2df609d04cb55399d270a07a3ee4a3" prot="public" virt="non-virtual"><scope>Lotus::CRigidBody</scope><name>Gravity</name></member>
       <member refid="structLotus_1_1CRigidBody_1a8f269efae758e54c2bd60efc733a17f7" prot="public" virt="non-virtual"><scope>Lotus::CRigidBody</scope><name>IsKinematic</name></member>
-      <member refid="structLotus_1_1CRigidBody_1a0af3702107a0c4cefe29925a52c86885" prot="public" virt="non-virtual"><scope>Lotus::CRigidBody</scope><name>REGISTER_DECL</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

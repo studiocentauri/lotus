@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structLotus_1_1SunLightInfo" kind="struct" language="C++" prot="public">
+    <compoundname>Lotus::SunLightInfo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLotus_1_1SunLightInfo_1a84f87c4bdfa4c79bb34030e57f594bf6" prot="public" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color Lotus::SunLightInfo::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="12" column="15" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1SunLightInfo_1afe518a1f6c3aeef5d511683399580487" prot="public" static="no" mutable="no">
+        <type>Vector3f</type>
+        <definition>Vector3f Lotus::SunLightInfo::direction</definition>
+        <argsstring></argsstring>
+        <name>direction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="13" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" line="10" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h" bodystart="11" bodyend="14"/>
+    <listofallmembers>
+      <member refid="structLotus_1_1SunLightInfo_1a84f87c4bdfa4c79bb34030e57f594bf6" prot="public" virt="non-virtual"><scope>Lotus::SunLightInfo</scope><name>color</name></member>
+      <member refid="structLotus_1_1SunLightInfo_1afe518a1f6c3aeef5d511683399580487" prot="public" virt="non-virtual"><scope>Lotus::SunLightInfo</scope><name>direction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

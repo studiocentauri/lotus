@@ -6,7 +6,7 @@
     <includes local="no">filesystem</includes>
     <includes refid="lcommon_8h" local="yes">lcommon.h</includes>
     <includes refid="filesystem_8h" local="yes">filesystem.h</includes>
-    <includes refid="physics_8h" local="yes">physics/physics.h</includes>
+    <includes refid="Vector_8h" local="yes">physics/Vector.h</includes>
     <includes refid="components_8h" local="yes">physics/components.h</includes>
     <includes refid="CTransform_8h" local="yes">ecs/components/CTransform.h</includes>
     <includes refid="CCamera_8h" local="yes">ecs/components/CCamera.h</includes>
@@ -22,30 +22,30 @@
     <includes refid="Model_8h" local="yes">resources/Model.h</includes>
     <includes refid="Shader_8h" local="yes">resources/Shader.h</includes>
     <includes refid="Texture_8h" local="yes">resources/Texture.h</includes>
+    <includes refid="CMeshRenderer_8h" local="yes">rendering/CMeshRenderer.h</includes>
+    <includes refid="RenderPass_8h" local="yes">rendering/RenderPass.h</includes>
     <includes refid="Scene_8h" local="yes">scene/Scene.h</includes>
     <includes refid="SceneTreeNode_8h" local="yes">scene/SceneTreeNode.h</includes>
     <includes refid="SceneManager_8h" local="yes">scene/SceneManager.h</includes>
     <includes refid="Config_8h" local="yes">Config.h</includes>
-    <includes refid="entry_8h" local="yes">entry.h</includes>
-    <includes refid="ILifecycle_8h" local="yes">ILifecycle.h</includes>
+    <includes refid="Engine_8h" local="yes">Engine.h</includes>
     <includes refid="Input_8h" local="yes">Input.h</includes>
-    <includes refid="Renderer_8h" local="yes">Renderer.h</includes>
     <incdepgraph>
       <node id="15">
         <label>lotus/internal/glm/gtx/matrix_decompose.hpp</label>
       </node>
-      <node id="31">
+      <node id="32">
         <label>resources/Material.h</label>
         <link refid="Material_8h_source"/>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="30" relation="include">
-        </childnode>
-        <childnode refid="28" relation="include">
-        </childnode>
-        <childnode refid="32" relation="include">
+        <childnode refid="31" relation="include">
         </childnode>
         <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
         </childnode>
       </node>
       <node id="20">
@@ -57,30 +57,36 @@
       <node id="16">
         <label>lotus/internal/glm/gtc/type_ptr.hpp</label>
       </node>
+      <node id="12">
+        <label>physics/Vector.h</label>
+        <link refid="Vector_8h_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
       <node id="9">
         <label>lotus/internal/entt/entt.hpp</label>
       </node>
-      <node id="32">
+      <node id="34">
         <label>variant</label>
       </node>
-      <node id="41">
-        <label>ILifecycle.h</label>
-        <link refid="ILifecycle_8h_source"/>
-        <childnode refid="25" relation="include">
+      <node id="38">
+        <label>rendering/RenderPass.h</label>
+        <link refid="RenderPass_8h_source"/>
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="43">
-        <label>Renderer.h</label>
-        <link refid="Renderer_8h_source"/>
-        <childnode refid="41" relation="include">
-        </childnode>
-        <childnode refid="34" relation="include">
-        </childnode>
-        <childnode refid="35" relation="include">
-        </childnode>
-        <childnode refid="21" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
+      <node id="24">
+        <label>lotus/rendering/common.h</label>
+        <link refid="common_8h_source"/>
+        <childnode refid="12" relation="include">
         </childnode>
       </node>
       <node id="2">
@@ -109,8 +115,6 @@
         </childnode>
         <childnode refid="18" relation="include">
         </childnode>
-        <childnode refid="24" relation="include">
-        </childnode>
         <childnode refid="25" relation="include">
         </childnode>
         <childnode refid="26" relation="include">
@@ -121,15 +125,15 @@
         </childnode>
         <childnode refid="29" relation="include">
         </childnode>
-        <childnode refid="31" relation="include">
-        </childnode>
-        <childnode refid="34" relation="include">
-        </childnode>
-        <childnode refid="35" relation="include">
-        </childnode>
         <childnode refid="30" relation="include">
         </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
         <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
         </childnode>
         <childnode refid="37" relation="include">
         </childnode>
@@ -145,34 +149,52 @@
         </childnode>
         <childnode refid="43" relation="include">
         </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
       </node>
-      <node id="28">
+      <node id="29">
         <label>resources/AssetRegistry.h</label>
         <link refid="AssetRegistry_8h_source"/>
-      </node>
-      <node id="42">
-        <label>Input.h</label>
-        <link refid="Input_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="25" relation="include">
+      </node>
+      <node id="37">
+        <label>rendering/CMeshRenderer.h</label>
+        <link refid="CMeshRenderer_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>Input.h</label>
+        <link refid="Input_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
         </childnode>
       </node>
       <node id="6">
         <label>fstream</label>
       </node>
-      <node id="30">
+      <node id="31">
         <label>lotus/resources/Texture.h</label>
         <link refid="Texture_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="28" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
       </node>
       <node id="23">
         <label>ecs/components/CLight.h</label>
         <link refid="CLight_8h_source"/>
         <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
         </childnode>
         <childnode refid="18" relation="include">
         </childnode>
@@ -196,20 +218,23 @@
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="24">
+      <node id="25">
         <label>ecs/Entity.h</label>
         <link refid="Entity_8h_source"/>
-        <childnode refid="25" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="33">
+      <node id="35">
         <label>optional</label>
       </node>
-      <node id="37">
+      <node id="40">
         <label>SceneTreeNode.h</label>
         <link refid="SceneTreeNode_8h_source"/>
+      </node>
+      <node id="45">
+        <label>utility</label>
       </node>
       <node id="4">
         <label>lcommon.h</label>
@@ -227,62 +252,46 @@
         <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="40">
-        <label>entry.h</label>
-        <link refid="entry_8h_source"/>
-        <childnode refid="39" relation="include">
-        </childnode>
-      </node>
-      <node id="25">
+      <node id="26">
         <label>Event.h</label>
         <link refid="Event_8h_source"/>
         <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="36">
+      <node id="39">
         <label>scene/Scene.h</label>
         <link refid="Scene_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="24" relation="include">
+        <childnode refid="25" relation="include">
         </childnode>
-        <childnode refid="37" relation="include">
+        <childnode refid="40" relation="include">
         </childnode>
       </node>
-      <node id="27">
+      <node id="28">
         <label>ecs/ISystem.h</label>
         <link refid="ISystem_8h_source"/>
       </node>
-      <node id="12">
-        <label>physics/physics.h</label>
-        <link refid="physics_8h_source"/>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
-      <node id="39">
+      <node id="42">
         <label>Config.h</label>
         <link refid="Config_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
       </node>
-      <node id="38">
+      <node id="41">
         <label>scene/SceneManager.h</label>
         <link refid="SceneManager_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="37" relation="include">
+        <childnode refid="40" relation="include">
         </childnode>
       </node>
-      <node id="35">
-        <label>resources/Shader.h</label>
+      <node id="33">
+        <label>Shader.h</label>
         <link refid="Shader_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
@@ -290,9 +299,7 @@
         </childnode>
         <childnode refid="23" relation="include">
         </childnode>
-        <childnode refid="31" relation="include">
-        </childnode>
-        <childnode refid="28" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
       </node>
       <node id="19">
@@ -305,6 +312,8 @@
       <node id="18">
         <label>lotus/ecs/ComponentRegistry.h</label>
         <link refid="ComponentRegistry_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
@@ -314,21 +323,23 @@
         <childnode refid="20" relation="include">
         </childnode>
       </node>
-      <node id="34">
+      <node id="36">
         <label>resources/Model.h</label>
         <link refid="Model_8h_source"/>
-        <childnode refid="31" relation="include">
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
         </childnode>
       </node>
       <node id="7">
         <label>type_traits</label>
       </node>
-      <node id="26">
+      <node id="27">
         <label>ecs/EventManager.h</label>
         <link refid="EventManager_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="25" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
       </node>
       <node id="17">
@@ -339,6 +350,12 @@
         <childnode refid="12" relation="include">
         </childnode>
       </node>
+      <node id="43">
+        <label>Engine.h</label>
+        <link refid="Engine_8h_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
       <node id="21">
         <label>ecs/components/CTransform.h</label>
         <link refid="CTransform_8h_source"/>
@@ -347,16 +364,16 @@
         <childnode refid="18" relation="include">
         </childnode>
       </node>
-      <node id="29">
+      <node id="30">
         <label>resources/HDRI.h</label>
         <link refid="HDRI_8h_source"/>
         <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="30" relation="include">
+        <childnode refid="31" relation="include">
         </childnode>
-        <childnode refid="28" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
         <childnode refid="18" relation="include">
         </childnode>
@@ -385,7 +402,7 @@
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lcommon.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;filesystem.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;physics/physics.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;physics/Vector.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;physics/components.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ecs/components/CTransform.h&quot;</highlight><highlight class="normal"></highlight></codeline>
@@ -404,15 +421,16 @@
 <codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;resources/Shader.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;resources/Texture.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;scene/Scene.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;scene/SceneTreeNode.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;scene/SceneManager.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Config.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;entry.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;ILifecycle.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Input.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Renderer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;rendering/CMeshRenderer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;rendering/RenderPass.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;scene/Scene.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;scene/SceneTreeNode.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;scene/SceneManager.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Config.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Engine.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Input.h&quot;</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="/builds/centauri/lotus/lotus/include/lotus/lotus.h"/>
   </compounddef>

@@ -76,14 +76,20 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8efbd8e3c670c25f4f644be0c2c15971"><td class="memItemLeft" align="right" valign="top">LOTUS_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceLotus_1_1Input.html#a8efbd8e3c670c25f4f644be0c2c15971">UpdateKeyState</a> (const <a class="el" href="structLotus_1_1KeyboardEvent.html">KeyboardEvent</a> &amp;event)</td></tr>
-<tr class="separator:a8efbd8e3c670c25f4f644be0c2c15971"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebb9f7678c07bac91f56e72e35a49cc5"><td class="memItemLeft" align="right" valign="top">LOTUS_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceLotus_1_1Input.html#aebb9f7678c07bac91f56e72e35a49cc5">UpdateMouseState</a> (const <a class="el" href="structLotus_1_1MouseEvent.html">MouseEvent</a> &amp;event)</td></tr>
-<tr class="separator:aebb9f7678c07bac91f56e72e35a49cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5cdc22b0275cab4194ccba2b4c0670e"><td class="memItemLeft" align="right" valign="top">LOTUS_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceLotus_1_1Input.html#af5cdc22b0275cab4194ccba2b4c0670e">UpdateKeyState</a> (int keycode, int state)</td></tr>
+<tr class="separator:af5cdc22b0275cab4194ccba2b4c0670e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bf300685e0efc4eaa90cddc9e7d105c"><td class="memItemLeft" align="right" valign="top"><a id="a0bf300685e0efc4eaa90cddc9e7d105c"></a>
+LOTUS_API void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateMouseButtonState</b> (int button, bool state)</td></tr>
+<tr class="separator:a0bf300685e0efc4eaa90cddc9e7d105c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cf47af6e1567dba2467c2b1204b3112"><td class="memItemLeft" align="right" valign="top">LOTUS_API void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceLotus_1_1Input.html#a8cf47af6e1567dba2467c2b1204b3112">UpdateMouseState</a> (double xpos, double ypos)</td></tr>
+<tr class="separator:a8cf47af6e1567dba2467c2b1204b3112"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bb0baa54e994bb8e5b78b270291c52e"><td class="memItemLeft" align="right" valign="top">LOTUS_API bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceLotus_1_1Input.html#a4bb0baa54e994bb8e5b78b270291c52e">GetKeyPressed</a> (int key)</td></tr>
 <tr class="separator:a4bb0baa54e994bb8e5b78b270291c52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae316f56496d2fdb2de8ccf41b49add95"><td class="memItemLeft" align="right" valign="top">LOTUS_API std::pair&lt; float, float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceLotus_1_1Input.html#ae316f56496d2fdb2de8ccf41b49add95">GetMouseDelta</a> ()</td></tr>
-<tr class="separator:ae316f56496d2fdb2de8ccf41b49add95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73c0ee1d44bac64d01319fa33df1024c"><td class="memItemLeft" align="right" valign="top"><a id="a73c0ee1d44bac64d01319fa33df1024c"></a>
+LOTUS_API bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetMousePressed</b> (int mouse)</td></tr>
+<tr class="separator:a73c0ee1d44bac64d01319fa33df1024c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60dc0471ef5c22d1697eededaf239ef7"><td class="memItemLeft" align="right" valign="top">LOTUS_API std::pair&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceLotus_1_1Input.html#a60dc0471ef5c22d1697eededaf239ef7">GetMouseDelta</a> ()</td></tr>
+<tr class="separator:a60dc0471ef5c22d1697eededaf239ef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="namespaceLotus_1_1Input.html">Input</a> manager that receives window events and maintains input state. Users should query this class to get input information. This is to avoid end users interacting with low level window implementations themselves. </p>
@@ -113,14 +119,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae316f56496d2fdb2de8ccf41b49add95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae316f56496d2fdb2de8ccf41b49add95">&#9670;&nbsp;</a></span>GetMouseDelta()</h2>
+<a id="a60dc0471ef5c22d1697eededaf239ef7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60dc0471ef5c22d1697eededaf239ef7">&#9670;&nbsp;</a></span>GetMouseDelta()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">LOTUS_API std::pair&lt;float, float&gt; Lotus::Input::GetMouseDelta </td>
+          <td class="memname">LOTUS_API std::pair&lt;double, double&gt; Lotus::Input::GetMouseDelta </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -131,8 +137,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8efbd8e3c670c25f4f644be0c2c15971"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8efbd8e3c670c25f4f644be0c2c15971">&#9670;&nbsp;</a></span>UpdateKeyState()</h2>
+<a id="af5cdc22b0275cab4194ccba2b4c0670e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5cdc22b0275cab4194ccba2b4c0670e">&#9670;&nbsp;</a></span>UpdateKeyState()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -140,13 +146,23 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">LOTUS_API void Lotus::Input::UpdateKeyState </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structLotus_1_1KeyboardEvent.html">KeyboardEvent</a> &amp;&#160;</td>
-          <td class="paramname"><em>event</em></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>keycode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>state</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="structLotus_1_1KeyboardEvent.html">KeyboardEvent</a> receiver that updates internal keyboard state. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>KeyboardEvent receiver that updates internal keyboard state. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">event</td><td>Keyboard input data </td></tr>
   </table>
@@ -155,8 +171,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="aebb9f7678c07bac91f56e72e35a49cc5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebb9f7678c07bac91f56e72e35a49cc5">&#9670;&nbsp;</a></span>UpdateMouseState()</h2>
+<a id="a8cf47af6e1567dba2467c2b1204b3112"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cf47af6e1567dba2467c2b1204b3112">&#9670;&nbsp;</a></span>UpdateMouseState()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -164,13 +180,23 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">LOTUS_API void Lotus::Input::UpdateMouseState </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="structLotus_1_1MouseEvent.html">MouseEvent</a> &amp;&#160;</td>
-          <td class="paramname"><em>event</em></td><td>)</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>xpos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>ypos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a class="el" href="structLotus_1_1MouseEvent.html">MouseEvent</a> receiver that updates internal mouse state. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>MouseEvent receiver that updates internal mouse state. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">event</td><td>Mouse input data </td></tr>
   </table>

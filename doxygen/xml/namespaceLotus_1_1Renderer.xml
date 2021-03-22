@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="namespaceLotus_1_1Renderer" kind="namespace" language="C++">
+    <compoundname>Lotus::Renderer</compoundname>
+    <innerclass refid="classLotus_1_1Renderer_1_1RenderPass" prot="public">Lotus::Renderer::RenderPass</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="RenderPass_8h_1acbff0dcce2166fae3fea42655864efff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LOTUS_API void</type>
+        <definition>LOTUS_API void Lotus::Renderer::AddRenderPass</definition>
+        <argsstring>(RenderPass *pass)</argsstring>
+        <name>AddRenderPass</name>
+        <param>
+          <type><ref refid="classLotus_1_1Renderer_1_1RenderPass" kindref="compound">RenderPass</ref> *</type>
+          <declname>pass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/rendering/RenderPass.h" line="26" column="20" declfile="/builds/centauri/lotus/lotus/include/lotus/rendering/RenderPass.h" declline="26" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="RenderPass_8h_1a542c2f6dc968c11674e66a7299837d23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LOTUS_API unsigned int</type>
+        <definition>LOTUS_API unsigned int Lotus::Renderer::GetColorBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>GetColorBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/rendering/RenderPass.h" line="27" column="28" declfile="/builds/centauri/lotus/lotus/include/lotus/rendering/RenderPass.h" declline="27" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="function" id="RenderPass_8h_1a2e43971505bd08b573ab426d49cdf48d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LOTUS_API void</type>
+        <definition>LOTUS_API void Lotus::Renderer::SetViewport</definition>
+        <argsstring>(unsigned int width, unsigned int height)</argsstring>
+        <name>SetViewport</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/rendering/RenderPass.h" line="28" column="20" declfile="/builds/centauri/lotus/lotus/include/lotus/rendering/RenderPass.h" declline="28" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="RenderPass_8h_1adae4c1cf7e00a73fc7e5e9ac31a47a7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LOTUS_API std::pair&lt; float, float &gt;</type>
+        <definition>LOTUS_API std::pair&lt;float, float&gt; Lotus::Renderer::GetViewportUV</definition>
+        <argsstring>()</argsstring>
+        <name>GetViewportUV</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/rendering/RenderPass.h" line="29" column="25" declfile="/builds/centauri/lotus/lotus/include/lotus/rendering/RenderPass.h" declline="29" declcolumn="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/rendering/RenderPass.h" line="5" column="1"/>
+  </compounddef>
+</doxygen>

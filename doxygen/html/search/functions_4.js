@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['initialize_132',['Initialize',['../classLotus_1_1Renderer.html#afd0235d803925767494aeb79b53d5f63',1,'Lotus::Renderer']]]
+  ['operator_20entityid_100',['operator EntityID',['../classLotus_1_1Entity.html#a6632822abd792a3bf2cda827455e90d5',1,'Lotus::Entity']]]
 ];

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structLotus_1_1ComponentAssigner" kind="struct" language="C++" prot="public">
+    <compoundname>Lotus::ComponentAssigner</compoundname>
+    <templateparamlist>
+      <param>
+        <type>class T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structLotus_1_1ComponentAssigner_1aea239ea63248247246ef358d3b06e73e" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Lotus::ComponentAssigner&lt; T &gt;::Assign</definition>
+        <argsstring>(const entt::entity entity, entt::registry &amp;registry, const nlohmann::json &amp;data)</argsstring>
+        <name>Assign</name>
+        <param>
+          <type>const entt::entity</type>
+          <declname>entity</declname>
+        </param>
+        <param>
+          <type>entt::registry &amp;</type>
+          <declname>registry</declname>
+        </param>
+        <param>
+          <type>const nlohmann::json &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="24" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="24" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="22" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="23" bodyend="30"/>
+    <listofallmembers>
+      <member refid="structLotus_1_1ComponentAssigner_1aea239ea63248247246ef358d3b06e73e" prot="public" virt="non-virtual"><scope>Lotus::ComponentAssigner</scope><name>Assign</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

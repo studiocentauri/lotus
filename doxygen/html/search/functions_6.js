@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['setviewport_134',['SetViewport',['../classLotus_1_1Renderer.html#a1d627fefc6486ad1c592d58bd21f697f',1,'Lotus::Renderer']]]
+  ['setupframe_102',['SetupFrame',['../classLotus_1_1Renderer_1_1RenderPass.html#a597cbc3660de08fbc025c22b79a9310f',1,'Lotus::Renderer::RenderPass']]]
 ];

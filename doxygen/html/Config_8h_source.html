@@ -74,21 +74,60 @@ $(function() {
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;lotus/lcommon.h&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>Lotus</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classLotus_1_1Config.html">   10</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classLotus_1_1Config.html">Config</a></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        <span class="comment">// TODO: Pick this up from a config file</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        ERenderAPI RenderAPI = ERenderAPI::OPEN_GL;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordtype">bool</span> IsDebug = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Width = 800;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> Height = 600;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    };</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;filesystem&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span>Lotus</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="structLotus_1_1ProjectConfig.html">    9</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structLotus_1_1ProjectConfig.html">ProjectConfig</a></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        std::filesystem::path ProjectRoot;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        std::filesystem::path ProjectResourceRoot;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        std::filesystem::path ProjectBuildRoot;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        std::string StartScene;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    };</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    SERIALIZE(<a class="code" href="structLotus_1_1ProjectConfig.html">ProjectConfig</a>, StartScene);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structLotus_1_1BuildConfig.html">   19</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structLotus_1_1BuildConfig.html">BuildConfig</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">bool</span> IsDebug;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    };</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    SERIALIZE(<a class="code" href="structLotus_1_1BuildConfig.html">BuildConfig</a>, IsDebug);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">enum class</span> ERenderAPI</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        OPEN_GL,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        DIRECTX,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        VULKAN</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    };</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    SERIALIZE_ENUM(ERenderAPI, {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        {ERenderAPI::OPEN_GL, <span class="stringliteral">&quot;opengl&quot;</span>},</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        {ERenderAPI::DIRECTX, <span class="stringliteral">&quot;directx&quot;</span>},</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        {ERenderAPI::VULKAN, <span class="stringliteral">&quot;vulkan&quot;</span>}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    });</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="structLotus_1_1RenderConfig.html">   39</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structLotus_1_1RenderConfig.html">RenderConfig</a></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        ERenderAPI RenderAPI;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ViewportWidth;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> ViewportHeight;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">bool</span> DepthTest;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordtype">bool</span> CullFace;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">bool</span> MSAA;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    };</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    SERIALIZE(<a class="code" href="structLotus_1_1RenderConfig.html">RenderConfig</a>, RenderAPI, ViewportWidth, ViewportHeight, DepthTest, CullFace, MSAA);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    LOTUS_API <span class="keywordtype">void</span> LoadConfig(<span class="keyword">const</span> std::filesystem::path&amp; path);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    LOTUS_API <span class="keyword">const</span> <a class="code" href="structLotus_1_1ProjectConfig.html">ProjectConfig</a>&amp; GetProjectConfig();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    LOTUS_API <span class="keyword">const</span> <a class="code" href="structLotus_1_1RenderConfig.html">RenderConfig</a>&amp; GetRenderConfig();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    LOTUS_API <span class="keyword">const</span> <a class="code" href="structLotus_1_1BuildConfig.html">BuildConfig</a>&amp; GetBuildConfig();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassLotus_1_1Config_html"><div class="ttname"><a href="classLotus_1_1Config.html">Lotus::Config</a></div><div class="ttdoc">Class that holds all configuration options for the engine.</div><div class="ttdef"><b>Definition:</b> Config.h:11</div></div>
+<div class="ttc" id="astructLotus_1_1BuildConfig_html"><div class="ttname"><a href="structLotus_1_1BuildConfig.html">Lotus::BuildConfig</a></div><div class="ttdef"><b>Definition:</b> Config.h:20</div></div>
+<div class="ttc" id="astructLotus_1_1RenderConfig_html"><div class="ttname"><a href="structLotus_1_1RenderConfig.html">Lotus::RenderConfig</a></div><div class="ttdoc">Options to initialize the renderer with.</div><div class="ttdef"><b>Definition:</b> Config.h:40</div></div>
+<div class="ttc" id="astructLotus_1_1ProjectConfig_html"><div class="ttname"><a href="structLotus_1_1ProjectConfig.html">Lotus::ProjectConfig</a></div><div class="ttdef"><b>Definition:</b> Config.h:10</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

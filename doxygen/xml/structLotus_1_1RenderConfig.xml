@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structLotus_1_1RenderConfig" kind="struct" language="C++" prot="public">
+    <compoundname>Lotus::RenderConfig</compoundname>
+    <includes refid="Config_8h" local="no">Config.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLotus_1_1RenderConfig_1a128fa0e40ca044682a023f851a214b9f" prot="public" static="no" mutable="no">
+        <type>ERenderAPI</type>
+        <definition>ERenderAPI Lotus::RenderConfig::RenderAPI</definition>
+        <argsstring></argsstring>
+        <name>RenderAPI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Config.h" line="41" column="20" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Config.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1RenderConfig_1a93e9b7c0ae6be843b57c1e20940787cc" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Lotus::RenderConfig::ViewportWidth</definition>
+        <argsstring></argsstring>
+        <name>ViewportWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Config.h" line="42" column="22" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Config.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1RenderConfig_1a050b51afa1ba7720a2e24abf88ff78df" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int Lotus::RenderConfig::ViewportHeight</definition>
+        <argsstring></argsstring>
+        <name>ViewportHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Config.h" line="43" column="22" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Config.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1RenderConfig_1adc4f90439348b56b7e96b2280bba4a15" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Lotus::RenderConfig::DepthTest</definition>
+        <argsstring></argsstring>
+        <name>DepthTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Config.h" line="45" column="14" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Config.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1RenderConfig_1a27744e9796e41495c33bf7156625120e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Lotus::RenderConfig::CullFace</definition>
+        <argsstring></argsstring>
+        <name>CullFace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Config.h" line="46" column="14" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Config.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1RenderConfig_1a9732e6c63dfde289f41d313331347d7f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Lotus::RenderConfig::MSAA</definition>
+        <argsstring></argsstring>
+        <name>MSAA</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/Config.h" line="47" column="14" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Config.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Options to initialize the renderer with. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/Config.h" line="39" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/Config.h" bodystart="40" bodyend="48"/>
+    <listofallmembers>
+      <member refid="structLotus_1_1RenderConfig_1a27744e9796e41495c33bf7156625120e" prot="public" virt="non-virtual"><scope>Lotus::RenderConfig</scope><name>CullFace</name></member>
+      <member refid="structLotus_1_1RenderConfig_1adc4f90439348b56b7e96b2280bba4a15" prot="public" virt="non-virtual"><scope>Lotus::RenderConfig</scope><name>DepthTest</name></member>
+      <member refid="structLotus_1_1RenderConfig_1a9732e6c63dfde289f41d313331347d7f" prot="public" virt="non-virtual"><scope>Lotus::RenderConfig</scope><name>MSAA</name></member>
+      <member refid="structLotus_1_1RenderConfig_1a128fa0e40ca044682a023f851a214b9f" prot="public" virt="non-virtual"><scope>Lotus::RenderConfig</scope><name>RenderAPI</name></member>
+      <member refid="structLotus_1_1RenderConfig_1a050b51afa1ba7720a2e24abf88ff78df" prot="public" virt="non-virtual"><scope>Lotus::RenderConfig</scope><name>ViewportHeight</name></member>
+      <member refid="structLotus_1_1RenderConfig_1a93e9b7c0ae6be843b57c1e20940787cc" prot="public" virt="non-virtual"><scope>Lotus::RenderConfig</scope><name>ViewportWidth</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

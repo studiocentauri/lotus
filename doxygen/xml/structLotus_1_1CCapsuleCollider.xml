@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="37" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="37" bodyend="-1"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="33" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="33" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structLotus_1_1CCapsuleCollider_1a72ed6926e3ae566786c1871f1f431288" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="40" column="15" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="40" bodyend="-1"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="36" column="15" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="36" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structLotus_1_1CCapsuleCollider_1a4968f2d67527c75a910e302d9b608b71" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -46,34 +46,46 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="43" column="15" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="43" bodyend="-1"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="39" column="15" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="39" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="structLotus_1_1CCapsuleCollider_1ad95f1fb5b2b970f6060af5b48d0118fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structLotus_1_1CCapsuleCollider_1ad9f28c65dc13eabbc4777d3856fc2b53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
-        <definition>Lotus::CCapsuleCollider::REGISTER_DECL</definition>
-        <argsstring>()</argsstring>
-        <name>REGISTER_DECL</name>
+        <definition>Lotus::CCapsuleCollider::GENERATED_BODY</definition>
+        <argsstring>(CCapsuleCollider, Position, Radius, Height)</argsstring>
+        <name>GENERATED_BODY</name>
+        <param>
+          <type><ref refid="structLotus_1_1CCapsuleCollider" kindref="compound">CCapsuleCollider</ref></type>
+        </param>
+        <param>
+          <type><ref refid="structLotus_1_1CCapsuleCollider_1a4d67eab1db6907b401ccbac8283ec87a" kindref="member">Position</ref></type>
+        </param>
+        <param>
+          <type><ref refid="structLotus_1_1CCapsuleCollider_1a72ed6926e3ae566786c1871f1f431288" kindref="member">Radius</ref></type>
+        </param>
+        <param>
+          <type><ref refid="structLotus_1_1CCapsuleCollider_1a4968f2d67527c75a910e302d9b608b71" kindref="member">Height</ref></type>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="45" column="9"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="41" column="9"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="34" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="35" bodyend="46"/>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="30" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="31" bodyend="42"/>
     <listofallmembers>
+      <member refid="structLotus_1_1CCapsuleCollider_1ad9f28c65dc13eabbc4777d3856fc2b53" prot="public" virt="non-virtual"><scope>Lotus::CCapsuleCollider</scope><name>GENERATED_BODY</name></member>
       <member refid="structLotus_1_1CCapsuleCollider_1a4968f2d67527c75a910e302d9b608b71" prot="public" virt="non-virtual"><scope>Lotus::CCapsuleCollider</scope><name>Height</name></member>
       <member refid="structLotus_1_1CCapsuleCollider_1a4d67eab1db6907b401ccbac8283ec87a" prot="public" virt="non-virtual"><scope>Lotus::CCapsuleCollider</scope><name>Position</name></member>
       <member refid="structLotus_1_1CCapsuleCollider_1a72ed6926e3ae566786c1871f1f431288" prot="public" virt="non-virtual"><scope>Lotus::CCapsuleCollider</scope><name>Radius</name></member>
-      <member refid="structLotus_1_1CCapsuleCollider_1ad95f1fb5b2b970f6060af5b48d0118fd" prot="public" virt="non-virtual"><scope>Lotus::CCapsuleCollider</scope><name>REGISTER_DECL</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structLotus_1_1CSunLight" kind="struct" language="C++" prot="public">
+    <compoundname>Lotus::CSunLight</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLotus_1_1CSunLight_1a949b1e653cec5f08e0a5916e5bec461f" prot="public" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color Lotus::CSunLight::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <initializer>= COLOR_WHITE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" line="11" column="15" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1CSunLight_1a630a53b2ecc3c56f63f25321166914d8" prot="public" static="no" mutable="no">
+        <type>Vector3f</type>
+        <definition>Vector3f Lotus::CSunLight::direction</definition>
+        <argsstring></argsstring>
+        <name>direction</name>
+        <initializer>= Vector3f(1.0f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" line="12" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structLotus_1_1CSunLight_1ad43d53ec8948012b3e085668c1770f9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Lotus::CSunLight::GENERATED_BODY</definition>
+        <argsstring>(CSunLight, direction, color)</argsstring>
+        <name>GENERATED_BODY</name>
+        <param>
+          <type><ref refid="structLotus_1_1CSunLight" kindref="compound">CSunLight</ref></type>
+        </param>
+        <param>
+          <type>direction</type>
+        </param>
+        <param>
+          <type>color</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" line="14" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" line="9" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" bodystart="10" bodyend="15"/>
+    <listofallmembers>
+      <member refid="structLotus_1_1CSunLight_1a949b1e653cec5f08e0a5916e5bec461f" prot="public" virt="non-virtual"><scope>Lotus::CSunLight</scope><name>color</name></member>
+      <member refid="structLotus_1_1CSunLight_1a630a53b2ecc3c56f63f25321166914d8" prot="public" virt="non-virtual"><scope>Lotus::CSunLight</scope><name>direction</name></member>
+      <member refid="structLotus_1_1CSunLight_1ad43d53ec8948012b3e085668c1770f9b" prot="public" virt="non-virtual"><scope>Lotus::CSunLight</scope><name>GENERATED_BODY</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

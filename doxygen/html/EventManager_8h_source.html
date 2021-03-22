@@ -76,63 +76,57 @@ $(function() {
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;lotus/lcommon.h&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;lotus/ecs/Event.h&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;constexpr <span class="keyword">auto</span> CREATE_OF_TYPE = std::remove_reference&lt;T&gt;();</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>Lotus</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classLotus_1_1EventManager.html">   14</a></span>&#160;    <span class="keyword">class </span>LOTUS_API <a class="code" href="classLotus_1_1EventManager.html">EventManager</a> : <span class="keyword">public</span> <a class="code" href="classLotus_1_1Singleton.html">Singleton</a>&lt;EventManager&gt;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        entt::dispatcher _dispatcher{};</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classLotus_1_1EventManager.html#aa19842134ec409a0fc74df98cda5b880">   31</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classLotus_1_1EventManager.html#aa19842134ec409a0fc74df98cda5b880">Dispatch</a>(T event)</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            static_assert(std::is_base_of_v&lt;Event, T&gt;);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordflow">if</span> (event.Immediate)</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>Lotus</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classLotus_1_1EventManager.html">   11</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classLotus_1_1EventManager.html">EventManager</a> : <span class="keyword">public</span> <a class="code" href="classLotus_1_1Singleton.html">Singleton</a>&lt;EventManager&gt;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        entt::dispatcher _dispatcher{};</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classLotus_1_1EventManager.html#aa19842134ec409a0fc74df98cda5b880">   28</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classLotus_1_1EventManager.html#aa19842134ec409a0fc74df98cda5b880">Dispatch</a>(T event)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <span class="keywordflow">if</span> constexpr (is_immediate&lt;T&gt;::value)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                _dispatcher.trigger&lt;T&gt;(event);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;            <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                _dispatcher.trigger&lt;T&gt;(event);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                _dispatcher.enqueue&lt;T&gt;(event);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            }</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                _dispatcher.enqueue&lt;T&gt;(event);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> E, auto F, <span class="keyword">typename</span> L&gt;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classLotus_1_1EventManager.html#a1d1f84c8c2883b91604d2af8664d0ed5">   52</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classLotus_1_1EventManager.html#a1d1f84c8c2883b91604d2af8664d0ed5">Bind</a>(L arg)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            static_assert(std::is_base_of_v&lt;Event, E&gt;);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            _dispatcher.sink&lt;E&gt;().<span class="keyword">template</span> connect&lt;F&gt;(std::forward&lt;L&gt;(arg));</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> E, auto F&gt;</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classLotus_1_1EventManager.html#a4ba9e061d7cd436326f8be37102f2300">   64</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classLotus_1_1EventManager.html#a4ba9e061d7cd436326f8be37102f2300">Bind</a>()</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            static_assert(std::is_base_of_v&lt;Event, E&gt;);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            _dispatcher.sink&lt;E&gt;().<span class="keyword">template</span> connect&lt;F&gt;();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classLotus_1_1EventManager.html#a55c85bf91622edb76447e4f8a2fa4bb8">   73</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classLotus_1_1EventManager.html#a55c85bf91622edb76447e4f8a2fa4bb8">DispatchAll</a>()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="comment">// Call all events in queue</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            _dispatcher.update();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <span class="keyword">friend</span> <a class="code" href="classLotus_1_1Singleton.html">Singleton&lt;EventManager&gt;</a>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <a class="code" href="classLotus_1_1EventManager.html">EventManager</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    };</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> E, auto F, <span class="keyword">typename</span> L&gt;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classLotus_1_1EventManager.html#a1d1f84c8c2883b91604d2af8664d0ed5">   48</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classLotus_1_1EventManager.html#a1d1f84c8c2883b91604d2af8664d0ed5">Bind</a>(L arg)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            _dispatcher.sink&lt;E&gt;().<span class="keyword">template</span> connect&lt;F&gt;(std::forward&lt;L&gt;(arg));</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        }</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> E, auto F&gt;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classLotus_1_1EventManager.html#a4ba9e061d7cd436326f8be37102f2300">   59</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classLotus_1_1EventManager.html#a4ba9e061d7cd436326f8be37102f2300">Bind</a>()</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            _dispatcher.sink&lt;E&gt;().<span class="keyword">template</span> connect&lt;F&gt;();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="classLotus_1_1EventManager.html#a55c85bf91622edb76447e4f8a2fa4bb8">   67</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classLotus_1_1EventManager.html#a55c85bf91622edb76447e4f8a2fa4bb8">DispatchAll</a>()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="comment">// Call all events in queue</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            _dispatcher.update();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">friend</span> <a class="code" href="classLotus_1_1Singleton.html">Singleton&lt;EventManager&gt;</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="classLotus_1_1EventManager.html">EventManager</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    };</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassLotus_1_1Singleton_html"><div class="ttname"><a href="classLotus_1_1Singleton.html">Lotus::Singleton</a></div><div class="ttdef"><b>Definition:</b> lcommon.h:55</div></div>
-<div class="ttc" id="aclassLotus_1_1EventManager_html_a1d1f84c8c2883b91604d2af8664d0ed5"><div class="ttname"><a href="classLotus_1_1EventManager.html#a1d1f84c8c2883b91604d2af8664d0ed5">Lotus::EventManager::Bind</a></div><div class="ttdeci">void Bind(L arg)</div><div class="ttdef"><b>Definition:</b> EventManager.h:52</div></div>
-<div class="ttc" id="aclassLotus_1_1EventManager_html_a55c85bf91622edb76447e4f8a2fa4bb8"><div class="ttname"><a href="classLotus_1_1EventManager.html#a55c85bf91622edb76447e4f8a2fa4bb8">Lotus::EventManager::DispatchAll</a></div><div class="ttdeci">void DispatchAll() const</div><div class="ttdef"><b>Definition:</b> EventManager.h:73</div></div>
-<div class="ttc" id="aclassLotus_1_1EventManager_html_aa19842134ec409a0fc74df98cda5b880"><div class="ttname"><a href="classLotus_1_1EventManager.html#aa19842134ec409a0fc74df98cda5b880">Lotus::EventManager::Dispatch</a></div><div class="ttdeci">void Dispatch(T event)</div><div class="ttdoc">Dispatch an event.</div><div class="ttdef"><b>Definition:</b> EventManager.h:31</div></div>
-<div class="ttc" id="aclassLotus_1_1EventManager_html"><div class="ttname"><a href="classLotus_1_1EventManager.html">Lotus::EventManager</a></div><div class="ttdef"><b>Definition:</b> EventManager.h:15</div></div>
-<div class="ttc" id="aclassLotus_1_1EventManager_html_a4ba9e061d7cd436326f8be37102f2300"><div class="ttname"><a href="classLotus_1_1EventManager.html#a4ba9e061d7cd436326f8be37102f2300">Lotus::EventManager::Bind</a></div><div class="ttdeci">void Bind()</div><div class="ttdef"><b>Definition:</b> EventManager.h:64</div></div>
+<div class="ttc" id="aclassLotus_1_1Singleton_html"><div class="ttname"><a href="classLotus_1_1Singleton.html">Lotus::Singleton</a></div><div class="ttdef"><b>Definition:</b> lcommon.h:46</div></div>
+<div class="ttc" id="aclassLotus_1_1EventManager_html_a1d1f84c8c2883b91604d2af8664d0ed5"><div class="ttname"><a href="classLotus_1_1EventManager.html#a1d1f84c8c2883b91604d2af8664d0ed5">Lotus::EventManager::Bind</a></div><div class="ttdeci">void Bind(L arg)</div><div class="ttdef"><b>Definition:</b> EventManager.h:48</div></div>
+<div class="ttc" id="aclassLotus_1_1EventManager_html_a55c85bf91622edb76447e4f8a2fa4bb8"><div class="ttname"><a href="classLotus_1_1EventManager.html#a55c85bf91622edb76447e4f8a2fa4bb8">Lotus::EventManager::DispatchAll</a></div><div class="ttdeci">void DispatchAll() const</div><div class="ttdef"><b>Definition:</b> EventManager.h:67</div></div>
+<div class="ttc" id="aclassLotus_1_1EventManager_html_aa19842134ec409a0fc74df98cda5b880"><div class="ttname"><a href="classLotus_1_1EventManager.html#aa19842134ec409a0fc74df98cda5b880">Lotus::EventManager::Dispatch</a></div><div class="ttdeci">void Dispatch(T event)</div><div class="ttdoc">Dispatch an event.</div><div class="ttdef"><b>Definition:</b> EventManager.h:28</div></div>
+<div class="ttc" id="aclassLotus_1_1EventManager_html"><div class="ttname"><a href="classLotus_1_1EventManager.html">Lotus::EventManager</a></div><div class="ttdef"><b>Definition:</b> EventManager.h:12</div></div>
+<div class="ttc" id="aclassLotus_1_1EventManager_html_a4ba9e061d7cd436326f8be37102f2300"><div class="ttname"><a href="classLotus_1_1EventManager.html#a4ba9e061d7cd436326f8be37102f2300">Lotus::EventManager::Bind</a></div><div class="ttdeci">void Bind()</div><div class="ttdef"><b>Definition:</b> EventManager.h:59</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -53,7 +53,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="31" column="9" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" bodystart="31" bodyend="31"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="31" column="9" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" bodystart="31" bodyend="33"/>
       </memberdef>
       <memberdef kind="function" id="classLotus_1_1Entity_1a6632822abd792a3bf2cda827455e90d5" prot="public" static="no" const="yes" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="36" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" bodystart="36" bodyend="39"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="38" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" bodystart="38" bodyend="41"/>
       </memberdef>
       <memberdef kind="function" id="classLotus_1_1Entity_1a84be326c22eb1d2cabc5e5b3190638da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -124,7 +124,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="49" column="19" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" bodystart="49" bodyend="52"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="51" column="19" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" bodystart="51" bodyend="54"/>
       </memberdef>
       <memberdef kind="function" id="classLotus_1_1Entity_1aae7a02a25247e102e84a75f96fe0d364" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -157,7 +157,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="60" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" bodystart="60" bodyend="63"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="62" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" bodystart="62" bodyend="65"/>
       </memberdef>
       <memberdef kind="function" id="classLotus_1_1Entity_1a69a075a0e668a9f1d2a92ddad83e4ba4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -171,7 +171,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="69" column="14" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" bodystart="69" bodyend="72"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="71" column="14" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" bodystart="71" bodyend="74"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -180,7 +180,7 @@
     <detaileddescription>
 <para>This class is the main interface through which the user should manipulate entities. It provides methods to manipulate components and destroy the entity. The class wraps an entity handle and a registry pointer, and is therefore lightweight enough to be passed around. </para>
     </detaileddescription>
-    <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="23" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" bodystart="24" bodyend="73"/>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="23" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" bodystart="24" bodyend="75"/>
     <listofallmembers>
       <member refid="classLotus_1_1Entity_1af8472524b6ff662ad11e420eec8ee4a3" prot="private" virt="non-virtual"><scope>Lotus::Entity</scope><name>_id</name></member>
       <member refid="classLotus_1_1Entity_1aa070da2fdb4fde7ae921b72d66e25098" prot="private" virt="non-virtual"><scope>Lotus::Entity</scope><name>_registry</name></member>

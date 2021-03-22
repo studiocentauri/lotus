@@ -17,29 +17,29 @@
         <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="24" column="16" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" bodystart="24" bodyend="-1"/>
       </memberdef>
       </sectiondef>
-      <sectiondef kind="public-func">
-      <memberdef kind="function" id="structLotus_1_1CSkybox_1a32205cd6d8b699c49f483ca4bd9fe2db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>Lotus::CSkybox::REGISTER_DECL</definition>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structLotus_1_1CSkybox_1a7a1aafb0e5652fffc774466eec3eab78" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>static std::string Lotus::CSkybox::GetName</definition>
         <argsstring>()</argsstring>
-        <name>REGISTER_DECL</name>
+        <name>GetName</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="26" column="9"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="26" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" bodystart="26" bodyend="27"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="22" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" bodystart="23" bodyend="27"/>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="22" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" bodystart="23" bodyend="28"/>
     <listofallmembers>
+      <member refid="structLotus_1_1CSkybox_1a7a1aafb0e5652fffc774466eec3eab78" prot="public" virt="non-virtual"><scope>Lotus::CSkybox</scope><name>GetName</name></member>
       <member refid="structLotus_1_1CSkybox_1a019dcc2dcd7fe021d593a3604126fa6f" prot="public" virt="non-virtual"><scope>Lotus::CSkybox</scope><name>Map</name></member>
-      <member refid="structLotus_1_1CSkybox_1a32205cd6d8b699c49f483ca4bd9fe2db" prot="public" virt="non-virtual"><scope>Lotus::CSkybox</scope><name>REGISTER_DECL</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

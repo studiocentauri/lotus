@@ -2,172 +2,187 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
   <compounddef id="lotus__export_8h" kind="file" language="C++">
     <compoundname>lotus_export.h</compoundname>
+    <includedby refid="ComponentRegistry_8h" local="no">/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h</includedby>
     <includedby refid="Event_8h" local="yes">/builds/centauri/lotus/lotus/include/lotus/ecs/Event.h</includedby>
+    <includedby refid="Engine_8h" local="no">/builds/centauri/lotus/lotus/include/lotus/Engine.h</includedby>
     <includedby refid="filesystem_8h" local="no">/builds/centauri/lotus/lotus/include/lotus/filesystem.h</includedby>
+    <includedby refid="Input_8h" local="yes">/builds/centauri/lotus/lotus/include/lotus/Input.h</includedby>
     <includedby refid="lcommon_8h" local="yes">/builds/centauri/lotus/lotus/include/lotus/lcommon.h</includedby>
     <invincdepgraph>
-      <node id="21">
+      <node id="7">
         <label>/builds/centauri/lotus/lotus/include/lotus/resources/Material.h</label>
         <link refid="Material_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-      </node>
-      <node id="7">
-        <label>/builds/centauri/lotus/lotus/include/lotus/ILifecycle.h</label>
-        <link refid="ILifecycle_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
         <childnode refid="8" relation="include">
         </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
       </node>
-      <node id="8">
-        <label>/builds/centauri/lotus/lotus/include/lotus/Renderer.h</label>
-        <link refid="Renderer_8h_source"/>
+      <node id="22">
+        <label>/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h</label>
+        <link refid="Vector_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
         <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>/builds/centauri/lotus/lotus/include/lotus/rendering/RenderPass.h</label>
+        <link refid="RenderPass_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>/builds/centauri/lotus/lotus/include/lotus/rendering/common.h</label>
+        <link refid="common_8h_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
         </childnode>
       </node>
       <node id="4">
         <label>/builds/centauri/lotus/lotus/include/lotus/lotus.h</label>
         <link refid="lotus_8h_source"/>
       </node>
+      <node id="24">
+        <label>/builds/centauri/lotus/lotus/include/lotus/resources/AssetRegistry.h</label>
+        <link refid="AssetRegistry_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
       <node id="9">
+        <label>/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h</label>
+        <link refid="CMeshRenderer_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
         <label>/builds/centauri/lotus/lotus/include/lotus/Input.h</label>
         <link refid="Input_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="23">
+      <node id="25">
         <label>/builds/centauri/lotus/lotus/include/lotus/resources/Texture.h</label>
         <link refid="Texture_8h_source"/>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="21" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
-      <node id="16">
-        <label>/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h</label>
-        <link refid="CLight_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-      </node>
-      <node id="19">
-        <label>/builds/centauri/lotus/lotus/include/lotus/ecs/components/CCamera.h</label>
-        <link refid="CCamera_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
-      <node id="10">
-        <label>/builds/centauri/lotus/lotus/include/lotus/filesystem.h</label>
-        <link refid="filesystem_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h</label>
-        <link refid="Entity_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-      </node>
-      <node id="12">
-        <label>/builds/centauri/lotus/lotus/include/lotus/lcommon.h</label>
-        <link refid="lcommon_8h_source"/>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="24" relation="include">
-        </childnode>
-      </node>
-      <node id="14">
-        <label>/builds/centauri/lotus/lotus/include/lotus/entry.h</label>
-        <link refid="entry_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>/builds/centauri/lotus/lotus/include/lotus/ecs/Event.h</label>
-        <link refid="Event_8h_source"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
       </node>
       <node id="5">
+        <label>/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h</label>
+        <link refid="CLight_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/builds/centauri/lotus/lotus/include/lotus/ecs/components/CCamera.h</label>
+        <link refid="CCamera_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>/builds/centauri/lotus/lotus/include/lotus/filesystem.h</label>
+        <link refid="filesystem_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h</label>
+        <link refid="Entity_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>/builds/centauri/lotus/lotus/include/lotus/lcommon.h</label>
+        <link refid="lcommon_8h_source"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/builds/centauri/lotus/lotus/include/lotus/ecs/Event.h</label>
+        <link refid="Event_8h_source"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
         <label>/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h</label>
         <link refid="Scene_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="15">
-        <label>/builds/centauri/lotus/lotus/include/lotus/physics/physics.h</label>
-        <link refid="physics_8h_source"/>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="21" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-      </node>
-      <node id="13">
+      <node id="21">
         <label>/builds/centauri/lotus/lotus/include/lotus/Config.h</label>
         <link refid="Config_8h_source"/>
-        <childnode refid="14" relation="include">
-        </childnode>
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="24">
+      <node id="27">
         <label>/builds/centauri/lotus/lotus/include/lotus/scene/SceneManager.h</label>
         <link refid="SceneManager_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="17">
+      <node id="6">
         <label>/builds/centauri/lotus/lotus/include/lotus/resources/Shader.h</label>
         <link refid="Shader_8h_source"/>
-        <childnode refid="4" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="8" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -175,42 +190,68 @@
         <link refid="lotus__export_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h</label>
+        <link refid="ComponentRegistry_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
         <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="22">
+      <node id="8">
         <label>/builds/centauri/lotus/lotus/include/lotus/resources/Model.h</label>
         <link refid="Model_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="8" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="6">
+      <node id="16">
         <label>/builds/centauri/lotus/lotus/include/lotus/ecs/EventManager.h</label>
         <link refid="EventManager_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="20">
+      <node id="11">
         <label>/builds/centauri/lotus/lotus/include/lotus/physics/components.h</label>
         <link refid="components_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="18">
+      <node id="17">
+        <label>/builds/centauri/lotus/lotus/include/lotus/Engine.h</label>
+        <link refid="Engine_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
         <label>/builds/centauri/lotus/lotus/include/lotus/ecs/components/CTransform.h</label>
         <link refid="CTransform_8h_source"/>
-        <childnode refid="19" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
       </node>
-      <node id="11">
+      <node id="12">
         <label>/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h</label>
         <link refid="HDRI_8h_source"/>
         <childnode refid="4" relation="include">

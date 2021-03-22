@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['keyboardevent_38',['KeyboardEvent',['../structLotus_1_1KeyboardEvent.html',1,'Lotus']]]
+  ['lotus_20reference_31',['Lotus Reference',['../index.html',1,'']]],
+  ['input_32',['Input',['../namespaceLotus_1_1Input.html',1,'Lotus']]]
 ];

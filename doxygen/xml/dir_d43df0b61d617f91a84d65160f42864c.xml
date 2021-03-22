@@ -4,18 +4,17 @@
     <compoundname>/builds/centauri/lotus/lotus/include/lotus</compoundname>
     <innerdir refid="dir_146493e3f23dceffbe9186c2ccedb199">/builds/centauri/lotus/lotus/include/lotus/ecs</innerdir>
     <innerdir refid="dir_437faebff2f9061803238efada88522b">/builds/centauri/lotus/lotus/include/lotus/physics</innerdir>
+    <innerdir refid="dir_eddbc945d6be3f3c5f0b928a5ebafb3e">/builds/centauri/lotus/lotus/include/lotus/rendering</innerdir>
     <innerdir refid="dir_0f5a2218f5a7b7e55e1d3fdb00ec9077">/builds/centauri/lotus/lotus/include/lotus/resources</innerdir>
     <innerdir refid="dir_44851c931ec4356d9f7d8ff6feb7e36d">/builds/centauri/lotus/lotus/include/lotus/scene</innerdir>
     <innerfile refid="Config_8h">Config.h</innerfile>
     <innerfile refid="debug_8h">debug.h</innerfile>
-    <innerfile refid="entry_8h">entry.h</innerfile>
+    <innerfile refid="Engine_8h">Engine.h</innerfile>
     <innerfile refid="filesystem_8h">filesystem.h</innerfile>
-    <innerfile refid="ILifecycle_8h">ILifecycle.h</innerfile>
     <innerfile refid="Input_8h">Input.h</innerfile>
     <innerfile refid="lcommon_8h">lcommon.h</innerfile>
     <innerfile refid="lotus_8h">lotus.h</innerfile>
     <innerfile refid="lotus__export_8h">lotus_export.h</innerfile>
-    <innerfile refid="Renderer_8h">Renderer.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

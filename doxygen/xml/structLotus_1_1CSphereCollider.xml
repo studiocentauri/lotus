@@ -35,11 +35,20 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="structLotus_1_1CSphereCollider_1af3143b641aab2816771ba386dca64fd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structLotus_1_1CSphereCollider_1ad2f54c98d15236bb589b483d0ff8081c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
-        <definition>Lotus::CSphereCollider::REGISTER_DECL</definition>
-        <argsstring>()</argsstring>
-        <name>REGISTER_DECL</name>
+        <definition>Lotus::CSphereCollider::GENERATED_BODY</definition>
+        <argsstring>(CSphereCollider, Position, Radius)</argsstring>
+        <name>GENERATED_BODY</name>
+        <param>
+          <type><ref refid="structLotus_1_1CSphereCollider" kindref="compound">CSphereCollider</ref></type>
+        </param>
+        <param>
+          <type><ref refid="structLotus_1_1CSphereCollider_1a5c78e6ec76d420bc06eb90175ff78783" kindref="member">Position</ref></type>
+        </param>
+        <param>
+          <type><ref refid="structLotus_1_1CSphereCollider_1a670435ec4d8d71d1d5189a97352ce3f2" kindref="member">Radius</ref></type>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -55,9 +64,9 @@
     </detaileddescription>
     <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="8" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="9" bodyend="17"/>
     <listofallmembers>
+      <member refid="structLotus_1_1CSphereCollider_1ad2f54c98d15236bb589b483d0ff8081c" prot="public" virt="non-virtual"><scope>Lotus::CSphereCollider</scope><name>GENERATED_BODY</name></member>
       <member refid="structLotus_1_1CSphereCollider_1a5c78e6ec76d420bc06eb90175ff78783" prot="public" virt="non-virtual"><scope>Lotus::CSphereCollider</scope><name>Position</name></member>
       <member refid="structLotus_1_1CSphereCollider_1a670435ec4d8d71d1d5189a97352ce3f2" prot="public" virt="non-virtual"><scope>Lotus::CSphereCollider</scope><name>Radius</name></member>
-      <member refid="structLotus_1_1CSphereCollider_1af3143b641aab2816771ba386dca64fd5" prot="public" virt="non-virtual"><scope>Lotus::CSphereCollider</scope><name>REGISTER_DECL</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

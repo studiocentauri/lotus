@@ -2,8 +2,21 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
   <compounddef id="structLotus_1_1CPointLight" kind="struct" language="C++" prot="public">
     <compoundname>Lotus::CPointLight</compoundname>
-    <basecompoundref refid="structLotus_1_1CLight" prot="public" virt="non-virtual">Lotus::CLight</basecompoundref>
       <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLotus_1_1CPointLight_1ad0b291d1a3550f09c8751580b39a7aa4" prot="public" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color Lotus::CPointLight::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <initializer>= COLOR_WHITE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" line="19" column="15" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="structLotus_1_1CPointLight_1ac74c709a8a179b4e65a712632d36b061" prot="public" static="no" mutable="no">
         <type>float</type>
         <definition>float Lotus::CPointLight::constant</definition>
@@ -16,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" line="21" column="15" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" bodystart="21" bodyend="-1"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" line="20" column="15" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" bodystart="20" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structLotus_1_1CPointLight_1a833e4c2bd55cf5b9cbc25f3246a0fd7f" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -30,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" line="22" column="15" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" bodystart="22" bodyend="-1"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" line="21" column="15" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" bodystart="21" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structLotus_1_1CPointLight_1af618e56da8d4529464172115fc1076dd" prot="public" static="no" mutable="no">
         <type>float</type>
@@ -44,61 +57,50 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" line="23" column="15" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" bodystart="23" bodyend="-1"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" line="22" column="15" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" bodystart="22" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="structLotus_1_1CPointLight_1aadd010f846497ea1b5d36148b0112d4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structLotus_1_1CPointLight_1a3388d3d18f38a5bd691f394147982203" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
-        <definition>Lotus::CPointLight::REGISTER_DECL</definition>
-        <argsstring>()</argsstring>
-        <name>REGISTER_DECL</name>
+        <definition>Lotus::CPointLight::GENERATED_BODY</definition>
+        <argsstring>(CPointLight, color, constant, linear, quadratic)</argsstring>
+        <name>GENERATED_BODY</name>
+        <param>
+          <type><ref refid="structLotus_1_1CPointLight" kindref="compound">CPointLight</ref></type>
+        </param>
+        <param>
+          <type>color</type>
+        </param>
+        <param>
+          <type>constant</type>
+        </param>
+        <param>
+          <type>linear</type>
+        </param>
+        <param>
+          <type>quadratic</type>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" line="25" column="9"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" line="24" column="9"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <inheritancegraph>
-      <node id="1">
-        <label>Lotus::CPointLight</label>
-        <link refid="structLotus_1_1CPointLight"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>Lotus::CLight</label>
-        <link refid="structLotus_1_1CLight"/>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
-      <node id="1">
-        <label>Lotus::CPointLight</label>
-        <link refid="structLotus_1_1CPointLight"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>Lotus::CLight</label>
-        <link refid="structLotus_1_1CLight"/>
-      </node>
-    </collaborationgraph>
-    <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" line="19" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" bodystart="20" bodyend="26"/>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" line="17" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CLight.h" bodystart="18" bodyend="25"/>
     <listofallmembers>
-      <member refid="structLotus_1_1CLight_1a8cef82e47113f060086b7e6bbc6f62c3" prot="public" virt="non-virtual"><scope>Lotus::CPointLight</scope><name>ambient</name></member>
+      <member refid="structLotus_1_1CPointLight_1ad0b291d1a3550f09c8751580b39a7aa4" prot="public" virt="non-virtual"><scope>Lotus::CPointLight</scope><name>color</name></member>
       <member refid="structLotus_1_1CPointLight_1ac74c709a8a179b4e65a712632d36b061" prot="public" virt="non-virtual"><scope>Lotus::CPointLight</scope><name>constant</name></member>
-      <member refid="structLotus_1_1CLight_1a2fffb72c62fd2376fd966dc001bb0e79" prot="public" virt="non-virtual"><scope>Lotus::CPointLight</scope><name>diffuse</name></member>
+      <member refid="structLotus_1_1CPointLight_1a3388d3d18f38a5bd691f394147982203" prot="public" virt="non-virtual"><scope>Lotus::CPointLight</scope><name>GENERATED_BODY</name></member>
       <member refid="structLotus_1_1CPointLight_1a833e4c2bd55cf5b9cbc25f3246a0fd7f" prot="public" virt="non-virtual"><scope>Lotus::CPointLight</scope><name>linear</name></member>
       <member refid="structLotus_1_1CPointLight_1af618e56da8d4529464172115fc1076dd" prot="public" virt="non-virtual"><scope>Lotus::CPointLight</scope><name>quadratic</name></member>
-      <member refid="structLotus_1_1CPointLight_1aadd010f846497ea1b5d36148b0112d4f" prot="public" virt="non-virtual"><scope>Lotus::CPointLight</scope><name>REGISTER_DECL</name></member>
-      <member refid="structLotus_1_1CLight_1ad12d3571d6a0fbfaecf1681b0e06ca87" prot="public" virt="non-virtual"><scope>Lotus::CPointLight</scope><name>specular</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

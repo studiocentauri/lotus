@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
   <compounddef id="debug_8h" kind="file" language="C++">
     <compoundname>debug.h</compoundname>
-    <includes local="no">lotus/internal/spdlog/spdlog.h</includes>
+    <includes local="no">spdlog/spdlog.h</includes>
     <incdepgraph>
       <node id="1">
         <label>/builds/centauri/lotus/lotus/include/lotus/debug.h</label>
@@ -11,7 +11,7 @@
         </childnode>
       </node>
       <node id="2">
-        <label>lotus/internal/spdlog/spdlog.h</label>
+        <label>spdlog/spdlog.h</label>
       </node>
     </incdepgraph>
       <sectiondef kind="define">
@@ -61,7 +61,7 @@
 <codeline lineno="1"></codeline>
 <codeline lineno="5"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;lotus/internal/spdlog/spdlog.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;spdlog/spdlog.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_INFO(...)<sp/><sp/><sp/>spdlog::info(__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_WARN(...)<sp/><sp/><sp/>spdlog::warn(__VA_ARGS__)</highlight><highlight class="normal"></highlight></codeline>

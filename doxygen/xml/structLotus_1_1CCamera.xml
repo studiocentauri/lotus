@@ -33,29 +33,38 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="structLotus_1_1CCamera_1accf4ad31a678b6dec38bf61eac04c452" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="structLotus_1_1CCamera_1a1354ec2f8621ef42d7b51dc2ecd40d41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
-        <definition>Lotus::CCamera::REGISTER_DECL</definition>
-        <argsstring>()</argsstring>
-        <name>REGISTER_DECL</name>
+        <definition>Lotus::CCamera::GENERATED_BODY</definition>
+        <argsstring>(CCamera, IsActive, FOV)</argsstring>
+        <name>GENERATED_BODY</name>
+        <param>
+          <type><ref refid="structLotus_1_1CCamera" kindref="compound">CCamera</ref></type>
+        </param>
+        <param>
+          <type>IsActive</type>
+        </param>
+        <param>
+          <type>FOV</type>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CCamera.h" line="13" column="9"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CCamera.h" line="12" column="9"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CCamera.h" line="8" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CCamera.h" bodystart="9" bodyend="14"/>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CCamera.h" line="8" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CCamera.h" bodystart="9" bodyend="13"/>
     <listofallmembers>
       <member refid="structLotus_1_1CCamera_1a327d1b5341d54790d80004807289fd1d" prot="public" virt="non-virtual"><scope>Lotus::CCamera</scope><name>FOV</name></member>
+      <member refid="structLotus_1_1CCamera_1a1354ec2f8621ef42d7b51dc2ecd40d41" prot="public" virt="non-virtual"><scope>Lotus::CCamera</scope><name>GENERATED_BODY</name></member>
       <member refid="structLotus_1_1CCamera_1ad04f40ab83f06a95fb960545babc92c3" prot="public" virt="non-virtual"><scope>Lotus::CCamera</scope><name>IsActive</name></member>
-      <member refid="structLotus_1_1CCamera_1accf4ad31a678b6dec38bf61eac04c452" prot="public" virt="non-virtual"><scope>Lotus::CCamera</scope><name>REGISTER_DECL</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

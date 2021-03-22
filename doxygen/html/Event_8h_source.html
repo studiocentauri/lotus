@@ -75,107 +75,51 @@ $(function() {
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;lotus/lotus_export.h&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">template</span>&lt;<span class="keywordtype">int</span> X&gt;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">static</span> constexpr <span class="keywordtype">int</span> BIT = (1 &lt;&lt; X);</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// TODO: Have sequential macros instead of this</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;constexpr <span class="keywordtype">int</span> L_KEY_NONE = 0;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;constexpr <span class="keywordtype">int</span> L_KEY_ESC = 1;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;constexpr <span class="keywordtype">int</span> L_KEY_W   = 2;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;constexpr <span class="keywordtype">int</span> L_KEY_S   = 3;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;constexpr <span class="keywordtype">int</span> L_KEY_A   = 4;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;constexpr <span class="keywordtype">int</span> L_KEY_D   = 5;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;constexpr <span class="keywordtype">int</span> L_KEY_E   = 6;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;constexpr <span class="keywordtype">int</span> L_KEY_Q   = 7;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;constexpr <span class="keywordtype">int</span> L_KEY_PRESS   = 0;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;constexpr <span class="keywordtype">int</span> L_KEY_REPEAT  = 1;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;constexpr <span class="keywordtype">int</span> L_KEY_RELEASE = 2;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span>Lotus</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">enum class</span> LOTUS_API EEventType</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        NONE = 0,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        WINDOW_CLOSE_EVENT,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        KEYBOARD_EVENT,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        MOUSE_EVENT</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    };</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="comment">// TODO: Do this with plain macros too?</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">enum class</span> LOTUS_API EEventCategory</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        NONE = 0,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        WINDOW = BIT&lt;0&gt;,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        INPUT = BIT&lt;1&gt;,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        KEYBOARD = BIT&lt;2&gt;,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        MOUSE = BIT&lt;3&gt;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    };</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">inline</span> LOTUS_API EEventCategory operator|(EEventCategory A, EEventCategory B)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>EEventCategory<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(A) | <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(B));</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">inline</span> LOTUS_API EEventCategory operator&amp;(EEventCategory A, EEventCategory B)</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>EEventCategory<span class="keyword">&gt;</span>(<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(A) &amp; <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(B));</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="structLotus_1_1Event.html">   52</a></span>&#160;    <span class="keyword">struct </span>LOTUS_API <a class="code" href="structLotus_1_1Event.html">Event</a></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        EEventCategory Category = EEventCategory::NONE;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        EEventType Type = EEventType::NONE;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordtype">bool</span> Immediate = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    };</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="structLotus_1_1WindowCloseEvent.html">   59</a></span>&#160;    <span class="keyword">struct </span>LOTUS_API <a class="code" href="structLotus_1_1WindowCloseEvent.html">WindowCloseEvent</a> : <span class="keyword">public</span> <a class="code" href="structLotus_1_1Event.html">Event</a></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <a class="code" href="structLotus_1_1WindowCloseEvent.html">WindowCloseEvent</a>()</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            Category = EEventCategory::WINDOW;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            Type = EEventType::WINDOW_CLOSE_EVENT;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            Immediate = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    };</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define IMMEDIATE_EVENT() \</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">    static constexpr bool immediate = true;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>Lotus</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">struct </span>is_immediate</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">using</span> yes = <span class="keywordtype">char</span>[1];</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">using</span> no = <span class="keywordtype">char</span>[2];</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> C&gt; <span class="keyword">static</span> yes&amp; test_function(decltype(&amp;C::immediate)) {};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">template</span> &lt;<span class="keyword">typename</span> C&gt; <span class="keyword">static</span> no&amp; test_function(...) {};</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">static</span> constexpr <span class="keywordtype">bool</span> value = []{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keywordflow">if</span> constexpr ( <span class="keyword">sizeof</span> (test_function&lt;T&gt;(<span class="keyword">nullptr</span>)) == <span class="keyword">sizeof</span> (yes) )</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                <span class="keywordflow">return</span> T::immediate;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    };</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">struct </span>KeyboardEvent {};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">struct </span>MouseEvent {};</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">struct </span>MouseButtonEvent {};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">struct </span>InitEvent { IMMEDIATE_EVENT() };</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">struct </span>BeginEvent { IMMEDIATE_EVENT() };</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">struct </span>PreUpdateEvent { IMMEDIATE_EVENT() };</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">struct </span>UpdateEvent</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        IMMEDIATE_EVENT();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordtype">double</span> DeltaTime = 0.0f;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    };</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">struct </span>PostUpdateEvent { IMMEDIATE_EVENT() };</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">struct </span>PreDestroyEvent { IMMEDIATE_EVENT() };</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keyword">struct </span>DestroyEvent { IMMEDIATE_EVENT() };</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">struct </span>ShutdownEvent { IMMEDIATE_EVENT() };</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="structLotus_1_1WindowResizeEvent.html">   69</a></span>&#160;    <span class="keyword">struct </span>LOTUS_API <a class="code" href="structLotus_1_1WindowResizeEvent.html">WindowResizeEvent</a></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordtype">float</span> NewWidth;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordtype">float</span> NewHeight;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    };</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="structLotus_1_1KeyboardEvent.html">   79</a></span>&#160;    <span class="keyword">struct </span>LOTUS_API <a class="code" href="structLotus_1_1KeyboardEvent.html">KeyboardEvent</a> : <span class="keyword">public</span> <a class="code" href="structLotus_1_1Event.html">Event</a></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    {</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">int</span> KeyCode = L_KEY_NONE;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordtype">int</span> State = L_KEY_NONE;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <a class="code" href="structLotus_1_1KeyboardEvent.html">KeyboardEvent</a>()</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            Type = EEventType::KEYBOARD_EVENT;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="comment">// TODO: This OR needs a == to got with it</span></div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">//            Category = EEventCategory::KEYBOARD | EEventCategory::INPUT;</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            Category = EEventCategory::INPUT;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    };</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="structLotus_1_1MouseEvent.html">   92</a></span>&#160;    <span class="keyword">struct </span>LOTUS_API <a class="code" href="structLotus_1_1MouseEvent.html">MouseEvent</a> : <span class="keyword">public</span> <a class="code" href="structLotus_1_1Event.html">Event</a></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordtype">float</span> MouseX = 0.0f;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordtype">float</span> MouseY = 0.0f;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <a class="code" href="structLotus_1_1MouseEvent.html">MouseEvent</a>()</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            Type = EEventType::MOUSE_EVENT;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            Category = EEventCategory::INPUT;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    };</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">struct </span>CollisionEvent {};</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="astructLotus_1_1MouseEvent_html"><div class="ttname"><a href="structLotus_1_1MouseEvent.html">Lotus::MouseEvent</a></div><div class="ttdef"><b>Definition:</b> Event.h:93</div></div>
-<div class="ttc" id="astructLotus_1_1WindowResizeEvent_html"><div class="ttname"><a href="structLotus_1_1WindowResizeEvent.html">Lotus::WindowResizeEvent</a></div><div class="ttdef"><b>Definition:</b> Event.h:70</div></div>
-<div class="ttc" id="astructLotus_1_1WindowCloseEvent_html"><div class="ttname"><a href="structLotus_1_1WindowCloseEvent.html">Lotus::WindowCloseEvent</a></div><div class="ttdef"><b>Definition:</b> Event.h:60</div></div>
-<div class="ttc" id="astructLotus_1_1KeyboardEvent_html"><div class="ttname"><a href="structLotus_1_1KeyboardEvent.html">Lotus::KeyboardEvent</a></div><div class="ttdef"><b>Definition:</b> Event.h:80</div></div>
-<div class="ttc" id="astructLotus_1_1Event_html"><div class="ttname"><a href="structLotus_1_1Event.html">Lotus::Event</a></div><div class="ttdef"><b>Definition:</b> Event.h:53</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

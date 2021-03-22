@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="classLotus_1_1Renderer_1_1RenderPass" kind="class" language="C++" prot="public">
+    <compoundname>Lotus::Renderer::RenderPass</compoundname>
+    <includes refid="RenderPass_8h" local="no">RenderPass.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classLotus_1_1Renderer_1_1RenderPass_1a597cbc3660de08fbc025c22b79a9310f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Lotus::Renderer::RenderPass::SetupFrame</definition>
+        <argsstring>()</argsstring>
+        <name>SetupFrame</name>
+        <briefdescription>
+<para>Called on PreUpdateEvent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/rendering/RenderPass.h" line="18" column="22" bodyfile="/builds/centauri/lotus/lotus/include/lotus/rendering/RenderPass.h" bodystart="18" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classLotus_1_1Renderer_1_1RenderPass_1a2d7b2f31bf31b18b40f7a7b67456ab3e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Lotus::Renderer::RenderPass::RenderFrame</definition>
+        <argsstring>(double deltaTime)</argsstring>
+        <name>RenderFrame</name>
+        <param>
+          <type>double</type>
+          <declname>deltaTime</declname>
+        </param>
+        <briefdescription>
+<para>Called on UpdateEvent. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/rendering/RenderPass.h" line="21" column="22" bodyfile="/builds/centauri/lotus/lotus/include/lotus/rendering/RenderPass.h" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classLotus_1_1Renderer_1_1RenderPass_1ade19d47e348df0be356694f433694ef5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual Lotus::Renderer::RenderPass::~RenderPass</definition>
+        <argsstring>()=default</argsstring>
+        <name>~RenderPass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/rendering/RenderPass.h" line="23" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A single step executed by the rendering pipeline. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>A <ref refid="classLotus_1_1Renderer_1_1RenderPass" kindref="compound">RenderPass</ref> is a way to organize tasks in the render pipeline. This provides a base class that implementations will derive from to define rendering tasks. The rendering pipeline simply executes these passes in the order that they are registered. </para>
+    </detaileddescription>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/rendering/RenderPass.h" line="14" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/rendering/RenderPass.h" bodystart="15" bodyend="24"/>
+    <listofallmembers>
+      <member refid="classLotus_1_1Renderer_1_1RenderPass_1a2d7b2f31bf31b18b40f7a7b67456ab3e" prot="public" virt="virtual"><scope>Lotus::Renderer::RenderPass</scope><name>RenderFrame</name></member>
+      <member refid="classLotus_1_1Renderer_1_1RenderPass_1a597cbc3660de08fbc025c22b79a9310f" prot="public" virt="virtual"><scope>Lotus::Renderer::RenderPass</scope><name>SetupFrame</name></member>
+      <member refid="classLotus_1_1Renderer_1_1RenderPass_1ade19d47e348df0be356694f433694ef5" prot="public" virt="virtual"><scope>Lotus::Renderer::RenderPass</scope><name>~RenderPass</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

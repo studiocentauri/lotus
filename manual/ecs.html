@@ -1,0 +1,263 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>The Entity Component System &mdash; Lotus 0.0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/navbar.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Importing Assets" href="importing.html" />
+    <link rel="prev" title="Quickstart" href="quickstart.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">The Entity Component System</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#events-and-systems">Events and Systems</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#common-patterns">Common Patterns</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#component-serialization">Component Serialization</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="importing.html">Importing Assets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="thirdparty.html">Third Party</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Lotus</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>The Entity Component System</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/manual/ecs.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="the-entity-component-system">
+<h1>The Entity Component System<a class="headerlink" href="#the-entity-component-system" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="events-and-systems">
+<h2>Events and Systems<a class="headerlink" href="#events-and-systems" title="Permalink to this headline">¶</a></h2>
+<p>The primary method to interact with the game world is through events and event callbacks. A <em>system</em> is loosely defined as a
+collection of event callbacks. For example, use the <code class="docutils literal notranslate"><span class="pre">UpdateEvent</span></code> to call some code each frame</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="kt">void</span> <span class="nf">OnUpdateEvent</span><span class="p">(</span><span class="k">const</span> <span class="n">UpdateEvent</span><span class="o">&amp;</span> <span class="n">event</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="c1">// code</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>Lotus provides two methods to register these callbacks, depending on whether the callback is a free function or a class member.</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">eventManager</span><span class="p">.</span><span class="n">Bind</span><span class="o">&lt;</span><span class="n">FoobarEvent</span><span class="p">,</span> <span class="n">OnFoobarEvent</span><span class="o">&gt;</span><span class="p">();</span>
+<span class="n">eventManager</span><span class="p">.</span><span class="n">Bind</span><span class="o">&lt;</span><span class="n">FoobarEvent</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">FoobarSystemClass</span><span class="o">::</span><span class="n">OnFoobarEvent</span><span class="o">&gt;</span><span class="p">(</span><span class="n">instanceOfFoobarSystemClass</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>These callbacks will then be called whenever <code class="docutils literal notranslate"><span class="pre">FoobarEvent</span></code> is invoked. Note that the order in which these callbacks are executed
+is not guaranteed. To invoke an event, use <code class="docutils literal notranslate"><span class="pre">EventManager::Dispatch()</span></code>, with an event object passed as a parameter. The <code class="docutils literal notranslate"><span class="pre">Event::Immediate</span></code> flag
+controls when the event is actually called. Immediate events suspend execution and call all registered callbacks. Non-immediate
+events are queued and handled at the end of each engine tick, after the <code class="docutils literal notranslate"><span class="pre">PostUpdateEvent</span></code> has been called.</p>
+<div class="section" id="common-patterns">
+<h3>Common Patterns<a class="headerlink" href="#common-patterns" title="Permalink to this headline">¶</a></h3>
+<p>Events and systems are extremely flexible and can be used however the user wants to use them. We follow the conventions outlined below
+while developing the engine.</p>
+<p>Systems may or may not maintain state. For example the <code class="docutils literal notranslate"><span class="pre">CameraSystem</span></code> does not maintain state, while the <code class="docutils literal notranslate"><span class="pre">Input</span></code> system does.
+Stateless systems can be easily created with free functions in a namespace, and can therefore be registered without passing an
+object. Stateful systems on the other hand may further be of two types: those that persist for the entire duration of the game or
+those that have a defined lifetime. The latter is simple to deal with, by creating a class with relevant data and callbacks as
+class methods. An object of this class can be created whenever this system’s lifetime starts. Core systems like physics and the
+engine tick itself are examples of the former kind. These systems are again defined as namespaces, but callbacks are now implemented
+necessarily in a separate <code class="docutils literal notranslate"><span class="pre">system.cpp</span></code> file where static state variables are defined.</p>
+</div>
+</div>
+<div class="section" id="component-serialization">
+<h2>Component Serialization<a class="headerlink" href="#component-serialization" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="importing.html" class="btn btn-neutral float-right" title="Importing Assets" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="quickstart.html" class="btn btn-neutral float-left" title="Quickstart" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2020, Studio Centauri
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

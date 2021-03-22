@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['pointlightinfo_46',['PointLightInfo',['../structLotus_1_1PointLightInfo.html',1,'Lotus']]],
-  ['position_47',['Position',['../structLotus_1_1CSphereCollider.html#a5c78e6ec76d420bc06eb90175ff78783',1,'Lotus::CSphereCollider::Position()'],['../structLotus_1_1CBoxCollider.html#a5d833c05997e1590273db89c3bf46c21',1,'Lotus::CBoxCollider::Position()'],['../structLotus_1_1CCapsuleCollider.html#a4d67eab1db6907b401ccbac8283ec87a',1,'Lotus::CCapsuleCollider::Position()']]],
-  ['postupdateevent_48',['PostUpdateEvent',['../structLotus_1_1PostUpdateEvent.html',1,'Lotus']]],
-  ['predestroyevent_49',['PreDestroyEvent',['../structLotus_1_1PreDestroyEvent.html',1,'Lotus']]],
-  ['preupdateevent_50',['PreUpdateEvent',['../structLotus_1_1PreUpdateEvent.html',1,'Lotus']]]
+  ['radius_39',['Radius',['../structLotus_1_1CSphereCollider.html#a670435ec4d8d71d1d5189a97352ce3f2',1,'Lotus::CSphereCollider::Radius()'],['../structLotus_1_1CCapsuleCollider.html#a72ed6926e3ae566786c1871f1f431288',1,'Lotus::CCapsuleCollider::Radius()']]],
+  ['renderconfig_40',['RenderConfig',['../structLotus_1_1RenderConfig.html',1,'Lotus']]],
+  ['renderframe_41',['RenderFrame',['../classLotus_1_1Renderer_1_1RenderPass.html#a2d7b2f31bf31b18b40f7a7b67456ab3e',1,'Lotus::Renderer::RenderPass']]],
+  ['renderpass_42',['RenderPass',['../classLotus_1_1Renderer_1_1RenderPass.html',1,'Lotus::Renderer']]]
 ];
