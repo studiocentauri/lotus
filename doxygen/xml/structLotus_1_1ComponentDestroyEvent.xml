@@ -19,14 +19,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="86" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" bodystart="86" bodyend="-1"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="89" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" bodystart="89" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="84" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" bodystart="85" bodyend="87"/>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="87" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" bodystart="88" bodyend="90"/>
     <listofallmembers>
       <member refid="structLotus_1_1ComponentDestroyEvent_1af36004a7fb823a48be0b0b10489b94ad" prot="public" virt="non-virtual"><scope>Lotus::ComponentDestroyEvent</scope><name>entityID</name></member>
     </listofallmembers>

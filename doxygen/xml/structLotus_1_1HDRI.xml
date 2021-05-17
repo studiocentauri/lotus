@@ -29,15 +29,43 @@
         </inbodydescription>
         <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="14" column="22" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" bodystart="14" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1HDRI_1a252bb2180c4316919adccb2b319dc52f" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Lotus::HDRI::path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="17" column="25" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1HDRI_1af3c59c1387480b93300199e10b14d5f4" prot="public" static="no" mutable="no">
+        <type>struct Lotus::HDRI::@1</type>
+        <definition>struct Lotus::HDRI::@1 Lotus::HDRI::detail</definition>
+        <argsstring></argsstring>
+        <name>detail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="18" column="16"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="11" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" bodystart="12" bodyend="15"/>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="11" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" bodystart="12" bodyend="19"/>
     <listofallmembers>
+      <member refid="structLotus_1_1HDRI_1af3c59c1387480b93300199e10b14d5f4" prot="public" virt="non-virtual"><scope>Lotus::HDRI</scope><name>detail</name></member>
       <member refid="structLotus_1_1HDRI_1ab3bcd13a1c00c65bb965fd9c8b6b2ecf" prot="public" virt="non-virtual"><scope>Lotus::HDRI</scope><name>EnvironmentMap</name></member>
       <member refid="structLotus_1_1HDRI_1a3066adf5111dac8193c5f01ffcf3ba2a" prot="public" virt="non-virtual"><scope>Lotus::HDRI</scope><name>Irradiance</name></member>
+      <member refid="structLotus_1_1HDRI_1a252bb2180c4316919adccb2b319dc52f" prot="public" virt="non-virtual"><scope>Lotus::HDRI</scope><name>path</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

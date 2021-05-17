@@ -16,14 +16,42 @@
         </inbodydescription>
         <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Model.h" line="10" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Model.h" bodystart="10" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1Model_1a8307be36832a1ce43273f5e50fb7a2a1" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Lotus::Model::path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Model.h" line="13" column="25" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Model.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1Model_1a4d08dc6ed0898a8c8b45608149eb33f8" prot="public" static="no" mutable="no">
+        <type>struct Lotus::Model::@3</type>
+        <definition>struct Lotus::Model::@3 Lotus::Model::detail</definition>
+        <argsstring></argsstring>
+        <name>detail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Model.h" line="14" column="16"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Model.h" line="8" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Model.h" bodystart="9" bodyend="11"/>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Model.h" line="8" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Model.h" bodystart="9" bodyend="15"/>
     <listofallmembers>
+      <member refid="structLotus_1_1Model_1a4d08dc6ed0898a8c8b45608149eb33f8" prot="public" virt="non-virtual"><scope>Lotus::Model</scope><name>detail</name></member>
       <member refid="structLotus_1_1Model_1a429f6325fbf32237be62a40b4dae9f42" prot="public" virt="non-virtual"><scope>Lotus::Model</scope><name>Meshes</name></member>
+      <member refid="structLotus_1_1Model_1a8307be36832a1ce43273f5e50fb7a2a1" prot="public" virt="non-virtual"><scope>Lotus::Model</scope><name>path</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

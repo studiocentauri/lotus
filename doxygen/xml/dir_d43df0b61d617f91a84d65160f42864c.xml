@@ -15,6 +15,7 @@
     <innerfile refid="lcommon_8h">lcommon.h</innerfile>
     <innerfile refid="lotus_8h">lotus.h</innerfile>
     <innerfile refid="lotus__export_8h">lotus_export.h</innerfile>
+    <innerfile refid="serialization_8h">serialization.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

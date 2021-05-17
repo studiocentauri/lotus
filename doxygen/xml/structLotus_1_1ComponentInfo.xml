@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structLotus_1_1ComponentInfo" kind="struct" language="C++" prot="public">
+    <compoundname>Lotus::ComponentInfo</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="structLotus_1_1ComponentInfo_1aea8465224775058c94fbd0cbe7fff61e" prot="public" static="no">
+        <type>std::function&lt; void(const entt::entity, entt::registry &amp;, const nlohmann::json &amp;data)&gt;</type>
+        <definition>using Lotus::ComponentInfo::AssignFn =  std::function&lt;void(const entt::entity, entt::registry&amp;, const nlohmann::json&amp; data)&gt;</definition>
+        <argsstring></argsstring>
+        <name>AssignFn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="22" column="9" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structLotus_1_1ComponentInfo_1a30c8d6ab715d6ee095e43915cb070603" prot="public" static="no">
+        <type>std::function&lt; void(const entt::entity, entt::registry &amp;)&gt;</type>
+        <definition>using Lotus::ComponentInfo::DefaultAssignFn =  std::function&lt;void(const entt::entity, entt::registry&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>DefaultAssignFn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="23" column="9" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="structLotus_1_1ComponentInfo_1a776171a031c0b08033398c77b15da458" prot="public" static="no">
+        <type>std::function&lt; void(<ref refid="structLotus_1_1OutputArchive" kindref="compound">Lotus::OutputArchive</ref> &amp;)&gt;</type>
+        <definition>using Lotus::ComponentInfo::SerializeFn =  std::function&lt;void(Lotus::OutputArchive&amp;)&gt;</definition>
+        <argsstring></argsstring>
+        <name>SerializeFn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="24" column="9" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLotus_1_1ComponentInfo_1a6aaa6262a1fd69a016de3beb0b552dd9" prot="public" static="no" mutable="no">
+        <type>entt::id_type</type>
+        <definition>entt::id_type Lotus::ComponentInfo::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="26" column="23" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1ComponentInfo_1aa48b121a6500846c7ec13b2a4075ef83" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Lotus::ComponentInfo::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="27" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1ComponentInfo_1ad2249341a3a8630c26bc8be66f049d4c" prot="public" static="no" mutable="no">
+        <type>AssignFn</type>
+        <definition>AssignFn Lotus::ComponentInfo::assignFn</definition>
+        <argsstring></argsstring>
+        <name>assignFn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="28" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1ComponentInfo_1a5177f9d54faf1ca33c6e8b2bd50bf8a6" prot="public" static="no" mutable="no">
+        <type>DefaultAssignFn</type>
+        <definition>DefaultAssignFn Lotus::ComponentInfo::defaultAssignFn</definition>
+        <argsstring></argsstring>
+        <name>defaultAssignFn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="29" column="25" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1ComponentInfo_1a72dabf72597c936e89004d860d83b44c" prot="public" static="no" mutable="no">
+        <type>SerializeFn</type>
+        <definition>SerializeFn Lotus::ComponentInfo::serializeFn</definition>
+        <argsstring></argsstring>
+        <name>serializeFn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="30" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="20" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="21" bodyend="31"/>
+    <listofallmembers>
+      <member refid="structLotus_1_1ComponentInfo_1aea8465224775058c94fbd0cbe7fff61e" prot="public" virt="non-virtual"><scope>Lotus::ComponentInfo</scope><name>AssignFn</name></member>
+      <member refid="structLotus_1_1ComponentInfo_1ad2249341a3a8630c26bc8be66f049d4c" prot="public" virt="non-virtual"><scope>Lotus::ComponentInfo</scope><name>assignFn</name></member>
+      <member refid="structLotus_1_1ComponentInfo_1a30c8d6ab715d6ee095e43915cb070603" prot="public" virt="non-virtual"><scope>Lotus::ComponentInfo</scope><name>DefaultAssignFn</name></member>
+      <member refid="structLotus_1_1ComponentInfo_1a5177f9d54faf1ca33c6e8b2bd50bf8a6" prot="public" virt="non-virtual"><scope>Lotus::ComponentInfo</scope><name>defaultAssignFn</name></member>
+      <member refid="structLotus_1_1ComponentInfo_1a6aaa6262a1fd69a016de3beb0b552dd9" prot="public" virt="non-virtual"><scope>Lotus::ComponentInfo</scope><name>id</name></member>
+      <member refid="structLotus_1_1ComponentInfo_1aa48b121a6500846c7ec13b2a4075ef83" prot="public" virt="non-virtual"><scope>Lotus::ComponentInfo</scope><name>name</name></member>
+      <member refid="structLotus_1_1ComponentInfo_1a776171a031c0b08033398c77b15da458" prot="public" virt="non-virtual"><scope>Lotus::ComponentInfo</scope><name>SerializeFn</name></member>
+      <member refid="structLotus_1_1ComponentInfo_1a72dabf72597c936e89004d860d83b44c" prot="public" virt="non-virtual"><scope>Lotus::ComponentInfo</scope><name>serializeFn</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

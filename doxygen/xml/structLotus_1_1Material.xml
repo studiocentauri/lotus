@@ -83,18 +83,46 @@
         </inbodydescription>
         <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h" line="20" column="15" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h" bodystart="20" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1Material_1a327805581d05c899be8ced3b9c3fdd39" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Lotus::Material::path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h" line="23" column="25" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1Material_1a01276bd8cea71d764f889e19319b7928" prot="public" static="no" mutable="no">
+        <type>struct Lotus::Material::@2</type>
+        <definition>struct Lotus::Material::@2 Lotus::Material::detail</definition>
+        <argsstring></argsstring>
+        <name>detail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h" line="24" column="16"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h" line="13" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h" bodystart="14" bodyend="21"/>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h" line="13" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h" bodystart="14" bodyend="25"/>
     <listofallmembers>
       <member refid="structLotus_1_1Material_1aae674619969fe53c20b678fb36c87db0" prot="public" virt="non-virtual"><scope>Lotus::Material</scope><name>Albedo</name></member>
       <member refid="structLotus_1_1Material_1a2908a6ca9bf8abc7f48b2f8ca1d964d9" prot="public" virt="non-virtual"><scope>Lotus::Material</scope><name>AO</name></member>
+      <member refid="structLotus_1_1Material_1a01276bd8cea71d764f889e19319b7928" prot="public" virt="non-virtual"><scope>Lotus::Material</scope><name>detail</name></member>
       <member refid="structLotus_1_1Material_1a1e5a910af828bdb7b01ee03270b0f69d" prot="public" virt="non-virtual"><scope>Lotus::Material</scope><name>MaterialShader</name></member>
       <member refid="structLotus_1_1Material_1a907dd79f744f40bbd24e12329d0facef" prot="public" virt="non-virtual"><scope>Lotus::Material</scope><name>Metallic</name></member>
       <member refid="structLotus_1_1Material_1a7b3a73801a660284cd670717d1bc6636" prot="public" virt="non-virtual"><scope>Lotus::Material</scope><name>Normal</name></member>
+      <member refid="structLotus_1_1Material_1a327805581d05c899be8ced3b9c3fdd39" prot="public" virt="non-virtual"><scope>Lotus::Material</scope><name>path</name></member>
       <member refid="structLotus_1_1Material_1a1a30652cbc54576797984f828f9d4666" prot="public" virt="non-virtual"><scope>Lotus::Material</scope><name>Roughness</name></member>
     </listofallmembers>
   </compounddef>

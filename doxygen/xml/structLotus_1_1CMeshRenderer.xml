@@ -30,6 +30,21 @@
         <location file="/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h" line="13" column="16" bodyfile="/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h" bodystart="13" bodyend="-1"/>
       </memberdef>
       </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structLotus_1_1CMeshRenderer_1aec92c5e9fd08f2460e08af968a4781d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Lotus::CMeshRenderer::CMeshRenderer</definition>
+        <argsstring>()</argsstring>
+        <name>CMeshRenderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h" line="17" column="9" bodyfile="/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h" bodystart="17" bodyend="21"/>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="public-static-func">
       <memberdef kind="function" id="structLotus_1_1CMeshRenderer_1a84be6bed0c74ff6be161a0bcdd2e74e8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::string</type>
@@ -42,15 +57,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h" line="17" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h" bodystart="17" bodyend="18"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h" line="23" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h" bodystart="23" bodyend="24"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h" line="10" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h" bodystart="11" bodyend="19"/>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h" line="10" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h" bodystart="11" bodyend="25"/>
     <listofallmembers>
+      <member refid="structLotus_1_1CMeshRenderer_1aec92c5e9fd08f2460e08af968a4781d9" prot="public" virt="non-virtual"><scope>Lotus::CMeshRenderer</scope><name>CMeshRenderer</name></member>
       <member refid="structLotus_1_1CMeshRenderer_1a84be6bed0c74ff6be161a0bcdd2e74e8" prot="public" virt="non-virtual"><scope>Lotus::CMeshRenderer</scope><name>GetName</name></member>
       <member refid="structLotus_1_1CMeshRenderer_1a71ec6898ef37d53773572aa8c930fac9" prot="public" virt="non-virtual"><scope>Lotus::CMeshRenderer</scope><name>MeshMaterial</name></member>
       <member refid="structLotus_1_1CMeshRenderer_1ae3fdd6d66475513269dc2d0776752bed" prot="public" virt="non-virtual"><scope>Lotus::CMeshRenderer</scope><name>MeshModel</name></member>

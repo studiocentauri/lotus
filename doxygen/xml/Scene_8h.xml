@@ -6,6 +6,7 @@
     <includes refid="Entity_8h" local="no">lotus/ecs/Entity.h</includes>
     <includes refid="SceneTreeNode_8h" local="yes">SceneTreeNode.h</includes>
     <includedby refid="lotus_8h" local="yes">/builds/centauri/lotus/lotus/include/lotus/lotus.h</includedby>
+    <includedby refid="SceneManager_8h" local="yes">/builds/centauri/lotus/lotus/include/lotus/scene/SceneManager.h</includedby>
     <incdepgraph>
       <node id="7">
         <label>lotus/internal/entt/entt.hpp</label>
@@ -81,9 +82,18 @@
         <link refid="Scene_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/builds/centauri/lotus/lotus/include/lotus/scene/SceneManager.h</label>
+        <link refid="SceneManager_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
       </node>
     </invincdepgraph>
     <innerclass refid="structLotus_1_1Scene" prot="public">Lotus::Scene</innerclass>
+    <innerclass refid="structLotus_1_1SceneLoadEvent" prot="public">Lotus::SceneLoadEvent</innerclass>
     <innernamespace refid="namespaceLotus">Lotus</innernamespace>
     <briefdescription>
     </briefdescription>
@@ -101,12 +111,33 @@
 <codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Lotus</highlight></codeline>
 <codeline lineno="10"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>Make<sp/>this<sp/>just<sp/>the<sp/>scene<sp/>hierarchy</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12" refid="structLotus_1_1Scene" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structLotus_1_1Scene" kindref="compound">Scene</ref></highlight></codeline>
+<codeline lineno="12" refid="structLotus_1_1Scene" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">LOTUS_API<sp/><ref refid="structLotus_1_1Scene" kindref="compound">Scene</ref></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>Path;</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classLotus_1_1SceneTreeNode" kindref="compound">SceneTreeNode</ref>*<sp/>Root<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classLotus_1_1SceneTreeNode" kindref="compound">SceneTreeNode</ref>*<sp/>Root<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>path;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>detail;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structLotus_1_1Scene" kindref="compound">Scene</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>entt::registry*<sp/>GetRegistry();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Entity<sp/>GetParent(Entity<sp/>entity);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classLotus_1_1Entity" kindref="compound">Entity</ref><sp/>CreateEntity(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>serialize<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classLotus_1_1Entity" kindref="compound">Entity</ref><sp/>CreateEntity(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>path,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>serialize<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>entt::registry<sp/>_registry;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="structLotus_1_1SceneLoadEvent" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structLotus_1_1SceneLoadEvent" kindref="compound">SceneLoadEvent</ref></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMMEDIATE_EVENT();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structLotus_1_1Scene" kindref="compound">Scene</ref>*<sp/>pScene;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h"/>
   </compounddef>

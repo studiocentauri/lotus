@@ -6,12 +6,15 @@
     <innerclass refid="structLotus_1_1CBoxCollider" prot="public">Lotus::CBoxCollider</innerclass>
     <innerclass refid="structLotus_1_1CCamera" prot="public">Lotus::CCamera</innerclass>
     <innerclass refid="structLotus_1_1CCapsuleCollider" prot="public">Lotus::CCapsuleCollider</innerclass>
+    <innerclass refid="structLotus_1_1CDisplayName" prot="public">Lotus::CDisplayName</innerclass>
     <innerclass refid="structLotus_1_1CMeshRenderer" prot="public">Lotus::CMeshRenderer</innerclass>
-    <innerclass refid="structLotus_1_1ComponentAssigner" prot="public">Lotus::ComponentAssigner</innerclass>
     <innerclass refid="structLotus_1_1ComponentCreateEvent" prot="public">Lotus::ComponentCreateEvent</innerclass>
     <innerclass refid="structLotus_1_1ComponentDestroyEvent" prot="public">Lotus::ComponentDestroyEvent</innerclass>
+    <innerclass refid="structLotus_1_1ComponentInfo" prot="public">Lotus::ComponentInfo</innerclass>
+    <innerclass refid="structLotus_1_1ComponentTraits" prot="public">Lotus::ComponentTraits</innerclass>
     <innerclass refid="structLotus_1_1CPointLight" prot="public">Lotus::CPointLight</innerclass>
     <innerclass refid="structLotus_1_1CRigidBody" prot="public">Lotus::CRigidBody</innerclass>
+    <innerclass refid="structLotus_1_1CSerialize" prot="public">Lotus::CSerialize</innerclass>
     <innerclass refid="structLotus_1_1CSkybox" prot="public">Lotus::CSkybox</innerclass>
     <innerclass refid="structLotus_1_1CSphereCollider" prot="public">Lotus::CSphereCollider</innerclass>
     <innerclass refid="structLotus_1_1CSpotlight" prot="public">Lotus::CSpotlight</innerclass>
@@ -24,10 +27,12 @@
     <innerclass refid="classLotus_1_1ISystem" prot="public">Lotus::ISystem</innerclass>
     <innerclass refid="structLotus_1_1Material" prot="public">Lotus::Material</innerclass>
     <innerclass refid="structLotus_1_1Model" prot="public">Lotus::Model</innerclass>
+    <innerclass refid="structLotus_1_1OutputArchive" prot="public">Lotus::OutputArchive</innerclass>
     <innerclass refid="structLotus_1_1PointLightInfo" prot="public">Lotus::PointLightInfo</innerclass>
     <innerclass refid="structLotus_1_1ProjectConfig" prot="public">Lotus::ProjectConfig</innerclass>
     <innerclass refid="structLotus_1_1RenderConfig" prot="public">Lotus::RenderConfig</innerclass>
     <innerclass refid="structLotus_1_1Scene" prot="public">Lotus::Scene</innerclass>
+    <innerclass refid="structLotus_1_1SceneLoadEvent" prot="public">Lotus::SceneLoadEvent</innerclass>
     <innerclass refid="classLotus_1_1SceneTreeNode" prot="public">Lotus::SceneTreeNode</innerclass>
     <innerclass refid="structLotus_1_1Shader" prot="public">Lotus::Shader</innerclass>
     <innerclass refid="classLotus_1_1Singleton" prot="public">Lotus::Singleton</innerclass>
@@ -160,18 +165,31 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
-      <memberdef kind="variable" id="ComponentRegistry_8h_1a2447331b00cafb065edb0ebd73c712e0" prot="public" static="no" mutable="no">
-        <type>LOTUS_API std::unordered_map&lt; component_ctor_key_t, component_ctor_t &gt;</type>
-        <definition>LOTUS_API std::unordered_map&lt;component_ctor_key_t, component_ctor_t&gt; Lotus::ctors</definition>
+      <memberdef kind="variable" id="ComponentRegistry_8h_1a533faecd0440feeb058a259e0d1d2f7e" prot="public" static="no" mutable="no">
+        <type>LOTUS_API std::unordered_map&lt; entt::id_type, <ref refid="structLotus_1_1ComponentInfo" kindref="compound">ComponentInfo</ref> &gt;</type>
+        <definition>LOTUS_API std::unordered_map&lt;entt::id_type, ComponentInfo&gt; Lotus::component_info</definition>
         <argsstring></argsstring>
-        <name>ctors</name>
+        <name>component_info</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="19" column="41" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" declline="19" declcolumn="41"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="17" column="41" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" declline="17" declcolumn="41"/>
+      </memberdef>
+      <memberdef kind="variable" id="ComponentRegistry_8h_1a58ecfc121e2817e110b6b5690de24b80" prot="public" static="no" mutable="no">
+        <type>LOTUS_API std::unordered_map&lt; std::string, entt::id_type &gt;</type>
+        <definition>LOTUS_API std::unordered_map&lt;std::string, entt::id_type&gt; Lotus::str_to_id</definition>
+        <argsstring></argsstring>
+        <name>str_to_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="18" column="41" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" declline="18" declcolumn="41"/>
       </memberdef>
       <memberdef kind="variable" id="Entity_8h_1a493ac41bab074a98321b2ea1c823702c" prot="public" static="no" constexpr="yes" mutable="no">
         <type>constexpr auto</type>
@@ -856,13 +874,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="33" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="33" bodyend="36"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="56" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="56" bodyend="67"/>
       </memberdef>
-      <memberdef kind="function" id="ComponentRegistry_8h_1ab3068e58481471196b3cfa2114eec73a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>const component_ctor_t &amp;</type>
-        <definition>const component_ctor_t&amp; Lotus::GetComponentCtor</definition>
+      <memberdef kind="function" id="ComponentRegistry_8h_1ae2ece40925a3b16505471ee7879745bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="structLotus_1_1ComponentInfo" kindref="compound">ComponentInfo</ref> &amp;</type>
+        <definition>const ComponentInfo&amp; Lotus::GetComponentInfo</definition>
         <argsstring>(const std::string &amp;name)</argsstring>
-        <name>GetComponentCtor</name>
+        <name>GetComponentInfo</name>
         <param>
           <type>const std::string &amp;</type>
           <declname>name</declname>
@@ -873,7 +891,71 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="38" column="35" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="38" bodyend="41"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="69" column="32" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="ComponentRegistry_8h_1a40523238979d70c93d47d1f526efc1ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; Lotus::GetRegisteredComponents</definition>
+        <argsstring>()</argsstring>
+        <name>GetRegisteredComponents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="74" column="24" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="74" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="ComponentRegistry_8h_1aba6202cd1d3ae68daeb3b4c49a5563cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Lotus::RegisterEngineComponents</definition>
+        <argsstring>()</argsstring>
+        <name>RegisterEngineComponents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="85" column="10" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" declline="85" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="ComponentRegistry_8h_1ac689482dc4c486deea161a92ac266b20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Lotus::SerializeComponentByID</definition>
+        <argsstring>(const entt::id_type id, OutputArchive &amp;archive)</argsstring>
+        <name>SerializeComponentByID</name>
+        <param>
+          <type>const entt::id_type</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type><ref refid="structLotus_1_1OutputArchive" kindref="compound">OutputArchive</ref> &amp;</type>
+          <declname>archive</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="87" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="87" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="ComponentRegistry_8h_1a8c14acff6cf4b6ec2efef39d3cdf7180" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Lotus::SerializeComponents</definition>
+        <argsstring>(OutputArchive &amp;archive)</argsstring>
+        <name>SerializeComponents</name>
+        <param>
+          <type><ref refid="structLotus_1_1OutputArchive" kindref="compound">OutputArchive</ref> &amp;</type>
+          <declname>archive</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="95" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="95" bodyend="101"/>
       </memberdef>
       <memberdef kind="function" id="CCamera_8h_1a65b0262010c6cce509ca6cbf4f1e789e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Matrix4f</type>
@@ -959,75 +1041,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CTransform.h" line="36" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/components/CTransform.h" bodystart="36" bodyend="45"/>
-      </memberdef>
-      <memberdef kind="function" id="Entity_8h_1aabe0c16a083cafda79d9c244d057c122" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void Lotus::ECSInitialize</definition>
-        <argsstring>()</argsstring>
-        <name>ECSInitialize</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="89" column="10" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" declline="89" declcolumn="10"/>
-      </memberdef>
-      <memberdef kind="function" id="Entity_8h_1ac5bcfd24bd3cb661b7b53050f822db5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void Lotus::ECSShutdown</definition>
-        <argsstring>()</argsstring>
-        <name>ECSShutdown</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="90" column="10" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" declline="90" declcolumn="10"/>
-      </memberdef>
-      <memberdef kind="function" id="Entity_8h_1a87991e17ac23c76e0864d643b64568ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>LOTUS_API entt::registry *</type>
-        <definition>LOTUS_API entt::registry* Lotus::GetRegistry</definition>
-        <argsstring>()</argsstring>
-        <name>GetRegistry</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="92" column="30" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" declline="92" declcolumn="30"/>
-      </memberdef>
-      <memberdef kind="function" id="Entity_8h_1ad0d15c921ed8f52868575a2b668fa491" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>LOTUS_API <ref refid="classLotus_1_1Entity" kindref="compound">Entity</ref></type>
-        <definition>LOTUS_API Entity Lotus::CreateEntity</definition>
-        <argsstring>()</argsstring>
-        <name>CreateEntity</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="93" column="22" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" declline="93" declcolumn="22"/>
-      </memberdef>
-      <memberdef kind="function" id="Entity_8h_1a31deb648a083999530f8978351b512e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>LOTUS_API <ref refid="classLotus_1_1Entity" kindref="compound">Entity</ref></type>
-        <definition>LOTUS_API Entity Lotus::CreateEntity</definition>
-        <argsstring>(const std::string &amp;path)</argsstring>
-        <name>CreateEntity</name>
-        <param>
-          <type>const std::string &amp;</type>
-          <declname>path</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" line="94" column="22" declfile="/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h" declline="94" declcolumn="22"/>
       </memberdef>
       <memberdef kind="function" id="filesystem_8h_1a6e43518c23bc84d989e24e12b025caab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>LOTUS_API std::string</type>
@@ -1460,7 +1473,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h" line="21" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h" bodystart="21" bodyend="24"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h" line="27" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h" bodystart="27" bodyend="31"/>
       </memberdef>
       <memberdef kind="function" id="CMeshRenderer_8h_1a9202fa7f1470d401d44312c40570e4ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1481,7 +1494,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h" line="26" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h" bodystart="26" bodyend="30"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h" line="33" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h" bodystart="33" bodyend="37"/>
       </memberdef>
       <memberdef kind="function" id="AssetRegistry_8h_1a004710358f7ce57ead893935e66a4eab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -1662,7 +1675,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="17" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" bodystart="17" bodyend="20"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="21" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" bodystart="21" bodyend="24"/>
       </memberdef>
       <memberdef kind="function" id="HDRI_8h_1add6d51f6e673f6580b721f8f8b1607c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1683,7 +1696,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="30" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" bodystart="30" bodyend="33"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="34" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" bodystart="34" bodyend="37"/>
       </memberdef>
       <memberdef kind="function" id="HDRI_8h_1a5cb36c93e35e551cb03619fb43a94735" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1704,7 +1717,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="35" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" bodystart="35" bodyend="38"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="39" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" bodystart="39" bodyend="42"/>
       </memberdef>
       <memberdef kind="function" id="Material_8h_1a33a48af55ceeac79cae0f2f3db59a918" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1720,7 +1733,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h" line="23" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h" bodystart="23" bodyend="26"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h" line="27" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Material.h" bodystart="27" bodyend="30"/>
       </memberdef>
       <memberdef kind="function" id="Model_8h_1a5db7750526a824d731764815e5988276" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1736,7 +1749,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Model.h" line="13" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Model.h" bodystart="13" bodyend="18"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Model.h" line="17" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Model.h" bodystart="17" bodyend="22"/>
       </memberdef>
       <memberdef kind="function" id="Shader_8h_1a653aa6d797db88917a5fd4e41bffddee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -1768,7 +1781,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Texture.h" line="13" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Texture.h" bodystart="13" bodyend="16"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Texture.h" line="17" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Texture.h" bodystart="17" bodyend="20"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

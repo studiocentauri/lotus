@@ -3,19 +3,6 @@
   <compounddef id="structLotus_1_1Scene" kind="struct" language="C++" prot="public">
     <compoundname>Lotus::Scene</compoundname>
       <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="structLotus_1_1Scene_1afb15d4115218954aabe99085cd97f1eb" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string Lotus::Scene::Path</definition>
-        <argsstring></argsstring>
-        <name>Path</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" line="14" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" bodystart="14" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="structLotus_1_1Scene_1a74c0a66897fcc20710042c241fed3c52" prot="public" static="no" mutable="no">
         <type><ref refid="classLotus_1_1SceneTreeNode" kindref="compound">SceneTreeNode</ref> *</type>
         <definition>SceneTreeNode* Lotus::Scene::Root</definition>
@@ -28,7 +15,116 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" line="15" column="23" bodyfile="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" bodystart="15" bodyend="-1"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" line="14" column="23" bodyfile="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1Scene_1ad3adbf33ca452b345df138c44661287e" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Lotus::Scene::path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" line="17" column="25" bodyfile="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1Scene_1a3d225f205a97992a47bdbd20e5f76b94" prot="public" static="no" mutable="no">
+        <type>struct Lotus::Scene::@5</type>
+        <definition>struct Lotus::Scene::@5 Lotus::Scene::detail</definition>
+        <argsstring></argsstring>
+        <name>detail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" line="18" column="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="structLotus_1_1Scene_1aa6d90931f76098d0b6c90bf9a3b61e8e" prot="private" static="no" mutable="no">
+        <type>entt::registry</type>
+        <definition>entt::registry Lotus::Scene::_registry</definition>
+        <argsstring></argsstring>
+        <name>_registry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" line="30" column="24" bodyfile="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structLotus_1_1Scene_1a4d539951751fe2f4b6f260294541b4cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Lotus::Scene::Scene</definition>
+        <argsstring>()</argsstring>
+        <name>Scene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" line="20" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="structLotus_1_1Scene_1ac337b5813f8d1e5eca7792a8afc94e8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>entt::registry *</type>
+        <definition>entt::registry* Lotus::Scene::GetRegistry</definition>
+        <argsstring>()</argsstring>
+        <name>GetRegistry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" line="22" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="structLotus_1_1Scene_1a2587faa60bcf7d68f8dee057a6c7430f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classLotus_1_1Entity" kindref="compound">Entity</ref></type>
+        <definition>Entity Lotus::Scene::CreateEntity</definition>
+        <argsstring>(bool serialize=true)</argsstring>
+        <name>CreateEntity</name>
+        <param>
+          <type>bool</type>
+          <declname>serialize</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" line="26" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="structLotus_1_1Scene_1a7263bd9e9c6ae042bbc2b4a19fd89df0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classLotus_1_1Entity" kindref="compound">Entity</ref></type>
+        <definition>Entity Lotus::Scene::CreateEntity</definition>
+        <argsstring>(const std::string &amp;path, bool serialize=true)</argsstring>
+        <name>CreateEntity</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>serialize</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" line="27" column="16"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -48,10 +144,16 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" line="12" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" bodystart="13" bodyend="16"/>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" line="12" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" bodystart="13" bodyend="31"/>
     <listofallmembers>
-      <member refid="structLotus_1_1Scene_1afb15d4115218954aabe99085cd97f1eb" prot="public" virt="non-virtual"><scope>Lotus::Scene</scope><name>Path</name></member>
+      <member refid="structLotus_1_1Scene_1aa6d90931f76098d0b6c90bf9a3b61e8e" prot="private" virt="non-virtual"><scope>Lotus::Scene</scope><name>_registry</name></member>
+      <member refid="structLotus_1_1Scene_1a2587faa60bcf7d68f8dee057a6c7430f" prot="public" virt="non-virtual"><scope>Lotus::Scene</scope><name>CreateEntity</name></member>
+      <member refid="structLotus_1_1Scene_1a7263bd9e9c6ae042bbc2b4a19fd89df0" prot="public" virt="non-virtual"><scope>Lotus::Scene</scope><name>CreateEntity</name></member>
+      <member refid="structLotus_1_1Scene_1a3d225f205a97992a47bdbd20e5f76b94" prot="public" virt="non-virtual"><scope>Lotus::Scene</scope><name>detail</name></member>
+      <member refid="structLotus_1_1Scene_1ac337b5813f8d1e5eca7792a8afc94e8d" prot="public" virt="non-virtual"><scope>Lotus::Scene</scope><name>GetRegistry</name></member>
+      <member refid="structLotus_1_1Scene_1ad3adbf33ca452b345df138c44661287e" prot="public" virt="non-virtual"><scope>Lotus::Scene</scope><name>path</name></member>
       <member refid="structLotus_1_1Scene_1a74c0a66897fcc20710042c241fed3c52" prot="public" virt="non-virtual"><scope>Lotus::Scene</scope><name>Root</name></member>
+      <member refid="structLotus_1_1Scene_1a4d539951751fe2f4b6f260294541b4cf" prot="public" virt="non-virtual"><scope>Lotus::Scene</scope><name>Scene</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

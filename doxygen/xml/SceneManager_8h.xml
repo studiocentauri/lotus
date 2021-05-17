@@ -3,7 +3,9 @@
   <compounddef id="SceneManager_8h" kind="file" language="C++">
     <compoundname>SceneManager.h</compoundname>
     <includes refid="lcommon_8h" local="no">lotus/lcommon.h</includes>
+    <includes refid="Event_8h" local="no">lotus/ecs/Event.h</includes>
     <includes refid="SceneTreeNode_8h" local="yes">SceneTreeNode.h</includes>
+    <includes refid="Scene_8h" local="yes">Scene.h</includes>
     <includedby refid="lotus_8h" local="yes">/builds/centauri/lotus/lotus/include/lotus/lotus.h</includedby>
     <incdepgraph>
       <node id="7">
@@ -12,7 +14,15 @@
       <node id="4">
         <label>fstream</label>
       </node>
-      <node id="9">
+      <node id="12">
+        <label>lotus/ecs/Entity.h</label>
+        <link refid="Entity_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
         <label>SceneTreeNode.h</label>
         <link refid="SceneTreeNode_8h_source"/>
       </node>
@@ -32,12 +42,32 @@
         <childnode refid="8" relation="include">
         </childnode>
       </node>
+      <node id="9">
+        <label>lotus/ecs/Event.h</label>
+        <link refid="Event_8h_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Scene.h</label>
+        <link refid="Scene_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
       <node id="1">
         <label>/builds/centauri/lotus/lotus/include/lotus/scene/SceneManager.h</label>
         <link refid="SceneManager_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
       <node id="6">
@@ -76,12 +106,18 @@
 <codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;lotus/lcommon.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;SceneTreeNode.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Lotus::SceneManager</highlight></codeline>
-<codeline lineno="7"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>LOTUS_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LoadScene(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>path);</highlight></codeline>
-<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;lotus/ecs/Event.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;SceneTreeNode.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Scene.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Lotus::SceneManager</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>LOTUS_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LoadScene(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>relpath);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>LOTUS_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>SaveScene();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>LOTUS_API<sp/>SRef&lt;Scene&gt;<sp/>GetCurrentScene();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>LOTUS_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnSimulationBegin(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SimulationBeginEvent&amp;<sp/>event);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>LOTUS_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>OnSimulationEnd(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SimulationEndEvent&amp;<sp/>event);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="/builds/centauri/lotus/lotus/include/lotus/scene/SceneManager.h"/>
   </compounddef>

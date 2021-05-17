@@ -3,14 +3,14 @@
   <compounddef id="namespaceLotus_1_1SceneManager" kind="namespace" language="C++">
     <compoundname>Lotus::SceneManager</compoundname>
       <sectiondef kind="func">
-      <memberdef kind="function" id="SceneManager_8h_1a6c3565b3612a6a0ec8889455b8c0a00d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="SceneManager_8h_1a2fc43bfe23f1f5810fa2a02ca59832de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>LOTUS_API void</type>
         <definition>LOTUS_API void Lotus::SceneManager::LoadScene</definition>
-        <argsstring>(const std::string &amp;path)</argsstring>
+        <argsstring>(const std::string &amp;relpath)</argsstring>
         <name>LoadScene</name>
         <param>
           <type>const std::string &amp;</type>
-          <declname>path</declname>
+          <declname>relpath</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -18,13 +18,73 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/scene/SceneManager.h" line="8" column="20" declfile="/builds/centauri/lotus/lotus/include/lotus/scene/SceneManager.h" declline="8" declcolumn="20"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/scene/SceneManager.h" line="10" column="20" declfile="/builds/centauri/lotus/lotus/include/lotus/scene/SceneManager.h" declline="10" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="SceneManager_8h_1aef832f351620c74713ac2a9ae246e469" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LOTUS_API void</type>
+        <definition>LOTUS_API void Lotus::SceneManager::SaveScene</definition>
+        <argsstring>()</argsstring>
+        <name>SaveScene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/scene/SceneManager.h" line="11" column="20" declfile="/builds/centauri/lotus/lotus/include/lotus/scene/SceneManager.h" declline="11" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="SceneManager_8h_1a0b6eaaab685dd09cd33ac11590581d65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LOTUS_API SRef&lt; <ref refid="structLotus_1_1Scene" kindref="compound">Scene</ref> &gt;</type>
+        <definition>LOTUS_API SRef&lt;Scene&gt; Lotus::SceneManager::GetCurrentScene</definition>
+        <argsstring>()</argsstring>
+        <name>GetCurrentScene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/scene/SceneManager.h" line="12" column="20" declfile="/builds/centauri/lotus/lotus/include/lotus/scene/SceneManager.h" declline="12" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="SceneManager_8h_1a9f6efdd9c554df705efced9409162b8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LOTUS_API void</type>
+        <definition>LOTUS_API void Lotus::SceneManager::OnSimulationBegin</definition>
+        <argsstring>(const SimulationBeginEvent &amp;event)</argsstring>
+        <name>OnSimulationBegin</name>
+        <param>
+          <type>const SimulationBeginEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/scene/SceneManager.h" line="13" column="20" declfile="/builds/centauri/lotus/lotus/include/lotus/scene/SceneManager.h" declline="13" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="SceneManager_8h_1ab402067127c65d4342ad4657438856a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LOTUS_API void</type>
+        <definition>LOTUS_API void Lotus::SceneManager::OnSimulationEnd</definition>
+        <argsstring>(const SimulationEndEvent &amp;event)</argsstring>
+        <name>OnSimulationEnd</name>
+        <param>
+          <type>const SimulationEndEvent &amp;</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/scene/SceneManager.h" line="14" column="20" declfile="/builds/centauri/lotus/lotus/include/lotus/scene/SceneManager.h" declline="14" declcolumn="20"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/builds/centauri/lotus/lotus/include/lotus/scene/SceneManager.h" line="6" column="1"/>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/scene/SceneManager.h" line="8" column="1"/>
   </compounddef>
 </doxygen>

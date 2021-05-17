@@ -14,7 +14,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="24" column="16" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" bodystart="24" bodyend="-1"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="28" column="16" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" bodystart="28" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-static-func">
@@ -29,14 +29,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="26" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" bodystart="26" bodyend="27"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="30" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" bodystart="30" bodyend="31"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="22" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" bodystart="23" bodyend="28"/>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" line="26" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/HDRI.h" bodystart="27" bodyend="32"/>
     <listofallmembers>
       <member refid="structLotus_1_1CSkybox_1a7a1aafb0e5652fffc774466eec3eab78" prot="public" virt="non-virtual"><scope>Lotus::CSkybox</scope><name>GetName</name></member>
       <member refid="structLotus_1_1CSkybox_1a019dcc2dcd7fe021d593a3604126fa6f" prot="public" virt="non-virtual"><scope>Lotus::CSkybox</scope><name>Map</name></member>

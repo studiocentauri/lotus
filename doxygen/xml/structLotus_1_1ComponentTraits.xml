@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structLotus_1_1ComponentTraits" kind="struct" language="C++" prot="public">
+    <compoundname>Lotus::ComponentTraits</compoundname>
+    <templateparamlist>
+      <param>
+        <type>class Component</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="structLotus_1_1ComponentTraits_1afec1ba47618abfa2a51f76e10c470143" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Lotus::ComponentTraits&lt; Component &gt;::Assign</definition>
+        <argsstring>(const entt::entity entity, entt::registry &amp;registry, const nlohmann::json &amp;data)</argsstring>
+        <name>Assign</name>
+        <param>
+          <type>const entt::entity</type>
+          <declname>entity</declname>
+        </param>
+        <param>
+          <type>entt::registry &amp;</type>
+          <declname>registry</declname>
+        </param>
+        <param>
+          <type>const nlohmann::json &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="36" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="36" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="structLotus_1_1ComponentTraits_1aed891d28fa3c2f46a6665a852e7854ce" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Lotus::ComponentTraits&lt; Component &gt;::DefaultAssign</definition>
+        <argsstring>(const entt::entity entity, entt::registry &amp;registry)</argsstring>
+        <name>DefaultAssign</name>
+        <param>
+          <type>const entt::entity</type>
+          <declname>entity</declname>
+        </param>
+        <param>
+          <type>entt::registry &amp;</type>
+          <declname>registry</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="43" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="43" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="structLotus_1_1ComponentTraits_1a71159088c5d47a4cf5c4cd4486a8a9eb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Lotus::ComponentTraits&lt; Component &gt;::Serialize</definition>
+        <argsstring>(OutputArchive &amp;archive)</argsstring>
+        <name>Serialize</name>
+        <param>
+          <type><ref refid="structLotus_1_1OutputArchive" kindref="compound">OutputArchive</ref> &amp;</type>
+          <declname>archive</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="49" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="49" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="34" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="35" bodyend="53"/>
+    <listofallmembers>
+      <member refid="structLotus_1_1ComponentTraits_1afec1ba47618abfa2a51f76e10c470143" prot="public" virt="non-virtual"><scope>Lotus::ComponentTraits</scope><name>Assign</name></member>
+      <member refid="structLotus_1_1ComponentTraits_1aed891d28fa3c2f46a6665a852e7854ce" prot="public" virt="non-virtual"><scope>Lotus::ComponentTraits</scope><name>DefaultAssign</name></member>
+      <member refid="structLotus_1_1ComponentTraits_1a71159088c5d47a4cf5c4cd4486a8a9eb" prot="public" virt="non-virtual"><scope>Lotus::ComponentTraits</scope><name>Serialize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

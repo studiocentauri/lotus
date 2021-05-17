@@ -6,6 +6,7 @@
     <includedby refid="Entity_8h" local="yes">/builds/centauri/lotus/lotus/include/lotus/ecs/Entity.h</includedby>
     <includedby refid="EventManager_8h" local="yes">/builds/centauri/lotus/lotus/include/lotus/ecs/EventManager.h</includedby>
     <includedby refid="lotus_8h" local="yes">/builds/centauri/lotus/lotus/include/lotus/lotus.h</includedby>
+    <includedby refid="SceneManager_8h" local="no">/builds/centauri/lotus/lotus/include/lotus/scene/SceneManager.h</includedby>
     <incdepgraph>
       <node id="1">
         <label>/builds/centauri/lotus/lotus/include/lotus/ecs/Event.h</label>
@@ -36,9 +37,11 @@
         <link refid="Event_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
       <node id="4">
@@ -46,8 +49,16 @@
         <link refid="Scene_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
       </node>
       <node id="5">
+        <label>/builds/centauri/lotus/lotus/include/lotus/scene/SceneManager.h</label>
+        <link refid="SceneManager_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
         <label>/builds/centauri/lotus/lotus/include/lotus/ecs/EventManager.h</label>
         <link refid="EventManager_8h_source"/>
         <childnode refid="3" relation="include">
@@ -91,22 +102,26 @@
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">MouseButtonEvent<sp/>{};</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">InitEvent<sp/>{<sp/>IMMEDIATE_EVENT()<sp/>};</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">BeginEvent<sp/>{<sp/>IMMEDIATE_EVENT()<sp/>};</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">PreUpdateEvent<sp/>{<sp/>IMMEDIATE_EVENT()<sp/>};</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">UpdateEvent</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMMEDIATE_EVENT();</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>DeltaTime<sp/>=<sp/>0.0f;</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">PostUpdateEvent<sp/>{<sp/>IMMEDIATE_EVENT()<sp/>};</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">PreDestroyEvent<sp/>{<sp/>IMMEDIATE_EVENT()<sp/>};</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">DestroyEvent<sp/>{<sp/>IMMEDIATE_EVENT()<sp/>};</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ShutdownEvent<sp/>{<sp/>IMMEDIATE_EVENT()<sp/>};</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">CollisionEvent<sp/>{};</highlight></codeline>
-<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">SimulationBeginEvent<sp/>{<sp/>IMMEDIATE_EVENT()<sp/>};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">SimulationPauseEvent<sp/>{<sp/>IMMEDIATE_EVENT()<sp/>};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">SimulationEndEvent<sp/>{<sp/>IMMEDIATE_EVENT()<sp/>};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">PreUpdateEvent<sp/>{<sp/>IMMEDIATE_EVENT()<sp/>};</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">UpdateEvent</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>IMMEDIATE_EVENT();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>DeltaTime<sp/>=<sp/>0.0f;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">PostUpdateEvent<sp/>{<sp/>IMMEDIATE_EVENT()<sp/>};</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">PreDestroyEvent<sp/>{<sp/>IMMEDIATE_EVENT()<sp/>};</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">DestroyEvent<sp/>{<sp/>IMMEDIATE_EVENT()<sp/>};</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">ShutdownEvent<sp/>{<sp/>IMMEDIATE_EVENT()<sp/>};</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">CollisionEvent<sp/>{};</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/Event.h"/>
   </compounddef>

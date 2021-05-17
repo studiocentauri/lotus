@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structLotus_1_1OutputArchive" kind="struct" language="C++" prot="public">
+    <compoundname>Lotus::OutputArchive</compoundname>
+    <innerclass refid="structLotus_1_1OutputArchive_1_1impl" prot="protected">Lotus::OutputArchive::impl</innerclass>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="structLotus_1_1OutputArchive_1a7528a605b6b74a6508da440635294ab3" prot="protected" static="no" mutable="no">
+        <type>entt::snapshot</type>
+        <definition>entt::snapshot Lotus::OutputArchive::snapshot</definition>
+        <argsstring></argsstring>
+        <name>snapshot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/serialization.h" line="42" column="24" bodyfile="/builds/centauri/lotus/lotus/include/lotus/serialization.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1OutputArchive_1ae6b030e2ddee488c7675fdd7a262c460" prot="protected" static="no" mutable="no">
+        <type>std::unordered_set&lt; std::string &gt;</type>
+        <definition>std::unordered_set&lt;std::string&gt; Lotus::OutputArchive::done</definition>
+        <argsstring></argsstring>
+        <name>done</name>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/serialization.h" line="43" column="28" bodyfile="/builds/centauri/lotus/lotus/include/lotus/serialization.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1OutputArchive_1a31325f65cc47d418654c232f13c33b25" prot="protected" static="no" mutable="no">
+        <type>struct <ref refid="structLotus_1_1OutputArchive_1_1impl" kindref="compound">Lotus::OutputArchive::impl</ref></type>
+        <definition>struct Lotus::OutputArchive::impl Lotus::OutputArchive::impl</definition>
+        <argsstring></argsstring>
+        <name>impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/serialization.h" line="80" column="14"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structLotus_1_1OutputArchive_1a2a3f3ed816ccfd31562231e4c1c098fa" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Lotus::OutputArchive::OutputArchive</definition>
+        <argsstring>(entt::registry *reg)</argsstring>
+        <name>OutputArchive</name>
+        <param>
+          <type>entt::registry *</type>
+          <declname>reg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/serialization.h" line="15" column="18" bodyfile="/builds/centauri/lotus/lotus/include/lotus/serialization.h" bodystart="15" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="structLotus_1_1OutputArchive_1abe8febf2a61948e7a241540c8c209e5c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Component</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Lotus::OutputArchive::components</definition>
+        <argsstring>()</argsstring>
+        <name>components</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/serialization.h" line="20" column="14" bodyfile="/builds/centauri/lotus/lotus/include/lotus/serialization.h" bodystart="20" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="structLotus_1_1OutputArchive_1a94f45ead6a57cc23836052cf31b9a9dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Lotus::OutputArchive::entities</definition>
+        <argsstring>()</argsstring>
+        <name>entities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/serialization.h" line="31" column="14" bodyfile="/builds/centauri/lotus/lotus/include/lotus/serialization.h" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="structLotus_1_1OutputArchive_1aa35ba3192ddc7cf1cf53229ad0b27637" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Lotus::OutputArchive::DumpToFile</definition>
+        <argsstring>(const std::string &amp;path)</argsstring>
+        <name>DumpToFile</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/serialization.h" line="36" column="14" bodyfile="/builds/centauri/lotus/lotus/include/lotus/serialization.h" bodystart="36" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Lotus::OutputArchive::impl</label>
+        <link refid="structLotus_1_1OutputArchive_1_1impl"/>
+      </node>
+      <node id="1">
+        <label>Lotus::OutputArchive</label>
+        <link refid="structLotus_1_1OutputArchive"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>impl</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/serialization.h" line="13" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/serialization.h" bodystart="14" bodyend="81"/>
+    <listofallmembers>
+      <member refid="structLotus_1_1OutputArchive_1abe8febf2a61948e7a241540c8c209e5c" prot="public" virt="non-virtual"><scope>Lotus::OutputArchive</scope><name>components</name></member>
+      <member refid="structLotus_1_1OutputArchive_1ae6b030e2ddee488c7675fdd7a262c460" prot="protected" virt="non-virtual"><scope>Lotus::OutputArchive</scope><name>done</name></member>
+      <member refid="structLotus_1_1OutputArchive_1aa35ba3192ddc7cf1cf53229ad0b27637" prot="public" virt="non-virtual"><scope>Lotus::OutputArchive</scope><name>DumpToFile</name></member>
+      <member refid="structLotus_1_1OutputArchive_1a94f45ead6a57cc23836052cf31b9a9dc" prot="public" virt="non-virtual"><scope>Lotus::OutputArchive</scope><name>entities</name></member>
+      <member refid="structLotus_1_1OutputArchive_1a31325f65cc47d418654c232f13c33b25" prot="protected" virt="non-virtual"><scope>Lotus::OutputArchive</scope><name>impl</name></member>
+      <member refid="structLotus_1_1OutputArchive_1a2a3f3ed816ccfd31562231e4c1c098fa" prot="public" virt="non-virtual"><scope>Lotus::OutputArchive</scope><name>OutputArchive</name></member>
+      <member refid="structLotus_1_1OutputArchive_1a7528a605b6b74a6508da440635294ab3" prot="protected" virt="non-virtual"><scope>Lotus::OutputArchive</scope><name>snapshot</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

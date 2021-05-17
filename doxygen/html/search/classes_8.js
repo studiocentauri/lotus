@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['renderconfig_79',['RenderConfig',['../structLotus_1_1RenderConfig.html',1,'Lotus']]],
-  ['renderpass_80',['RenderPass',['../classLotus_1_1Renderer_1_1RenderPass.html',1,'Lotus::Renderer']]]
+  ['pointlightinfo_88',['PointLightInfo',['../structLotus_1_1PointLightInfo.html',1,'Lotus']]],
+  ['projectconfig_89',['ProjectConfig',['../structLotus_1_1ProjectConfig.html',1,'Lotus']]]
 ];

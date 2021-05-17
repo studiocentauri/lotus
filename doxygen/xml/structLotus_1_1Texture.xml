@@ -17,14 +17,42 @@
         </inbodydescription>
         <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Texture.h" line="10" column="22" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Texture.h" bodystart="10" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1Texture_1ac51ccd7c377bd64e14fab452b1bdb462" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Lotus::Texture::path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Texture.h" line="13" column="25" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Texture.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1Texture_1a34935dcb1a6f6e6c23c2bb86778e6a70" prot="public" static="no" mutable="no">
+        <type>struct Lotus::Texture::@4</type>
+        <definition>struct Lotus::Texture::@4 Lotus::Texture::detail</definition>
+        <argsstring></argsstring>
+        <name>detail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Texture.h" line="14" column="16"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Texture.h" line="8" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Texture.h" bodystart="9" bodyend="11"/>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/resources/Texture.h" line="8" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/resources/Texture.h" bodystart="9" bodyend="15"/>
     <listofallmembers>
+      <member refid="structLotus_1_1Texture_1a34935dcb1a6f6e6c23c2bb86778e6a70" prot="public" virt="non-virtual"><scope>Lotus::Texture</scope><name>detail</name></member>
       <member refid="structLotus_1_1Texture_1a983b538ba8f96889ffb99d32e5c2388b" prot="public" virt="non-virtual"><scope>Lotus::Texture</scope><name>ID</name></member>
+      <member refid="structLotus_1_1Texture_1ac51ccd7c377bd64e14fab452b1bdb462" prot="public" virt="non-virtual"><scope>Lotus::Texture</scope><name>path</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

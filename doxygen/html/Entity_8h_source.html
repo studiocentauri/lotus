@@ -90,60 +90,56 @@ $(function() {
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        entt::registry* _registry = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="classLotus_1_1Entity.html">Entity</a>(EntityID <span class="keywordtype">id</span>, entt::registry* registry)</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                : _id(<span class="keywordtype">id</span>), _registry(registry)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        {}</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classLotus_1_1Entity.html#a6632822abd792a3bf2cda827455e90d5">   38</a></span>&#160;        <span class="keyword">explicit</span> <span class="keyword">operator</span> EntityID()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            <span class="keywordflow">return</span> _id;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Component, <span class="keyword">typename</span> ...Args&gt;</div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classLotus_1_1Entity.html#a84be326c22eb1d2cabc5e5b3190638da">   51</a></span>&#160;        Component&amp; <a class="code" href="classLotus_1_1Entity.html#a84be326c22eb1d2cabc5e5b3190638da">AddComponent</a>(Args&amp;&amp; ...args)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">return</span> _registry-&gt;emplace&lt;Component&gt;(_id, std::forward&lt;Args&gt;(args)...);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span>... Components&gt;</div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classLotus_1_1Entity.html#aae7a02a25247e102e84a75f96fe0d364">   62</a></span>&#160;        decltype(<span class="keyword">auto</span>) <a class="code" href="classLotus_1_1Entity.html#aae7a02a25247e102e84a75f96fe0d364">GetComponent</a>()</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">return</span> _registry-&gt;get&lt;Components...&gt;(_id);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        }</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="comment">// ReSharper disable once CppMemberFunctionMayBeConst</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classLotus_1_1Entity.html#a69a075a0e668a9f1d2a92ddad83e4ba4">   71</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classLotus_1_1Entity.html#a69a075a0e668a9f1d2a92ddad83e4ba4">Destroy</a>()</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            _registry-&gt;destroy(_id);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    };</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="structLotus_1_1ComponentCreateEvent.html">   78</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structLotus_1_1ComponentCreateEvent.html">ComponentCreateEvent</a></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        EntityID entityID;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    };</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="structLotus_1_1ComponentDestroyEvent.html">   84</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structLotus_1_1ComponentDestroyEvent.html">ComponentDestroyEvent</a></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        EntityID entityID;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    };</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> ECSInitialize();</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> ECSShutdown();</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    LOTUS_API entt::registry* GetRegistry();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    LOTUS_API <a class="code" href="classLotus_1_1Entity.html">Entity</a> CreateEntity();</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    LOTUS_API <a class="code" href="classLotus_1_1Entity.html">Entity</a> CreateEntity(<span class="keyword">const</span> std::string&amp; path);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <a class="code" href="classLotus_1_1Entity.html">Entity</a>()</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        {}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="classLotus_1_1Entity.html">Entity</a>(EntityID <span class="keywordtype">id</span>, entt::registry* registry)</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                : _id(<span class="keywordtype">id</span>), _registry(registry)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        {}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classLotus_1_1Entity.html#a6632822abd792a3bf2cda827455e90d5">   41</a></span>&#160;        <span class="keyword">explicit</span> <span class="keyword">operator</span> EntityID()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="keywordflow">return</span> _id;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Component, <span class="keyword">typename</span> ...Args&gt;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classLotus_1_1Entity.html#a84be326c22eb1d2cabc5e5b3190638da">   54</a></span>&#160;        Component&amp; <a class="code" href="classLotus_1_1Entity.html#a84be326c22eb1d2cabc5e5b3190638da">AddComponent</a>(Args&amp;&amp; ...args)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <span class="keywordflow">return</span> _registry-&gt;emplace&lt;Component&gt;(_id, std::forward&lt;Args&gt;(args)...);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keyword">template</span>&lt;<span class="keyword">typename</span>... Components&gt;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classLotus_1_1Entity.html#aae7a02a25247e102e84a75f96fe0d364">   65</a></span>&#160;        decltype(<span class="keyword">auto</span>) <a class="code" href="classLotus_1_1Entity.html#aae7a02a25247e102e84a75f96fe0d364">GetComponent</a>()</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">return</span> _registry-&gt;get&lt;Components...&gt;(_id);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="comment">// ReSharper disable once CppMemberFunctionMayBeConst</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classLotus_1_1Entity.html#a69a075a0e668a9f1d2a92ddad83e4ba4">   74</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classLotus_1_1Entity.html#a69a075a0e668a9f1d2a92ddad83e4ba4">Destroy</a>()</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            _registry-&gt;destroy(_id);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    };</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="structLotus_1_1ComponentCreateEvent.html">   81</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structLotus_1_1ComponentCreateEvent.html">ComponentCreateEvent</a></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        EntityID entityID;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    };</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="structLotus_1_1ComponentDestroyEvent.html">   87</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structLotus_1_1ComponentDestroyEvent.html">ComponentDestroyEvent</a></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        EntityID entityID;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    };</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassLotus_1_1Entity_html_aae7a02a25247e102e84a75f96fe0d364"><div class="ttname"><a href="classLotus_1_1Entity.html#aae7a02a25247e102e84a75f96fe0d364">Lotus::Entity::GetComponent</a></div><div class="ttdeci">decltype(auto) GetComponent()</div><div class="ttdoc">Get components from this entity.</div><div class="ttdef"><b>Definition:</b> Entity.h:62</div></div>
+<div class="ttc" id="aclassLotus_1_1Entity_html_aae7a02a25247e102e84a75f96fe0d364"><div class="ttname"><a href="classLotus_1_1Entity.html#aae7a02a25247e102e84a75f96fe0d364">Lotus::Entity::GetComponent</a></div><div class="ttdeci">decltype(auto) GetComponent()</div><div class="ttdoc">Get components from this entity.</div><div class="ttdef"><b>Definition:</b> Entity.h:65</div></div>
 <div class="ttc" id="aclassLotus_1_1Entity_html"><div class="ttname"><a href="classLotus_1_1Entity.html">Lotus::Entity</a></div><div class="ttdoc">Lightweight wrapper class to represent entities.</div><div class="ttdef"><b>Definition:</b> Entity.h:24</div></div>
-<div class="ttc" id="astructLotus_1_1ComponentDestroyEvent_html"><div class="ttname"><a href="structLotus_1_1ComponentDestroyEvent.html">Lotus::ComponentDestroyEvent</a></div><div class="ttdef"><b>Definition:</b> Entity.h:85</div></div>
-<div class="ttc" id="astructLotus_1_1ComponentCreateEvent_html"><div class="ttname"><a href="structLotus_1_1ComponentCreateEvent.html">Lotus::ComponentCreateEvent</a></div><div class="ttdef"><b>Definition:</b> Entity.h:79</div></div>
-<div class="ttc" id="aclassLotus_1_1Entity_html_a69a075a0e668a9f1d2a92ddad83e4ba4"><div class="ttname"><a href="classLotus_1_1Entity.html#a69a075a0e668a9f1d2a92ddad83e4ba4">Lotus::Entity::Destroy</a></div><div class="ttdeci">void Destroy()</div><div class="ttdoc">Destroy this entity and remove it from the scene.</div><div class="ttdef"><b>Definition:</b> Entity.h:71</div></div>
-<div class="ttc" id="aclassLotus_1_1Entity_html_a84be326c22eb1d2cabc5e5b3190638da"><div class="ttname"><a href="classLotus_1_1Entity.html#a84be326c22eb1d2cabc5e5b3190638da">Lotus::Entity::AddComponent</a></div><div class="ttdeci">Component &amp; AddComponent(Args &amp;&amp;...args)</div><div class="ttdoc">Add a component to this entity.</div><div class="ttdef"><b>Definition:</b> Entity.h:51</div></div>
+<div class="ttc" id="astructLotus_1_1ComponentDestroyEvent_html"><div class="ttname"><a href="structLotus_1_1ComponentDestroyEvent.html">Lotus::ComponentDestroyEvent</a></div><div class="ttdef"><b>Definition:</b> Entity.h:88</div></div>
+<div class="ttc" id="astructLotus_1_1ComponentCreateEvent_html"><div class="ttname"><a href="structLotus_1_1ComponentCreateEvent.html">Lotus::ComponentCreateEvent</a></div><div class="ttdef"><b>Definition:</b> Entity.h:82</div></div>
+<div class="ttc" id="aclassLotus_1_1Entity_html_a69a075a0e668a9f1d2a92ddad83e4ba4"><div class="ttname"><a href="classLotus_1_1Entity.html#a69a075a0e668a9f1d2a92ddad83e4ba4">Lotus::Entity::Destroy</a></div><div class="ttdeci">void Destroy()</div><div class="ttdoc">Destroy this entity and remove it from the scene.</div><div class="ttdef"><b>Definition:</b> Entity.h:74</div></div>
+<div class="ttc" id="aclassLotus_1_1Entity_html_a84be326c22eb1d2cabc5e5b3190638da"><div class="ttname"><a href="classLotus_1_1Entity.html#a84be326c22eb1d2cabc5e5b3190638da">Lotus::Entity::AddComponent</a></div><div class="ttdeci">Component &amp; AddComponent(Args &amp;&amp;...args)</div><div class="ttdoc">Add a component to this entity.</div><div class="ttdef"><b>Definition:</b> Entity.h:54</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

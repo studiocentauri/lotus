@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="47" column="15" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="47" bodyend="-1"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="52" column="15" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structLotus_1_1CRigidBody_1a8f269efae758e54c2bd60efc733a17f7" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -30,7 +30,34 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="48" column="14" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="48" bodyend="-1"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="53" column="14" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1CRigidBody_1a3553a150d0a0ccd4056c561bd3db919a" prot="public" static="no" mutable="no">
+        <type>physx::PxRigidActor *</type>
+        <definition>physx::PxRigidActor* Lotus::CRigidBody::actor</definition>
+        <argsstring></argsstring>
+        <name>actor</name>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="59" column="33" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLotus_1_1CRigidBody_1abd590847ca817969cbb15d7f1fda5d1f" prot="public" static="no" mutable="no">
+        <type>struct Lotus::CRigidBody::@0</type>
+        <definition>struct Lotus::CRigidBody::@0 Lotus::CRigidBody::detail</definition>
+        <argsstring></argsstring>
+        <name>detail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="60" column="16"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -54,7 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="50" column="9"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="55" column="9"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -64,8 +91,10 @@
 </simplesect>
 </para>
     </detaileddescription>
-    <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="45" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="46" bodyend="51"/>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="50" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="51" bodyend="61"/>
     <listofallmembers>
+      <member refid="structLotus_1_1CRigidBody_1a3553a150d0a0ccd4056c561bd3db919a" prot="public" virt="non-virtual"><scope>Lotus::CRigidBody</scope><name>actor</name></member>
+      <member refid="structLotus_1_1CRigidBody_1abd590847ca817969cbb15d7f1fda5d1f" prot="public" virt="non-virtual"><scope>Lotus::CRigidBody</scope><name>detail</name></member>
       <member refid="structLotus_1_1CRigidBody_1a48aded464e47b22eb88cf6208f941310" prot="public" virt="non-virtual"><scope>Lotus::CRigidBody</scope><name>GENERATED_BODY</name></member>
       <member refid="structLotus_1_1CRigidBody_1add2df609d04cb55399d270a07a3ee4a3" prot="public" virt="non-virtual"><scope>Lotus::CRigidBody</scope><name>Gravity</name></member>
       <member refid="structLotus_1_1CRigidBody_1a8f269efae758e54c2bd60efc733a17f7" prot="public" virt="non-virtual"><scope>Lotus::CRigidBody</scope><name>IsKinematic</name></member>

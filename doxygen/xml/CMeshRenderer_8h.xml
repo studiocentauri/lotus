@@ -20,12 +20,12 @@
         </childnode>
         <childnode refid="16" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
+        <childnode refid="28" relation="include">
         </childnode>
-        <childnode refid="27" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
       </node>
-      <node id="25">
+      <node id="27">
         <label>functional</label>
       </node>
       <node id="20">
@@ -48,8 +48,16 @@
       <node id="7">
         <label>lotus/internal/entt/entt.hpp</label>
       </node>
-      <node id="26">
+      <node id="28">
         <label>variant</label>
+      </node>
+      <node id="24">
+        <label>lotus/serialization.h</label>
+        <link refid="serialization_8h_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
       </node>
       <node id="22">
         <label>lotus/rendering/common.h</label>
@@ -59,6 +67,9 @@
       </node>
       <node id="10">
         <label>string</label>
+      </node>
+      <node id="25">
+        <label>lotus/internal/entt/entity/fwd.hpp</label>
       </node>
       <node id="14">
         <label>lotus/resources/AssetRegistry.h</label>
@@ -110,7 +121,7 @@
         <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="27">
+      <node id="29">
         <label>optional</label>
       </node>
       <node id="2">
@@ -141,7 +152,7 @@
         <childnode refid="14" relation="include">
         </childnode>
       </node>
-      <node id="24">
+      <node id="26">
         <label>unordered_map</label>
       </node>
       <node id="6">
@@ -151,15 +162,15 @@
       <node id="23">
         <label>lotus/ecs/ComponentRegistry.h</label>
         <link refid="ComponentRegistry_8h_source"/>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
+        <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="24" relation="include">
         </childnode>
-        <childnode refid="25" relation="include">
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
         </childnode>
       </node>
       <node id="11">
@@ -218,21 +229,28 @@
 <codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>NOTE:<sp/>These<sp/>cannot<sp/>be<sp/>just<sp/>&quot;Material&quot;<sp/>or<sp/>&quot;Model&quot;<sp/>because<sp/>GCC<sp/>complains<sp/>about<sp/>the<sp/>name</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MSVC<sp/>and<sp/>clang<sp/>will<sp/>work<sp/>fine<sp/>though</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::string<sp/>GetName()</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;CMeshRenderer&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>to_json(nlohmann::json&amp;<sp/>data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structLotus_1_1CMeshRenderer" kindref="compound">CMeshRenderer</ref>&amp;<sp/>mr)</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>Handle<sp/>to<sp/>path</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>from_json(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>nlohmann::json&amp;<sp/>data,<sp/>CMeshRenderer&amp;<sp/>mr)</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mr.MeshModel<sp/>=<sp/>LoadAsset&lt;Model,<sp/>ModelLoader&gt;(ExpandPath(data.at(</highlight><highlight class="stringliteral">&quot;Model&quot;</highlight><highlight class="normal">).get&lt;std::string&gt;()));</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mr.MeshMaterial<sp/>=<sp/>LoadAsset&lt;Material,<sp/>MaterialLoader&gt;(ExpandPath(data.at(</highlight><highlight class="stringliteral">&quot;Material&quot;</highlight><highlight class="normal">).get&lt;std::string&gt;()));</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structLotus_1_1CMeshRenderer" kindref="compound">CMeshRenderer</ref>()</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MeshMaterial<sp/>=<sp/>LoadAsset&lt;Material,<sp/>MaterialLoader&gt;(</highlight><highlight class="stringliteral">&quot;int://materials/default.json&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MeshModel<sp/>=<sp/>LoadAsset&lt;Model,<sp/>ModelLoader&gt;(</highlight><highlight class="stringliteral">&quot;int://mesh/cube.fbx&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>std::string<sp/>GetName()</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;CMeshRenderer&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>to_json(nlohmann::json&amp;<sp/>data,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structLotus_1_1CMeshRenderer" kindref="compound">CMeshRenderer</ref>&amp;<sp/>mr)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data[</highlight><highlight class="stringliteral">&quot;Model&quot;</highlight><highlight class="normal">]<sp/>=<sp/>mr.MeshModel-&gt;detail.path;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data[</highlight><highlight class="stringliteral">&quot;Material&quot;</highlight><highlight class="normal">]<sp/>=<sp/>mr.MeshMaterial-&gt;detail.path;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>from_json(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>nlohmann::json&amp;<sp/>data,<sp/>CMeshRenderer&amp;<sp/>mr)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mr.MeshModel<sp/>=<sp/>LoadAsset&lt;Model,<sp/>ModelLoader&gt;(data.at(</highlight><highlight class="stringliteral">&quot;Model&quot;</highlight><highlight class="normal">).get&lt;std::string&gt;());</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mr.MeshMaterial<sp/>=<sp/>LoadAsset&lt;Material,<sp/>MaterialLoader&gt;(data.at(</highlight><highlight class="stringliteral">&quot;Material&quot;</highlight><highlight class="normal">).get&lt;std::string&gt;());</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="/builds/centauri/lotus/lotus/include/lotus/rendering/CMeshRenderer.h"/>
   </compounddef>

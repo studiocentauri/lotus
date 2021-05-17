@@ -167,6 +167,10 @@
             
   <div class="section" id="the-entity-component-system">
 <h1>The Entity Component System<a class="headerlink" href="#the-entity-component-system" title="Permalink to this headline">¶</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Do not use component pointers. Keep the entity instead and get the component wherever required.</p>
+</div>
 <div class="section" id="events-and-systems">
 <h2>Events and Systems<a class="headerlink" href="#events-and-systems" title="Permalink to this headline">¶</a></h2>
 <p>The primary method to interact with the game world is through events and event callbacks. A <em>system</em> is loosely defined as a

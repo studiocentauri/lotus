@@ -19,19 +19,36 @@
     <member refid="structLotus_1_1CCapsuleCollider_1a4968f2d67527c75a910e302d9b608b71" kind="variable"><name>Height</name></member>
     <member refid="structLotus_1_1CCapsuleCollider_1ad9f28c65dc13eabbc4777d3856fc2b53" kind="function"><name>GENERATED_BODY</name></member>
   </compound>
+  <compound refid="structLotus_1_1CDisplayName" kind="struct"><name>Lotus::CDisplayName</name>
+    <member refid="structLotus_1_1CDisplayName_1a8e3235c0a23a014a85831ba8c777b412" kind="variable"><name>Name</name></member>
+    <member refid="structLotus_1_1CDisplayName_1a0eb9379b680fbb809e9f3504c74e65ca" kind="function"><name>GENERATED_BODY</name></member>
+  </compound>
   <compound refid="structLotus_1_1CMeshRenderer" kind="struct"><name>Lotus::CMeshRenderer</name>
     <member refid="structLotus_1_1CMeshRenderer_1a71ec6898ef37d53773572aa8c930fac9" kind="variable"><name>MeshMaterial</name></member>
     <member refid="structLotus_1_1CMeshRenderer_1ae3fdd6d66475513269dc2d0776752bed" kind="variable"><name>MeshModel</name></member>
+    <member refid="structLotus_1_1CMeshRenderer_1aec92c5e9fd08f2460e08af968a4781d9" kind="function"><name>CMeshRenderer</name></member>
     <member refid="structLotus_1_1CMeshRenderer_1a84be6bed0c74ff6be161a0bcdd2e74e8" kind="function"><name>GetName</name></member>
-  </compound>
-  <compound refid="structLotus_1_1ComponentAssigner" kind="struct"><name>Lotus::ComponentAssigner</name>
-    <member refid="structLotus_1_1ComponentAssigner_1aea239ea63248247246ef358d3b06e73e" kind="function"><name>Assign</name></member>
   </compound>
   <compound refid="structLotus_1_1ComponentCreateEvent" kind="struct"><name>Lotus::ComponentCreateEvent</name>
     <member refid="structLotus_1_1ComponentCreateEvent_1a3687f7e1d72c31e1932403877b70be97" kind="variable"><name>entityID</name></member>
   </compound>
   <compound refid="structLotus_1_1ComponentDestroyEvent" kind="struct"><name>Lotus::ComponentDestroyEvent</name>
     <member refid="structLotus_1_1ComponentDestroyEvent_1af36004a7fb823a48be0b0b10489b94ad" kind="variable"><name>entityID</name></member>
+  </compound>
+  <compound refid="structLotus_1_1ComponentInfo" kind="struct"><name>Lotus::ComponentInfo</name>
+    <member refid="structLotus_1_1ComponentInfo_1aea8465224775058c94fbd0cbe7fff61e" kind="typedef"><name>AssignFn</name></member>
+    <member refid="structLotus_1_1ComponentInfo_1a30c8d6ab715d6ee095e43915cb070603" kind="typedef"><name>DefaultAssignFn</name></member>
+    <member refid="structLotus_1_1ComponentInfo_1a776171a031c0b08033398c77b15da458" kind="typedef"><name>SerializeFn</name></member>
+    <member refid="structLotus_1_1ComponentInfo_1a6aaa6262a1fd69a016de3beb0b552dd9" kind="variable"><name>id</name></member>
+    <member refid="structLotus_1_1ComponentInfo_1aa48b121a6500846c7ec13b2a4075ef83" kind="variable"><name>name</name></member>
+    <member refid="structLotus_1_1ComponentInfo_1ad2249341a3a8630c26bc8be66f049d4c" kind="variable"><name>assignFn</name></member>
+    <member refid="structLotus_1_1ComponentInfo_1a5177f9d54faf1ca33c6e8b2bd50bf8a6" kind="variable"><name>defaultAssignFn</name></member>
+    <member refid="structLotus_1_1ComponentInfo_1a72dabf72597c936e89004d860d83b44c" kind="variable"><name>serializeFn</name></member>
+  </compound>
+  <compound refid="structLotus_1_1ComponentTraits" kind="struct"><name>Lotus::ComponentTraits</name>
+    <member refid="structLotus_1_1ComponentTraits_1afec1ba47618abfa2a51f76e10c470143" kind="function"><name>Assign</name></member>
+    <member refid="structLotus_1_1ComponentTraits_1aed891d28fa3c2f46a6665a852e7854ce" kind="function"><name>DefaultAssign</name></member>
+    <member refid="structLotus_1_1ComponentTraits_1a71159088c5d47a4cf5c4cd4486a8a9eb" kind="function"><name>Serialize</name></member>
   </compound>
   <compound refid="structLotus_1_1CPointLight" kind="struct"><name>Lotus::CPointLight</name>
     <member refid="structLotus_1_1CPointLight_1ad0b291d1a3550f09c8751580b39a7aa4" kind="variable"><name>color</name></member>
@@ -43,7 +60,11 @@
   <compound refid="structLotus_1_1CRigidBody" kind="struct"><name>Lotus::CRigidBody</name>
     <member refid="structLotus_1_1CRigidBody_1add2df609d04cb55399d270a07a3ee4a3" kind="variable"><name>Gravity</name></member>
     <member refid="structLotus_1_1CRigidBody_1a8f269efae758e54c2bd60efc733a17f7" kind="variable"><name>IsKinematic</name></member>
+    <member refid="structLotus_1_1CRigidBody_1a3553a150d0a0ccd4056c561bd3db919a" kind="variable"><name>actor</name></member>
+    <member refid="structLotus_1_1CRigidBody_1abd590847ca817969cbb15d7f1fda5d1f" kind="variable"><name>detail</name></member>
     <member refid="structLotus_1_1CRigidBody_1a48aded464e47b22eb88cf6208f941310" kind="function"><name>GENERATED_BODY</name></member>
+  </compound>
+  <compound refid="structLotus_1_1CSerialize" kind="struct"><name>Lotus::CSerialize</name>
   </compound>
   <compound refid="structLotus_1_1CSkybox" kind="struct"><name>Lotus::CSkybox</name>
     <member refid="structLotus_1_1CSkybox_1a019dcc2dcd7fe021d593a3604126fa6f" kind="variable"><name>Map</name></member>
@@ -77,6 +98,7 @@
   <compound refid="classLotus_1_1Entity" kind="class"><name>Lotus::Entity</name>
     <member refid="classLotus_1_1Entity_1af8472524b6ff662ad11e420eec8ee4a3" kind="variable"><name>_id</name></member>
     <member refid="classLotus_1_1Entity_1aa070da2fdb4fde7ae921b72d66e25098" kind="variable"><name>_registry</name></member>
+    <member refid="classLotus_1_1Entity_1a8d19cdf30c3a6666fced1d4484c953a9" kind="function"><name>Entity</name></member>
     <member refid="classLotus_1_1Entity_1ad1a098f6591950a6c21b255ed84bce18" kind="function"><name>Entity</name></member>
     <member refid="classLotus_1_1Entity_1a6632822abd792a3bf2cda827455e90d5" kind="function"><name>operator EntityID</name></member>
     <member refid="classLotus_1_1Entity_1a84be326c22eb1d2cabc5e5b3190638da" kind="function"><name>AddComponent</name></member>
@@ -99,6 +121,17 @@
   <compound refid="structLotus_1_1HDRI" kind="struct"><name>Lotus::HDRI</name>
     <member refid="structLotus_1_1HDRI_1ab3bcd13a1c00c65bb965fd9c8b6b2ecf" kind="variable"><name>EnvironmentMap</name></member>
     <member refid="structLotus_1_1HDRI_1a3066adf5111dac8193c5f01ffcf3ba2a" kind="variable"><name>Irradiance</name></member>
+    <member refid="structLotus_1_1HDRI_1a252bb2180c4316919adccb2b319dc52f" kind="variable"><name>path</name></member>
+    <member refid="structLotus_1_1HDRI_1af3c59c1387480b93300199e10b14d5f4" kind="variable"><name>detail</name></member>
+  </compound>
+  <compound refid="structLotus_1_1OutputArchive_1_1impl" kind="struct"><name>Lotus::OutputArchive::impl</name>
+    <member refid="structLotus_1_1OutputArchive_1_1impl_1ac465d2d5dc83f79788d41102e3b27a94" kind="variable"><name>data</name></member>
+    <member refid="structLotus_1_1OutputArchive_1_1impl_1a96a8e788688eb25e2da6ca6d70b54f5f" kind="variable"><name>pReg</name></member>
+    <member refid="structLotus_1_1OutputArchive_1_1impl_1a1a01fbb5e0a884b0b26034e9864fd831" kind="function"><name>impl</name></member>
+    <member refid="structLotus_1_1OutputArchive_1_1impl_1ab807300a3d3003fc73ac0b978c801fca" kind="function"><name>operator()</name></member>
+    <member refid="structLotus_1_1OutputArchive_1_1impl_1a40882f9619f138998f3ab64aa2549090" kind="function"><name>operator()</name></member>
+    <member refid="structLotus_1_1OutputArchive_1_1impl_1ad11499eabb829828965f17bdebf75ec6" kind="function"><name>operator()</name></member>
+    <member refid="structLotus_1_1OutputArchive_1_1impl_1ae92e3593f1320da6bd03bc53a89f4b90" kind="function"><name>dump</name></member>
   </compound>
   <compound refid="classLotus_1_1ISystem" kind="class"><name>Lotus::ISystem</name>
   </compound>
@@ -109,9 +142,22 @@
     <member refid="structLotus_1_1Material_1a7b3a73801a660284cd670717d1bc6636" kind="variable"><name>Normal</name></member>
     <member refid="structLotus_1_1Material_1a1a30652cbc54576797984f828f9d4666" kind="variable"><name>Roughness</name></member>
     <member refid="structLotus_1_1Material_1a907dd79f744f40bbd24e12329d0facef" kind="variable"><name>Metallic</name></member>
+    <member refid="structLotus_1_1Material_1a327805581d05c899be8ced3b9c3fdd39" kind="variable"><name>path</name></member>
+    <member refid="structLotus_1_1Material_1a01276bd8cea71d764f889e19319b7928" kind="variable"><name>detail</name></member>
   </compound>
   <compound refid="structLotus_1_1Model" kind="struct"><name>Lotus::Model</name>
     <member refid="structLotus_1_1Model_1a429f6325fbf32237be62a40b4dae9f42" kind="variable"><name>Meshes</name></member>
+    <member refid="structLotus_1_1Model_1a8307be36832a1ce43273f5e50fb7a2a1" kind="variable"><name>path</name></member>
+    <member refid="structLotus_1_1Model_1a4d08dc6ed0898a8c8b45608149eb33f8" kind="variable"><name>detail</name></member>
+  </compound>
+  <compound refid="structLotus_1_1OutputArchive" kind="struct"><name>Lotus::OutputArchive</name>
+    <member refid="structLotus_1_1OutputArchive_1a7528a605b6b74a6508da440635294ab3" kind="variable"><name>snapshot</name></member>
+    <member refid="structLotus_1_1OutputArchive_1ae6b030e2ddee488c7675fdd7a262c460" kind="variable"><name>done</name></member>
+    <member refid="structLotus_1_1OutputArchive_1a31325f65cc47d418654c232f13c33b25" kind="variable"><name>impl</name></member>
+    <member refid="structLotus_1_1OutputArchive_1a2a3f3ed816ccfd31562231e4c1c098fa" kind="function"><name>OutputArchive</name></member>
+    <member refid="structLotus_1_1OutputArchive_1abe8febf2a61948e7a241540c8c209e5c" kind="function"><name>components</name></member>
+    <member refid="structLotus_1_1OutputArchive_1a94f45ead6a57cc23836052cf31b9a9dc" kind="function"><name>entities</name></member>
+    <member refid="structLotus_1_1OutputArchive_1aa35ba3192ddc7cf1cf53229ad0b27637" kind="function"><name>DumpToFile</name></member>
   </compound>
   <compound refid="structLotus_1_1PointLightInfo" kind="struct"><name>Lotus::PointLightInfo</name>
     <member refid="structLotus_1_1PointLightInfo_1aac9a2c1aedd7e426ce9c9730e0aa63a4" kind="variable"><name>color</name></member>
@@ -140,8 +186,18 @@
     <member refid="classLotus_1_1Renderer_1_1RenderPass_1ade19d47e348df0be356694f433694ef5" kind="function"><name>~RenderPass</name></member>
   </compound>
   <compound refid="structLotus_1_1Scene" kind="struct"><name>Lotus::Scene</name>
-    <member refid="structLotus_1_1Scene_1afb15d4115218954aabe99085cd97f1eb" kind="variable"><name>Path</name></member>
     <member refid="structLotus_1_1Scene_1a74c0a66897fcc20710042c241fed3c52" kind="variable"><name>Root</name></member>
+    <member refid="structLotus_1_1Scene_1ad3adbf33ca452b345df138c44661287e" kind="variable"><name>path</name></member>
+    <member refid="structLotus_1_1Scene_1a3d225f205a97992a47bdbd20e5f76b94" kind="variable"><name>detail</name></member>
+    <member refid="structLotus_1_1Scene_1aa6d90931f76098d0b6c90bf9a3b61e8e" kind="variable"><name>_registry</name></member>
+    <member refid="structLotus_1_1Scene_1a4d539951751fe2f4b6f260294541b4cf" kind="function"><name>Scene</name></member>
+    <member refid="structLotus_1_1Scene_1ac337b5813f8d1e5eca7792a8afc94e8d" kind="function"><name>GetRegistry</name></member>
+    <member refid="structLotus_1_1Scene_1a2587faa60bcf7d68f8dee057a6c7430f" kind="function"><name>CreateEntity</name></member>
+    <member refid="structLotus_1_1Scene_1a7263bd9e9c6ae042bbc2b4a19fd89df0" kind="function"><name>CreateEntity</name></member>
+  </compound>
+  <compound refid="structLotus_1_1SceneLoadEvent" kind="struct"><name>Lotus::SceneLoadEvent</name>
+    <member refid="structLotus_1_1SceneLoadEvent_1ac1013eef155664a906c117346e7ea503" kind="variable"><name>pScene</name></member>
+    <member refid="structLotus_1_1SceneLoadEvent_1a51c8f8ef31f6eaa82e6c5875dff0d687" kind="function"><name>IMMEDIATE_EVENT</name></member>
   </compound>
   <compound refid="classLotus_1_1SceneTreeNode" kind="class"><name>Lotus::SceneTreeNode</name>
   </compound>
@@ -188,6 +244,8 @@
   </compound>
   <compound refid="structLotus_1_1Texture" kind="struct"><name>Lotus::Texture</name>
     <member refid="structLotus_1_1Texture_1a983b538ba8f96889ffb99d32e5c2388b" kind="variable"><name>ID</name></member>
+    <member refid="structLotus_1_1Texture_1ac51ccd7c377bd64e14fab452b1bdb462" kind="variable"><name>path</name></member>
+    <member refid="structLotus_1_1Texture_1a34935dcb1a6f6e6c23c2bb86778e6a70" kind="variable"><name>detail</name></member>
   </compound>
   <compound refid="structLotus_1_1Vertex" kind="struct"><name>Lotus::Vertex</name>
     <member refid="structLotus_1_1Vertex_1a9f0c2552cf31098031db38b934f5e119" kind="variable"><name>Position</name></member>
@@ -211,7 +269,8 @@
     <member refid="lcommon_8h_1a0ca822b05156da4e9ea13e492f68032e" kind="typedef"><name>SRef</name></member>
     <member refid="lcommon_8h_1a28ddd2debe7f1c7e5f33e1a637b6b84f" kind="typedef"><name>Handle</name></member>
     <member refid="common_8h_1aeca0c728cda940e8ba2a7bedae459620" kind="typedef"><name>Color</name></member>
-    <member refid="ComponentRegistry_8h_1a2447331b00cafb065edb0ebd73c712e0" kind="variable"><name>ctors</name></member>
+    <member refid="ComponentRegistry_8h_1a533faecd0440feeb058a259e0d1d2f7e" kind="variable"><name>component_info</name></member>
+    <member refid="ComponentRegistry_8h_1a58ecfc121e2817e110b6b5690de24b80" kind="variable"><name>str_to_id</name></member>
     <member refid="Entity_8h_1a493ac41bab074a98321b2ea1c823702c" kind="variable"><name>NULL_ENTITY</name></member>
     <member refid="Input_8h_1a42a866ccdcf0b1074e72b1c7e8b2e590" kind="variable"><name>L_KEY_NONE</name></member>
     <member refid="Input_8h_1aeb80b2a64d60a85f57c4a15d18190700" kind="variable"><name>L_KEY_ESC</name></member>
@@ -258,17 +317,16 @@
     <member refid="Config_8h_1ac9c12d177330e25a33a9e6b65248befd" kind="function"><name>GetRenderConfig</name></member>
     <member refid="Config_8h_1ac7870810596e9c1f4cc2791e07e89d31" kind="function"><name>GetBuildConfig</name></member>
     <member refid="ComponentRegistry_8h_1ab54e0e2471fa1caa7e671ef65983c635" kind="function"><name>RegisterComponent</name></member>
-    <member refid="ComponentRegistry_8h_1ab3068e58481471196b3cfa2114eec73a" kind="function"><name>GetComponentCtor</name></member>
+    <member refid="ComponentRegistry_8h_1ae2ece40925a3b16505471ee7879745bc" kind="function"><name>GetComponentInfo</name></member>
+    <member refid="ComponentRegistry_8h_1a40523238979d70c93d47d1f526efc1ee" kind="function"><name>GetRegisteredComponents</name></member>
+    <member refid="ComponentRegistry_8h_1aba6202cd1d3ae68daeb3b4c49a5563cf" kind="function"><name>RegisterEngineComponents</name></member>
+    <member refid="ComponentRegistry_8h_1ac689482dc4c486deea161a92ac266b20" kind="function"><name>SerializeComponentByID</name></member>
+    <member refid="ComponentRegistry_8h_1a8c14acff6cf4b6ec2efef39d3cdf7180" kind="function"><name>SerializeComponents</name></member>
     <member refid="CCamera_8h_1a65b0262010c6cce509ca6cbf4f1e789e" kind="function"><name>GetViewMatrix</name></member>
     <member refid="CTransform_8h_1ada809878939f381775227b977dc1a54c" kind="function"><name>GetForwardVector</name></member>
     <member refid="CTransform_8h_1a35a04b715a08991168cc31988864cf00" kind="function"><name>GetRightVector</name></member>
     <member refid="CTransform_8h_1add79c43acb117e49e987f5442850e9a0" kind="function"><name>GetUpVector</name></member>
     <member refid="CTransform_8h_1ab456bed98c00402d4874fc59721df9fd" kind="function"><name>GetModelMatrix</name></member>
-    <member refid="Entity_8h_1aabe0c16a083cafda79d9c244d057c122" kind="function"><name>ECSInitialize</name></member>
-    <member refid="Entity_8h_1ac5bcfd24bd3cb661b7b53050f822db5d" kind="function"><name>ECSShutdown</name></member>
-    <member refid="Entity_8h_1a87991e17ac23c76e0864d643b64568ee" kind="function"><name>GetRegistry</name></member>
-    <member refid="Entity_8h_1ad0d15c921ed8f52868575a2b668fa491" kind="function"><name>CreateEntity</name></member>
-    <member refid="Entity_8h_1a31deb648a083999530f8978351b512e5" kind="function"><name>CreateEntity</name></member>
     <member refid="filesystem_8h_1a6e43518c23bc84d989e24e12b025caab" kind="function"><name>ExpandPath</name></member>
     <member refid="Vector_8h_1a7b60e19a35f865bc192e239b4c579a73" kind="function"><name>LNormalize</name></member>
     <member refid="Vector_8h_1a726f9b8e02e75b52c1f7df5480868381" kind="function"><name>LCross</name></member>
@@ -312,7 +370,13 @@
     <member refid="RenderPass_8h_1adae4c1cf7e00a73fc7e5e9ac31a47a7d" kind="function"><name>GetViewportUV</name></member>
   </compound>
   <compound refid="namespaceLotus_1_1SceneManager" kind="namespace"><name>Lotus::SceneManager</name>
-    <member refid="SceneManager_8h_1a6c3565b3612a6a0ec8889455b8c0a00d" kind="function"><name>LoadScene</name></member>
+    <member refid="SceneManager_8h_1a2fc43bfe23f1f5810fa2a02ca59832de" kind="function"><name>LoadScene</name></member>
+    <member refid="SceneManager_8h_1aef832f351620c74713ac2a9ae246e469" kind="function"><name>SaveScene</name></member>
+    <member refid="SceneManager_8h_1a0b6eaaab685dd09cd33ac11590581d65" kind="function"><name>GetCurrentScene</name></member>
+    <member refid="SceneManager_8h_1a9f6efdd9c554df705efced9409162b8f" kind="function"><name>OnSimulationBegin</name></member>
+    <member refid="SceneManager_8h_1ab402067127c65d4342ad4657438856a2" kind="function"><name>OnSimulationEnd</name></member>
+  </compound>
+  <compound refid="namespacephysx" kind="namespace"><name>physx</name>
   </compound>
   <compound refid="index_8md" kind="file"><name>index.md</name>
   </compound>
@@ -325,8 +389,6 @@
   </compound>
   <compound refid="ComponentRegistry_8h" kind="file"><name>ComponentRegistry.h</name>
     <member refid="ComponentRegistry_8h_1a45021cdaa76d0b04a876611f3b289fbf" kind="define"><name>GENERATED_BODY</name></member>
-    <member refid="ComponentRegistry_8h_1acddc9f003039109d031df7eba3aa43f5" kind="typedef"><name>component_ctor_key_t</name></member>
-    <member refid="ComponentRegistry_8h_1a624d2081cd7814102d24b1d9a9c007d8" kind="typedef"><name>component_ctor_t</name></member>
   </compound>
   <compound refid="CCamera_8h" kind="file"><name>CCamera.h</name>
   </compound>
@@ -411,6 +473,8 @@
   <compound refid="SceneManager_8h" kind="file"><name>SceneManager.h</name>
   </compound>
   <compound refid="SceneTreeNode_8h" kind="file"><name>SceneTreeNode.h</name>
+  </compound>
+  <compound refid="serialization_8h" kind="file"><name>serialization.h</name>
   </compound>
   <compound refid="dir_7a321a921dad526c540d89c0006fb0a9" kind="dir"><name>/builds</name>
   </compound>

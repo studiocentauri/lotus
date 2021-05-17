@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="structLotus_1_1CDisplayName" kind="struct" language="C++" prot="public">
+    <compoundname>Lotus::CDisplayName</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLotus_1_1CDisplayName_1a8e3235c0a23a014a85831ba8c777b412" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Lotus::CDisplayName::Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="105" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structLotus_1_1CDisplayName_1a0eb9379b680fbb809e9f3504c74e65ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Lotus::CDisplayName::GENERATED_BODY</definition>
+        <argsstring>(CDisplayName, Name)</argsstring>
+        <name>GENERATED_BODY</name>
+        <param>
+          <type><ref refid="structLotus_1_1CDisplayName" kindref="compound">CDisplayName</ref></type>
+        </param>
+        <param>
+          <type>Name</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="106" column="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" line="103" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/ecs/ComponentRegistry.h" bodystart="104" bodyend="107"/>
+    <listofallmembers>
+      <member refid="structLotus_1_1CDisplayName_1a0eb9379b680fbb809e9f3504c74e65ca" prot="public" virt="non-virtual"><scope>Lotus::CDisplayName</scope><name>GENERATED_BODY</name></member>
+      <member refid="structLotus_1_1CDisplayName_1a8e3235c0a23a014a85831ba8c777b412" prot="public" virt="non-virtual"><scope>Lotus::CDisplayName</scope><name>Name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

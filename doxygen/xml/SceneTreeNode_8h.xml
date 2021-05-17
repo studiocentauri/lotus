@@ -25,6 +25,8 @@
         <link refid="Scene_8h_source"/>
         <childnode refid="3" relation="include">
         </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
       </node>
       <node id="4">
         <label>/builds/centauri/lotus/lotus/include/lotus/scene/SceneManager.h</label>
