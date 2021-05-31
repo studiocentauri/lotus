@@ -56,7 +56,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" line="30" column="24" bodyfile="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" bodystart="30" bodyend="-1"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" line="57" column="24" bodyfile="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" bodystart="57" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -86,6 +86,86 @@
         </inbodydescription>
         <location file="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" line="22" column="24"/>
       </memberdef>
+      <memberdef kind="function" id="structLotus_1_1Scene_1a4ec9ee9c6ccd79357f0c40538b25fc7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classLotus_1_1Entity" kindref="compound">Entity</ref></type>
+        <definition>Entity Lotus::Scene::GetEntity</definition>
+        <argsstring>(EntityID entity)</argsstring>
+        <name>GetEntity</name>
+        <param>
+          <type>EntityID</type>
+          <declname>entity</declname>
+        </param>
+        <briefdescription>
+<para>Fetch an entity in the scene by EntityID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If you know the ID for the entity of interest, this function can be used to fetch it by that ID.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>entity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID of the entity to search for </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classLotus_1_1Entity" kindref="compound">Entity</ref> wrapper over the instance in the current scene </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if the entity ID supplied is invalid </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" line="34" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="structLotus_1_1Scene_1a3a669eef17f1d8b8addc70ac1afbccf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classLotus_1_1Entity" kindref="compound">Entity</ref></type>
+        <definition>Entity Lotus::Scene::GetEntity</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>GetEntity</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Fetch an entity in the scene by display name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If the entity that you are trying to find has a <ref refid="structLotus_1_1CDisplayName" kindref="compound">CDisplayName</ref> component, this function can be used fetch it by the Name field of the component, neatly wrapped in the <ref refid="classLotus_1_1Entity" kindref="compound">Entity</ref> convenience class.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name to search for among all <ref refid="structLotus_1_1CDisplayName" kindref="compound">CDisplayName</ref> components </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="classLotus_1_1Entity" kindref="compound">Entity</ref> wrapper over the instance in the current scene </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::runtime_error</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if no entity has a <ref refid="structLotus_1_1CDisplayName" kindref="compound">CDisplayName</ref> with the supplied name </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" line="47" column="16"/>
+      </memberdef>
       <memberdef kind="function" id="structLotus_1_1Scene_1a2587faa60bcf7d68f8dee057a6c7430f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classLotus_1_1Entity" kindref="compound">Entity</ref></type>
         <definition>Entity Lotus::Scene::CreateEntity</definition>
@@ -102,7 +182,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" line="26" column="16"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" line="49" column="16"/>
       </memberdef>
       <memberdef kind="function" id="structLotus_1_1Scene_1a7263bd9e9c6ae042bbc2b4a19fd89df0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classLotus_1_1Entity" kindref="compound">Entity</ref></type>
@@ -124,7 +204,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" line="27" column="16"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" line="50" column="16"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -144,12 +224,14 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" line="12" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" bodystart="13" bodyend="31"/>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" line="12" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/scene/Scene.h" bodystart="13" bodyend="58"/>
     <listofallmembers>
       <member refid="structLotus_1_1Scene_1aa6d90931f76098d0b6c90bf9a3b61e8e" prot="private" virt="non-virtual"><scope>Lotus::Scene</scope><name>_registry</name></member>
       <member refid="structLotus_1_1Scene_1a2587faa60bcf7d68f8dee057a6c7430f" prot="public" virt="non-virtual"><scope>Lotus::Scene</scope><name>CreateEntity</name></member>
       <member refid="structLotus_1_1Scene_1a7263bd9e9c6ae042bbc2b4a19fd89df0" prot="public" virt="non-virtual"><scope>Lotus::Scene</scope><name>CreateEntity</name></member>
       <member refid="structLotus_1_1Scene_1a3d225f205a97992a47bdbd20e5f76b94" prot="public" virt="non-virtual"><scope>Lotus::Scene</scope><name>detail</name></member>
+      <member refid="structLotus_1_1Scene_1a4ec9ee9c6ccd79357f0c40538b25fc7a" prot="public" virt="non-virtual"><scope>Lotus::Scene</scope><name>GetEntity</name></member>
+      <member refid="structLotus_1_1Scene_1a3a669eef17f1d8b8addc70ac1afbccf4" prot="public" virt="non-virtual"><scope>Lotus::Scene</scope><name>GetEntity</name></member>
       <member refid="structLotus_1_1Scene_1ac337b5813f8d1e5eca7792a8afc94e8d" prot="public" virt="non-virtual"><scope>Lotus::Scene</scope><name>GetRegistry</name></member>
       <member refid="structLotus_1_1Scene_1ad3adbf33ca452b345df138c44661287e" prot="public" virt="non-virtual"><scope>Lotus::Scene</scope><name>path</name></member>
       <member refid="structLotus_1_1Scene_1a74c0a66897fcc20710042c241fed3c52" prot="public" virt="non-virtual"><scope>Lotus::Scene</scope><name>Root</name></member>

@@ -90,7 +90,12 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#build">Build</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#build">Build</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#command-line">Command Line</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-visual-studio">Using Visual Studio</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#editor-layout">Editor Layout</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
@@ -175,16 +180,38 @@
 </div>
 <div class="section" id="build">
 <h2>Build<a class="headerlink" href="#build" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="command-line">
+<h3>Command Line<a class="headerlink" href="#command-line" title="Permalink to this headline">¶</a></h3>
 <p>After cloning the repository, build with CMake:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp"># In the root of the repo</span>
 <span class="n">mkdir</span> <span class="n">build</span> <span class="o">&amp;&amp;</span> <span class="n">cd</span> <span class="n">build</span>
-<span class="n">conan</span> <span class="n">install</span> <span class="p">..</span>
+<span class="n">conan</span> <span class="n">install</span> <span class="p">..</span> <span class="o">-</span><span class="n">s</span> <span class="n">build_type</span><span class="o">=</span><span class="n">Debug</span>
 <span class="n">cmake</span> <span class="p">..</span>
 <span class="n">cmake</span> <span class="o">--</span><span class="n">build</span> <span class="p">.</span>
 </pre></div>
 </div>
 <p>The sets up a working directory <code class="docutils literal notranslate"><span class="pre">build/</span></code> for cmake and builds all targets. You should now have an output library file at
 <code class="docutils literal notranslate"><span class="pre">build/lib/</span></code> and an example executable using that file in <code class="docutils literal notranslate"><span class="pre">build/bin/</span></code>.</p>
+</div>
+<div class="section" id="using-visual-studio">
+<h3>Using Visual Studio<a class="headerlink" href="#using-visual-studio" title="Permalink to this headline">¶</a></h3>
+<p>For Visual Studio users, open the project as a CMake project. You should then get a few CMake errors claiming there’s no <code class="docutils literal notranslate"><span class="pre">conanbuildinfo.cmake</span></code>.
+Open up a Developer Command Prompt, and perform the <code class="docutils literal notranslate"><span class="pre">conan</span> <span class="pre">install</span></code> as follows:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">your</span><span class="o">-</span><span class="n">cmake</span><span class="o">-</span><span class="n">binary</span><span class="o">-</span><span class="n">dir</span>
+<span class="n">conan</span> <span class="n">install</span> <span class="n">path</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">root</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">the</span><span class="o">-</span><span class="n">lotus</span><span class="o">-</span><span class="n">repo</span> <span class="o">-</span><span class="n">s</span> <span class="n">build_type</span><span class="o">=</span><span class="n">Debug</span>
+</pre></div>
+</div>
+<p>Basically, we want to run <code class="docutils literal notranslate"><span class="pre">conan</span> <span class="pre">install</span></code> in your <code class="docutils literal notranslate"><span class="pre">CMAKE_BINARY_DIR</span></code>, which will fetch all dependencies and set up CMake stubs to use them.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Support for multiple build configurations is currently lacking, which is why Visual Studio needs this workaround and also why we passed
+the <code class="docutils literal notranslate"><span class="pre">-s</span> <span class="pre">build_type=Debug</span></code> flag to conan. The Debug build configuration is the only one that we’re working with for now.</p>
+</div>
+</div>
+<div class="section" id="editor-layout">
+<h3>Editor Layout<a class="headerlink" href="#editor-layout" title="Permalink to this headline">¶</a></h3>
+<p>You can copy the <code class="docutils literal notranslate"><span class="pre">editor/imgui.ini</span></code> file to the directory where the editor executable is to get the default layout. You can skip this if you want to set up your own layout.</p>
+</div>
 </div>
 </div>
 

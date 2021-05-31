@@ -26,6 +26,8 @@
         </childnode>
         <childnode refid="19" relation="include">
         </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
         <childnode refid="3" relation="include">
         </childnode>
       </node>
@@ -67,6 +69,9 @@
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
+      </node>
+      <node id="20">
+        <label>lotus/internal/glm/gtc/quaternion.hpp</label>
       </node>
       <node id="13">
         <label>unordered_map</label>
@@ -128,6 +133,7 @@
     <innerclass refid="structLotus_1_1CRigidBody" prot="public">Lotus::CRigidBody</innerclass>
     <innernamespace refid="namespacephysx">physx</innernamespace>
     <innernamespace refid="namespaceLotus">Lotus</innernamespace>
+    <innernamespace refid="namespaceLotus_1_1Physics">Lotus::Physics</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -187,6 +193,12 @@
 <codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>detail;</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Lotus::Physics</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/>EForceType<sp/>{<sp/>IMPULSE,<sp/>FORCE<sp/>};</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>LOTUS_API<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ApplyForce(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CRigidBody&amp;<sp/>rb,<sp/>Vector3f<sp/>force,<sp/>EForceType<sp/>type<sp/>=<sp/>EForceType::FORCE);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h"/>
   </compounddef>

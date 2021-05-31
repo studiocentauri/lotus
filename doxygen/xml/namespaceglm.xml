@@ -22,7 +22,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="29" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="29" bodyend="35"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="32" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="32" bodyend="38"/>
       </memberdef>
       <memberdef kind="function" id="Vector_8h_1abb2bb72753f95eacb74e3888d8e2a760" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="37" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="37" bodyend="42"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="40" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="40" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="Vector_8h_1a7fafce0cfa835f976ed8f9d07df0d3c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -64,7 +64,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="44" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="44" bodyend="51"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="47" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="47" bodyend="54"/>
       </memberdef>
       <memberdef kind="function" id="Vector_8h_1a7056666278b04d7e69032e3776ada4cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -85,13 +85,55 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="53" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="53" bodyend="59"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="56" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="56" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="Vector_8h_1a6bfd8340217f79da99b998106d3daf19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void glm::to_json</definition>
+        <argsstring>(nlohmann::json &amp;data, const glm::quat &amp;q)</argsstring>
+        <name>to_json</name>
+        <param>
+          <type>nlohmann::json &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>const glm::quat &amp;</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="64" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="64" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="Vector_8h_1ae3319405801fc2f44dca36e66aa5ca5f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void glm::from_json</definition>
+        <argsstring>(const nlohmann::json &amp;data, glm::quat &amp;q)</argsstring>
+        <name>from_json</name>
+        <param>
+          <type>const nlohmann::json &amp;</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>glm::quat &amp;</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="73" column="17" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="73" bodyend="79"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="26" column="1"/>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="29" column="1"/>
   </compounddef>
 </doxygen>

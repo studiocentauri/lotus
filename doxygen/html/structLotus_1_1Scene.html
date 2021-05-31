@@ -90,6 +90,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac337b5813f8d1e5eca7792a8afc94e8d"><td class="memItemLeft" align="right" valign="top"><a id="ac337b5813f8d1e5eca7792a8afc94e8d"></a>
 entt::registry *&#160;</td><td class="memItemRight" valign="bottom"><b>GetRegistry</b> ()</td></tr>
 <tr class="separator:ac337b5813f8d1e5eca7792a8afc94e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ec9ee9c6ccd79357f0c40538b25fc7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLotus_1_1Entity.html">Entity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLotus_1_1Scene.html#a4ec9ee9c6ccd79357f0c40538b25fc7a">GetEntity</a> (EntityID entity)</td></tr>
+<tr class="memdesc:a4ec9ee9c6ccd79357f0c40538b25fc7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch an entity in the scene by EntityID.  <a href="structLotus_1_1Scene.html#a4ec9ee9c6ccd79357f0c40538b25fc7a">More...</a><br /></td></tr>
+<tr class="separator:a4ec9ee9c6ccd79357f0c40538b25fc7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a669eef17f1d8b8addc70ac1afbccf4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classLotus_1_1Entity.html">Entity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLotus_1_1Scene.html#a3a669eef17f1d8b8addc70ac1afbccf4">GetEntity</a> (const std::string &amp;name)</td></tr>
+<tr class="memdesc:a3a669eef17f1d8b8addc70ac1afbccf4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch an entity in the scene by display name.  <a href="structLotus_1_1Scene.html#a3a669eef17f1d8b8addc70ac1afbccf4">More...</a><br /></td></tr>
+<tr class="separator:a3a669eef17f1d8b8addc70ac1afbccf4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2587faa60bcf7d68f8dee057a6c7430f"><td class="memItemLeft" align="right" valign="top"><a id="a2587faa60bcf7d68f8dee057a6c7430f"></a>
 <a class="el" href="classLotus_1_1Entity.html">Entity</a>&#160;</td><td class="memItemRight" valign="bottom"><b>CreateEntity</b> (bool serialize=true)</td></tr>
 <tr class="separator:a2587faa60bcf7d68f8dee057a6c7430f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,6 +116,75 @@ struct {</td></tr>
 <tr class="memitem:a3d225f205a97992a47bdbd20e5f76b94"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><b>detail</b></td></tr>
 <tr class="separator:a3d225f205a97992a47bdbd20e5f76b94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a3a669eef17f1d8b8addc70ac1afbccf4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a669eef17f1d8b8addc70ac1afbccf4">&#9670;&nbsp;</a></span>GetEntity() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLotus_1_1Entity.html">Entity</a> Lotus::Scene::GetEntity </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fetch an entity in the scene by display name. </p>
+<p>If the entity that you are trying to find has a <a class="el" href="structLotus_1_1CDisplayName.html">CDisplayName</a> component, this function can be used fetch it by the Name field of the component, neatly wrapped in the <a class="el" href="classLotus_1_1Entity.html" title="Lightweight wrapper class to represent entities.">Entity</a> convenience class.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>Name to search for among all <a class="el" href="structLotus_1_1CDisplayName.html">CDisplayName</a> components </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classLotus_1_1Entity.html" title="Lightweight wrapper class to represent entities.">Entity</a> wrapper over the instance in the current scene </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>if no entity has a <a class="el" href="structLotus_1_1CDisplayName.html">CDisplayName</a> with the supplied name </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4ec9ee9c6ccd79357f0c40538b25fc7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ec9ee9c6ccd79357f0c40538b25fc7a">&#9670;&nbsp;</a></span>GetEntity() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classLotus_1_1Entity.html">Entity</a> Lotus::Scene::GetEntity </td>
+          <td>(</td>
+          <td class="paramtype">EntityID&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fetch an entity in the scene by EntityID. </p>
+<p>If you know the ID for the entity of interest, this function can be used to fetch it by that ID.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>ID of the entity to search for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classLotus_1_1Entity.html" title="Lightweight wrapper class to represent entities.">Entity</a> wrapper over the instance in the current scene </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>if the entity ID supplied is invalid </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/builds/centauri/lotus/lotus/include/lotus/scene/<a class="el" href="Scene_8h_source.html">Scene.h</a></li>
 </ul>

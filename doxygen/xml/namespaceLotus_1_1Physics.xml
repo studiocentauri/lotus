@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.18">
+  <compounddef id="namespaceLotus_1_1Physics" kind="namespace" language="C++">
+    <compoundname>Lotus::Physics</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="components_8h_1a26636e20f80bb323e9fbecddb8afed69" prot="public" static="no" strong="yes">
+        <type></type>
+        <name>EForceType</name>
+        <enumvalue id="components_8h_1a26636e20f80bb323e9fbecddb8afed69a088ae75055323518ba811d33fed05fe4" prot="public">
+          <name>IMPULSE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="components_8h_1a26636e20f80bb323e9fbecddb8afed69a2884c991e71a112e70c186a5c4458a24" prot="public">
+          <name>FORCE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="66" column="5" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" bodystart="66" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="components_8h_1a7369d7fc6daf7f0d1d65bf96ccb6e146" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LOTUS_API void</type>
+        <definition>LOTUS_API void Lotus::Physics::ApplyForce</definition>
+        <argsstring>(const CRigidBody &amp;rb, Vector3f force, EForceType type=EForceType::FORCE)</argsstring>
+        <name>ApplyForce</name>
+        <param>
+          <type>const <ref refid="structLotus_1_1CRigidBody" kindref="compound">CRigidBody</ref> &amp;</type>
+          <declname>rb</declname>
+        </param>
+        <param>
+          <type>Vector3f</type>
+          <declname>force</declname>
+        </param>
+        <param>
+          <type>EForceType</type>
+          <declname>type</declname>
+          <defval>EForceType::FORCE</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="67" column="20" declfile="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" declline="67" declcolumn="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/builds/centauri/lotus/lotus/include/lotus/physics/components.h" line="64" column="1"/>
+  </compounddef>
+</doxygen>

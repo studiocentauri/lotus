@@ -94,26 +94,34 @@ $(function() {
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        entt::registry* GetRegistry();</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">//        Entity GetParent(Entity entity);</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <a class="code" href="classLotus_1_1Entity.html">Entity</a> CreateEntity(<span class="keywordtype">bool</span> serialize = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="classLotus_1_1Entity.html">Entity</a> CreateEntity(<span class="keyword">const</span> std::string&amp; path, <span class="keywordtype">bool</span> serialize = <span class="keyword">true</span>);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        entt::registry _registry;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    };</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structLotus_1_1SceneLoadEvent.html">   33</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structLotus_1_1SceneLoadEvent.html">SceneLoadEvent</a></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        IMMEDIATE_EVENT();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <a class="code" href="structLotus_1_1Scene.html">Scene</a>* pScene;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    };</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="structLotus_1_1Scene.html#a4ec9ee9c6ccd79357f0c40538b25fc7a">   34</a></span>&#160;        <a class="code" href="classLotus_1_1Entity.html">Entity</a> <a class="code" href="structLotus_1_1Scene.html#a4ec9ee9c6ccd79357f0c40538b25fc7a">GetEntity</a>(EntityID entity);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structLotus_1_1Scene.html#a3a669eef17f1d8b8addc70ac1afbccf4">   47</a></span>&#160;        <a class="code" href="classLotus_1_1Entity.html">Entity</a> <a class="code" href="structLotus_1_1Scene.html#a3a669eef17f1d8b8addc70ac1afbccf4">GetEntity</a>(<span class="keyword">const</span> std::string&amp; name);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="classLotus_1_1Entity.html">Entity</a> CreateEntity(<span class="keywordtype">bool</span> serialize = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <a class="code" href="classLotus_1_1Entity.html">Entity</a> CreateEntity(<span class="keyword">const</span> std::string&amp; path, <span class="keywordtype">bool</span> serialize = <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="comment">// TODO: Wrapper over registry, view</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="comment">//   template&lt;class ...Components&gt;</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="comment">//   auto View() {}</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        entt::registry _registry;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    };</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="structLotus_1_1SceneLoadEvent.html">   60</a></span>&#160;    <span class="keyword">struct </span><a class="code" href="structLotus_1_1SceneLoadEvent.html">SceneLoadEvent</a></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        IMMEDIATE_EVENT();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="structLotus_1_1Scene.html">Scene</a>* pScene;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    };</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="astructLotus_1_1Scene_html"><div class="ttname"><a href="structLotus_1_1Scene.html">Lotus::Scene</a></div><div class="ttdef"><b>Definition:</b> Scene.h:13</div></div>
 <div class="ttc" id="aclassLotus_1_1SceneTreeNode_html"><div class="ttname"><a href="classLotus_1_1SceneTreeNode.html">Lotus::SceneTreeNode</a></div><div class="ttdef"><b>Definition:</b> SceneTreeNode.h:6</div></div>
 <div class="ttc" id="aclassLotus_1_1Entity_html"><div class="ttname"><a href="classLotus_1_1Entity.html">Lotus::Entity</a></div><div class="ttdoc">Lightweight wrapper class to represent entities.</div><div class="ttdef"><b>Definition:</b> Entity.h:24</div></div>
-<div class="ttc" id="astructLotus_1_1SceneLoadEvent_html"><div class="ttname"><a href="structLotus_1_1SceneLoadEvent.html">Lotus::SceneLoadEvent</a></div><div class="ttdef"><b>Definition:</b> Scene.h:34</div></div>
+<div class="ttc" id="astructLotus_1_1Scene_html_a3a669eef17f1d8b8addc70ac1afbccf4"><div class="ttname"><a href="structLotus_1_1Scene.html#a3a669eef17f1d8b8addc70ac1afbccf4">Lotus::Scene::GetEntity</a></div><div class="ttdeci">Entity GetEntity(const std::string &amp;name)</div><div class="ttdoc">Fetch an entity in the scene by display name.</div></div>
+<div class="ttc" id="astructLotus_1_1Scene_html_a4ec9ee9c6ccd79357f0c40538b25fc7a"><div class="ttname"><a href="structLotus_1_1Scene.html#a4ec9ee9c6ccd79357f0c40538b25fc7a">Lotus::Scene::GetEntity</a></div><div class="ttdeci">Entity GetEntity(EntityID entity)</div><div class="ttdoc">Fetch an entity in the scene by EntityID.</div></div>
+<div class="ttc" id="astructLotus_1_1SceneLoadEvent_html"><div class="ttname"><a href="structLotus_1_1SceneLoadEvent.html">Lotus::SceneLoadEvent</a></div><div class="ttdef"><b>Definition:</b> Scene.h:61</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

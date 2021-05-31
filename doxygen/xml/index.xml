@@ -192,6 +192,8 @@
     <member refid="structLotus_1_1Scene_1aa6d90931f76098d0b6c90bf9a3b61e8e" kind="variable"><name>_registry</name></member>
     <member refid="structLotus_1_1Scene_1a4d539951751fe2f4b6f260294541b4cf" kind="function"><name>Scene</name></member>
     <member refid="structLotus_1_1Scene_1ac337b5813f8d1e5eca7792a8afc94e8d" kind="function"><name>GetRegistry</name></member>
+    <member refid="structLotus_1_1Scene_1a4ec9ee9c6ccd79357f0c40538b25fc7a" kind="function"><name>GetEntity</name></member>
+    <member refid="structLotus_1_1Scene_1a3a669eef17f1d8b8addc70ac1afbccf4" kind="function"><name>GetEntity</name></member>
     <member refid="structLotus_1_1Scene_1a2587faa60bcf7d68f8dee057a6c7430f" kind="function"><name>CreateEntity</name></member>
     <member refid="structLotus_1_1Scene_1a7263bd9e9c6ae042bbc2b4a19fd89df0" kind="function"><name>CreateEntity</name></member>
   </compound>
@@ -258,6 +260,8 @@
     <member refid="Vector_8h_1abb2bb72753f95eacb74e3888d8e2a760" kind="function"><name>from_json</name></member>
     <member refid="Vector_8h_1a7fafce0cfa835f976ed8f9d07df0d3c8" kind="function"><name>to_json</name></member>
     <member refid="Vector_8h_1a7056666278b04d7e69032e3776ada4cf" kind="function"><name>from_json</name></member>
+    <member refid="Vector_8h_1a6bfd8340217f79da99b998106d3daf19" kind="function"><name>to_json</name></member>
+    <member refid="Vector_8h_1ae3319405801fc2f44dca36e66aa5ca5f" kind="function"><name>from_json</name></member>
   </compound>
   <compound refid="namespaceLotus" kind="namespace"><name>Lotus</name>
     <member refid="Config_8h_1ae825578a38779239ed42a80e8048dfb3" kind="enum"><name>ERenderAPI</name></member>
@@ -363,6 +367,12 @@
     <member refid="namespaceLotus_1_1Input_1a73c0ee1d44bac64d01319fa33df1024c" kind="function"><name>GetMousePressed</name></member>
     <member refid="namespaceLotus_1_1Input_1a60dc0471ef5c22d1697eededaf239ef7" kind="function"><name>GetMouseDelta</name></member>
   </compound>
+  <compound refid="namespaceLotus_1_1Physics" kind="namespace"><name>Lotus::Physics</name>
+    <member refid="components_8h_1a26636e20f80bb323e9fbecddb8afed69" kind="enum"><name>EForceType</name></member>
+    <member refid="components_8h_1a26636e20f80bb323e9fbecddb8afed69a088ae75055323518ba811d33fed05fe4" kind="enumvalue"><name>IMPULSE</name></member>
+    <member refid="components_8h_1a26636e20f80bb323e9fbecddb8afed69a2884c991e71a112e70c186a5c4458a24" kind="enumvalue"><name>FORCE</name></member>
+    <member refid="components_8h_1a7369d7fc6daf7f0d1d65bf96ccb6e146" kind="function"><name>ApplyForce</name></member>
+  </compound>
   <compound refid="namespaceLotus_1_1Renderer" kind="namespace"><name>Lotus::Renderer</name>
     <member refid="RenderPass_8h_1acbff0dcce2166fae3fea42655864efff" kind="function"><name>AddRenderPass</name></member>
     <member refid="RenderPass_8h_1a542c2f6dc968c11674e66a7299837d23" kind="function"><name>GetColorBuffer</name></member>
@@ -441,6 +451,7 @@
     <member refid="Vector_8h_1aacfb3298d638469bf9ebb3b8a0399453" kind="typedef"><name>Vector2f</name></member>
     <member refid="Vector_8h_1abbfe7ad4e3666fed6601f0532d9c2c6a" kind="typedef"><name>Vector3f</name></member>
     <member refid="Vector_8h_1ae0924f2aa69c64615c821adff96a317a" kind="typedef"><name>Vector4f</name></member>
+    <member refid="Vector_8h_1aa4dcc58b75eed9798afd00a9057993cd" kind="typedef"><name>Quaternion</name></member>
     <member refid="Vector_8h_1aac02e4a5715931b75d8f83bd0d5d0b2c" kind="typedef"><name>Matrix2i</name></member>
     <member refid="Vector_8h_1ae14c3b779b22c8d5f42d38e173d10514" kind="typedef"><name>Matrix3i</name></member>
     <member refid="Vector_8h_1af99dfdc3c171de0972aae703be4a3bd3" kind="typedef"><name>Matrix4i</name></member>

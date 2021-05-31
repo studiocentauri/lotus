@@ -42,6 +42,7 @@
     <innerclass refid="structLotus_1_1Vertex" prot="public">Lotus::Vertex</innerclass>
     <innernamespace refid="namespaceLotus_1_1Engine">Lotus::Engine</innernamespace>
     <innernamespace refid="namespaceLotus_1_1Input">Lotus::Input</innernamespace>
+    <innernamespace refid="namespaceLotus_1_1Physics">Lotus::Physics</innernamespace>
     <innernamespace refid="namespaceLotus_1_1Renderer">Lotus::Renderer</innernamespace>
     <innernamespace refid="namespaceLotus_1_1SceneManager">Lotus::SceneManager</innernamespace>
       <sectiondef kind="enum">
@@ -1100,7 +1101,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="92" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="92" bodyend="95"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="112" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="112" bodyend="115"/>
       </memberdef>
       <memberdef kind="function" id="Vector_8h_1a726f9b8e02e75b52c1f7df5480868381" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Vector3f</type>
@@ -1141,7 +1142,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="103" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="103" bodyend="106"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="123" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="123" bodyend="126"/>
       </memberdef>
       <memberdef kind="function" id="Vector_8h_1a893de9d4908114267fdfb6b93352a369" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Matrix4f</type>
@@ -1194,7 +1195,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="115" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="115" bodyend="118"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="135" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="135" bodyend="138"/>
       </memberdef>
       <memberdef kind="function" id="Vector_8h_1a6b8ce6b82e47ad6e7d1368b2b414eccb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Matrix4f</type>
@@ -1259,7 +1260,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="128" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="128" bodyend="131"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="148" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="148" bodyend="151"/>
       </memberdef>
       <memberdef kind="function" id="Vector_8h_1a7121c0742be7d02d3edeb1c095879776" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Matrix4f</type>
@@ -1300,7 +1301,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="139" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="139" bodyend="142"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="159" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="159" bodyend="162"/>
       </memberdef>
       <memberdef kind="function" id="Vector_8h_1ac760cc5e35d95f3e943583f3d17bce53" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Matrix4f</type>
@@ -1341,7 +1342,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="150" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="150" bodyend="153"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="170" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="170" bodyend="173"/>
       </memberdef>
       <memberdef kind="function" id="Vector_8h_1a2d8bf4ad45a5ac17b5f8188ad4b9f3af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>Matrix4f</type>
@@ -1394,7 +1395,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="162" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="162" bodyend="165"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="182" column="21" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="182" bodyend="185"/>
       </memberdef>
       <memberdef kind="function" id="Vector_8h_1a14c15fa7611b1fff9231f9ecee70e5f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const float *</type>
@@ -1423,7 +1424,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="172" column="24" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="172" bodyend="174"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="192" column="24" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="192" bodyend="194"/>
       </memberdef>
       <memberdef kind="function" id="Vector_8h_1a0aee522b724c634c46d97e2e2ad030f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const float *</type>
@@ -1452,7 +1453,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="181" column="24" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="181" bodyend="184"/>
+        <location file="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" line="201" column="24" bodyfile="/builds/centauri/lotus/lotus/include/lotus/physics/Vector.h" bodystart="201" bodyend="204"/>
       </memberdef>
       <memberdef kind="function" id="CMeshRenderer_8h_1ac6abc462d0a09f476896cf45aac50bde" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
