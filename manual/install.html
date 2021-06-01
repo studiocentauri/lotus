@@ -93,6 +93,9 @@
 <li class="toctree-l2"><a class="reference internal" href="#build">Build</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#command-line">Command Line</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#using-visual-studio">Using Visual Studio</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#launching-the-editor">Launching the Editor</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#editor-layout">Editor Layout</a></li>
 </ul>
 </li>
@@ -208,6 +211,14 @@ Open up a Developer Command Prompt, and perform the <code class="docutils litera
 the <code class="docutils literal notranslate"><span class="pre">-s</span> <span class="pre">build_type=Debug</span></code> flag to conan. The Debug build configuration is the only one that we’re working with for now.</p>
 </div>
 </div>
+</div>
+<div class="section" id="launching-the-editor">
+<h2>Launching the Editor<a class="headerlink" href="#launching-the-editor" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">editor.exe</span></code> in your build directory launches the editor. It needs one argument, an absolute path to a Lotus project directory, which is a directory containing an <code class="docutils literal notranslate"><span class="pre">.lproject</span></code> file. For example, you can launch the Pong example with:</p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="o">/</span><span class="n">editor</span><span class="p">.</span><span class="n">exe</span> <span class="n">abspath</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">repo</span><span class="o">/</span><span class="n">examples</span><span class="o">/</span><span class="n">pong</span><span class="o">/</span>
+</pre></div>
+</div>
+<p>This argument is required, so if you use an IDE to run the executable look for an option to configure command line arguments.</p>
 <div class="section" id="editor-layout">
 <h3>Editor Layout<a class="headerlink" href="#editor-layout" title="Permalink to this headline">¶</a></h3>
 <p>You can copy the <code class="docutils literal notranslate"><span class="pre">editor/imgui.ini</span></code> file to the directory where the editor executable is to get the default layout. You can skip this if you want to set up your own layout.</p>
